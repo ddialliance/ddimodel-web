@@ -1,0 +1,425 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ReferenceType &mdash; DDI Data Documentation 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/image.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex/"/>
+        <link rel="search" title="Search" href="../../search/"/>
+    <link rel="top" title="DDI Data Documentation 0.1 documentation" href="../../"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../" class="icon icon-home"> DDI Data Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Topics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/All Content Items/">All Content Items</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Items and Fields</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../item-types/">All Item Types</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">DDI Data Documentation</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+      <li>ReferenceType</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/composite-types/ReferenceType/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="referencetype">
+<h1><a class="toc-backref" href="#id1">ReferenceType</a><a class="headerlink" href="#referencetype" title="Permalink to this headline">¶</a></h1>
+<p>Used for referencing an identified entity expressed in DDI XML, either by a URN and/or an identification sequence. If both are supplied, the URN takes precedence. At a minimum, one or the other is required. If the identification sequence is used the content of MaintainableObject may be required to be able to assemble the canonical or deprecated DDI URN. To fully support interoperability both the DDI URN and the full identification sequence should be used. Note that to support interoperability of the canonical and deprecated URN, at minimum the MaintainableIdentifier and TypeOfMaintainableObject should be supplied if the canonical URN is being used for the reference. The lateBound attribute has a boolean value, which - if set to true - indicates that the latest version should be used. Use the attribute lateBoundRestriction to indicate when a portion, such as the major version number, should be restricted to a specific value and then late bound within that restriction. Element descriptions will contain a list of applicable TypeOfObject values.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#referencetype" id="id1">ReferenceType</a><ul>
+<li><a class="reference internal" href="#item-type-hierarchy" id="id2">Item Type Hierarchy</a></li>
+<li><a class="reference internal" href="#relationships" id="id3">Relationships</a></li>
+<li><a class="reference internal" href="#properties" id="id4">Properties</a><ul>
+<li><a class="reference internal" href="#urn" id="id5">URN</a></li>
+<li><a class="reference internal" href="#agency" id="id6">Agency</a></li>
+<li><a class="reference internal" href="#id" id="id7">ID</a></li>
+<li><a class="reference internal" href="#version" id="id8">Version</a></li>
+<li><a class="reference internal" href="#typeofobject" id="id9">TypeOfObject</a></li>
+<li><a class="reference internal" href="#maintainableobject" id="id10">MaintainableObject</a></li>
+<li><a class="reference internal" href="#isexternal" id="id11">IsExternal</a></li>
+<li><a class="reference internal" href="#externalreferencedefaulturi" id="id12">ExternalReferenceDefaultURI</a></li>
+<li><a class="reference internal" href="#isreference" id="id13">IsReference</a></li>
+<li><a class="reference internal" href="#latebound" id="id14">LateBound</a></li>
+<li><a class="reference internal" href="#lateboundrestriction" id="id15">LateBoundRestriction</a></li>
+<li><a class="reference internal" href="#objectlanguage" id="id16">ObjectLanguage</a></li>
+<li><a class="reference internal" href="#sourcecontext" id="id17">SourceContext</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="item-type-hierarchy">
+<h2><a class="toc-backref" href="#id2">Item Type Hierarchy</a><a class="headerlink" href="#item-type-hierarchy" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt><strong>ReferenceType</strong></dt>
+<dd><ul class="first last">
+<li><span class="xref std std-doc">/reusable-types/ConditionalVariableReferenceType/index</span></li>
+<li><span class="xref std std-doc">/reusable-types/ControlConstructReferenceType/index</span></li>
+<li><span class="xref std std-doc">/reusable-types/DefaultMissingValuesReferenceType/index</span></li>
+<li><span class="xref std std-doc">/reusable-types/DomainReferenceType/index</span></li>
+<li><span class="xref std std-doc">/reusable-types/GeographicLocationReferenceType/index</span></li>
+<li><span class="xref std std-doc">/reusable-types/GeographicStructureReferenceType/index</span></li>
+<li><span class="xref std std-doc">/reusable-types/InterviewerInstructionReferenceType/index</span></li>
+<li><span class="xref std std-doc">/reusable-types/KeyVariableReferenceType/index</span></li>
+<li><span class="xref std std-doc">/reusable-types/MeasureDefinitionReferenceType/index</span></li>
+<li><span class="xref std std-doc">/reusable-types/NCubeMeasureDefinitionReferenceType/index</span></li>
+<li><span class="xref std std-doc">/reusable-types/ParentGeographicLevelReferenceType/index</span></li>
+<li><span class="xref std std-doc">/reusable-types/PhysicalStructureLinkReferenceType/index</span></li>
+<li><span class="xref std std-doc">/reusable-types/ProcessingInstructionReferenceType/index</span></li>
+<li><span class="xref std std-doc">/reusable-types/RelatedLocationValueReferenceType/index</span></li>
+<li><span class="xref std std-doc">/reusable-types/RepresentationReferenceType/index</span></li>
+<li><span class="xref std std-doc">/reusable-types/SchemeReferenceType/index</span></li>
+<li><span class="xref std std-doc">/reusable-types/SourceReferenceType/index</span></li>
+<li><span class="xref std std-doc">/reusable-types/SubCategoryReferenceType/index</span></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="relationships">
+<h2><a class="toc-backref" href="#id3">Relationships</a><a class="headerlink" href="#relationships" title="Permalink to this headline">¶</a></h2>
+<div class="image docutils container">
+<img alt="stub" src="composite-types\ReferenceType\../../images/ReferenceType.svg" /></div>
+</div>
+<div class="section" id="properties">
+<h2><a class="toc-backref" href="#id4">Properties</a><a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="urn">
+<h3><a class="toc-backref" href="#id5">URN</a><a class="headerlink" href="#urn" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/URNType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>The URN of the entity being referenced. The URN should follow the pattern associated with the value of the attribute typeOfIdentifier (Canonical or Deprecated).</p>
+</div>
+<div class="section" id="agency">
+<h3><a class="toc-backref" href="#id6">Agency</a><a class="headerlink" href="#agency" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>string</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>This is the registered agency code with optional sub-agencies separated by dots.</p>
+</div>
+<div class="section" id="id">
+<h3><a class="toc-backref" href="#id7">ID</a><a class="headerlink" href="#id" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/IDType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>ID of the object being referenced.This must conform to the allowed structure of the DDI Identifier and must be unique within the declared scope of uniqueness (Agency or Maintainable).</p>
+</div>
+<div class="section" id="version">
+<h3><a class="toc-backref" href="#id8">Version</a><a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>string</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>The version of the object at the time of reference. Late binding is handled separately and does not effect the content of this object.</p>
+</div>
+<div class="section" id="typeofobject">
+<h3><a class="toc-backref" href="#id9">TypeOfObject</a><a class="headerlink" href="#typeofobject" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>string</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>States the type of object being referenced based on a persistent list of valid DDI object types.</p>
+</div>
+<div class="section" id="maintainableobject">
+<h3><a class="toc-backref" href="#id10">MaintainableObject</a><a class="headerlink" href="#maintainableobject" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/MaintainableObjectType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Do not use if the referenced object is Maintainable. For references to Identifiable and Versionable objects this provides contextual information on the Maintainable Parent of this object at point of origin. Note that if the ID, Agency, Version sequence is used, and the scope of uniqueness of the referenced object is the Maintainable, then the ID of the Maintainable is needed to create the structured ID portion of the canonical URN. If the system uses the deprecated URN, both the Maintainable ID and TypeOfMaintainableObject are required to create the deprecated URN structure.</p>
+</div>
+<div class="section" id="isexternal">
+<h3><a class="toc-backref" href="#id11">IsExternal</a><a class="headerlink" href="#isexternal" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>boolean</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Indicates that the reference is made to an external source. If the value is true, then a URI must be provided.</p>
+</div>
+<div class="section" id="externalreferencedefaulturi">
+<h3><a class="toc-backref" href="#id12">ExternalReferenceDefaultURI</a><a class="headerlink" href="#externalreferencedefaulturi" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>anyURI</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>URI identifying the location of an external reference as provided in the maintainable object of the referenced item. For example the content of the externalReferenceDefaultURI of the parent VariableScheme for a referenced Variable. If there is a conflict where the content of the URI does not match the requested object, the DDI URN becomes the preferred value.</p>
+</div>
+<div class="section" id="isreference">
+<h3><a class="toc-backref" href="#id13">IsReference</a><a class="headerlink" href="#isreference" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>boolean</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>A fixed attribute value identifying which elements are references.</p>
+</div>
+<div class="section" id="latebound">
+<h3><a class="toc-backref" href="#id14">LateBound</a><a class="headerlink" href="#latebound" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>boolean</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>The default value is set to false indicating that the reference is to a specific version of the object. If the most recent version or most recent minor version within a major version is required, set this flag to “true”. Indicating lateBound and not providing information for lateBoundRestriction indicates the request is for the latest version available without restriction.</p>
+</div>
+<div class="section" id="lateboundrestriction">
+<h3><a class="toc-backref" href="#id15">LateBoundRestriction</a><a class="headerlink" href="#lateboundrestriction" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>string</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Use when lateBound is changed to “true”. The specifies the point to begin late binding the version number. For example if an object had a two part version number such as X.Y where X is a major version and Y a minor version and the request is for the latest minor version of major version number 4, the content of this field would be 4. Indicating lateBound and not providing information for this field indicates the request is for the latest version available without restriction.</p>
+</div>
+<div class="section" id="objectlanguage">
+<h3><a class="toc-backref" href="#id16">ObjectLanguage</a><a class="headerlink" href="#objectlanguage" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>language</dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>Specifies the language (or language-locale pair) to use for display in references to objects which have multiple languages available.</p>
+</div>
+<div class="section" id="sourcecontext">
+<h3><a class="toc-backref" href="#id17">SourceContext</a><a class="headerlink" href="#sourcecontext" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>anyURI</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Provide a DDI URN for the version of the parent maintainable that shows the full context for the referenced object. This is used only when the context of the object within the current version of a maintainable is important to the user and this version is later than the one containing the object itself. For example a occupation classification may be unchanged since version 1.0 of its maintainable but at the point of reference the current version of the maintainable containing the original structure is at version 2.0 etc..</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright TODO.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

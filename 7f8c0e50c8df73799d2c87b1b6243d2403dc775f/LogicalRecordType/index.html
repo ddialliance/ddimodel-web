@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>LogicalRecordType &mdash; DDI Data Documentation 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/image.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex/"/>
+        <link rel="search" title="Search" href="../../search/"/>
+    <link rel="top" title="DDI Data Documentation 0.1 documentation" href="../../"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../" class="icon icon-home"> DDI Data Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Topics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/All Content Items/">All Content Items</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Items and Fields</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../item-types/">All Item Types</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">DDI Data Documentation</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+      <li>LogicalRecordType</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/composite-types/LogicalRecordType/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="logicalrecordtype">
+<h1><a class="toc-backref" href="#id1">LogicalRecordType</a><a class="headerlink" href="#logicalrecordtype" title="Permalink to this headline">¶</a></h1>
+<p>A logical record is a description of all of the elements (variables or NCubes) related to a single case or analysis unit. Required to link a description of a physical record structure to its logical record. In addition to the standard name, label, and description, the structure identifies the variable designating its record type, describes case identification within the record type, indicates support for multiple storage segments, and defines a default set of missing values used by the record. In a data set with multiple records repeat to describe each logical record, such as a household, family, person, or event, record. A LogicalRecord is required to link a description of a physical record structure to its logical record.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#logicalrecordtype" id="id1">LogicalRecordType</a><ul>
+<li><a class="reference internal" href="#item-type-hierarchy" id="id2">Item Type Hierarchy</a></li>
+<li><a class="reference internal" href="#relationships" id="id3">Relationships</a></li>
+<li><a class="reference internal" href="#properties" id="id4">Properties</a><ul>
+<li><a class="reference internal" href="#logicalrecordname" id="id5">LogicalRecordName</a></li>
+<li><a class="reference internal" href="#label" id="id6">Label</a></li>
+<li><a class="reference internal" href="#description" id="id7">Description</a></li>
+<li><a class="reference internal" href="#variablevaluereference" id="id8">VariableValueReference</a></li>
+<li><a class="reference internal" href="#supportformultiplesegments" id="id9">SupportForMultipleSegments</a></li>
+<li><a class="reference internal" href="#caseidentification" id="id10">CaseIdentification</a></li>
+<li><a class="reference internal" href="#variablesinrecord" id="id11">VariablesInRecord</a></li>
+<li><a class="reference internal" href="#ncubesinrecord" id="id12">NCubesInRecord</a></li>
+<li><a class="reference internal" href="#defaultmissingvalues" id="id13">DefaultMissingValues</a></li>
+<li><a class="reference internal" href="#haslocator" id="id14">HasLocator</a></li>
+<li><a class="reference internal" href="#variablequantity" id="id15">VariableQuantity</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="item-type-hierarchy">
+<h2><a class="toc-backref" href="#id2">Item Type Hierarchy</a><a class="headerlink" href="#item-type-hierarchy" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>AbstractIdentifiableType</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt><span class="xref std std-doc">/reusable-types/IdentifiableType/index</span></dt>
+<dd><ul class="first last">
+<li><strong>LogicalRecordType</strong></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="relationships">
+<h2><a class="toc-backref" href="#id3">Relationships</a><a class="headerlink" href="#relationships" title="Permalink to this headline">¶</a></h2>
+<div class="image docutils container">
+<img alt="stub" src="composite-types\LogicalRecordType\../../images/LogicalRecordType.svg" /></div>
+</div>
+<div class="section" id="properties">
+<h2><a class="toc-backref" href="#id4">Properties</a><a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="logicalrecordname">
+<h3><a class="toc-backref" href="#id5">LogicalRecordName</a><a class="headerlink" href="#logicalrecordname" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/NameType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>A name for the LogicalRecord. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.</p>
+</div>
+<div class="section" id="label">
+<h3><a class="toc-backref" href="#id6">Label</a><a class="headerlink" href="#label" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/LabelType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>A display label for the LogicalRecord. May be expressed in multiple languages. Repeat for labels with different content, for example, labels with differing length limitations.</p>
+</div>
+<div class="section" id="description">
+<h3><a class="toc-backref" href="#id7">Description</a><a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/StructuredStringType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>A description of the content and purpose of the LogicalRecord. May be expressed in multiple languages and supports the use of structured content.</p>
+</div>
+<div class="section" id="variablevaluereference">
+<h3><a class="toc-backref" href="#id8">VariableValueReference</a><a class="headerlink" href="#variablevaluereference" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/VariableValueReferenceType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>A reference the variable containing the record type locator and the value being used. Files with single record types or which store records in different files may not have a record type locator. If this element is used set the attribute hasLocator to “true”.</p>
+</div>
+<div class="section" id="supportformultiplesegments">
+<h3><a class="toc-backref" href="#id9">SupportForMultipleSegments</a><a class="headerlink" href="#supportformultiplesegments" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/VariableValueReferenceType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Information concerning support for breaking the logical record into segments for storage purposes. Some files may be broken into record segments for storage but lack variables to support identification of specific segments. In this case segments are identified by their physical order within the storage file.</p>
+</div>
+<div class="section" id="caseidentification">
+<h3><a class="toc-backref" href="#id10">CaseIdentification</a><a class="headerlink" href="#caseidentification" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/CaseIdentificationType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>Describes the information needed to identify an individual case within a record type. This may be the variable or concatenated variable used to identify a unique case of a particular record type. Often referred to as a unique key. There may be more than one means of identifying a record. For example a US Census Summary File has a LogicalRecordIdentifier that is unique to the original file within which it was published. A specific geography has a set of fields that uniquely identify it.</p>
+</div>
+<div class="section" id="variablesinrecord">
+<h3><a class="toc-backref" href="#id11">VariablesInRecord</a><a class="headerlink" href="#variablesinrecord" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/VariablesInRecordType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>List of all variables used in the record, either directly or as found in a defined VariableGroup; note that a variable can be used in multiple records. The variables in the logical record can be noted by inclusion or exclusion to facilitate listing. The attribute allVariablesInLogicalProduct, when set to ‘true’, includes all variables in the LogicalProduct. VariableSchemeReference can then be used to exclude individual Variables schemes or include schemes from other logical products. In the same way VariableReference can be used to exclude specific variables from the previously defined variable set or include variables not already included. The simplest LogicalProduct descriptions with a single LogicalRecord can be described using only the attribute allVariablesInLogicalProduct with a value of true.</p>
+</div>
+<div class="section" id="ncubesinrecord">
+<h3><a class="toc-backref" href="#id12">NCubesInRecord</a><a class="headerlink" href="#ncubesinrecord" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/NCubesInRecordType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>List of all NCubes used in the record, either directly or as found in a defined NCubeGroup; note that an NCube can be used in multiple records. The NCubes in the logical record can be noted by inclusion or exclusion to facilitate listing. The attribute allNCubesInLogicalProduct, when set to ‘true’, includes all NCubes in the LogicalProduct. NCubeSchemeReference can then be used to exclude individual NCubes schemes or include schemes from other logical products. In the same way NCubeReference can be used to exclude specific variables from the previously defined variable set or include variables not already included. The simplest LogicalProduct descriptions with a single LogicalRecord can be described using only the attribute allNCubesInLogicalProduct with a value of true.</p>
+</div>
+<div class="section" id="defaultmissingvalues">
+<h3><a class="toc-backref" href="#id13">DefaultMissingValues</a><a class="headerlink" href="#defaultmissingvalues" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/DefaultMissingValuesType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Identifies the default missing value parameter for the this logical record by referencing a ManagedMissingValuesRepresentation or by stating that there is a default missing values parameter used but it is undocumented. Note that a conflicting DefaultMissingValues definition in a PhysicalInstance will override that found in the LogicalRecord.</p>
+</div>
+<div class="section" id="haslocator">
+<h3><a class="toc-backref" href="#id14">HasLocator</a><a class="headerlink" href="#haslocator" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>boolean</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>If “true” indicates that the record type has a field which identifies its record type. In logical structures with a single record type there is generally no identifier. Most multi-record files will have a variable that identifies the record type.</p>
+</div>
+<div class="section" id="variablequantity">
+<h3><a class="toc-backref" href="#id15">VariableQuantity</a><a class="headerlink" href="#variablequantity" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>int</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Number of variables in the logical record. Caution in using optional checksums is recommended. Conflict between checksums and the items being counted can cause problems with warning flags during processing. If using checksum to capture information for internal processing purposes, the use of automatically generated check sums is strongly urged.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright TODO.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
