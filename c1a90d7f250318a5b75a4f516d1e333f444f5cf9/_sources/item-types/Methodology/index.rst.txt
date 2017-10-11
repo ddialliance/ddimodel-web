@@ -1,0 +1,87 @@
+Methodology
+-----------
+
+Metadata regarding the methodologies used concerning data collection, determining the timing and repetition patterns for data collection, and sampling procedures. Identifies areas where there were deviations from the planned sampling approach, the software used for data collection, and references to any quality standards or statements regarding the processes surrounding the planning and implementation of data collection.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **Methodology**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/Methodology.svg
+
+Properties
+~~~~~~~~~~
+
+DataCollectionMethodology
+*************************
+
+Type
+    :doc:`/reusable-types/DataCollectionMethodologyType/index`
+Cardinality
+    0..n
+
+A basic structure for describing the methodology used for collecting data. Repeat this element if multiple methodologies are used.
+
+TimeMethod
+**********
+
+Type
+    :doc:`/reusable-types/TimeMethodType/index`
+Cardinality
+    0..n
+
+Describes how time fits into the data collection methodology.
+
+SamplingProcedure
+*****************
+
+Type
+    :doc:`/reusable-types/SamplingProcedureType/index`
+Cardinality
+    0..n
+
+Describes the type of sample, sample design and provides details on drawing the sample. May be repeated to provide descriptions of individual facets of a single sample design or when multiple sampling methods are used. When multiple descriptions are used, the use of a controlled vocabulary to identify the parts and relationships is strongly recommended.
+
+DeviationFromSampleDesign
+*************************
+
+Type
+    :doc:`/reusable-types/DeviationFromSampleDesignType/index`
+Cardinality
+    0..n
+
+Describes any deviations from the planned sample design.
+
+DataCollectionSoftware
+**********************
+
+Type
+    :doc:`/reusable-types/SoftwareType/index`
+Cardinality
+    0..n
+
+Specification of a software package used to instantiate a data collection method.
+
+QualityStatementReference
+*************************
+
+Type
+    :doc:`/item-types/QualityStatement/index`
+Cardinality
+    0..n
+
+A reference to a Quality Statement pertaining to the quality of the study methodology, metadata, or data to which it is associated. Quality statements may be related to external quality standards.
+
+
+

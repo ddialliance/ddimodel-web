@@ -1,0 +1,97 @@
+Relation
+--------
+
+Describes the relationship between any two organizations or individual, or an individual and an organization. This is a pairwise relationship and relationships may be unidirectional. Identifies the Source organization or individual and the Target organization or individual, describes the relationship, provides a keyword to classify the relationship, provides and effective period for the relationship, allows for addition information to be provided, and can contain a privacy specification.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **Relation**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/Relation.svg
+
+Properties
+~~~~~~~~~~
+
+SourceObject
+************
+
+Type
+    :doc:`/reusable-types/SourceObjectType/index`
+Cardinality
+    0..1
+
+Identifies the Source organization or individual in the relationship. Source to Target provides a directional perception when defining the relationship.
+
+TargetObject
+************
+
+Type
+    :doc:`/reusable-types/TargetObjectType/index`
+Cardinality
+    0..1
+
+Identifies the Target organization or individual in the relationship. The Target object describes its role in relationship to the Source object.
+
+Description
+***********
+
+Type
+    :doc:`/reusable-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+A description of the relationship. May be expressed in multiple languages and supports the use of structured content.
+
+Keyword
+*******
+
+Type
+    :doc:`/reusable-types/InternationalCodeValueType/index`
+Cardinality
+    0..n
+
+A brief textual identification of the relation type. Supports the use of an external controlled vocabulary.
+
+EffectivePeriod
+***************
+
+Type
+    :doc:`/reusable-types/DateType/index`
+Cardinality
+    0..n
+
+Time period during which this relationship is valid.
+
+AdditionalInformation
+*********************
+
+Type
+    :doc:`/reusable-types/AdditionalInformationType/index`
+Cardinality
+    0..n
+
+Any additional information you which to note about the relation. This is a structured string so it can be formatted and a privacy tag can be applied.
+
+Privacy
+*******
+
+Type
+    string
+Cardinality
+    0..1
+
+A basic set of privacy codes for the parent element. These may be stricter than the general access restrictions for the overall metadata. If available codes are insufficient this may also contain any string.
+
+
+

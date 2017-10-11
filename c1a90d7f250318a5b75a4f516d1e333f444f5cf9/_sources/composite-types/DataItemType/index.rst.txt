@@ -1,0 +1,40 @@
+DataItemType
+------------
+
+Describes a single data item within the record, linking its description in a variable to its physical location in the stored record.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DataItemType.svg
+
+Properties
+~~~~~~~~~~
+
+VariableReference
+*****************
+
+Type
+    :doc:`/item-types/Variable/index`
+Cardinality
+    0..1
+
+Reference to the Variable describing this data item.
+
+PhysicalLocation
+****************
+
+Type
+    :doc:`/reusable-types/PhysicalLocationType/index`
+Cardinality
+    0..1
+
+Description of the physical location of the value of the object in the data file.
+
+
+

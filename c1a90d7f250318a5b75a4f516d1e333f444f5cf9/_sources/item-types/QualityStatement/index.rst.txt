@@ -1,0 +1,77 @@
+QualityStatement
+----------------
+
+A statement of quality which may be related to an external standard or contain a simple statement of internal quality goals or expectations. When relating to an external standard information on compliance may be added providing a reference to a ComplianceConcept, an ExternalComplianceCode, as well as a description. Optionally, a general statement of quality may be provided using OtherQualityStatement.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **QualityStatement**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/QualityStatement.svg
+
+Properties
+~~~~~~~~~~
+
+QualityStatementName
+********************
+
+Type
+    :doc:`/reusable-types/NameType/index`
+Cardinality
+    0..n
+
+Name of the QualityStatement using the DDI Name structure.
+
+Label
+*****
+
+Type
+    :doc:`/reusable-types/LabelType/index`
+Cardinality
+    0..n
+
+A display label for the QualityStatement. May be expressed in multiple languages. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/reusable-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+A description of the QualityStatement. May be expressed in multiple languages and supports the use of structured content.
+
+Standard
+********
+
+Type
+    :doc:`/reusable-types/StandardType/index`
+Cardinality
+    0..1
+
+Identifies the external standard used and describes the level of compliance with the standard in terms specific aspects of the standard's content.
+
+OtherQualityStatement
+*********************
+
+Type
+    :doc:`/reusable-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+Describes the steps taken to ensure quality that are not related to a specific standard. Language variants should be captured within a single OtherQualityStatement. Repeat the OtherQualityStatement for differing content if needed.
+
+
+

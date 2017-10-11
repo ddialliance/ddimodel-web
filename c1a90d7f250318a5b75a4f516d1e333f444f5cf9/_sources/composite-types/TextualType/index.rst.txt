@@ -1,0 +1,40 @@
+TextualType
+-----------
+
+Defines the segment of textual content used by the parent object. Can identify a set of lines and or characters used to define the segment.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/TextualType.svg
+
+Properties
+~~~~~~~~~~
+
+LineParameter
+*************
+
+Type
+    :doc:`/reusable-types/LineParameterType/index`
+Cardinality
+    0..1
+
+Specification of the line and offset for the beginning and end of the segment.
+
+CharacterParameter
+******************
+
+Type
+    :doc:`/reusable-types/CharacterParameterType/index`
+Cardinality
+    0..1
+
+Specification of the character offset for the beginning and end of the segment.
+
+
+

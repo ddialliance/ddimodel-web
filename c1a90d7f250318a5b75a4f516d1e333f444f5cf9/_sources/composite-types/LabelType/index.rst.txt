@@ -1,0 +1,78 @@
+LabelType
+---------
+
+A structured display label for the element. Label provides display content of a fully human readable display for the identification of the element. DDI does not impose any length limitations on Label. If length of Label is constrained due to use of the element in a specific application, the maximum length supported should be noted in the attribute maxLength. TypeOfLabel should be used to indicate the application either directly or as an identified type, such as “systems with an 8 character label length limitation”. The label may also indicate its applicability to a specific locale using the attribute locationVariant. Label may be repeated to provide content for different uses or situations. Language variants should be made within the Label using the internal structure of the Structured String type. The assumption is that replication of Label is done to provide different intellectual content or content specific to differing systems or applications.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/reusable-types/StructuredStringType/index`
+    * **LabelType**
+        * :doc:`/reusable-types/CellLabelType/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/LabelType.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfLabel
+***********
+
+Type
+    :doc:`/reusable-types/CodeValueType/index`
+Cardinality
+    0..1
+
+A brief description of the label type. Supports the use of a controlled vocabulary.
+
+LocationVariant
+***************
+
+Type
+    string
+Cardinality
+    0..1
+
+Indicate if the content is intended to be used in a specific location. For example if the Label is specific to use within a sub-region of a country that uses the same language but may have unique terminology. For example some regions of the United States use the term “water fountain” and others use “bubbler”.
+
+ValidForStartDate
+*****************
+
+Type
+    cogsDate
+Cardinality
+    0..1
+
+Allows for the specification of a starting date for the period that this label is valid. The date must be formatted according to ISO 8601.
+
+ValidForEndDate
+***************
+
+Type
+    cogsDate
+Cardinality
+    0..1
+
+Allows for the specification of a ending date for the period that this label is valid. The date must be formatted according to ISO 8601.
+
+MaxLength
+*********
+
+Type
+    int
+Cardinality
+    0..1
+
+A positive integer indicating the maximum number of characters in the label.
+
+
+

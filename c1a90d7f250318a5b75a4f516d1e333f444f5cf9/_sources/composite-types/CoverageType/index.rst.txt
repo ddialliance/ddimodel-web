@@ -1,0 +1,100 @@
+CoverageType
+------------
+
+Describes the temporal, spatial and topical coverage. At the instance level these descriptions should be inclusive of the coverage of all modules in the instance. The element is available within individual modules and can be used to refine the coverage to that of the individual module.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CoverageType.svg
+
+Properties
+~~~~~~~~~~
+
+TopicalCoverageReference
+************************
+
+Type
+    :doc:`/reusable-types/TopicalCoverageType/index`
+Cardinality
+    0..1
+
+Reference to a previously defined topical coverage.
+
+TopicalCoverage
+***************
+
+Type
+    :doc:`/reusable-types/TopicalCoverageType/index`
+Cardinality
+    0..1
+
+Description of the topical coverage of the data described in a particular DDI module.
+
+SpatialCoverageReference
+************************
+
+Type
+    :doc:`/reusable-types/GeographicCoverageType/index`
+Cardinality
+    0..1
+
+Reference to a previously defined spatial coverage.
+
+SpatialCoverage
+***************
+
+Type
+    :doc:`/reusable-types/GeographicCoverageType/index`
+Cardinality
+    0..1
+
+Description of the geographic coverage of the data described in a particular DDI module.
+
+TemporalCoverageReference
+*************************
+
+Type
+    :doc:`/reusable-types/TemporalCoverageType/index`
+Cardinality
+    0..1
+
+Reference to a previously defined temporal coverage.
+
+TemporalCoverage
+****************
+
+Type
+    :doc:`/reusable-types/TemporalCoverageType/index`
+Cardinality
+    0..1
+
+Description of the temporal coverage of the data described in a particular DDI module.
+
+RestrictionProcess
+******************
+
+Type
+    :doc:`/reusable-types/RestrictionProcessType/index`
+Cardinality
+    0..1
+
+Allows for a specific machine actionable description of the restriction process using a GenerationInstructionReference, if one currently exists, or through a CommandCode. In the case of a physical instance, the RestrictionProcess would be the same as a case, record or variable selection process.
+
+IsRestrictionOfParentCoverage
+*****************************
+
+Type
+    boolean
+Cardinality
+    0..1
+
+If the coverage described within this object is a restriction of the coverage of its parent study or group set this attribute to "true". If the coverage of a specific type (spatial, topical, or temporal) is not a restriction, include this coverage type by reference to that described in parent. Create a new coverage for the type being restricted.
+
+
+

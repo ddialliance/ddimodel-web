@@ -1,0 +1,48 @@
+RelatedValueType
+----------------
+
+The characteristic value expressed as a string with an indicator of the specific relationship of the variable value to the characteristic value. The default is "Equal". The value may be defined as containing no content (blank) by setting the attribute valueIsBlank to "true".
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* string
+    * :doc:`/reusable-types/ValueType/index`
+        * **RelatedValueType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/RelatedValueType.svg
+
+Properties
+~~~~~~~~~~
+
+Type
+****
+
+Type
+    string
+Cardinality
+    0..1
+
+Indicates value type as "GreaterThan", LessThan", "Equal", "GreaterThanOrEqual", "LessThanOrEqual", or "NotEqual".
+
+ValueIsBlank
+************
+
+Type
+    boolean
+Cardinality
+    0..1
+
+Set to "true" if the value of the conditional variable is blank.
+
+
+

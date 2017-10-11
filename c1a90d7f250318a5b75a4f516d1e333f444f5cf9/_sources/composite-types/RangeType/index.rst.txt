@@ -1,0 +1,57 @@
+RangeType
+---------
+
+Indicates the range of items expressed as a string, such as an alphabetic range.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* **RangeType**
+    * :doc:`/reusable-types/RankingRangeType/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/RangeType.svg
+
+Properties
+~~~~~~~~~~
+
+RangeUnit
+*********
+
+Type
+    string
+Cardinality
+    0..1
+
+Specifies the units in the range.
+
+MinimumValue
+************
+
+Type
+    :doc:`/reusable-types/RangeValueType/index`
+Cardinality
+    0..1
+
+Minimum value in the range.
+
+MaximumValue
+************
+
+Type
+    :doc:`/reusable-types/RangeValueType/index`
+Cardinality
+    0..1
+
+Maximum value in the range.
+
+
+

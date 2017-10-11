@@ -1,0 +1,40 @@
+SpatialCoordinateType
+---------------------
+
+Lists the value and format type for the coordinate value. Note that this is a single value (X coordinate or Y coordinate) rather than a coordinate pair.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/SpatialCoordinateType.svg
+
+Properties
+~~~~~~~~~~
+
+CoordinateValue
+***************
+
+Type
+    string
+Cardinality
+    0..1
+
+The value of the coordinate expressed as a string.
+
+CoordinateType
+**************
+
+Type
+    string
+Cardinality
+    1..1
+
+Identifies the type of point coordinate system using a controlled vocabulary. Point formats include decimal degree, degrees minutes seconds, decimal minutes, meters, and feet.
+
+
+

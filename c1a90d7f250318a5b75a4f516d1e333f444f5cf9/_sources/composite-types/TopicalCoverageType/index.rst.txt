@@ -1,0 +1,48 @@
+TopicalCoverageType
+-------------------
+
+Describes the topical coverage of the module using Subject and Keyword. Note that upper level modules should include all the members of lower level modules. Subjects are members of structured classification systems such as formal subject headings in libraries or topical thesauri. Keywords are generally unstructured and reflect the terminology found in the document and other related (broader or similar) terms.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* AbstractIdentifiableType
+    * :doc:`/reusable-types/IdentifiableType/index`
+        * **TopicalCoverageType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/TopicalCoverageType.svg
+
+Properties
+~~~~~~~~~~
+
+Subject
+*******
+
+Type
+    :doc:`/reusable-types/InternationalCodeValueType/index`
+Cardinality
+    0..n
+
+A subject or list of subjects that indicate the topical coverage of the data described in a particular module/section. Uses and InternationalCodeValue and may indicate the language of the code used.
+
+Keyword
+*******
+
+Type
+    :doc:`/reusable-types/InternationalCodeValueType/index`
+Cardinality
+    0..n
+
+A keyword that indicates the topical coverage of the data described in a particular module/section. Uses and InternationalCodeValue and may indicate the language of the code used.
+
+
+

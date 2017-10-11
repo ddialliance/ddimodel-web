@@ -1,0 +1,40 @@
+FilterVariableCategoryType
+--------------------------
+
+Category statistics for the variable when the filter variable contains the specified value.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/FilterVariableCategoryType.svg
+
+Properties
+~~~~~~~~~~
+
+FilterCategoryValue
+*******************
+
+Type
+    string
+Cardinality
+    0..1
+
+Provides the specific value of the variable being used as a filter. References a specific Code within the variable if using a CodeRepresentation. May alternately provide the Value of the Category.
+
+VariableCategory
+****************
+
+Type
+    :doc:`/reusable-types/VariableCategoryType/index`
+Cardinality
+    0..n
+
+Category statistics for the specified value of the variable (when the filter variable contains the specified value). Repeat for each value of the variable.
+
+
+

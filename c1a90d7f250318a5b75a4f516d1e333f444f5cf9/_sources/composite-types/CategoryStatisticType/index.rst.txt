@@ -1,0 +1,40 @@
+CategoryStatisticType
+---------------------
+
+The value of a statistic associated with the category value.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CategoryStatisticType.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfCategoryStatistic
+***********************
+
+Type
+    :doc:`/reusable-types/CodeValueType/index`
+Cardinality
+    0..1
+
+Type of category statistic. Supports the use of an external controlled vocabulary. DDI strongly recommends the use of a controlled vocabulary.
+
+Statistic
+*********
+
+Type
+    :doc:`/reusable-types/StatisticType/index`
+Cardinality
+    0..1
+
+The value of the statistics and whether it is weighted and/or includes missing values.
+
+
+

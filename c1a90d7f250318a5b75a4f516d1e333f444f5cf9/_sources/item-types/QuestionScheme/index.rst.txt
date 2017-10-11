@@ -1,0 +1,108 @@
+QuestionScheme
+--------------
+
+Contains a set of QuestionItems, QuestionGrids, QuestionBlocks, and QuestionGroups. In addition to the standard name, label, and description of the Question Scheme, may contain another QuestionScheme by reference, a listing of Questions by type (in-line or by reference), and a listing of QuestionGroups (in-line or by reference).
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **QuestionScheme**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/QuestionScheme.svg
+
+Properties
+~~~~~~~~~~
+
+QuestionSchemeName
+******************
+
+Type
+    :doc:`/reusable-types/NameType/index`
+Cardinality
+    0..n
+
+A name for the QuestionScheme. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/reusable-types/LabelType/index`
+Cardinality
+    0..n
+
+A display label for the scheme. May be expressed in multiple languages. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/reusable-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+A description of the content and purpose of the QuestionScheme. May be expressed in multiple languages and supports the use of structured content.
+
+QuestionSchemeReference
+***********************
+
+Type
+    :doc:`/item-types/QuestionScheme/index`
+Cardinality
+    0..n
+
+Allows for the inclusion of another QuestionScheme by reference.
+
+QuestionItemReference
+*********************
+
+Type
+    :doc:`/item-types/QuestionItem/index`
+Cardinality
+    0..n
+
+Describes a QuestionItem in-line.
+
+QuestionGridReference
+*********************
+
+Type
+    :doc:`/item-types/QuestionGrid/index`
+Cardinality
+    0..n
+
+Describes a QuestionGrid in-line.
+
+QuestionBlockReference
+**********************
+
+Type
+    :doc:`/item-types/QuestionBlock/index`
+Cardinality
+    0..n
+
+Describes a QuestionBlock in-line.
+
+QuestionGroupReference
+**********************
+
+Type
+    :doc:`/item-types/QuestionGroup/index`
+Cardinality
+    0..n
+
+Contains a group of Questions, which may be ordered or hierarchical.
+
+
+

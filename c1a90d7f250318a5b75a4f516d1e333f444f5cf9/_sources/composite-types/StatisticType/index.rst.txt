@@ -1,0 +1,47 @@
+StatisticType
+-------------
+
+The value of the statistics and whether it is weighted and/or includes missing values.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* decimal
+    * **StatisticType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/StatisticType.svg
+
+Properties
+~~~~~~~~~~
+
+IsWeighted
+**********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+Set to "true" if the statistic is weighted using the weight designated in VariableStatistics.
+
+ComputationBase
+***************
+
+Type
+    string
+Cardinality
+    0..1
+
+Defines the cases included in determining the statistic. The options are total=all cases, valid and missing (invalid); validOnly=Only valid values, missing (invalid) are not included in the calculation; missingOnly=Only missing (invalid) cases included in the calculation.
+
+
+

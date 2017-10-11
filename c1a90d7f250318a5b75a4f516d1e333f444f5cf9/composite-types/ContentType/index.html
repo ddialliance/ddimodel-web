@@ -1,0 +1,327 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ContentType &mdash; DDI Data Documentation 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/image.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex/"/>
+        <link rel="search" title="Search" href="../../search/"/>
+    <link rel="top" title="DDI Data Documentation 0.1 documentation" href="../../"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../" class="icon icon-home"> DDI Data Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Topics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/All Content Items/">All Content Items</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Items and Fields</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../item-types/">All Item Types</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">DDI Data Documentation</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+      <li>ContentType</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/composite-types/ContentType/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="contenttype">
+<h1><a class="toc-backref" href="#id1">ContentType</a><a class="headerlink" href="#contenttype" title="Permalink to this headline">¶</a></h1>
+<p>Allows for non-formatted strings that may be translations from other languages, or that may be translatable into other languages. Only one string per language/location type is allowed. String contains the following attributes, xml:lang to designate the language, isTranslated with a default value of false to designate if an object is a translation of another language, isTranslatable with a default value of true to designate if the content can be translated, translationSourceLanguage to indicate the source languages used in creating this translation, and translationDate.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#contenttype" id="id1">ContentType</a><ul>
+<li><a class="reference internal" href="#item-type-hierarchy" id="id2">Item Type Hierarchy</a></li>
+<li><a class="reference internal" href="#relationships" id="id3">Relationships</a></li>
+<li><a class="reference internal" href="#properties" id="id4">Properties</a><ul>
+<li><a class="reference internal" href="#lang" id="id5">Lang</a></li>
+<li><a class="reference internal" href="#istranslated" id="id6">IsTranslated</a></li>
+<li><a class="reference internal" href="#istranslatable" id="id7">IsTranslatable</a></li>
+<li><a class="reference internal" href="#translationsourcelanguage" id="id8">TranslationSourceLanguage</a></li>
+<li><a class="reference internal" href="#translationdate" id="id9">TranslationDate</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="item-type-hierarchy">
+<h2><a class="toc-backref" href="#id2">Item Type Hierarchy</a><a class="headerlink" href="#item-type-hierarchy" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>string</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt><strong>ContentType</strong></dt>
+<dd><ul class="first last">
+<li><span class="xref std std-doc">/reusable-types/TextType/index</span></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="relationships">
+<h2><a class="toc-backref" href="#id3">Relationships</a><a class="headerlink" href="#relationships" title="Permalink to this headline">¶</a></h2>
+<div class="image docutils container">
+<img alt="stub" src="../../_images/ContentType.svg" /></div>
+</div>
+<div class="section" id="properties">
+<h2><a class="toc-backref" href="#id4">Properties</a><a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="lang">
+<h3><a class="toc-backref" href="#id5">Lang</a><a class="headerlink" href="#lang" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>language</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Indicates the language of content. Note that xml:lang allows for a simple 2 or 3 character language code or a language code extended by a country code , for example en-au for English as used in Australia.</p>
+</div>
+<div class="section" id="istranslated">
+<h3><a class="toc-backref" href="#id6">IsTranslated</a><a class="headerlink" href="#istranslated" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>boolean</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Indicates whether content is a translation (true) or an original (false).</p>
+</div>
+<div class="section" id="istranslatable">
+<h3><a class="toc-backref" href="#id7">IsTranslatable</a><a class="headerlink" href="#istranslatable" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>boolean</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Indicates whether content is translatable (true) or not (false). An example of something that is not translatable would be a MNEMONIC of an object or a number.</p>
+</div>
+<div class="section" id="translationsourcelanguage">
+<h3><a class="toc-backref" href="#id8">TranslationSourceLanguage</a><a class="headerlink" href="#translationsourcelanguage" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>language</dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>List the language or language codes in a space delimited array. The language original may or may not be provided in this bundle of language specific strings.</p>
+</div>
+<div class="section" id="translationdate">
+<h3><a class="toc-backref" href="#id9">TranslationDate</a><a class="headerlink" href="#translationdate" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>date</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>The date the content was translated. Provision of translation date allows user to verify if translation was available during data collection or other time linked activity.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright TODO.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

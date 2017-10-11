@@ -1,0 +1,37 @@
+ReferenceDateType
+-----------------
+
+The date that the data reference such as at the point of collection, a previous year or date, etc. This is expressed as a date (singular or range) and may have specific subjects associated with it. For example if only income and labor force status relate to the previous year and all other data related to the point of collection.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/reusable-types/DateType/index`
+    * **ReferenceDateType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ReferenceDateType.svg
+
+Properties
+~~~~~~~~~~
+
+Subject
+*******
+
+Type
+    :doc:`/reusable-types/InternationalCodeValueType/index`
+Cardinality
+    0..n
+
+If the date is for a subset of data only such as a referent date for residence 5 years ago, use Subject to specify the coverage of the data this date applies to. May be repeated to reflect multiple subjects.
+
+
+

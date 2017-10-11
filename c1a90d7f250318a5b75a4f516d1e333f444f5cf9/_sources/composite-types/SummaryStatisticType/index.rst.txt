@@ -1,0 +1,40 @@
+SummaryStatisticType
+--------------------
+
+Describes a summary statistic for a variable.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/SummaryStatisticType.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfSummaryStatistic
+**********************
+
+Type
+    :doc:`/reusable-types/CodeValueType/index`
+Cardinality
+    0..1
+
+Type of summary statistic, such as count, mean, mode, median, etc. Supports the use of an external controlled vocabulary. DDI strongly recommends the use of a controlled vocabulary.
+
+Statistic
+*********
+
+Type
+    :doc:`/reusable-types/StatisticType/index`
+Cardinality
+    0..1
+
+The value of the statistics and whether it is weighted and/or includes missing values.
+
+
+

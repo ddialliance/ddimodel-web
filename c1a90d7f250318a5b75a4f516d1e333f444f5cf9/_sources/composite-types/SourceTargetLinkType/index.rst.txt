@@ -1,0 +1,40 @@
+SourceTargetLinkType
+--------------------
+
+Contains a set of variables, one from the source record and one from the target record used as all or part of a link between the source and target records.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/SourceTargetLinkType.svg
+
+Properties
+~~~~~~~~~~
+
+SourceLinkVariableReference
+***************************
+
+Type
+    :doc:`/item-types/Variable/index`
+Cardinality
+    0..1
+
+A reference to the variable in the Source Record containing the value that is equal to the value in the identified variable in the Target Record.
+
+TargetLinkVariableReference
+***************************
+
+Type
+    :doc:`/item-types/Variable/index`
+Cardinality
+    0..1
+
+A reference to the variable in the Target Record containing the value that is equal to the value in the identified variable in the Source Record.
+
+
+

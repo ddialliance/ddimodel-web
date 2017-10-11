@@ -1,0 +1,30 @@
+VariableOrderType
+-----------------
+
+A set of References to Variable found in the record in storage order.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/VariableOrderType.svg
+
+Properties
+~~~~~~~~~~
+
+VariableReference
+*****************
+
+Type
+    :doc:`/item-types/Variable/index`
+Cardinality
+    0..n
+
+References variables in storage order. One reference per variable.
+
+
+

@@ -1,0 +1,49 @@
+CoordinatePairsType
+-------------------
+
+Field to capture coordinate pairs as individual pairs or as an array of pairs.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/reusable-types/RepresentationType/index`
+    * :doc:`/reusable-types/TextRepresentationBaseType/index`
+        * :doc:`/reusable-types/TextDomainType/index`
+            * **CoordinatePairsType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CoordinatePairsType.svg
+
+Properties
+~~~~~~~~~~
+
+MaxArray
+********
+
+Type
+    int
+Cardinality
+    0..1
+
+The maximum number of coordinate pairs listed in the array. The two values in a coordinate pair are separated by a comma. Pairs in an array are separated by the character indicated in the arraySeparator attribute. Default value is "1".
+
+ArraySeparator
+**************
+
+Type
+    string
+Cardinality
+    0..1
+
+The character used to separate arrays, if present. If not given a value, and if the maxArray attribute has a value greater than one, the separator is assumed to be whitespace.
+
+
+

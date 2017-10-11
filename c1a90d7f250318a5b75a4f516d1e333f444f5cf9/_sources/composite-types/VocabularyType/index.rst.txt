@@ -1,0 +1,110 @@
+VocabularyType
+--------------
+
+Provides information about the vocabulary used to create a concept scheme.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/VocabularyType.svg
+
+Properties
+~~~~~~~~~~
+
+VocabularyTitle
+***************
+
+Type
+    :doc:`/reusable-types/InternationalStringType/index`
+Cardinality
+    0..1
+
+Full title of vocabulary.
+
+Abbreviation
+************
+
+Type
+    :doc:`/reusable-types/InternationalStringType/index`
+Cardinality
+    0..n
+
+Abbreviation of vocabulary title.
+
+Keyword
+*******
+
+Type
+    :doc:`/reusable-types/InternationalCodeValueType/index`
+Cardinality
+    0..n
+
+Keywords that describe the vocabulary.
+
+Description
+***********
+
+Type
+    :doc:`/reusable-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+A description of the content and purpose of the Vocabulary. May be expressed in multiple languages and supports the use of structured content.
+
+URI
+***
+
+Type
+    anyURI
+Cardinality
+    0..1
+
+URI to external resource providing information about the vocabulary (general description, main web page).
+
+XML-URI
+*******
+
+Type
+    anyURI
+Cardinality
+    0..1
+
+URI to the vocabulary represented as an XML document.
+
+Scheme
+******
+
+Type
+    string
+Cardinality
+    0..1
+
+Textual description of the XML scheme in which the classification is written.
+
+SchemeURI
+*********
+
+Type
+    anyURI
+Cardinality
+    0..1
+
+URI to the XML scheme used in the vocabulary (DTD or XML Schema for the XML document above; schemes like DDI, Claset, Neuchatel, and DocBook). Typically, this will be an XML namespace.
+
+Comments
+********
+
+Type
+    :doc:`/reusable-types/StructuredStringType/index`
+Cardinality
+    0..n
+
+Information for the user regarding the reasons for use of the vocabulary and appropriate usage constraints.
+
+
+

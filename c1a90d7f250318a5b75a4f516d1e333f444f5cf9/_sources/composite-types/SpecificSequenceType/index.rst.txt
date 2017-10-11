@@ -1,0 +1,47 @@
+SpecificSequenceType
+--------------------
+
+Describes the ordering of items when not otherwise indicated. There are a set number of values for ItemSequenceType, but also a provision for describing an alternate ordering using a command language.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* **SpecificSequenceType**
+    * :doc:`/reusable-types/QuestionSequenceType/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/SpecificSequenceType.svg
+
+Properties
+~~~~~~~~~~
+
+ItemSequenceType
+****************
+
+Type
+    string
+Cardinality
+    0..1
+
+Identifies the type of sequence to use. Values include InOrderOfAppearance, Random, Rotate, and Other.
+
+AlternateSequenceType
+*********************
+
+Type
+    :doc:`/reusable-types/CommandCodeType/index`
+Cardinality
+    0..1
+
+Information on the command used to generate an alternative means of determining sequence changes. If used, the ItemSequenceType should be "Other".
+
+
+

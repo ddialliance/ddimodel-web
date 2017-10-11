@@ -1,0 +1,120 @@
+OtherMaterialType
+-----------------
+
+OtherMaterialType describes the structure of the OtherMaterial element, used to reference external resources. It includes citations to materials related to the content of the DDI Instance. This includes citations to such material, an external reference to a URL (or other URI), and a statement about the relationship between the cited OtherMaterial the contents of the DDI instance.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* AbstractIdentifiableType
+    * :doc:`/reusable-types/IdentifiableType/index`
+        * **OtherMaterialType**
+            * :doc:`/reusable-types/AuthorizedSourceType/index`
+            * :doc:`/reusable-types/ExternalInterviewerInstructionType/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/OtherMaterialType.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfMaterial
+**************
+
+Type
+    :doc:`/reusable-types/CodeValueType/index`
+Cardinality
+    0..1
+
+Designation of the type of material being described. Supports the use of a controlled vocabulary.
+
+Description
+***********
+
+Type
+    :doc:`/reusable-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+A description of the referenced material. This field can map to a Dublin Core abstract. Note that Dublin Core does not support structure within the abstract element. Supports multiple languages and optional structured content.
+
+Citation
+********
+
+Type
+    :doc:`/reusable-types/CitationType/index`
+Cardinality
+    0..1
+
+Bibliographic citation for the external resource.
+
+ExternalURLReference
+********************
+
+Type
+    anyURI
+Cardinality
+    0..n
+
+Contains a URL which indicates the location of the cited external resource.
+
+ExternalURNReference
+********************
+
+Type
+    anyURI
+Cardinality
+    0..1
+
+Contains a URN which identifies the cited external resource.
+
+Relationship
+************
+
+Type
+    :doc:`/reusable-types/RelationshipType/index`
+Cardinality
+    0..n
+
+Reference to the item within the DDI Instance to which the external resource is related.
+
+MIMEType
+********
+
+Type
+    :doc:`/reusable-types/CodeValueType/index`
+Cardinality
+    0..1
+
+Provides a standard Internet MIME type for use by processing applications.
+
+Segment
+*******
+
+Type
+    :doc:`/reusable-types/SegmentType/index`
+Cardinality
+    0..n
+
+Can describe a segment within a larger object such as a text or video segment.
+
+Lang
+****
+
+Type
+    language
+Cardinality
+    0..1
+
+Language of the metadata describing the other material.
+
+
+

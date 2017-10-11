@@ -1,0 +1,174 @@
+ReferenceType
+-------------
+
+Used for referencing an identified entity expressed in DDI XML, either by a URN and/or an identification sequence. If both are supplied, the URN takes precedence. At a minimum, one or the other is required. If the identification sequence is used the content of MaintainableObject may be required to be able to assemble the canonical or deprecated DDI URN. To fully support interoperability both the DDI URN and the full identification sequence should be used. Note that to support interoperability of the canonical and deprecated URN, at minimum the MaintainableIdentifier and TypeOfMaintainableObject should be supplied if the canonical URN is being used for the reference. The lateBound attribute has a boolean value, which - if set to true - indicates that the latest version should be used. Use the attribute lateBoundRestriction to indicate when a portion, such as the major version number, should be restricted to a specific value and then late bound within that restriction. Element descriptions will contain a list of applicable TypeOfObject values.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* **ReferenceType**
+    * :doc:`/reusable-types/ConditionalVariableReferenceType/index`
+    * :doc:`/reusable-types/ControlConstructReferenceType/index`
+    * :doc:`/reusable-types/DefaultMissingValuesReferenceType/index`
+    * :doc:`/reusable-types/DomainReferenceType/index`
+    * :doc:`/reusable-types/GeographicLocationReferenceType/index`
+    * :doc:`/reusable-types/GeographicStructureReferenceType/index`
+    * :doc:`/reusable-types/InterviewerInstructionReferenceType/index`
+    * :doc:`/reusable-types/KeyVariableReferenceType/index`
+    * :doc:`/reusable-types/MeasureDefinitionReferenceType/index`
+    * :doc:`/reusable-types/NCubeMeasureDefinitionReferenceType/index`
+    * :doc:`/reusable-types/ParentGeographicLevelReferenceType/index`
+    * :doc:`/reusable-types/PhysicalStructureLinkReferenceType/index`
+    * :doc:`/reusable-types/ProcessingInstructionReferenceType/index`
+    * :doc:`/reusable-types/RelatedLocationValueReferenceType/index`
+    * :doc:`/reusable-types/RepresentationReferenceType/index`
+    * :doc:`/reusable-types/SchemeReferenceType/index`
+    * :doc:`/reusable-types/SourceReferenceType/index`
+    * :doc:`/reusable-types/SubCategoryReferenceType/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ReferenceType.svg
+
+Properties
+~~~~~~~~~~
+
+URN
+***
+
+Type
+    :doc:`/reusable-types/URNType/index`
+Cardinality
+    0..1
+
+The URN of the entity being referenced. The URN should follow the pattern associated with the value of the attribute typeOfIdentifier (Canonical or Deprecated).
+
+Agency
+******
+
+Type
+    string
+Cardinality
+    0..1
+
+This is the registered agency code with optional sub-agencies separated by dots.
+
+ID
+**
+
+Type
+    :doc:`/reusable-types/IDType/index`
+Cardinality
+    0..1
+
+ID of the object being referenced.This must conform to the allowed structure of the DDI Identifier and must be unique within the declared scope of uniqueness (Agency or Maintainable).
+
+Version
+*******
+
+Type
+    string
+Cardinality
+    0..1
+
+The version of the object at the time of reference. Late binding is handled separately and does not effect the content of this object.
+
+TypeOfObject
+************
+
+Type
+    string
+Cardinality
+    0..1
+
+States the type of object being referenced based on a persistent list of valid DDI object types.
+
+MaintainableObject
+******************
+
+Type
+    :doc:`/reusable-types/MaintainableObjectType/index`
+Cardinality
+    0..1
+
+Do not use if the referenced object is Maintainable. For references to Identifiable and Versionable objects this provides contextual information on the Maintainable Parent of this object at point of origin. Note that if the ID, Agency, Version sequence is used, and the scope of uniqueness of the referenced object is the Maintainable, then the ID of the Maintainable is needed to create the structured ID portion of the canonical URN. If the system uses the deprecated URN, both the Maintainable ID and TypeOfMaintainableObject are required to create the deprecated URN structure.
+
+IsExternal
+**********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+Indicates that the reference is made to an external source. If the value is true, then a URI must be provided.
+
+ExternalReferenceDefaultURI
+***************************
+
+Type
+    anyURI
+Cardinality
+    0..1
+
+URI identifying the location of an external reference as provided in the maintainable object of the referenced item. For example the content of the externalReferenceDefaultURI of the parent VariableScheme for a referenced Variable. If there is a conflict where the content of the URI does not match the requested object, the DDI URN becomes the preferred value.
+
+IsReference
+***********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+A fixed attribute value identifying which elements are references.
+
+LateBound
+*********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+The default value is set to false indicating that the reference is to a specific version of the object. If the most recent version or most recent minor version within a major version is required, set this flag to "true". Indicating lateBound and not providing information for lateBoundRestriction indicates the request is for the latest version available without restriction.
+
+LateBoundRestriction
+********************
+
+Type
+    string
+Cardinality
+    0..1
+
+Use when lateBound is changed to "true". The specifies the point to begin late binding the version number. For example if an object had a two part version number such as X.Y where X is a major version and Y a minor version and the request is for the latest minor version of major version number 4, the content of this field would be 4. Indicating lateBound and not providing information for this field indicates the request is for the latest version available without restriction.
+
+ObjectLanguage
+**************
+
+Type
+    language
+Cardinality
+    0..n
+
+Specifies the language (or language-locale pair) to use for display in references to objects which have multiple languages available.
+
+SourceContext
+*************
+
+Type
+    anyURI
+Cardinality
+    0..1
+
+Provide a DDI URN for the version of the parent maintainable that shows the full context for the referenced object. This is used only when the context of the object within the current version of a maintainable is important to the user and this version is later than the one containing the object itself. For example a occupation classification may be unchanged since version 1.0 of its maintainable but at the point of reference the current version of the maintainable containing the original structure is at version 2.0 etc..
+
+
+

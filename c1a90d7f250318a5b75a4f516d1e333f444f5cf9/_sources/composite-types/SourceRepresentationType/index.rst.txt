@@ -1,0 +1,120 @@
+SourceRepresentationType
+------------------------
+
+Provides a reference to the managed content of a representation which may be a ManagedRepresentation or a specific CodeList, GeographicRepresentation, or GeographicLocation. Allows for the optional reference to a Concept when context is important. For example, a ManagedNumericRepresentation within the context of Age.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/SourceRepresentationType.svg
+
+Properties
+~~~~~~~~~~
+
+ManagedRepresentationReference_ManagedMissingValuesRepresentation
+*****************************************************************
+
+Type
+    :doc:`/item-types/ManagedMissingValuesRepresentation/index`
+Cardinality
+    0..1
+
+Substitution group head for referencing Managed Representations. For example, ManagedTextRepresentationReference, ManagedNumericRepresentationReference, etc.
+
+ManagedRepresentationReference_ManagedScaleRepresentation
+*********************************************************
+
+Type
+    :doc:`/item-types/ManagedScaleRepresentation/index`
+Cardinality
+    0..1
+
+Substitution group head for referencing Managed Representations. For example, ManagedTextRepresentationReference, ManagedNumericRepresentationReference, etc.
+
+ManagedRepresentationReference_ManagedNumericRepresentation
+***********************************************************
+
+Type
+    :doc:`/item-types/ManagedNumericRepresentation/index`
+Cardinality
+    0..1
+
+Substitution group head for referencing Managed Representations. For example, ManagedTextRepresentationReference, ManagedNumericRepresentationReference, etc.
+
+ManagedRepresentationReference_ManagedDateTimeRepresentation
+************************************************************
+
+Type
+    :doc:`/item-types/ManagedDateTimeRepresentation/index`
+Cardinality
+    0..1
+
+Substitution group head for referencing Managed Representations. For example, ManagedTextRepresentationReference, ManagedNumericRepresentationReference, etc.
+
+ManagedRepresentationReference_ManagedTextRepresentation
+********************************************************
+
+Type
+    :doc:`/item-types/ManagedTextRepresentation/index`
+Cardinality
+    0..1
+
+Substitution group head for referencing Managed Representations. For example, ManagedTextRepresentationReference, ManagedNumericRepresentationReference, etc.
+
+CategorySchemeReference
+***********************
+
+Type
+    :doc:`/item-types/CategoryScheme/index`
+Cardinality
+    0..1
+
+A reference to a CategoryScheme as the managed component of a representation.
+
+CodeListReference
+*****************
+
+Type
+    :doc:`/item-types/CodeList/index`
+Cardinality
+    0..1
+
+A reference to a CodeList as the managed component of a representation.
+
+GeographicStructureReference
+****************************
+
+Type
+    :doc:`/item-types/GeographicStructure/index`
+Cardinality
+    0..1
+
+A reference to a GeographicStructure as the managed component of a representation.
+
+GeographicLocationReference
+***************************
+
+Type
+    :doc:`/item-types/GeographicLocation/index`
+Cardinality
+    0..1
+
+A reference to a GeographicLocation as the managed component of a representation.
+
+ConceptReference
+****************
+
+Type
+    :doc:`/item-types/Concept/index`
+Cardinality
+    0..1
+
+Reference to a Concept which provides a context for the representation, e.g. Age for a numeric representation.
+
+
+

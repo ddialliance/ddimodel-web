@@ -1,0 +1,38 @@
+RangeValueType
+--------------
+
+Describes a bounding value of a string.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* string
+    * :doc:`/reusable-types/ValueType/index`
+        * **RangeValueType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/RangeValueType.svg
+
+Properties
+~~~~~~~~~~
+
+Included
+********
+
+Type
+    boolean
+Cardinality
+    1..1
+
+Set to "true" if the value is included in the range.
+
+
+

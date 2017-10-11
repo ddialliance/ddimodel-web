@@ -1,0 +1,68 @@
+PhysicalRecordSegmentType
+-------------------------
+
+A description of the physical record segment as found in the data store. A logical record may be stored in one or more segments housed hierarchically in a single file or in separate data files. All logical records have at least one segment. Identifies the Key variable identifying the segment if the identifier exists in the record, a file name identifier if the segment identification is expressed as part of the file name (used when each segment is stored in a separate file), the order of this segment in relation to other physical segments as part of the logical record, and a flag indicating whether or not the physical segment contains a key.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* AbstractIdentifiableType
+    * :doc:`/reusable-types/IdentifiableType/index`
+        * **PhysicalRecordSegmentType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/PhysicalRecordSegmentType.svg
+
+Properties
+~~~~~~~~~~
+
+KeyVariableReference
+********************
+
+Type
+    :doc:`/item-types/Variable/index`
+Cardinality
+    0..1
+
+Reference to the Unique key variable for segment identification.
+
+FileNameIdentification
+**********************
+
+Type
+    string
+Cardinality
+    0..1
+
+If the file containing this segment has a standard section of its file name, include it here. For example a segment number. For example, in the files 2000SF10001.csv and 2000SF10002.csv the last 4 digits contain the segment number. There is no standard means of specifying this information in a machine-actionable way. This statement is informational but in some legacy files may be the only location where the segment identification is found.
+
+SegmentOrder
+************
+
+Type
+    int
+Cardinality
+    0..1
+
+Indicates the position of this physical record segment within the logical record expressed as an integer.
+
+HasSegmentKey
+*************
+
+Type
+    boolean
+Cardinality
+    0..1
+
+Set to "true" if there is a variable identifying the segment order. If true a segment key should be declared in a KeyVariableReference. Set to "false" if there are multiple segments and the identification of a particular segment is based on the order of the records within the file.
+
+
+

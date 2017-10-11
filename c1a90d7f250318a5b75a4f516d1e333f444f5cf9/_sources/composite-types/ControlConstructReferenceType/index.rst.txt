@@ -1,0 +1,37 @@
+ControlConstructReferenceType
+-----------------------------
+
+A reference to a control construct of any type with the ability to bind the InParameter or OutParameter of the ControlConstruct to external information as needed.ComputationItem, IfThenElse, Loop, QuestionConstruct, RepeatUntil, RepeatWhile, Sequence, or StatementItem
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/reusable-types/ReferenceType/index`
+    * **ControlConstructReferenceType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ControlConstructReferenceType.svg
+
+Properties
+~~~~~~~~~~
+
+Binding
+*******
+
+Type
+    :doc:`/reusable-types/BindingType/index`
+Cardinality
+    0..n
+
+A structure used to bind the content of a parameter declared as the source to a parameter declared as the target. For example, binding the output of a question to the input of a generation instruction. Question A has an OutParameter X. Generation Instruction has an InParameter Y used in the recode instruction. Binding defines the content of InParameter Y to be whatever is provided by OutParameter X for use in the calculation of the recode.
+
+
+

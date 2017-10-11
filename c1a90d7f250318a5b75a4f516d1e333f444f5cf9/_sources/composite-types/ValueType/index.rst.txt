@@ -1,0 +1,29 @@
+ValueType
+---------
+
+The Value expressed as an xs:string with the ability to preserve whitespace if critical to the understanding of the content.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* string
+    * **ValueType**
+        * :doc:`/reusable-types/RangeValueType/index`
+        * :doc:`/reusable-types/RelatedValueType/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ValueType.svg
+
+Properties
+~~~~~~~~~~
+
+
+

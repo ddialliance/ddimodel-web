@@ -1,0 +1,38 @@
+GeographicStructureCodeRepresentationBaseType
+---------------------------------------------
+
+Allows for the use of all or part of a GeographicStructure description to be used as a response domain or value representation by a question or variable. In addition to the basic objects of a representation it describes the Geographic Structure values available for use by the question or variable.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/reusable-types/RepresentationType/index`
+    * **GeographicStructureCodeRepresentationBaseType**
+        * :doc:`/reusable-types/GeographicStructureCodeDomainType/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/GeographicStructureCodeRepresentationBaseType.svg
+
+Properties
+~~~~~~~~~~
+
+IncludedGeographicStructureCodes
+********************************
+
+Type
+    :doc:`/reusable-types/IncludedGeographicStructureCodesType/index`
+Cardinality
+    0..1
+
+Identifies the Geographic Structure codes included by the Authorized source of the code, the Geographic Structure being used and the Structures to exclude.
+
+
+

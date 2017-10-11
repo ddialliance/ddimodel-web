@@ -1,0 +1,48 @@
+ContentDateOffsetType
+---------------------
+
+Identifies the difference between the date applied to the data as a whole and this specific item such as previous year's income or residence 5 years ago. A value of true for the attribute isNegativeOffset indicates that the offset is the specified number of declared units prior to the date of the data as a whole and false indicates information regarding a future state.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* string
+    * :doc:`/reusable-types/CodeValueType/index`
+        * **ContentDateOffsetType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ContentDateOffsetType.svg
+
+Properties
+~~~~~~~~~~
+
+NumberOfUnits
+*************
+
+Type
+    decimal
+Cardinality
+    0..1
+
+The number of units to off-set the date for this item expressed as a decimal.
+
+IsNegativeOffset
+****************
+
+Type
+    boolean
+Cardinality
+    0..1
+
+If set to "true" the date is offset the number of units specified PRIOR to the default date of the data. A setting of "false" indicates a date the specified number of units in the FUTURE from the default date of the data.
+
+
+

@@ -1,0 +1,39 @@
+InParameterType
+---------------
+
+A parameter that may accept content from outside its parent element. In addition to standard parameter content may provide the instructions for limiting the allowable array index.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* AbstractIdentifiableType
+    * :doc:`/reusable-types/IdentifiableType/index`
+        * :doc:`/reusable-types/ParameterType/index`
+            * **InParameterType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/InParameterType.svg
+
+Properties
+~~~~~~~~~~
+
+LimitArrayIndex
+***************
+
+Type
+    string
+Cardinality
+    0..1
+
+When the InParameter represents an array of items, this attribute specifies the index identification of the items within the zero-based array which should be treated as input parameters. If not specified, the full array is treated as the input parameter.
+
+
+

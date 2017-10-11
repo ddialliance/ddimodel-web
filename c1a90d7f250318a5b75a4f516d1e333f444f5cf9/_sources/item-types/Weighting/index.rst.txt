@@ -1,0 +1,57 @@
+Weighting
+---------
+
+Describes the weighting used in the process. In addition to a description of the weighting process it may be designated as a specific type of weighting. If the data uses a standard weight (each record has an equal weight) it may be expressed here with StandardWeight.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **Weighting**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/Weighting.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfWeighting
+***************
+
+Type
+    :doc:`/reusable-types/CodeValueType/index`
+Cardinality
+    0..1
+
+Allows brief identification of Time Method used with the option of using a controlled vocabulary.
+
+Description
+***********
+
+Type
+    :doc:`/reusable-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+Full description of the data collection methodology. Supports structured content and multiple language content.
+
+StandardWeight
+**************
+
+Type
+    :doc:`/reusable-types/StandardWeightType/index`
+Cardinality
+    0..n
+
+A standard weighting factor used by all or a group of variables within the data set.
+
+
+

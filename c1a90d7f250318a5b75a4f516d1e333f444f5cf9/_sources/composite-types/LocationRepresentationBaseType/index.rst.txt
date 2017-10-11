@@ -1,0 +1,48 @@
+LocationRepresentationBaseType
+------------------------------
+
+Means of describing the Location of an action and the action itself within a repesentation so that they can be used by questions as a response domain. In addition to the basic objects of the representation, the structure briefly describes the object type upon which the action is to take place and the action to take (where an how to mark the object).
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/reusable-types/RepresentationType/index`
+    * **LocationRepresentationBaseType**
+        * :doc:`/reusable-types/LocationDomainType/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/LocationRepresentationBaseType.svg
+
+Properties
+~~~~~~~~~~
+
+Object
+******
+
+Type
+    :doc:`/reusable-types/CodeValueType/index`
+Cardinality
+    0..1
+
+The type of object on which the action takes place such as an image, audio tape, etc. Allows for the use of a controlled vocabulary.
+
+Action
+******
+
+Type
+    :doc:`/reusable-types/ActionType/index`
+Cardinality
+    0..n
+
+Describes the region of an image, recording, or text where an action where a specified action is performed and the type of action taken (i.e., Mark an "X" where the actor should be standing on the picture of the stage.).
+
+
+

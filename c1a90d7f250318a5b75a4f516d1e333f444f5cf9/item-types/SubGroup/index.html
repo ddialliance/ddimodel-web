@@ -1,0 +1,764 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SubGroup &mdash; DDI Data Documentation 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/image.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex/"/>
+        <link rel="search" title="Search" href="../../search/"/>
+    <link rel="top" title="DDI Data Documentation 0.1 documentation" href="../../"/>
+        <link rel="up" title="All Content Items" href="../../topics/All Content Items/"/>
+        <link rel="next" title="LocalHoldingPackage" href="../LocalHoldingPackage/"/>
+        <link rel="prev" title="Group" href="../Group/"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../" class="icon icon-home"> DDI Data Documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Topics</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../topics/All Content Items/">All Content Items</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../topics/All Content Items/#item-types">Item Types</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../GeographicStructure/">GeographicStructure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GeographicLocation/">GeographicLocation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../QualityStatementScheme/">QualityStatementScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../QualityStatementGroup/">QualityStatementGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../QualityStatement/">QualityStatement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ManagedRepresentationScheme/">ManagedRepresentationScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ManagedRepresentationGroup/">ManagedRepresentationGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ManagedTextRepresentation/">ManagedTextRepresentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ManagedDateTimeRepresentation/">ManagedDateTimeRepresentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ManagedNumericRepresentation/">ManagedNumericRepresentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ManagedScaleRepresentation/">ManagedScaleRepresentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ManagedMissingValuesRepresentation/">ManagedMissingValuesRepresentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../DDIInstance/">DDIInstance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Archive/">Archive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OrganizationScheme/">OrganizationScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../OrganizationGroup/">OrganizationGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Organization/">Organization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Individual/">Individual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Relation/">Relation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Comparison/">Comparison</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GenericMap/">GenericMap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../RepresentationMap/">RepresentationMap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../DataCollection/">DataCollection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Methodology/">Methodology</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ProcessingEventScheme/">ProcessingEventScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ProcessingEventGroup/">ProcessingEventGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ProcessingEvent/">ProcessingEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ProcessingInstructionScheme/">ProcessingInstructionScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ProcessingInstructionGroup/">ProcessingInstructionGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GeneralInstruction/">GeneralInstruction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GenerationInstruction/">GenerationInstruction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../InterviewerInstructionScheme/">InterviewerInstructionScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../InstructionGroup/">InstructionGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Instruction/">Instruction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../InstrumentScheme/">InstrumentScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../InstrumentGroup/">InstrumentGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Instrument/">Instrument</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ControlConstructScheme/">ControlConstructScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ControlConstructGroup/">ControlConstructGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../IfThenElse/">IfThenElse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../RepeatUntil/">RepeatUntil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../RepeatWhile/">RepeatWhile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Loop/">Loop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sequence/">Sequence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ComputationItem/">ComputationItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../StatementItem/">StatementItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../QuestionScheme/">QuestionScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../QuestionItem/">QuestionItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../QuestionBlock/">QuestionBlock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../QuestionGroup/">QuestionGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../QuestionGrid/">QuestionGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../QuestionConstruct/">QuestionConstruct</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Weighting/">Weighting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../LogicalProduct/">LogicalProduct</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../CategoryScheme/">CategoryScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../CategoryGroup/">CategoryGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Category/">Category</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../CodeListScheme/">CodeListScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../CodeList/">CodeList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../CodeListGroup/">CodeListGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VariableScheme/">VariableScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Variable/">Variable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VariableGroup/">VariableGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../NCubeScheme/">NCubeScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../NCube/">NCube</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../DataRelationship/">DataRelationship</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../NCubeGroup/">NCubeGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../RepresentedVariableScheme/">RepresentedVariableScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../RepresentedVariableGroup/">RepresentedVariableGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../RepresentedVariable/">RepresentedVariable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ConceptualComponent/">ConceptualComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ConceptScheme/">ConceptScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../UniverseScheme/">UniverseScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../UniverseGroup/">UniverseGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ConceptGroup/">ConceptGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Concept/">Concept</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ConceptualVariable/">ConceptualVariable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ConceptualVariableScheme/">ConceptualVariableScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ConceptualVariableGroup/">ConceptualVariableGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Universe/">Universe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../SubUniverseClass/">SubUniverseClass</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GeographicStructureScheme/">GeographicStructureScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GeographicStructureGroup/">GeographicStructureGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GeographicLocationScheme/">GeographicLocationScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GeographicLocationGroup/">GeographicLocationGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../DataSet/">DataSet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PhysicalDataProduct/">PhysicalDataProduct</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PhysicalStructureScheme/">PhysicalStructureScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PhysicalStructure/">PhysicalStructure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PhysicalStructureGroup/">PhysicalStructureGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../RecordLayoutScheme/">RecordLayoutScheme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../RecordLayoutGroup/">RecordLayoutGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../RecordLayout/">RecordLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../DDIProfile/">DDIProfile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ResourcePackage/">ResourcePackage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Group/">Group</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">SubGroup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#item-type-hierarchy">Item Type Hierarchy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#relationships">Relationships</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../LocalHoldingPackage/">LocalHoldingPackage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PhysicalInstance/">PhysicalInstance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VariableStatistics/">VariableStatistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../StudyUnit/">StudyUnit</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Items and Fields</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../">All Item Types</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">DDI Data Documentation</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+          <li><a href="../../topics/All Content Items/">All Content Items</a> &raquo;</li>
+        
+      <li>SubGroup</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/item-types/SubGroup/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="subgroup">
+<h1><a class="toc-backref" href="#id1">SubGroup</a><a class="headerlink" href="#subgroup" title="Permalink to this headline">¶</a></h1>
+<p>The subgroup element is a container for a group that is a child of a higher-level group described in this module, but may also be a parent to other (subordinate) groups. A studyunit can be fully described, or just referenced, within its subgroup container. The purpose of sub-groups is described using the attributes which summarize relationships along the dimensions of time, panel, geography, instrument and language. These attributes allow the purpose to be machine-actionable, while the sub-group also includes an element for describing the purpose in human-readable format. A SubGroup contains a Citation, Abstract, information on authorization, the universe of the sub-group, series statement, quality statements, funding information, purpose, coverage, analysis units covered, kind of data, other materials, and embargo information. It then allows all maintainable structures within the StudyUnit to be expressed at the SubGroup level.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#subgroup" id="id1">SubGroup</a><ul>
+<li><a class="reference internal" href="#item-type-hierarchy" id="id2">Item Type Hierarchy</a></li>
+<li><a class="reference internal" href="#relationships" id="id3">Relationships</a></li>
+<li><a class="reference internal" href="#properties" id="id4">Properties</a><ul>
+<li><a class="reference internal" href="#citation" id="id5">Citation</a></li>
+<li><a class="reference internal" href="#abstract" id="id6">Abstract</a></li>
+<li><a class="reference internal" href="#authorizationsource" id="id7">AuthorizationSource</a></li>
+<li><a class="reference internal" href="#universereference" id="id8">UniverseReference</a></li>
+<li><a class="reference internal" href="#seriesstatement" id="id9">SeriesStatement</a></li>
+<li><a class="reference internal" href="#qualitystatementreference" id="id10">QualityStatementReference</a></li>
+<li><a class="reference internal" href="#qualitystatementschemereference" id="id11">QualityStatementSchemeReference</a></li>
+<li><a class="reference internal" href="#fundinginformation" id="id12">FundingInformation</a></li>
+<li><a class="reference internal" href="#purpose" id="id13">Purpose</a></li>
+<li><a class="reference internal" href="#coverage" id="id14">Coverage</a></li>
+<li><a class="reference internal" href="#analysisunit" id="id15">AnalysisUnit</a></li>
+<li><a class="reference internal" href="#analysisunitscovered" id="id16">AnalysisUnitsCovered</a></li>
+<li><a class="reference internal" href="#kindofdata" id="id17">KindOfData</a></li>
+<li><a class="reference internal" href="#othermaterial" id="id18">OtherMaterial</a></li>
+<li><a class="reference internal" href="#embargo" id="id19">Embargo</a></li>
+<li><a class="reference internal" href="#conceptualcomponentreference" id="id20">ConceptualComponentReference</a></li>
+<li><a class="reference internal" href="#datacollectionreference" id="id21">DataCollectionReference</a></li>
+<li><a class="reference internal" href="#logicalproductreference" id="id22">LogicalProductReference</a></li>
+<li><a class="reference internal" href="#physicaldataproductreference" id="id23">PhysicalDataProductReference</a></li>
+<li><a class="reference internal" href="#physicalinstancereference" id="id24">PhysicalInstanceReference</a></li>
+<li><a class="reference internal" href="#archivereference" id="id25">ArchiveReference</a></li>
+<li><a class="reference internal" href="#ddiprofilereference" id="id26">DDIProfileReference</a></li>
+<li><a class="reference internal" href="#comparisonreference" id="id27">ComparisonReference</a></li>
+<li><a class="reference internal" href="#studyunitreference" id="id28">StudyUnitReference</a></li>
+<li><a class="reference internal" href="#subgroupreference" id="id29">SubGroupReference</a></li>
+<li><a class="reference internal" href="#time" id="id30">Time</a></li>
+<li><a class="reference internal" href="#captureinstrument" id="id31">CaptureInstrument</a></li>
+<li><a class="reference internal" href="#panel" id="id32">Panel</a></li>
+<li><a class="reference internal" href="#geography" id="id33">Geography</a></li>
+<li><a class="reference internal" href="#dataproduct" id="id34">DataProduct</a></li>
+<li><a class="reference internal" href="#languagerelationship" id="id35">LanguageRelationship</a></li>
+<li><a class="reference internal" href="#userdefinedgroupproperty" id="id36">UserDefinedGroupProperty</a></li>
+<li><a class="reference internal" href="#userdefinedgrouppropertyvalue" id="id37">UserDefinedGroupPropertyValue</a></li>
+<li><a class="reference internal" href="#isinheritable" id="id38">IsInheritable</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="item-type-hierarchy">
+<h2><a class="toc-backref" href="#id2">Item Type Hierarchy</a><a class="headerlink" href="#item-type-hierarchy" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt><a class="reference internal" href="../Versionable/"><span class="doc">Versionable</span></a></dt>
+<dd><ul class="first last">
+<li><strong>SubGroup</strong></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="relationships">
+<h2><a class="toc-backref" href="#id3">Relationships</a><a class="headerlink" href="#relationships" title="Permalink to this headline">¶</a></h2>
+<div class="image docutils container">
+<img alt="stub" src="../../_images/SubGroup.svg" /></div>
+</div>
+<div class="section" id="properties">
+<h2><a class="toc-backref" href="#id4">Properties</a><a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="citation">
+<h3><a class="toc-backref" href="#id5">Citation</a><a class="headerlink" href="#citation" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/CitationType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>The citation for the sub-group. DDI strongly recommends that at minimum a Title be provided.</p>
+</div>
+<div class="section" id="abstract">
+<h3><a class="toc-backref" href="#id6">Abstract</a><a class="headerlink" href="#abstract" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/StructuredStringType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>An abstract of the sub-group unit describing the nature and scope of the data collection, special characteristics of its content. Note that detailed information on the purpose of the sub-group and structured coverage information are to be entered in Purpose and Coverage. Abstract supports multiple language versions of the same content as well as optional formatting of the content.</p>
+</div>
+<div class="section" id="authorizationsource">
+<h3><a class="toc-backref" href="#id7">AuthorizationSource</a><a class="headerlink" href="#authorizationsource" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/AuthorizationSourceType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>Identifies the authorizing agency for the sub-group and allows for the full text of the authorization (law, regulation, or other form of authorization). May be used to list authorizations from oversight committees and other regulatory agencies.</p>
+</div>
+<div class="section" id="universereference">
+<h3><a class="toc-backref" href="#id8">UniverseReference</a><a class="headerlink" href="#universereference" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../Universe/"><span class="doc">Universe</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Reference to the universe statement from the universe scheme, describing the sub-group of persons or other elements that are the object of research and to which any analytic results refer. Age, nationality, and residence commonly help to delineate a given universe, but any of a number of factors may be involved, such as sex, race, income, veteran status, criminal convictions, etc. The universe may consist of elements other than persons, such as housing units, court cases, deaths, countries, etc. In general, it should be possible to tell from the description of the universe whether a given individual or element (hypothetical or real) is a member of the population under sub-group. A universe may be described as “inclusive” or “exclusive”. This sub-group level reference is normally to the top level of the UniverseScheme.</p>
+</div>
+<div class="section" id="seriesstatement">
+<h3><a class="toc-backref" href="#id9">SeriesStatement</a><a class="headerlink" href="#seriesstatement" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/SeriesStatementType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>A sub-group, particularly one in a series, may be the result of two series merging into a single sub-group. The new sub-group belongs to both series. For example, Niger now fields the UNICEF Multiple Indicators Cluster Survey (MICS) and the Demographic and Health Survey as a single merged instrument.</p>
+</div>
+<div class="section" id="qualitystatementreference">
+<h3><a class="toc-backref" href="#id10">QualityStatementReference</a><a class="headerlink" href="#qualitystatementreference" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../QualityStatement/"><span class="doc">QualityStatement</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>A reference to a Quality Statement pertaining to the quality of the subgroup overall, metadata, or data to which it is associated. Quality statements may be related to external quality standards.</p>
+</div>
+<div class="section" id="qualitystatementschemereference">
+<h3><a class="toc-backref" href="#id11">QualityStatementSchemeReference</a><a class="headerlink" href="#qualitystatementschemereference" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../QualityStatementScheme/"><span class="doc">QualityStatementScheme</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>A reference to a QualityStatementScheme containing statements of quality related to the quality of the sub-group methodology, metadata, or data. Quality statements may be related to external quality standards.</p>
+</div>
+<div class="section" id="fundinginformation">
+<h3><a class="toc-backref" href="#id12">FundingInformation</a><a class="headerlink" href="#fundinginformation" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/FundingInformationType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>Contains details of the sub-group unit’s funding, including information about grants, agencies, etc.</p>
+</div>
+<div class="section" id="purpose">
+<h3><a class="toc-backref" href="#id13">Purpose</a><a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/StructuredStringType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>The purpose of the sub-group, why the sub-group took place. This should include detailed information on the investigator’s primary sub-group questions or hypotheses as well as information on any legal basis for the data collection, such as laws requiring the collection of census data for apportionment purposes. Legal or other authorization should be provided in detail within AuthorizationSource. Purpose supports multiple language versions of the same content as well as optional formatting of the content.</p>
+</div>
+<div class="section" id="coverage">
+<h3><a class="toc-backref" href="#id14">Coverage</a><a class="headerlink" href="#coverage" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/CoverageType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Describes the coverage of the sub-group unit. Detailed information on Topical, Temporal, and Spatial Coverage is contained here. Note that Coverage at this level should be inclusive all lower level modules or section. Lower level descriptions serve to constrain coverage within the scope described here.</p>
+</div>
+<div class="section" id="analysisunit">
+<h3><a class="toc-backref" href="#id15">AnalysisUnit</a><a class="headerlink" href="#analysisunit" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/CodeValueType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>Allows the use of a controlled vocabulary to list all of the units of analysis used in the sub-group. Should be repeated to describe multiple units of analysis.</p>
+</div>
+<div class="section" id="analysisunitscovered">
+<h3><a class="toc-backref" href="#id16">AnalysisUnitsCovered</a><a class="headerlink" href="#analysisunitscovered" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/InternationalStringType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>A narrative of the units of analysis in the sub-group unit. Uses an InternationalString to support multiple languages.</p>
+</div>
+<div class="section" id="kindofdata">
+<h3><a class="toc-backref" href="#id17">KindOfData</a><a class="headerlink" href="#kindofdata" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/KindOfDataType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>Briefly describes the kind of data documented in the logical product(s) of a sub-group unit. Examples include survey data, census/enumeration data, administrative data, measurement data, assessment data, demographic data, voting data, etc. Supports the use of an external controlled vocabulary.</p>
+</div>
+<div class="section" id="othermaterial">
+<h3><a class="toc-backref" href="#id18">OtherMaterial</a><a class="headerlink" href="#othermaterial" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/OtherMaterialType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>Contains references to other materials relevant to the sub-group unit, whether in DDI form or external. Links can be made from items in this section to any identifiable element in the instance. Best practice is to include OtherMaterial inside the maintainable containing the objects that are related to the OtherMaterial.</p>
+</div>
+<div class="section" id="embargo">
+<h3><a class="toc-backref" href="#id19">Embargo</a><a class="headerlink" href="#embargo" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><span class="xref std std-doc">/reusable-types/EmbargoType/index</span></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>Embargo information about the sub-group unit. References to embargo information in this section can be made from individual variables.</p>
+</div>
+<div class="section" id="conceptualcomponentreference">
+<h3><a class="toc-backref" href="#id20">ConceptualComponentReference</a><a class="headerlink" href="#conceptualcomponentreference" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../ConceptualComponent/"><span class="doc">ConceptualComponent</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>ConceptualComponent applying to the sub-group as a whole.</p>
+</div>
+<div class="section" id="datacollectionreference">
+<h3><a class="toc-backref" href="#id21">DataCollectionReference</a><a class="headerlink" href="#datacollectionreference" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../DataCollection/"><span class="doc">DataCollection</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>DataCollection applying to the sub-group as a whole.</p>
+</div>
+<div class="section" id="logicalproductreference">
+<h3><a class="toc-backref" href="#id22">LogicalProductReference</a><a class="headerlink" href="#logicalproductreference" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../BaseLogicalProduct/"><span class="doc">BaseLogicalProduct</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>LogicalProduct applying to the sub-group as a whole.</p>
+</div>
+<div class="section" id="physicaldataproductreference">
+<h3><a class="toc-backref" href="#id23">PhysicalDataProductReference</a><a class="headerlink" href="#physicaldataproductreference" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../PhysicalDataProduct/"><span class="doc">PhysicalDataProduct</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>PhysicalDataProduct applying to the sub-group as a whole.</p>
+</div>
+<div class="section" id="physicalinstancereference">
+<h3><a class="toc-backref" href="#id24">PhysicalInstanceReference</a><a class="headerlink" href="#physicalinstancereference" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../PhysicalInstance/"><span class="doc">PhysicalInstance</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>PhysicalInstance applying to the sub-group as a whole.</p>
+</div>
+<div class="section" id="archivereference">
+<h3><a class="toc-backref" href="#id25">ArchiveReference</a><a class="headerlink" href="#archivereference" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../Archive/"><span class="doc">Archive</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>Archive applying to the sub-group as a whole.</p>
+</div>
+<div class="section" id="ddiprofilereference">
+<h3><a class="toc-backref" href="#id26">DDIProfileReference</a><a class="headerlink" href="#ddiprofilereference" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../DDIProfile/"><span class="doc">DDIProfile</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>DDIProfile applying to the sub-group as a whole.</p>
+</div>
+<div class="section" id="comparisonreference">
+<h3><a class="toc-backref" href="#id27">ComparisonReference</a><a class="headerlink" href="#comparisonreference" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../Comparison/"><span class="doc">Comparison</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>In-line Comparison of differences between related objects in different study units or due to versioning.</p>
+</div>
+<div class="section" id="studyunitreference">
+<h3><a class="toc-backref" href="#id28">StudyUnitReference</a><a class="headerlink" href="#studyunitreference" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../StudyUnit/"><span class="doc">StudyUnit</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>A StudyUnit within the SubGroup provided in-line.</p>
+</div>
+<div class="section" id="subgroupreference">
+<h3><a class="toc-backref" href="#id29">SubGroupReference</a><a class="headerlink" href="#subgroupreference" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="#"><span class="doc">SubGroup</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+</dl>
+<p>A description of study units comprising a sub-sub-group within the main SubGroup.</p>
+</div>
+<div class="section" id="time">
+<h3><a class="toc-backref" href="#id30">Time</a><a class="headerlink" href="#time" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>string</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Indicates how all members of the sub-group are related along the dimension of time (for example single occurrence, multiple occurrence, etc.).</p>
+</div>
+<div class="section" id="captureinstrument">
+<h3><a class="toc-backref" href="#id31">CaptureInstrument</a><a class="headerlink" href="#captureinstrument" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>string</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Indicates how all members of the sub-group are related in terms of the instruments used to collect data (single, multiple, etc.).</p>
+</div>
+<div class="section" id="panel">
+<h3><a class="toc-backref" href="#id32">Panel</a><a class="headerlink" href="#panel" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>string</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Indicates how all members of the sub-group are related in terms of type of panel (single, rolling, etc.).</p>
+</div>
+<div class="section" id="geography">
+<h3><a class="toc-backref" href="#id33">Geography</a><a class="headerlink" href="#geography" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>string</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Indicates how all members of the sub-group are related along the dimension of geography.</p>
+</div>
+<div class="section" id="dataproduct">
+<h3><a class="toc-backref" href="#id34">DataProduct</a><a class="headerlink" href="#dataproduct" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>string</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Indicates how all members of the sub-group are related in terms of physical data products in relation to data collection efforts.</p>
+</div>
+<div class="section" id="languagerelationship">
+<h3><a class="toc-backref" href="#id35">LanguageRelationship</a><a class="headerlink" href="#languagerelationship" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>string</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Indicates how all members of the sub-group are related in terms of language relationships such as parallel content in multiple languages, translations (full or partial), etc.</p>
+</div>
+<div class="section" id="userdefinedgroupproperty">
+<h3><a class="toc-backref" href="#id36">UserDefinedGroupProperty</a><a class="headerlink" href="#userdefinedgroupproperty" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>string</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Provides a user-defined sub-grouping property, different from those supplied in other attributes.</p>
+</div>
+<div class="section" id="userdefinedgrouppropertyvalue">
+<h3><a class="toc-backref" href="#id37">UserDefinedGroupPropertyValue</a><a class="headerlink" href="#userdefinedgrouppropertyvalue" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>string</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Provides a value for the user-defined sub-group property supplied in userDefinedSubGroupProperty.</p>
+</div>
+<div class="section" id="isinheritable">
+<h3><a class="toc-backref" href="#id38">IsInheritable</a><a class="headerlink" href="#isinheritable" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>boolean</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>Default is true, and allows for inheritance of all properties and modules, and the use of lower-level over-rides. If set to false, inheritance is switched off for specific sub-groups.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../LocalHoldingPackage/" class="btn btn-neutral float-right" title="LocalHoldingPackage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../Group/" class="btn btn-neutral" title="Group" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright TODO.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

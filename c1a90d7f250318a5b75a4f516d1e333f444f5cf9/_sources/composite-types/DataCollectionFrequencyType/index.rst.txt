@@ -1,0 +1,37 @@
+DataCollectionFrequencyType
+---------------------------
+
+Documents the intended frequency of data collection, for example monthly, yearly, weekly, etc., preferably using an optional controlled vocabulary in the IntendedFrequency element. Date of first collection should be provided in StartDate as a basis for defining periodicity. EndDate should be entered for data collection cycles with a known or anticipated end date. EndDate is omitted in data collection series that are intended to be on-going.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/reusable-types/DateType/index`
+    * **DataCollectionFrequencyType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DataCollectionFrequencyType.svg
+
+Properties
+~~~~~~~~~~
+
+IntendedFrequency
+*****************
+
+Type
+    :doc:`/reusable-types/CodeValueType/index`
+Cardinality
+    0..1
+
+Documents the intended frequency of data collection, for example monthly, yearly, weekly, etc., preferably using an optional controlled vocabulary.
+
+
+

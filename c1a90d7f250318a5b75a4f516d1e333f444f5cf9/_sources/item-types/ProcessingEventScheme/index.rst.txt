@@ -1,0 +1,88 @@
+ProcessingEventScheme
+---------------------
+
+A set of processing events maintained by an agency, and used in the processing data during development, cleaning, converting to variables, aggregating, and comparing. In addition to the standard name, label, and description allows for the inclusion of an existing ProcessingEventScheme by reference and descriptions of ProcessingEvent and ProcessingEventGroup either in-line or by reference.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **ProcessingEventScheme**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ProcessingEventScheme.svg
+
+Properties
+~~~~~~~~~~
+
+ProcessingEventSchemeName
+*************************
+
+Type
+    :doc:`/reusable-types/NameType/index`
+Cardinality
+    0..n
+
+A name for the ProcessingEventScheme. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/reusable-types/LabelType/index`
+Cardinality
+    0..n
+
+A display label for the ProcessingEventScheme. May be expressed in multiple languages. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/reusable-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+A description of the ProcessingEventScheme. May be expressed in multiple languages and supports the use of structured content.
+
+ProcessingEventSchemeReference
+******************************
+
+Type
+    :doc:`/item-types/ProcessingEventScheme/index`
+Cardinality
+    0..n
+
+Reference to an existing ProcessingEventScheme for inclusion.
+
+ProcessingEventReference
+************************
+
+Type
+    :doc:`/item-types/ProcessingEvent/index`
+Cardinality
+    0..n
+
+A ProcessingEvent described in the ProcessingEventScheme.
+
+ProcessingEventGroupReference
+*****************************
+
+Type
+    :doc:`/item-types/ProcessingEventGroup/index`
+Cardinality
+    0..n
+
+A description of a group of ProcessingEvent for administrative or conceptual purposes.
+
+
+

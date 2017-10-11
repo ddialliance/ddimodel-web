@@ -1,0 +1,88 @@
+NCubeScheme
+-----------
+
+A set of NCubes maintained by an agency and used to structure data items into relational structures. In addition to the standard name, label, and description of the scheme, contains descriptions of individual NCubes and NCubeGroups as well as allowing the inclusion of another NCubeScheme by reference.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **NCubeScheme**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/NCubeScheme.svg
+
+Properties
+~~~~~~~~~~
+
+NCubeSchemeName
+***************
+
+Type
+    :doc:`/reusable-types/NameType/index`
+Cardinality
+    0..n
+
+A name for the NCubeScheme. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/reusable-types/LabelType/index`
+Cardinality
+    0..n
+
+A display label for the NCubeScheme. May be expressed in multiple languages. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/reusable-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+A description of the content and purpose of the NCubeScheme. May be expressed in multiple languages and supports the use of structured content.
+
+NCubeReference
+**************
+
+Type
+    :doc:`/item-types/NCube/index`
+Cardinality
+    0..n
+
+Describes the logical structure of an NCube which is a 1..n dimension structure which relates a set of individual value to each other by defining them within a matrix.
+
+NCubeGroupReference
+*******************
+
+Type
+    :doc:`/item-types/NCubeGroup/index`
+Cardinality
+    0..n
+
+Describes a group of NCubes for conceptual or administrative purposes, which may be ordered or hierarchical.
+
+NCubeSchemeReference
+********************
+
+Type
+    :doc:`/item-types/NCubeScheme/index`
+Cardinality
+    0..n
+
+Allows for inclusion of other NCube schemes by reference.
+
+
+

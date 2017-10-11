@@ -1,0 +1,88 @@
+InterviewerInstructionScheme
+----------------------------
+
+A set of interviewer instructions to be displayed within the instrument, such as definitions, and explanations of terminology and questions. Content may also be used to provide the contents of an instruction manual for questions or instruments. In addition to the standard name, label, and description, allows for the inclusion of another InterviewerInstructionScheme by reference an a set of in-line instructions.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **InterviewerInstructionScheme**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/InterviewerInstructionScheme.svg
+
+Properties
+~~~~~~~~~~
+
+InterviewerInstructionSchemeName
+********************************
+
+Type
+    :doc:`/reusable-types/NameType/index`
+Cardinality
+    0..n
+
+A name for the InterviewerInstructionScheme. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/reusable-types/LabelType/index`
+Cardinality
+    0..n
+
+A display label for the InterviewerInstructionScheme. May be expressed in multiple languages. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/reusable-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+A description of the content and purpose of the InterviewerInstructionScheme. May be expressed in multiple languages and supports the use of structured content.
+
+InterviewerInstructionSchemeReference
+*************************************
+
+Type
+    :doc:`/item-types/InterviewerInstructionScheme/index`
+Cardinality
+    0..n
+
+Allows for the inclusion of an existing InterviewerInstructionScheme by reference.
+
+InstructionReference
+********************
+
+Type
+    :doc:`/item-types/Instruction/index`
+Cardinality
+    0..n
+
+Content of an individual instruction.
+
+InstructionGroupReference
+*************************
+
+Type
+    :doc:`/item-types/InstructionGroup/index`
+Cardinality
+    0..n
+
+In-line description of a group of Instructions.
+
+
+
