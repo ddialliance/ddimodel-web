@@ -1,0 +1,46 @@
+ElseIfType
+----------
+
+Use for multiple branching from a single point in the flow logic represented by the flow logic If, Then, ElseIf, Then, etc. This is a packaging element for an IfCondition and ThenConstructReference and not a control construct.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ElseIfType.svg
+
+Properties
+~~~~~~~~~~
+
+IfCondition
+***********
+
+Type
+    :doc:`/composite-types/CommandCodeType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+The condition which must be met to trigger the Then clause, expressed as a Coding. The condition is an expression in the programming language used in the instrument.
+
+ThenConstructReference
+**********************
+
+Type
+    :doc:`/item-types/Sequence/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+Reference to the control construct which should be triggered if the associated condition is met.
+
+
+

@@ -1,0 +1,53 @@
+AccessRestrictionDateType
+-------------------------
+
+The date or date range of the access restriction for all or portions of the data. Includes a reason for the access restriction as well as the user group to which the restriction applies.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/DateType/index`
+    * **AccessRestrictionDateType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/AccessRestrictionDateType.svg
+
+Properties
+~~~~~~~~~~
+
+Reason
+******
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+The reason for the access restriction.
+
+User
+****
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+The user group to whom the restriction applies
+
+
+

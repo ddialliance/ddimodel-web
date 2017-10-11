@@ -1,0 +1,33 @@
+ConditionalIdentifierType
+-------------------------
+
+Describes the information needed to identify a specific record or case within a record type. Repeating the field allows multiple means of identifying a case referencing multiple variables.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ConditionalIdentifierType.svg
+
+Properties
+~~~~~~~~~~
+
+CaseSpecification
+*****************
+
+Type
+    :doc:`/composite-types/CaseSpecificationType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_2
+
+Case specification allows different unique identifiers to be used based on the value of an identified variable. In some cases the value of a variable (such as a geographic level) results in a different set of variables required to identify a unique case. Case specification is used to capture these combinations. For example: a file containing State, County, and Place records. The unique identifier for a State requires a combination of GeoLevel=State and the variable STATE. Place would require a combination of GeoLevel=Place and the variables STATE and PLACE.
+
+
+

@@ -1,0 +1,54 @@
+GeographicLocationCodeRepresentationBaseType
+--------------------------------------------
+
+Allows for the use of all or part of a GeographicLocation description to be used as a response domain or value representation by a question or variable. In addition to the basic objects of a representation it describes the Geographic Location values available for use by the question or variable.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/RepresentationType/index`
+    * **GeographicLocationCodeRepresentationBaseType**
+        * :doc:`/composite-types/GeographicLocationCodeDomainType/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/GeographicLocationCodeRepresentationBaseType.svg
+
+Properties
+~~~~~~~~~~
+
+IncludedGeographicLocationCodes
+*******************************
+
+Type
+    :doc:`/composite-types/IncludedGeographicLocationCodesType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Identifies the Geographic Location codes included by the Authorized source of the code, the geographic location being used and the locations to exclude.
+
+LimitedCodeSegmentCaptured
+**************************
+
+Type
+    :doc:`/composite-types/LimitedCodeSegmentCapturedType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+When the code is a concatenation this structure allows you to limit the portion of the concatenated code that this object captures.
+
+
+

@@ -1,0 +1,72 @@
+MetadataQualityType
+-------------------
+
+An assessment of the quality of the metadata within the Maintainable object, e.g. the quality of the transcription, completeness, editing status, etc. It indicates the type of metadata quality being assesed, the purpose of providing the measure, and either a value for the quality from a controlled vocabulary and/or a description of the value.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/MetadataQualityType.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfMetadataQuality
+*********************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A brief statement of the metadata quality being measured. Supports the use of an external controlled vocabulary. Use of a controlled vocabulary is strongly recommended.
+
+MeasurePurpose
+**************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+The purpose of the type of metadata quality and its value. Supports multiple languages and the use of structured content.
+
+MeasureValue
+************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A value representing the measurement of this set of metadata within the context of the TypeOfMetadataQuality indicated. Supports the use of an external controlled vocabulary.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A textual description of the quality of this set of metadata which expands on or is provided in lieu of other objects within MetadataQuality. Supports multiple languages and the use of structured content.
+
+
+

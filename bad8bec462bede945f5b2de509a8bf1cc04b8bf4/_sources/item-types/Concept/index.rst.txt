@@ -1,0 +1,102 @@
+Concept
+-------
+
+Describes a concept per ISO/IEC 11179. In addition to the standard name, label, and description, can identify similar concepts, the concept which this concept is a subclass of, a concept that is used to characterize this concept, and a reference to the Universe associated with this concept. It is the linking of a concept to a specific universe (object) that defines this as a data element concept.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **Concept**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/Concept.svg
+
+Properties
+~~~~~~~~~~
+
+ConceptName
+***********
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:conceptualcomponent:3_2
+
+A name for the Concept. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A display label for the Concept. May be expressed in multiple languages. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A description of the content and purpose of the Concept. May be expressed in multiple languages and supports the use of structured content.
+
+SimilarConcept
+**************
+
+Type
+    :doc:`/composite-types/SimilarConceptType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:conceptualcomponent:3_2
+
+A reference to a concept expressing a similar idea plus a description of the differences. Used to assist in disambiguation of concepts.
+
+SubclassOfReference
+*******************
+
+Type
+    :doc:`/item-types/Concept/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:conceptualcomponent:3_2
+
+Reference to a Concept that is used for qualifying this data element concept. The referenced Concept should have its isCharacteristic attribute set to true.
+
+IsCharacteristic
+****************
+
+Type
+    boolean
+Cardinality
+    0..1
+
+If set to "true" this concept is used to describe a characteristic of another concept.
+
+
+

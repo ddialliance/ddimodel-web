@@ -1,0 +1,20 @@
+{
+    "builds":  [
+                   {
+                       "APPVEYOR_BUILD_ID":  "11393683",
+                       "APPVEYOR_REPO_BRANCH":  "master",
+                       "APPVEYOR_REPO_TAG_NAME":  "",
+                       "APPVEYOR_REPO_COMMIT":  "bad8bec462bede945f5b2de509a8bf1cc04b8bf4",
+                       "APPVEYOR_REPO_COMMIT_AUTHOR":  "Dan Smith",
+                       "APPVEYOR_REPO_COMMIT_TIMESTAMP":  "2017-10-11T22:39:06.0000000Z",
+                       "APPVEYOR_REPO_COMMIT_MESSAGE":  "disable remote desktop on CI machine",
+                       "APPVEYOR_REPO_COMMIT_MESSAGE_EXTENDED":  "",
+                       "APPVEYOR_REPO_TAG":  "false",
+                       "APPVEYOR_PULL_REQUEST_NUMBER":  "",
+                       "APPVEYOR_PULL_REQUEST_TITLE":  "",
+                       "APPVEYOR_PULL_REQUEST_HEAD_REPO_NAME":  "",
+                       "APPVEYOR_PULL_REQUEST_HEAD_REPO_BRANCH":  "",
+                       "APPVEYOR_PULL_REQUEST_HEAD_COMMIT":  ""
+                   }
+               ]
+}

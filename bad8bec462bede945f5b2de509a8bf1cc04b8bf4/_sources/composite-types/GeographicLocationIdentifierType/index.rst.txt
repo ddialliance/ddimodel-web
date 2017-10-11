@@ -1,0 +1,46 @@
+GeographicLocationIdentifierType
+--------------------------------
+
+Describes the GeographicLocation as represented by a specific GeographicCode provided by an Authorized Source.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/GeographicLocationIdentifierType.svg
+
+Properties
+~~~~~~~~~~
+
+GeographicCode
+**************
+
+Type
+    string
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Container for a standard geography code expressed as a string.
+
+AuthorizedSourceReference
+*************************
+
+Type
+    :doc:`/composite-types/AuthorizedSourceType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Reference to the AuthorizedSource description in GeographicLocation that provided this code.
+
+
+
