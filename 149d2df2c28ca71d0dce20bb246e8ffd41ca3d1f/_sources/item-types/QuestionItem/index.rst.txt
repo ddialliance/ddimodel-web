@@ -1,0 +1,271 @@
+QuestionItem
+------------
+
+Structure a single Question which may contain one or more response domains (i.e., a list of valid category responses where if "Other" is indicated a text response can be used to specify the intent of "Other"). The structure provides detail on the intent of the question, the text of the question, the valid response options and the number of allowed responses, references to external aids and instructions, and an estimation of the time needed to respond to the question. Note that the QuestionItem is a reusable format for use in any number of applied uses. External aids, instructions, response sequencing etc. should contain information consistent with the general use of the QuestionItem. Additional materials and information can be added within the QuestionConstruct which is the applied use of a question.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **QuestionItem**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/QuestionItem.svg
+
+Properties
+~~~~~~~~~~
+
+QuestionItemName
+****************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+A name for the QuestionItem. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+InParameter
+***********
+
+Type
+    :doc:`/composite-types/InParameterType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Provides an identity for input objects required for the QuestionItem.
+
+OutParameter
+************
+
+Type
+    :doc:`/composite-types/ParameterType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Provides an identify for the output objects of the QuestionItem.
+
+Binding
+*******
+
+Type
+    :doc:`/composite-types/BindingType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A structure used to bind the content of a parameter declared as the source to a parameter declared as the target. For example, binding the OutParameter of one Question to the InParameter of another Question in order to personalize a question text. Care should be taken to bind only reusable information at this level. Binding is also available at the QuestionConstruct to reflect bindings particular to the use of the question in a specific question flow or instrument.
+
+QuestionText
+************
+
+Type
+    :doc:`/composite-types/DynamicTextType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+The text of a question. Supports the use of DynamicText. Note that when using QuestionText, the full QuestionText must be repeated for multi-language versions of the content. Different languages may handle the dynamic portions in different locations and/or with different content. Therefore languages cannot be mixed within a dynamic text except when the full text itself has multiple language sections, for example, a foreign language term in a text. The DisplayText may also be repeated to provide a dynamic and plain text version of the display. This allows for accurate rendering of the QuestionText in a non-dynamic environment like print.
+
+QuestionIntent
+**************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+The purpose of the QuestionItem in terms of what it is designed to measure.
+
+ResponseDomain
+**************
+
+Type
+    :doc:`/composite-types/RepresentationType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+Contains a response domain for the question item. Typically used to describe simple response domains (textual, numeric, etc.).
+
+ResponseDomainReference_ManagedMissingValuesRepresentation
+**********************************************************
+
+Type
+    :doc:`/item-types/ManagedMissingValuesRepresentation/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+The inclusion of a response domain by reference (must be supported by a managed representation). An abstract element. May be substituted by any valid object of substitution type ResponseDomainReference.
+
+ResponseDomainReference_ManagedScaleRepresentation
+**************************************************
+
+Type
+    :doc:`/item-types/ManagedScaleRepresentation/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+The inclusion of a response domain by reference (must be supported by a managed representation). An abstract element. May be substituted by any valid object of substitution type ResponseDomainReference.
+
+ResponseDomainReference_ManagedNumericRepresentation
+****************************************************
+
+Type
+    :doc:`/item-types/ManagedNumericRepresentation/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+The inclusion of a response domain by reference (must be supported by a managed representation). An abstract element. May be substituted by any valid object of substitution type ResponseDomainReference.
+
+ResponseDomainReference_ManagedDateTimeRepresentation
+*****************************************************
+
+Type
+    :doc:`/item-types/ManagedDateTimeRepresentation/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+The inclusion of a response domain by reference (must be supported by a managed representation). An abstract element. May be substituted by any valid object of substitution type ResponseDomainReference.
+
+ResponseDomainReference_ManagedTextRepresentation
+*************************************************
+
+Type
+    :doc:`/item-types/ManagedTextRepresentation/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+The inclusion of a response domain by reference (must be supported by a managed representation). An abstract element. May be substituted by any valid object of substitution type ResponseDomainReference.
+
+StructuredMixedResponseDomain
+*****************************
+
+Type
+    :doc:`/composite-types/StructuredMixedResponseDomainType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+Use in cases where the question requires the option for multiple response domains, such as a category response and a text response to specify a value for "Other", or when text needs to be inserted before, after, or between response options for the question.
+
+ResponseCardinality
+*******************
+
+Type
+    :doc:`/composite-types/ResponseCardinalityType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Allows the designation of the minimum and maximum number of responses allowed for this question. Note that each response domain has its own response cardinality.
+
+ConceptReference
+****************
+
+Type
+    :doc:`/item-types/Concept/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A reference to the concept associated with the response to the question.
+
+ExternalAid
+***********
+
+Type
+    :doc:`/composite-types/OtherMaterialType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+A pointer to an external aid presented by the instrument such as a text card, image, audio, or audiovisual aid. Typically a URN. Use type attribute to describe the type of external aid provided. Example of terms to use would include: imageOnly audioOnly audioVisual multiMedia.
+
+ExternalInterviewerInstruction
+******************************
+
+Type
+    :doc:`/composite-types/ExternalInterviewerInstructionType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+External reference to an interviewer instruction not expressed as DDI XML using OtherMaterial.
+
+InterviewerInstructionReference
+*******************************
+
+Type
+    :doc:`/item-types/Instruction/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+Reference to an interviewer instruction expressed as DDI XML.
+
+EstimatedSecondsResponseTime
+****************************
+
+Type
+    decimal
+Cardinality
+    0..1
+
+The estimated amount of time required to answer a question expressed in seconds. Decimal values should be used to define fractions of seconds.
+
+
+

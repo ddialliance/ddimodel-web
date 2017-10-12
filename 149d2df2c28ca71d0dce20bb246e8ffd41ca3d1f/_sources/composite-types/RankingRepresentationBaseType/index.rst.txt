@@ -1,0 +1,41 @@
+RankingRepresentationBaseType
+-----------------------------
+
+A means of capturing the representation of Ranking to be used as a response domain used by a question. In addition to the basic objects of the representation, the structure defines the range used for ranking including the number of times an individual value may be repeated.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/RepresentationType/index`
+    * **RankingRepresentationBaseType**
+        * :doc:`/composite-types/RankingDomainType/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/RankingRepresentationBaseType.svg
+
+Properties
+~~~~~~~~~~
+
+RankingRange
+************
+
+Type
+    :doc:`/composite-types/RankingRangeType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+The allowed values expressed using Range (allows for non-numeric values). In addition, defines the number of times a value may be used in expressing a ranking.
+
+
+
