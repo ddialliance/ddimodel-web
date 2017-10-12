@@ -1,0 +1,46 @@
+OriginType
+----------
+
+A citation or URI for the source of the data. Note that this is an external reference, and should not be used to point to DDI descriptions of the data, or to DDI-encoded data.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/OriginType.svg
+
+Properties
+~~~~~~~~~~
+
+Citation
+********
+
+Type
+    :doc:`/composite-types/CitationType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Citation for the data source.
+
+OriginLocation
+**************
+
+Type
+    anyURI
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+A URN or URL for the data source.
+
+
+

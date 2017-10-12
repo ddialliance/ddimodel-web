@@ -1,0 +1,59 @@
+AttachmentLocationType
+----------------------
+
+Allows attachment of a response domain to a specific item in a code or category scheme. For example, attach a TextDomain to the value "Other".
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/AttachmentLocationType.svg
+
+Properties
+~~~~~~~~~~
+
+CodeReference
+*************
+
+Type
+    :doc:`/composite-types/CodeType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Identifies the value to which the new response domain is attached by a references a specific Code within the CodeDomain.
+
+CategoryReference
+*****************
+
+Type
+    :doc:`/item-types/Category/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Identifies the value to which the new response domain is attached by a references a specific Category within the CategoryDomain.
+
+DomainSpecificValue
+*******************
+
+Type
+    :doc:`/composite-types/DomainSpecificValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+Identifies the value to which the new response domain is attached by a reference to a specific value used by the response domain and the specific value.
+
+
+

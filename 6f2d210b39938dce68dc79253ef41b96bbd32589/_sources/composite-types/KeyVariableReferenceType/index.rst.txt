@@ -1,0 +1,40 @@
+KeyVariableReferenceType
+------------------------
+
+Reference to the Unique key variable for segment identification and the value it contains for the specific segment. TypeOfObject should be set to Variable.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/ReferenceType/index`
+    * **KeyVariableReferenceType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/KeyVariableReferenceType.svg
+
+Properties
+~~~~~~~~~~
+
+Value
+*****
+
+Type
+    :doc:`/composite-types/ValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Value of the variable for this segment.
+
+
+
