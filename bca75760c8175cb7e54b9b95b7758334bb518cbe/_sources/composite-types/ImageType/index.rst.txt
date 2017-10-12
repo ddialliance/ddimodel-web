@@ -1,0 +1,73 @@
+ImageType
+---------
+
+A reference to an image, with a description of its properties and type.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* **ImageType**
+    * :doc:`/composite-types/PrivateImageType/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ImageType.svg
+
+Properties
+~~~~~~~~~~
+
+ImageLocation
+*************
+
+Type
+    anyURI
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A reference to the location of the image using a URI.
+
+TypeOfImage
+***********
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Brief description of the image type. Supports the use of an external controlled vocabulary.
+
+Dpi
+***
+
+Type
+    int
+Cardinality
+    0..1
+
+Provides the resolution of the image in dots per inch to assist in selecting the appropriate image for various uses.
+
+LanguageOfImage
+***************
+
+Type
+    language
+Cardinality
+    0..1
+
+Language of image.
+
+
+

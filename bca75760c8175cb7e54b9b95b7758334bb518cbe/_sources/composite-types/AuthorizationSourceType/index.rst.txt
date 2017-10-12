@@ -1,0 +1,82 @@
+AuthorizationSourceType
+-----------------------
+
+Identifies the authorizing agency for the study and allows for the full text of the authorization (law, regulation, or other form of authorization). May be used to list authorizations from oversight committees and other regulatory agencies.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/AuthorizationSourceType.svg
+
+Properties
+~~~~~~~~~~
+
+AuthorizingAgencyReference_Organization
+***************************************
+
+Type
+    :doc:`/item-types/Organization/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+References the authorizing agency, organization, or individual.
+
+AuthorizingAgencyReference_Individual
+*************************************
+
+Type
+    :doc:`/item-types/Individual/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+References the authorizing agency, organization, or individual.
+
+StatementOfAuthorization
+************************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Text of the authorization. May be repeated for multiple languages.
+
+LegalMandate
+************
+
+Type
+    string
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Provide a legal citation to a law authorizing the study/data collection. For example, a legal citation for a law authorizing a country's census.
+
+AuthorizationDate
+*****************
+
+Type
+    cogsDate
+Cardinality
+    0..1
+
+Identifies the date of Authorization.
+
+
+

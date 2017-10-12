@@ -1,0 +1,197 @@
+AccessType
+----------
+
+Describes access to the holdings of the archive or to a specific data product. In addition to the name, label, and description for access. This item includes a confidentiality statement, descriptions of the access permissions required, restrictions to access, citation requirements, depositor requirements, conditions for access, a disclaimer, any time limits for access restrictions, and contact information regarding access.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* AbstractIdentifiableType
+    * :doc:`/composite-types/IdentifiableType/index`
+        * **AccessType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/AccessType.svg
+
+Properties
+~~~~~~~~~~
+
+AccessTypeName
+**************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:archive:3_2
+
+A name by which the description of access is known. May be expressed in multiple languages. Repeat the element to express names with different content, for example, different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A display label for the description of access. May be expressed in multiple languages. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A description of the content and purpose of the access description. May be expressed in multiple languages and supports the use of structured content.
+
+ConfidentialityStatement
+************************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:archive:3_2
+
+A statement regarding the confidentiality of the related data or metadata.
+
+AccessPermission
+****************
+
+Type
+    :doc:`/composite-types/FormType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:archive:3_2
+
+A link to a form used to provide access to the data or metadata including a statement of the purpose of the form.
+
+Restrictions
+************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:archive:3_2
+
+A statement regarding restrictions to access. May be expressed in multiple languages and supports the use of structured content.
+
+CitationRequirement
+*******************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:archive:3_2
+
+A statement regarding the citation requirement. May be expressed in multiple languages and supports the use of structured content.
+
+DepositRequirement
+******************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:archive:3_2
+
+A statement regarding depositor requirements. May be expressed in multiple languages and supports the use of structured content.
+
+AccessConditions
+****************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:archive:3_2
+
+A statement regarding conditions for access. May be expressed in multiple languages and supports the use of structured content.
+
+Disclaimer
+**********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:archive:3_2
+
+A disclaimer regarding the liability of the data producers or providers. May be expressed in multiple languages and supports the use of structured content.
+
+AccessRestrictionDate
+*********************
+
+Type
+    :doc:`/composite-types/AccessRestrictionDateType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:archive:3_2
+
+The date or date range of the access restriction for all or portions of the data. Includes a reason for the access restriction as well as the user group to which the restriction applies.
+
+ContactOrganizationReference_Organization
+*****************************************
+
+Type
+    :doc:`/item-types/Organization/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:archive:3_2
+
+A reference to an organization or individual to contact for further information regarding the metadata or data.
+
+ContactOrganizationReference_Individual
+***************************************
+
+Type
+    :doc:`/item-types/Individual/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:archive:3_2
+
+A reference to an organization or individual to contact for further information regarding the metadata or data.
+
+
+

@@ -1,0 +1,82 @@
+VersionDistinctionType
+----------------------
+
+Describes the data versioning scheme(s) used by an organization. If more than one, Name should differentiate between a standard versioning structure used by the organization and special structures used by specific projects or studies. Information on what drives and major and minor change and how they are structured.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/VersionDistinctionType.svg
+
+Properties
+~~~~~~~~~~
+
+VersionDistinctionName
+**********************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:archive:3_2
+
+A name for the Version Distinction. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A display label for the Version Distinction. May be expressed in multiple languages. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A description of the content and purpose of the Version Distinction. May be expressed in multiple languages and supports the use of structured content.
+
+EffectivePeriod
+***************
+
+Type
+    :doc:`/composite-types/DateType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Clarifies when the identification information is accurate.
+
+RegExp
+******
+
+Type
+    string
+Cardinality
+    0..1
+
+Allows the version structure to be defined by a regular expression.
+
+
+

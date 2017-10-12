@@ -1,0 +1,150 @@
+TargetRepresentationType
+------------------------
+
+Provides a reference to a codified representation. Supports the ability to limit code coverage as appropriate for the coding structure referenced.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/TargetRepresentationType.svg
+
+Properties
+~~~~~~~~~~
+
+ManagedRepresentationReference_ManagedMissingValuesRepresentation
+*****************************************************************
+
+Type
+    :doc:`/item-types/ManagedMissingValuesRepresentation/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Substitution group head for referencing Managed Representations. For example, ManagedTextRepresentationReference, ManagedNumericRepresentationReference, etc.
+
+ManagedRepresentationReference_ManagedScaleRepresentation
+*********************************************************
+
+Type
+    :doc:`/item-types/ManagedScaleRepresentation/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Substitution group head for referencing Managed Representations. For example, ManagedTextRepresentationReference, ManagedNumericRepresentationReference, etc.
+
+ManagedRepresentationReference_ManagedNumericRepresentation
+***********************************************************
+
+Type
+    :doc:`/item-types/ManagedNumericRepresentation/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Substitution group head for referencing Managed Representations. For example, ManagedTextRepresentationReference, ManagedNumericRepresentationReference, etc.
+
+ManagedRepresentationReference_ManagedDateTimeRepresentation
+************************************************************
+
+Type
+    :doc:`/item-types/ManagedDateTimeRepresentation/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Substitution group head for referencing Managed Representations. For example, ManagedTextRepresentationReference, ManagedNumericRepresentationReference, etc.
+
+ManagedRepresentationReference_ManagedTextRepresentation
+********************************************************
+
+Type
+    :doc:`/item-types/ManagedTextRepresentation/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Substitution group head for referencing Managed Representations. For example, ManagedTextRepresentationReference, ManagedNumericRepresentationReference, etc.
+
+CategorySchemeReference
+***********************
+
+Type
+    :doc:`/item-types/CategoryScheme/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A reference to a CategoryScheme as the managed component of a representation.
+
+CodeListReference
+*****************
+
+Type
+    :doc:`/item-types/CodeList/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A reference to a CodeList as the managed component of a representation.
+
+CodeSubsetInformation
+*********************
+
+Type
+    :doc:`/composite-types/CodeSubsetInformationType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Allows further specification of the codes to use from the CodeList.
+
+IncludedGeographicStructureCodes
+********************************
+
+Type
+    :doc:`/composite-types/IncludedGeographicStructureCodesType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Identifies the Geographic Structure codes included by the Authorized source of the code, the geographic location being used and the locations to exclude.
+
+IncludedGeographicLocationCodes
+*******************************
+
+Type
+    :doc:`/composite-types/IncludedGeographicLocationCodesType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Identifies the Geographic Location codes included by the Authorized source of the code, the geographic location being used and the locations to exclude.
+
+
+
