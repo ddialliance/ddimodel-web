@@ -36,7 +36,7 @@ function renderCards(data) {
 
 
 $(document).ready(function() {
-    $.getJSON("/builds.json", function(data){
+    $.getJSON("builds.json", function(data){
         $.each(data, function (index, value) {
             console.log("RENDERING");
             renderCards(data);
