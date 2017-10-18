@@ -1,0 +1,37 @@
+IDType
+------
+
+ID type. A fixed attribute is added to the string to ensure that only one ID can be provided.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* BaseIDType
+    * **IDType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/IDType.svg
+
+Properties
+~~~~~~~~~~
+
+Type
+****
+
+Type
+    string
+Cardinality
+    0..1
+
+This is a fixed value attribute declaring that the element is Identifiable and follows the rules of an identifiable object within DDI.
+
+
+

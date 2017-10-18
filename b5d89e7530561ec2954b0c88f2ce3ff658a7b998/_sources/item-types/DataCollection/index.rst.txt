@@ -1,0 +1,197 @@
+DataCollection
+--------------
+
+A maintainable module containing information on activities related to data collection/capture and the processing required for the creation a data product. This section covers the methodologies, events, data sources, collection instruments and processes which comprise the collection/capture and processing of data. Methodology covers approaches used for selecting samples, administering surveys, timing repeated data collection activities. Collection Event specifies data sources, collection instruments, questions and question flow, and data processing activities. This module houses Processing Instructions (General Instructions and Generation Instructions) which may be referenced by variables or comparison maps.The module is described by a name, label, and description, provides spatial, temporal, and topical coverage information on the activities covered by the module, and references to external material related to objects in the module using OtherMaterial. The content of the module is organized within the following sections; Methodology, Collection Event, QuestionScheme (in-line or by reference), ControlConstructScheme (in-line or by references) containing the flow of a questionnaire or data capture process, InterviewerInstructionScheme (in-line or by reference), InstrumentScheme (in-line or by reference) and ProcessingEventScheme (in-line or by reference).
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **DataCollection**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DataCollection.svg
+
+Properties
+~~~~~~~~~~
+
+DataCollectionModuleName
+************************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+A name for the DataCollection module. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A display label for the DataCollection module. May be expressed in multiple languages. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A description of the content and purpose of the DataCollection module. May be expressed in multiple languages and supports the use of structured content.
+
+Coverage
+********
+
+Type
+    :doc:`/composite-types/CoverageType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Documents the spatial, temporal, and/or topical coverage of the data collection module.
+
+OtherMaterial
+*************
+
+Type
+    :doc:`/composite-types/OtherMaterialType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Contains references to other materials relevant to the data collection module, whether in DDI form or external. Links can be made from items in this section to any identifiable element in the instance. Best practice is to include OtherMaterial inside the maintainable containing the objects that are related to the OtherMaterial.
+
+MethodologyReference
+********************
+
+Type
+    :doc:`/item-types/Methodology/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+Metadata regarding the methodology of the data collection process including, determining repetition patterns, sampling, collection modes, etc.
+
+CollectionEvent
+***************
+
+Type
+    :doc:`/composite-types/CollectionEventType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+A specific event in the collection or capture process.
+
+QuestionSchemeReference
+***********************
+
+Type
+    :doc:`/item-types/QuestionScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+Describes a set of questions used for data collection.
+
+ControlConstructSchemeReference
+*******************************
+
+Type
+    :doc:`/item-types/ControlConstructScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+Describes a set of control constructs used to produce the flow pattern of a questionnaire or steps in a data capture process.
+
+InterviewerInstructionSchemeReference
+*************************************
+
+Type
+    :doc:`/item-types/InterviewerInstructionScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+Describes a set of instructions used by the interviewer (respondent in the case of a self administered questionnaire) or instrument to support the accurate collection or capture of data.
+
+InstrumentSchemeReference
+*************************
+
+Type
+    :doc:`/item-types/InstrumentScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+Describes a set of instruments used to collect or capture data.
+
+ProcessingEventSchemeReference
+******************************
+
+Type
+    :doc:`/item-types/ProcessingEventScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+Describes a set of processing events used to collect or capture data and process it during or post collection. May include the processes used to capture data in non-questionnaire data capture.
+
+ProcessingInstructionSchemeReference
+************************************
+
+Type
+    :doc:`/item-types/ProcessingInstructionScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+Describes a set of processing instructions used to collect or capture data and process it during or post collection. May include the processing instructions used to capture data in non-questionnaire data capture.
+
+
+

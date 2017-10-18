@@ -1,0 +1,54 @@
+AggregationVariablesType
+------------------------
+
+Identifies the independent and dependent variables used in the aggregation process. Note that in the case of calculating a percentage, mean, etc. of a dependent value against the total population of the cell, there is no independent variable.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* AbstractIdentifiableType
+    * :doc:`/composite-types/IdentifiableType/index`
+        * **AggregationVariablesType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/AggregationVariablesType.svg
+
+Properties
+~~~~~~~~~~
+
+IndependentVariableReference
+****************************
+
+Type
+    :doc:`/item-types/Variable/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+A reference to a variable, which is an important constraint for the computed aggregation measure and has the potential to invoke a change in a dependent variable like sex for average of income. In the context of calculating percentages, the use of Sex as the independent variable would indicate that the percentages provided represent the percentage of the dependent variable associated with a specific value for Sex (i.e., the dependent variable expressed as a percentage of the total for Males). This would be opposed to the percent for the full population (the percent of the total grid population falling within that particular cell).
+
+DependentVariableReference
+**************************
+
+Type
+    :doc:`/item-types/Variable/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+A reference to a variable, for which the aggregate measure is computed like average of income.
+
+
+

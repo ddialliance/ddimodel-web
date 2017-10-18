@@ -1,6 +1,42 @@
 {
     "builds":  [
                    {
+                       "APPVEYOR_BUILD_ID":  "11525869",
+                       "APPVEYOR_REPO_BRANCH":  "master",
+                       "APPVEYOR_REPO_NAME":  "ddialliance/ddimodel",
+                       "APPVEYOR_REPO_TAG_NAME":  "",
+                       "APPVEYOR_REPO_COMMIT":  "b5d89e7530561ec2954b0c88f2ce3ff658a7b998",
+                       "APPVEYOR_REPO_COMMIT_AUTHOR":  "Dan",
+                       "APPVEYOR_REPO_COMMIT_TIMESTAMP":  "2017-10-18T12:33:43.0000000Z",
+                       "APPVEYOR_REPO_COMMIT_MESSAGE":  "Merge pull request #1 from DanSmith/master",
+                       "APPVEYOR_REPO_COMMIT_MESSAGE_EXTENDED":  "Exit with error code on validation failure",
+                       "APPVEYOR_REPO_TAG":  "false",
+                       "APPVEYOR_PULL_REQUEST_NUMBER":  "",
+                       "APPVEYOR_PULL_REQUEST_TITLE":  "",
+                       "APPVEYOR_PULL_REQUEST_HEAD_REPO_NAME":  "",
+                       "APPVEYOR_PULL_REQUEST_HEAD_REPO_BRANCH":  "",
+                       "APPVEYOR_PULL_REQUEST_HEAD_COMMIT":  "",
+                       "github_commit_info":  {
+                                                  "login":  "web-flow",
+                                                  "id":  19864447,
+                                                  "avatar_url":  "https://avatars3.githubusercontent.com/u/19864447?v=4",
+                                                  "gravatar_id":  "",
+                                                  "url":  "https://api.github.com/users/web-flow",
+                                                  "html_url":  "https://github.com/web-flow",
+                                                  "followers_url":  "https://api.github.com/users/web-flow/followers",
+                                                  "following_url":  "https://api.github.com/users/web-flow/following{/other_user}",
+                                                  "gists_url":  "https://api.github.com/users/web-flow/gists{/gist_id}",
+                                                  "starred_url":  "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+                                                  "subscriptions_url":  "https://api.github.com/users/web-flow/subscriptions",
+                                                  "organizations_url":  "https://api.github.com/users/web-flow/orgs",
+                                                  "repos_url":  "https://api.github.com/users/web-flow/repos",
+                                                  "events_url":  "https://api.github.com/users/web-flow/events{/privacy}",
+                                                  "received_events_url":  "https://api.github.com/users/web-flow/received_events",
+                                                  "type":  "User",
+                                                  "site_admin":  false
+                                              }
+                   },
+                   {
                        "APPVEYOR_BUILD_ID":  "11398398",
                        "APPVEYOR_REPO_BRANCH":  "master",
                        "APPVEYOR_REPO_NAME":  "ddialliance/ddimodel",

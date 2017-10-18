@@ -1,0 +1,106 @@
+CodeListScheme
+--------------
+
+A scheme containing sets of CodeLists that are used by reference to define code representations used by value representations and response domains. In addition to the standard name, label, description, the CodeListScheme may contain another CodeListScheme by reference, CodeLists either in-line or by reference, and CodeListGroups either in-line or by reference.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **CodeListScheme**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CodeListScheme.svg
+
+Properties
+~~~~~~~~~~
+
+CodeListSchemeName
+******************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_2
+
+A name for the CodeListScheme. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A display label for the CodeListScheme. May be expressed in multiple languages. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A description of the content and purpose of the CodeListScheme. May be expressed in multiple languages and supports the use of structured content.
+
+CodeListSchemeReference
+***********************
+
+Type
+    :doc:`/item-types/CodeListScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Allows for the inclusion of another CodeListScheme by reference.
+
+CodeListReference
+*****************
+
+Type
+    :doc:`/item-types/CodeList/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_2
+
+A structure used to associate a list of code values to specified categories. May be flat or hierarchical. A maintainable CodeList listed in the CodeListScheme in-line.
+
+CodeListGroupReference
+**********************
+
+Type
+    :doc:`/item-types/CodeListGroup/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_2
+
+In-line description of a group of CodeLists for conceptual, administrative or other purposes.
+
+
+
