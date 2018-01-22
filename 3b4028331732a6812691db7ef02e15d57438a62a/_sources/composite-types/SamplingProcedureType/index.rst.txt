@@ -1,0 +1,54 @@
+SamplingProcedureType
+---------------------
+
+Describes the type of sample, sample design and provides details on drawing the sample. In addition to the descriptive narrative supports the use of a brief term or controlled vocabulary to classify the type of sampling procedure described.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* AbstractIdentifiableType
+    * :doc:`/composite-types/IdentifiableType/index`
+        * **SamplingProcedureType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/SamplingProcedureType.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfSamplingProcedure
+***********************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+Allows brief identification of sampling procedure used with the option of using a controlled vocabulary.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Full description of the sampling procedure. This may include information on the sample frame, sampling methodology, and procedures for identifying and selecting sub-populations. Supports structured content and multiple language content.
+
+
+

@@ -1,0 +1,40 @@
+GeographicStructureReferenceType
+--------------------------------
+
+Reference to an existing GeographicStructure using the Reference structure plus the ability to exclude any number of contained GeographicLevels as specified by reference. TypeOfObject should be set to GeographicStructure.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/ReferenceType/index`
+    * **GeographicStructureReferenceType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/GeographicStructureReferenceType.svg
+
+Properties
+~~~~~~~~~~
+
+ExcludedGeographicLevelReference
+********************************
+
+Type
+    :doc:`/composite-types/GeographicLevelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Reference to a GeographicLevel within the referenced GeographicStructure which should be excluded. Each excluded GeographicLevel should be specified by reference.
+
+
+

@@ -1,0 +1,59 @@
+TargetObjectType
+----------------
+
+Identifies the Target organization or individual in the relationship. References either an Organiztion or an Individual and specifies the role of the Target in relationship to the Source. Multiple roles for specified periods may be identified.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/TargetObjectType.svg
+
+Properties
+~~~~~~~~~~
+
+OrganizationReference
+*********************
+
+Type
+    :doc:`/item-types/Organization/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:archive:3_2
+
+A reference to an Organization described in DDI.
+
+IndividualReference
+*******************
+
+Type
+    :doc:`/item-types/Individual/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:archive:3_2
+
+A reference to an Individual described in DDI.
+
+Role
+****
+
+Type
+    :doc:`/composite-types/RoleType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:archive:3_2
+
+Describes the role of Target Individual or Organization in relation to the Source Object.
+
+
+

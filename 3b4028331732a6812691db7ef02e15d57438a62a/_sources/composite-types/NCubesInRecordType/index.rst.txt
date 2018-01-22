@@ -1,0 +1,69 @@
+NCubesInRecordType
+------------------
+
+Identifies the NCubes and any variables in the record external to NCube structures such as case identification variables that are contained in the logical record by indicating that all NCubes contained in the logical product are included, inclusion of a NCubeScheme to include, or listing individual NCubes to include. When the attribute allNCubesInLogicalProduct is set to "false" use the NCubeSchemeReference (which allows for exclusions) and NCubeReference to specify the included variables. A nested VariablesInRecord structure is used to include non-NCube variables in the record.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/NCubesInRecordType.svg
+
+Properties
+~~~~~~~~~~
+
+VariablesInRecord
+*****************
+
+Type
+    :doc:`/composite-types/VariablesInRecordType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_2
+
+Use VariablesInRecord to describe any variables in the record that are external to the NCube such as case identifiers.
+
+NCubeSchemeReference
+********************
+
+Type
+    :doc:`/item-types/NCubeScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Reference to an NCubeScheme whose members are included in the logical record. Note that individual items may be excluded from the scheme if not used by the logical record.
+
+NCubeReference
+**************
+
+Type
+    :doc:`/item-types/NCube/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Reference to an NCube to include in the logical record. This may be used to supplement the contents of an included NCubeScheme or to list all the variables individually.
+
+AllNCubesInLogicalProduct
+*************************
+
+Type
+    boolean
+Cardinality
+    0..1
+
+When the value is true, then the logical record contains all listed NCubes in the logical product module.
+
+
+

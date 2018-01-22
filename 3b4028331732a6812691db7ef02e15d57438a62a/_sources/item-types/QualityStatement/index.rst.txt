@@ -1,0 +1,92 @@
+QualityStatement
+----------------
+
+A statement of quality which may be related to an external standard or contain a simple statement of internal quality goals or expectations. When relating to an external standard information on compliance may be added providing a reference to a ComplianceConcept, an ExternalComplianceCode, as well as a description. Optionally, a general statement of quality may be provided using OtherQualityStatement.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **QualityStatement**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/QualityStatement.svg
+
+Properties
+~~~~~~~~~~
+
+QualityStatementName
+********************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Name of the QualityStatement using the DDI Name structure.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A display label for the QualityStatement. May be expressed in multiple languages. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A description of the QualityStatement. May be expressed in multiple languages and supports the use of structured content.
+
+Standard
+********
+
+Type
+    :doc:`/composite-types/StandardType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Identifies the external standard used and describes the level of compliance with the standard in terms specific aspects of the standard's content.
+
+OtherQualityStatement
+*********************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Describes the steps taken to ensure quality that are not related to a specific standard. Language variants should be captured within a single OtherQualityStatement. Repeat the OtherQualityStatement for differing content if needed.
+
+
+
