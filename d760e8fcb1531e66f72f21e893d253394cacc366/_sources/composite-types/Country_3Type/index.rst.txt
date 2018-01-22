@@ -1,0 +1,78 @@
+Country_3Type
+-------------
+
+Allows for string content which may be taken from an externally maintained controlled vocabulary (code value). If the content is from a controlled vocabulary provide the code value, as well as a reference to the code list from which the value is taken. Provide as many of the identifying attributes as needed to adequately identify the controlled vocabulary. Note that DDI has published a number of controlled vocabularies applicable to several locations using the CodeValue structure. Use of shared controlled vocabularies helps support interoperability and machine actionability.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* string
+    * :doc:`/composite-types/CountryCodeType/index`
+        * **Country_3Type**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/Country_3Type.svg
+
+Properties
+~~~~~~~~~~
+
+CodeListID
+**********
+
+Type
+    string
+Cardinality
+    0..1
+
+The ID of the code list (controlled vocabulary) that the content was taken from.
+
+CodeListName_string
+*******************
+
+Type
+    string
+Cardinality
+    0..1
+
+The name of the code list. Fixed as ISO3166 3-letter
+
+CodeListAgencyName
+******************
+
+Type
+    string
+Cardinality
+    0..1
+
+The name of the agency maintaining the code list.
+
+OtherValue
+**********
+
+Type
+    string
+Cardinality
+    0..1
+
+If the value of the string is "Other" or the equivalent from the codelist, this attribute can provide a more specific value not found in the codelist.
+
+CodeListURN
+***********
+
+Type
+    string
+Cardinality
+    0..1
+
+The URN of the codelist. Fixed value. Note this is fixed as late bound. Codes will not be removed from this list when the country code is no longer in active use.
+
+
+

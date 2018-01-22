@@ -1,0 +1,85 @@
+CommandType
+-----------
+
+Provides the following information on the command: The content of the command, the programming language used, the pieces of information (InParameters) used by the command, the pieces of information created by the command (OutParameters) and the source of the information used by the InParameters (Binding).
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CommandType.svg
+
+Properties
+~~~~~~~~~~
+
+ProgramLanguage
+***************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Designates the programming language used for the command. Supports the use of a controlled vocabulary.
+
+InParameter
+***********
+
+Type
+    :doc:`/composite-types/InParameterType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Describes the information used by the command as it is identified within the command structure.
+
+OutParameter
+************
+
+Type
+    :doc:`/composite-types/ParameterType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Describes the information that results from the command that may be used as input by another object.
+
+Binding
+*******
+
+Type
+    :doc:`/composite-types/BindingType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Defines the link between the output of an external object to an InParameter described above.
+
+CommandContent
+**************
+
+Type
+    string
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Content of the command itself expressed in the language designated in Programming Language.
+
+
+

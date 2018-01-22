@@ -1,0 +1,106 @@
+QualityStatementScheme
+----------------------
+
+This scheme contains a set of quality statements referenced by the metadata at different points in the lifecycle. In addition to the name, label, and description of the scheme, the structure supports the inclusion of another QualityStatementScheme by reference and a set of QualityStatement descriptions either in-line or by reference.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **QualityStatementScheme**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/QualityStatementScheme.svg
+
+Properties
+~~~~~~~~~~
+
+QualityStatementSchemeName
+**************************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A name for the scheme. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A display label for the scheme. May be expressed in multiple languages. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A description of the content and purpose of the scheme. May be expressed in multiple languages and supports the use of structured content.
+
+QualityStatementSchemeReference
+*******************************
+
+Type
+    :doc:`/item-types/QualityStatementScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Inclusion of an existing QualityStatementScheme by reference.
+
+QualityStatementReference
+*************************
+
+Type
+    :doc:`/item-types/QualityStatement/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+In-line description of a QualityStatement. These are used by reference at various points in the lifecycle.
+
+QualityStatementGroupReference
+******************************
+
+Type
+    :doc:`/item-types/QualityStatementGroup/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+In-line description of a group of QualityStatements.
+
+
+

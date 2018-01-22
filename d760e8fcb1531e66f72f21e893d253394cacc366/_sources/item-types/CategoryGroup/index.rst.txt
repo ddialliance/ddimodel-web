@@ -1,0 +1,180 @@
+CategoryGroup
+-------------
+
+Contains a group of Category descriptions, which may be ordered or hierarchical. In addition to the name, label, and description of the group, the structure allows for defining the group as a valid category value using a DefiningCategoryReference, and a listing of Categories and CategoryGroups in any order.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **CategoryGroup**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CategoryGroup.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfCategoryGroup
+*******************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_2
+
+A brief textual identification of the group type. Supports the use of an external controlled vocabulary.
+
+CategoryGroupName
+*****************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_2
+
+A name for the group. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A display label for the category group. May be expressed in multiple languages. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A description of the content and purpose of the CategoryGroup. May be expressed in multiple languages and supports the use of structured content.
+
+DefiningCategoryReference
+*************************
+
+Type
+    :doc:`/item-types/Category/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_2
+
+A reference to a category that defines the group, thereby allowing the group to define the contents of that category by explicitly identifying its members.
+
+UniverseReference
+*****************
+
+Type
+    :doc:`/item-types/Universe/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Reference to the universe statement describing the persons or other objects to which the contents of this group pertain.
+
+ConceptReference
+****************
+
+Type
+    :doc:`/item-types/Concept/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Reference to the concept expressed by the objects in this group.
+
+Subject
+*******
+
+Type
+    :doc:`/composite-types/InternationalCodeValueType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+If subjects are listed for this group, it is strongly recommended that the subjects listed also be found in the TopicalCoverage element for the parent packaging element when this group is included directly or by reference in a module containing a coverage element. Use of subject at the group level allows for associating objects as a type of subject based group or to identify subject characteristics of a reusable group of objects.
+
+Keyword
+*******
+
+Type
+    :doc:`/composite-types/InternationalCodeValueType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+If keywords are listed for this group, it is strongly recommended that the keywords listed also be found in the TopicalCoverage element for the parent packaging element when this group is included directly or by reference in a module containing a coverage element. Use of keyword at the group level allows for associating objects as a type of keyword based group or to identify keyword characteristics of a reusable group of objects.
+
+CategoryReference
+*****************
+
+Type
+    :doc:`/item-types/Category/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A category defined as a member of this group.
+
+CategoryGroupReference
+**********************
+
+Type
+    :doc:`/item-types/CategoryGroup/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_2
+
+A category group that is a member of this group (nesting structure).
+
+IsOrdered
+*********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+If set to "true" indicates that the content of the group is ordered as it appears within the XML structure.
+
+
+

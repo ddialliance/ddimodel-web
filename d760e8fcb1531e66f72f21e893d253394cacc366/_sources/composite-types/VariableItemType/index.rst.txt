@@ -1,0 +1,46 @@
+VariableItemType
+----------------
+
+The set of values associated with a single variable (one for each record in storage order of records).
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/VariableItemType.svg
+
+Properties
+~~~~~~~~~~
+
+VariableReference
+*****************
+
+Type
+    :doc:`/item-types/Variable/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Reference to the variable associated with the values given.
+
+Value
+*****
+
+Type
+    :doc:`/composite-types/ValueType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Value associated with the referenced variable in record storage order.
+
+
+

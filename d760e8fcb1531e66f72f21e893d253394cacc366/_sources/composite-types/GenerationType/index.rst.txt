@@ -1,0 +1,92 @@
+GenerationType
+--------------
+
+Description of the process used to generate the category content. Includes a reference to component parts, a description of the generation process, a structured command, and other materials that are needed in the generation process. The item may be designated as a derivation process (default value) and be qualified in some way by a qualification attribute.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/GenerationType.svg
+
+Properties
+~~~~~~~~~~
+
+ComponentReference
+******************
+
+Type
+    :doc:`/item-types/Category/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_2
+
+Reference to a category used in the generation process.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A description of the generation process. May be expressed in multiple languages and supports the use of structured content.
+
+CommandCode
+***********
+
+Type
+    :doc:`/composite-types/CommandCodeType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Structured information used by a system to generate the category.
+
+OtherMaterial
+*************
+
+Type
+    :doc:`/composite-types/OtherMaterialType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+External documentation required for creating the generation - for example, a chart or table for defining poverty.
+
+IsDerived
+*********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+If not a derivation process set this attribute to "false".
+
+Qualification
+*************
+
+Type
+    string
+Cardinality
+    0..1
+
+A qualification for the generation process expressed as a simple string.
+
+
+

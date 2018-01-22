@@ -1,0 +1,120 @@
+DateType
+--------
+
+Provides the structure of a Date element, which allows a choice between single, simple dates (of BaseDateType) or date ranges. If the Date element contains a range, Cycle may be used to indicate occurrence of this range within a series of ranges as an integer identifying the cycle, i.e. the 4th wave of a data collection cycle would have 4. ISO-formatted dates are required for all standard date fields; a historically-formatted date may also be provided to reflect the specific content of a legacy document or common practice within an agency or for publication. All uses of DateType should be optional.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* **DateType**
+    * :doc:`/composite-types/AccessRestrictionDateType/index`
+    * :doc:`/composite-types/DataCollectionFrequencyType/index`
+    * :doc:`/composite-types/ReferenceDateType/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DateType.svg
+
+Properties
+~~~~~~~~~~
+
+SimpleDate
+**********
+
+Type
+    cogsDate
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A single point in time. If a duration is expressed as a SimpleDate it is defining a period of time without a designated Start or End date.
+
+HistoricalDate
+**************
+
+Type
+    :doc:`/composite-types/HistoricalDateType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A simple date expressed in a historical date format, including a specification of the date format and calendar used.
+
+StartDate
+*********
+
+Type
+    cogsDate
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Start of a date range. If there is a start date with no end date provided, this implies that the end date is unknown but that the date being recorded is not just a simple date but a range of unknown duration.
+
+HistoricalStartDate
+*******************
+
+Type
+    :doc:`/composite-types/HistoricalDateType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A start date expressed in a historical date format, including a specification of the date format and calendar used.
+
+EndDate
+*******
+
+Type
+    cogsDate
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+End of a date range with a known start date.
+
+HistoricalEndDate
+*****************
+
+Type
+    :doc:`/composite-types/HistoricalDateType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+An end date expressed in a historical date format, including a specification of the date format and calendar used.
+
+Cycle
+*****
+
+Type
+    int
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Use to indicate occurrence of this range within a series of ranges as an integer identifying the cycle, i.e. the 4th wave of a data collection cycle would have 4.
+
+
+

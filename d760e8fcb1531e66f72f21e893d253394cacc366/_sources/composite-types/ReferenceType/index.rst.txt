@@ -1,0 +1,210 @@
+ReferenceType
+-------------
+
+Used for referencing an identified entity expressed in DDI XML, either by a URN and/or an identification sequence. If both are supplied, the URN takes precedence. At a minimum, one or the other is required. If the identification sequence is used the content of MaintainableObject may be required to be able to assemble the canonical or deprecated DDI URN. To fully support interoperability both the DDI URN and the full identification sequence should be used. Note that to support interoperability of the canonical and deprecated URN, at minimum the MaintainableIdentifier and TypeOfMaintainableObject should be supplied if the canonical URN is being used for the reference. The lateBound attribute has a boolean value, which - if set to true - indicates that the latest version should be used. Use the attribute lateBoundRestriction to indicate when a portion, such as the major version number, should be restricted to a specific value and then late bound within that restriction. Element descriptions will contain a list of applicable TypeOfObject values.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* **ReferenceType**
+    * :doc:`/composite-types/ConditionalVariableReferenceType/index`
+    * :doc:`/composite-types/ControlConstructReferenceType/index`
+    * :doc:`/composite-types/DefaultMissingValuesReferenceType/index`
+    * :doc:`/composite-types/DomainReferenceType/index`
+    * :doc:`/composite-types/GeographicLocationReferenceType/index`
+    * :doc:`/composite-types/GeographicStructureReferenceType/index`
+    * :doc:`/composite-types/InterviewerInstructionReferenceType/index`
+    * :doc:`/composite-types/KeyVariableReferenceType/index`
+    * :doc:`/composite-types/MeasureDefinitionReferenceType/index`
+    * :doc:`/composite-types/NCubeMeasureDefinitionReferenceType/index`
+    * :doc:`/composite-types/ParentGeographicLevelReferenceType/index`
+    * :doc:`/composite-types/PhysicalStructureLinkReferenceType/index`
+    * :doc:`/composite-types/ProcessingInstructionReferenceType/index`
+    * :doc:`/composite-types/RelatedLocationValueReferenceType/index`
+    * :doc:`/composite-types/RepresentationReferenceType/index`
+    * :doc:`/composite-types/SchemeReferenceType/index`
+    * :doc:`/composite-types/SourceReferenceType/index`
+    * :doc:`/composite-types/SubCategoryReferenceType/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ReferenceType.svg
+
+Properties
+~~~~~~~~~~
+
+URN
+***
+
+Type
+    :doc:`/composite-types/URNType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+The URN of the entity being referenced. The URN should follow the pattern associated with the value of the attribute typeOfIdentifier (Canonical or Deprecated).
+
+Agency
+******
+
+Type
+    string
+Cardinality
+    0..1
+
+Minimum Length
+    1
+
+Maximum Length
+    253
+
+Pattern regular expression
+    [a-zA-Z0-9\-]{1,63}(\.[a-zA-Z0-9\-]{1,63})*
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+This is the registered agency code with optional sub-agencies separated by dots.
+
+ID
+**
+
+Type
+    :doc:`/composite-types/IDType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+ID of the object being referenced.This must conform to the allowed structure of the DDI Identifier and must be unique within the declared scope of uniqueness (Agency or Maintainable).
+
+Version
+*******
+
+Type
+    string
+Cardinality
+    0..1
+
+Pattern regular expression
+    [0-9]+(\.[0-9]+)*
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+The version of the object at the time of reference. Late binding is handled separately and does not effect the content of this object.
+
+TypeOfObject
+************
+
+Type
+    string
+Cardinality
+    0..1
+
+Enumeration
+    Access, ActionToMinimizeLosses, AggregationVariables, Attribute, AuthorizedSource, BudgetDocument, Code, CollectionEvent, CollectionSituation, CoordinateRegion, DataCollectionMethodology, DefaultAccess, DeviationFromSampleDesign, Embargo, ExternalAid, ExternalInformation, ExternalInterviewerInstruction, GeographicLevel, GrossFileStructure, GrossRecordStructure, InParameter, ItemMap, LifecycleEvent, LocationValue, LogicalRecord, MeasureDefinition, ModeOfCollection, OtherMaterial, OutParameter, PhysicalRecordSegment, RecordRelationship, SamplingProcedure, SpatialCoverage, StandardUsed, StandardWeight, StimulusMaterial, TemporalCoverage, TimeMethod, TopicalCoverage, Category, CategoryGroup, CategoryMap, CodeListGroup, ComputationItem, Concept, ConceptGroup, ConceptMap, ConceptualVariable, ConceptualVariableGroup, ControlConstructGroup, DataRelationship, DataSet, GeneralInstruction, GenerationInstruction, GeographicLocation, GeographicLocationGroup, GeographicStructure, GeographicStructureGroup, IfThenElse, Individual, Instruction, InstructionGroup, Instrument, InstrumentGroup, Loop, ManagedDateTimeRepresentation, ManagedMissingValuesRepresentation, ManagedNumericRepresentation, ManagedRepresentationGroup, ManagedScaleRepresentation, ManagedTextRepresentation, Methodology, NCube, NCubeGroup, NCubeInstance, Organization, OrganizationGroup, PhysicalStructure, PhysicalStructureGroup, ProcessingEvent, ProcessingEventGroup, ProcessingInstructionGroup, QualityStatement, QualityStatementGroup, QuestionBlock, QuestionConstruct, QuestionGrid, QuestionGroup, QuestionItem, QuestionMap, RecordLayout, RecordLayoutGroup, Relation, RepeatUntil, RepeatWhile, RepresentationMap, RepresentedVariable, RepresentedVariableGroup, Sequence, StatementItem, SubGroup, SubUniverseClass, Universe, UniverseGroup, UniverseMap, Variable, VariableGroup, VariableMap, VariableStatistics, Weighting, Archive, CategoryScheme, CodeList, CodeListScheme, Comparison, ConceptScheme, ConceptualComponent, ConceptualVariableScheme, ControlConstructScheme, DataCollection, DDIInstance, DDIProfile, GeographicLocationScheme, GeographicStructureScheme, Group, InstrumentScheme, InterviewerInstructionScheme, LocalGroupContent, LocalHoldingPackage, LocalResourcePackageContent, LocalStudyUnitContent, LogicalProduct, ManagedRepresentationScheme, NCubeScheme, OrganizationScheme, PhysicalDataProduct, PhysicalInstance, PhysicalStructureScheme, ProcessingEventScheme, ProcessingInstructionScheme, QualityStatementScheme, QuestionScheme, RecordLayoutScheme, RepresentedVariableScheme, ResourcePackage, StudyUnit, UniverseScheme, VariableScheme
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+States the type of object being referenced based on a persistent list of valid DDI object types.
+
+MaintainableObject
+******************
+
+Type
+    :doc:`/composite-types/MaintainableObjectType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Do not use if the referenced object is Maintainable. For references to Identifiable and Versionable objects this provides contextual information on the Maintainable Parent of this object at point of origin. Note that if the ID, Agency, Version sequence is used, and the scope of uniqueness of the referenced object is the Maintainable, then the ID of the Maintainable is needed to create the structured ID portion of the canonical URN. If the system uses the deprecated URN, both the Maintainable ID and TypeOfMaintainableObject are required to create the deprecated URN structure.
+
+IsExternal
+**********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+Indicates that the reference is made to an external source. If the value is true, then a URI must be provided.
+
+ExternalReferenceDefaultURI
+***************************
+
+Type
+    anyURI
+Cardinality
+    0..1
+
+URI identifying the location of an external reference as provided in the maintainable object of the referenced item. For example the content of the externalReferenceDefaultURI of the parent VariableScheme for a referenced Variable. If there is a conflict where the content of the URI does not match the requested object, the DDI URN becomes the preferred value.
+
+IsReference
+***********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+A fixed attribute value identifying which elements are references.
+
+LateBound
+*********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+The default value is set to false indicating that the reference is to a specific version of the object. If the most recent version or most recent minor version within a major version is required, set this flag to "true". Indicating lateBound and not providing information for lateBoundRestriction indicates the request is for the latest version available without restriction.
+
+LateBoundRestriction
+********************
+
+Type
+    string
+Cardinality
+    0..1
+
+Pattern regular expression
+    [0-9]+(\.[0-9]+)*
+
+Use when lateBound is changed to "true". The specifies the point to begin late binding the version number. For example if an object had a two part version number such as X.Y where X is a major version and Y a minor version and the request is for the latest minor version of major version number 4, the content of this field would be 4. Indicating lateBound and not providing information for this field indicates the request is for the latest version available without restriction.
+
+ObjectLanguage
+**************
+
+Type
+    language
+Cardinality
+    0..n
+
+Specifies the language (or language-locale pair) to use for display in references to objects which have multiple languages available.
+
+SourceContext
+*************
+
+Type
+    anyURI
+Cardinality
+    0..1
+
+Provide a DDI URN for the version of the parent maintainable that shows the full context for the referenced object. This is used only when the context of the object within the current version of a maintainable is important to the user and this version is later than the one containing the object itself. For example a occupation classification may be unchanged since version 1.0 of its maintainable but at the point of reference the current version of the maintainable containing the original structure is at version 2.0 etc..
+
+
+
