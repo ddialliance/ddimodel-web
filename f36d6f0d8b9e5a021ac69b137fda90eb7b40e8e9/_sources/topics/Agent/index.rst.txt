@@ -1,0 +1,16 @@
+Agent
+-----
+
+
+
+Item Types
+**********
+
+DDI has 2 item types related to Agent.
+
+.. toctree::
+   :maxdepth: 1
+
+   ../../item-types/Individual/index
+   ../../item-types/Organization/index
+

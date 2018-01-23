@@ -1,0 +1,59 @@
+IncludedGeographicLocationCodesType
+-----------------------------------
+
+Specifies the Geographic Location Codes included in the representation by providing a reference to the authorized source of the code, the GeographicLocation used, and any excluded values.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/IncludedGeographicLocationCodesType.svg
+
+Properties
+~~~~~~~~~~
+
+AuthorizedSourceReference
+*************************
+
+Type
+    :doc:`/composite-types/AuthorizedSourceType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A reference to the Authorized Source of the value used by this representation. A GeographicLocation may have more than one Authorized Source included in the listing.
+
+GeographicLocationReference
+***************************
+
+Type
+    :doc:`/item-types/GeographicLocation/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A reference to the GeographicLocation used by this representation.
+
+ExcludedLocationValueReference
+******************************
+
+Type
+    :doc:`/composite-types/LocationValueType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A reference to a location value that is excluded, not used by, this representation. May be repeated to exclude multiple location values.
+
+
+

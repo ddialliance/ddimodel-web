@@ -1,0 +1,33 @@
+ContentLinkingMapType
+---------------------
+
+Contains a stack of links from the LocalAddedContent to the Depository content and provides instructions regarding the relationship between the local added content and the deposited content.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ContentLinkingMapType.svg
+
+Properties
+~~~~~~~~~~
+
+LinkingMap
+**********
+
+Type
+    :doc:`/composite-types/LinkingMapType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:group:3_2
+
+Provides a link from a local object to a deposited object via reference and designates if the added material should Override, act as AddedContent, or DeleteContent in the original deposited material.
+
+
+
