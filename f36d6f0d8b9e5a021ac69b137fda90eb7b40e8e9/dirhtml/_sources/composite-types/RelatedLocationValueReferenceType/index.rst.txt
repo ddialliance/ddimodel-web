@@ -1,0 +1,37 @@
+RelatedLocationValueReferenceType
+---------------------------------
+
+Provides a reference to the LocationValue or Values that is related to the current LocationValue partially or fully. TypeOfObject should be set to LocationValue.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/ReferenceType/index`
+    * **RelatedLocationValueReferenceType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/RelatedLocationValueReferenceType.svg
+
+Properties
+~~~~~~~~~~
+
+IsFull
+******
+
+Type
+    boolean
+Cardinality
+    0..1
+
+The attribute indicates whether or not the full area of the LocationValue within which the element is used maps to the referenced area. The default value is false, i.e. only part of the current LocationValue maps to the referenced LocationValue. Change to "true" if the full area of the current LocationValue maps to the referenced LocationValue.
+
+
+

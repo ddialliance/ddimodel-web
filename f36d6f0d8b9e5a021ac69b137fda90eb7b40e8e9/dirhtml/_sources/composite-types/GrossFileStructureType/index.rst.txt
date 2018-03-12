@@ -1,0 +1,106 @@
+GrossFileStructureType
+----------------------
+
+Includes information about the file structure, as well as other characteristics that are specific to the physical instance. Information includes place of production, processing checks to validate the content, processing status, the software used to create the data file, and check sums for the number of cases and overall record count.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* AbstractIdentifiableType
+    * :doc:`/composite-types/IdentifiableType/index`
+        * **GrossFileStructureType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/GrossFileStructureType.svg
+
+Properties
+~~~~~~~~~~
+
+PlaceOfProduction
+*****************
+
+Type
+    string
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:physicalinstance:3_2
+
+Indicates the place where the physical instance was produced expressed as a simple string.
+
+ProcessingCheck
+***************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:physicalinstance:3_2
+
+Documents processing checks and other operations performed on the data file.
+
+ProcessingStatus
+****************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:physicalinstance:3_2
+
+Processing status of the data file. Supports the use of an external controlled vocabulary.
+
+CreationSoftware
+****************
+
+Type
+    :doc:`/composite-types/SoftwareType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:physicalinstance:3_2
+
+Indicates the software that was used to create the data file.
+
+CaseQuantity
+************
+
+Type
+    int
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:physicalinstance:3_2
+
+Number of cases or observations in the data file. Caution in using optional checksums is recommended. Conflict between checksums and the items being counted can cause problems with warning flags during processing. If using checksum to capture information for internal processing purposes, the use of automatically generated check sums is strongly urged.
+
+OverallRecordCount
+******************
+
+Type
+    int
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:physicalinstance:3_2
+
+Overall record count in the data file. Caution in using optional checksums is recommended. Conflict between checksums and the items being counted can cause problems with warning flags during processing. If using checksum to capture information for internal processing purposes, the use of automatically generated check sums is strongly urged.
+
+
+

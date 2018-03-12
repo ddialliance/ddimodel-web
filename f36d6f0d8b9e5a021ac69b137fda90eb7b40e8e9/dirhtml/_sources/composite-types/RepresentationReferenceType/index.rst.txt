@@ -1,0 +1,50 @@
+RepresentationReferenceType
+---------------------------
+
+References the managed representation of the variables' values. Allows for the listing of values to be treated as missing in order to support 3.1 structures. The prefered method is the use of a reference to MissingValues description using MissingValuesReference. If both are used and there is a conflict in the content, MissingValuesReference will override the content provided in the ValueRepresentationReference. TypeOfObject should be set to ManagedDateTimeRepresentation, ManagedNumericRepresentation, ManagedScaleRepresentation, or ManagedTextRepresentation.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/ReferenceType/index`
+    * **RepresentationReferenceType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/RepresentationReferenceType.svg
+
+Properties
+~~~~~~~~~~
+
+MissingValue
+************
+
+Type
+    string
+Cardinality
+    0..1
+
+Pattern regular expression
+    \c+
+
+List the values used to represent missing data in a space delimited array. Use of MissingValuesReference is preferred. If this content does not match the values provided in the MissingValuesReference, the content of the MissingValuesReference overrides the content of this attribute.
+
+BlankIsMissingValue
+*******************
+
+Type
+    boolean
+Cardinality
+    0..1
+
+When value is true a blank or empty variable content should be treated as a missing value.  Use of MissingValuesReference is preferred.
+
+
+
