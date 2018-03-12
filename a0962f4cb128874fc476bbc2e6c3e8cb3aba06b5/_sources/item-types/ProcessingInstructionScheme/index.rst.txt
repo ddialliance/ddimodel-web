@@ -1,0 +1,119 @@
+ProcessingInstructionScheme
+---------------------------
+
+A set of Processing Instructions (General and Generation Instructions) maintained by an agency. In addition to the standard name, label, and description allows for the inclusion of an existing ProcessingInstructionScheme by reference, and GeneralInstruction, GenerationInstruction, and ProcessingInstructionGroup descriptions either in-line or by reference.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **ProcessingInstructionScheme**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ProcessingInstructionScheme.svg
+
+Properties
+~~~~~~~~~~
+
+ProcessingInstructionSchemeName
+*******************************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+A name for the ProcessingInstructionScheme. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A display label for the ProcessingInstructionScheme. May be expressed in multiple languages. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A description of the ProcessingInstructionScheme. May be expressed in multiple languages and supports the use of structured content.
+
+ProcessingInstructionSchemeReference
+************************************
+
+Type
+    :doc:`/item-types/ProcessingInstructionScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+Reference to an existing ProcessingInstructionScheme for inclusion.
+
+GeneralInstructionReference
+***************************
+
+Type
+    :doc:`/item-types/GeneralInstruction/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+A General Instruction described in the Processing Instruction Scheme.
+
+GenerationInstructionReference
+******************************
+
+Type
+    :doc:`/item-types/GenerationInstruction/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+A Generation Instruction described in the Processing Instruction Scheme.
+
+ProcessingInstructionGroupReference
+***********************************
+
+Type
+    :doc:`/item-types/ProcessingInstructionGroup/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+A description of a group of ProcessingInstructions for administrative or conceptual purposes.
+
+
+

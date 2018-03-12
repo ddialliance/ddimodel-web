@@ -1,0 +1,167 @@
+RecordLayoutGroup
+-----------------
+
+Contains a group of RecordLayout descriptions for administrative or conceptual purposes, which may be hierarchical. In addition to the standard name, label, and description, allows for a classification of the type of group, a reference to a Universe and Concept and inclusion of RecordLayouts and RecordLayoutGroups by reference, plus a flag indicating if the group is ordered.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **RecordLayoutGroup**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/RecordLayoutGroup.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfRecordLayoutGroup
+***********************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:physicaldataproduct:3_2
+
+A generic element for specifying a reason for a RecordLayoutGroup. Note that this element can contain either a term from a controlled vocabulary list or a textual description.
+
+RecordLayoutGroupName
+*********************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:physicaldataproduct:3_2
+
+A name for the RecordLayoutGroup. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A display label for the RecordLayoutGroup. May be expressed in multiple languages. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A description of the RecordLayoutGroup. May be expressed in multiple languages and supports the use of structured content.
+
+UniverseReference
+*****************
+
+Type
+    :doc:`/item-types/Universe/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Reference to the universe statement describing the persons or other elements that the data refer to, and to which any analytic results refer.
+
+ConceptReference
+****************
+
+Type
+    :doc:`/item-types/Concept/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Reference to the concept represented by the record layout in this group.
+
+Subject
+*******
+
+Type
+    :doc:`/composite-types/InternationalCodeValueType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+If subjects are listed for this group, it is strongly recommended that the subjects listed also be found in the TopicalCoverage element for the parent packaging element when this group is included directly or by reference in a module containing a coverage element. Use of subject at the group level allows for associating objects as a type of subject based group or to identify subject characteristics of a reusable group of objects.
+
+Keyword
+*******
+
+Type
+    :doc:`/composite-types/InternationalCodeValueType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+If keywords are listed for this group, it is strongly recommended that the keywords listed also be found in the TopicalCoverage element for the parent packaging element when this group is included directly or by reference in a module containing a coverage element. Use of keyword at the group level allows for associating objects as a type of keyword based group or to identify keyword characteristics of a reusable group of objects.
+
+RecordLayoutReference
+*********************
+
+Type
+    :doc:`/item-types/RecordLayout/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Reference to constituent RecordLayout.
+
+RecordLayoutGroupReference
+**************************
+
+Type
+    :doc:`/item-types/RecordLayoutGroup/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:physicaldataproduct:3_2
+
+Reference to constituent RecordLayoutGroup. This allows for nesting of variable RecordLayoutGroups.
+
+IsOrdered
+*********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+If set to "true" indicates that the content of the group is ordered as it appears within the XML structure.
+
+
+

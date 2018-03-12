@@ -1,0 +1,40 @@
+ConditionalVariableReferenceType
+--------------------------------
+
+Value of variable indicating this record type, multiple entries allow for multiple valid values or ranges. Includes a reference to the variable an the specified related value. TypeOfObject should be set to Variabele.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/ReferenceType/index`
+    * **ConditionalVariableReferenceType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ConditionalVariableReferenceType.svg
+
+Properties
+~~~~~~~~~~
+
+RelatedValue
+************
+
+Type
+    :doc:`/composite-types/RelatedValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_2
+
+Use to specify the value of variable for which this is a case specification (i.e., GeoLevel in the example for Case Specification).
+
+
+
