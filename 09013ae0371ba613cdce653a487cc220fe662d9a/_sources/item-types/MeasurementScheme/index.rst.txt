@@ -1,0 +1,106 @@
+MeasurementScheme
+-----------------
+
+Contains a set of MeasurementItems and MeasurementGroups. In addition to the standard name, label, and description of the MeasurementScheme, may contain another MeasurementScheme by reference, a listing of MeasurementItems (in-line or by reference), and a listing of MeasurementGroups (in-line or by reference).
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **MeasurementScheme**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/MeasurementScheme.svg
+
+Properties
+~~~~~~~~~~
+
+MeasurementSchemeName
+*********************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A name for the MeasurementScheme. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the scheme. May be expressed in multiple languages. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the content and purpose of the MeasurementItemScheme. May be expressed in multiple languages and supports the use of structured content.
+
+MeasurementSchemeReference
+**************************
+
+Type
+    :doc:`/item-types/MeasurementScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Allows for the inclusion of another MeasurementItemScheme by reference.
+
+MeasurementItemReference
+************************
+
+Type
+    :doc:`/item-types/MeasurementItem/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Describes a MeasurementItem in-line.
+
+MeasurementGroupReference
+*************************
+
+Type
+    :doc:`/item-types/MeasurementGroup/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Contains a group of MeasurementItems, which may be ordered or hierarchical.
+
+
+
