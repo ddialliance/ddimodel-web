@@ -1,0 +1,56 @@
+DimensionRankValueType
+----------------------
+
+A dimension describes the rank or order of the dimension within the NCube structure and provides the specific coordinate value of the dimension for the data item. In the case where the value is found within the data file, it provides a reference to the variable containing the value.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DimensionRankValueType.svg
+
+Properties
+~~~~~~~~~~
+
+VariableReference
+*****************
+
+Type
+    :doc:`/item-types/Variable/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+References the Variable holding the dimension value. Use this instead of the value attribute when the value must be obtained from the data file at the location of the variable indicated in the reference.
+
+Value
+*****
+
+Type
+    :doc:`/composite-types/ValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+The value of this dimension for this particular data item.
+
+Rank
+****
+
+Type
+    nonNegativeInteger
+Cardinality
+    1..1
+
+Enter the rank (placement) order in which the value from this dimension appears in the coordinate address of any cell in the NCube matrix.
+
+
+

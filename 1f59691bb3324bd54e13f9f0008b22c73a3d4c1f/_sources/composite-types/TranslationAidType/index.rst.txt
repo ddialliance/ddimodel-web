@@ -1,0 +1,59 @@
+TranslationAidType
+------------------
+
+Describes available aids for translation typed by a controlled vocabulary and supporting a description and resource identification where appropriate. This may include items such as the availability of an interpreter, key word material, etc.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/TranslationAidType.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfTranslationAid
+********************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Specifies the type of translation aid available. Supports the use of a controlled vocabulary.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Description of the translation aid. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+TranslationAidResource
+**********************
+
+Type
+    :doc:`/composite-types/TranslationAidResourceType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Provides a reference to the translation aid resource using the structure of OtherMaterial.
+
+
+

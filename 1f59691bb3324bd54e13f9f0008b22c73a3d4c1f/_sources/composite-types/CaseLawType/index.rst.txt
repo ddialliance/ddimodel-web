@@ -1,0 +1,59 @@
+CaseLawType
+-----------
+
+Refers to a case law ruling related to the Classification Item. 
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CaseLawType.svg
+
+Properties
+~~~~~~~~~~
+
+CaseLawName
+***********
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Case Law Name
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the case law
+
+CaseLawDate
+***********
+
+Type
+    cogsDate
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Date of the case law ruling
+
+
+
