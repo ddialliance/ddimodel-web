@@ -1,0 +1,262 @@
+ClassificationItem
+------------------
+
+A Classification Item represents a Category at a certain Level within a Statistical Classification. It defines the content and the borders of the category. An object/unit can be classified to one and only one Classification Item at each Level of a Statistical Classification.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Describable/index`
+        * **ClassificationItem**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ClassificationItem.svg
+
+Properties
+~~~~~~~~~~
+
+ItemCode
+********
+
+Type
+    string
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+A Classification Item is identified by an alphabetical, numerical or alphanumerical code, which is in line with the code structure of the Level. The code is unique within the Statistical Classification to which the Classification Item belongs.
+
+DefiningConceptReference
+************************
+
+Type
+    :doc:`/item-types/Concept/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A concept which describes the Classification Item.
+
+Includes
+********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Specifies the contents of the category.
+
+IncludesAlso
+************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+A list of borderline cases, which belong to the described category.
+
+Excludes
+********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+A list of borderline cases, which do not belong to the described category. Excluded cases may contain a reference to the Classification Items to which the excluded cases belong.
+
+ExcludedClassificationItem
+**************************
+
+Type
+    :doc:`/item-types/ClassificationItem/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+A reference to the Classification Items to which the excluded cases belong.
+
+LevelNumber
+***********
+
+Type
+    int
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+The number of the Level to which the Classification Item belongs.
+
+LevelReference
+**************
+
+Type
+    :doc:`/item-types/ClassificationLevel/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+The Level to which the Classification Item belongs.
+
+IsGenerated
+***********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Indicates whether or not the Classification Item has been generated to make the Level to which it belongs complete.
+
+IsValid
+*******
+
+Type
+    boolean
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+If updates are allowed in the Statistical Classification, a Classification Item may be restricted in its validity, i.e. it may become valid or invalid after the Statistical Classification has been released. Indicates whether or not the Classification Item is currently valid.
+
+ValidFrom
+*********
+
+Type
+    cogsDate
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Date from which the Classification Item became valid. The date must be defined if the Classification Item belongs to a floating Statistical Classification.
+
+ValidTo
+*******
+
+Type
+    cogsDate
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Date at which the Classification Item became invalid. The date must be defined if the Classification Item belongs to a floating Statistical Classification and is no longer valid.
+
+FutureEvents
+************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+The future events describe a change (or a number of changes) related to an invalid Classification Item. These changes may e.g. have turned the now invalid Classification Item into one or several successor Classification Items. In describing these changes, terminology from the Typology of item changes, found in Appendix 3 should be used. This allows the possibility to follow successors of the Classification Item in the future.
+
+SuccessorClassificationItem
+***************************
+
+Type
+    :doc:`/item-types/ClassificationItem/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Future events may e.g. have turned the now invalid Classification Item into one or several successor Classification Items, listed here
+
+ChangesFromPriorVersion
+***********************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Describes the changes, which the Classification Item has been subject to from the previous version to the actual Statistical Classification. In describing these changes, terminology from the Typology of item changes, found in Appendix 3 of GSIM should be used.
+
+Updates
+*******
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Describes the changes, which the Classification Item has been subject to during the life time of the actual Statistical Classification.
+
+ParentClassificationItem
+************************
+
+Type
+    :doc:`/item-types/ClassificationItem/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+The Classification Item at the next higher Level of the Statistical Classification of which the actual Classification Item is a sub item.
+
+CaseLaws
+********
+
+Type
+    :doc:`/composite-types/CaseLawType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Refers to one or more case law rulings related to the Classification Item.
+
+
+

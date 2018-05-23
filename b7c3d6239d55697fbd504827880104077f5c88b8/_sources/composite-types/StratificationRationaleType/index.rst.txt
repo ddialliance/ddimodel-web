@@ -1,0 +1,46 @@
+StratificationRationaleType
+---------------------------
+
+Describe the purpose for stratifying your sample frame prior to sampling.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/StratificationRationaleType.svg
+
+Properties
+~~~~~~~~~~
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A full description of the purpose for stratifying your sample frame prior to sampling
+
+UniverseReference
+*****************
+
+Type
+    :doc:`/item-types/Universe/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference each sub universe which defines a strata of the population. For example if you are stratifying on gender there would be 2 Universe references, one to Males and one to Females.
+
+
+
