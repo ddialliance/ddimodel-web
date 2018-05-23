@@ -1,0 +1,69 @@
+CohortType
+----------
+
+Defines the included values of a dimension by means of individual value references or by defining a range of values to include. Allows the included values to be identified by reference to the Code, the Category used by the Code, or the Value of the Code (which by definition should be unique). The dimension is identified by its rank value.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CohortType.svg
+
+Properties
+~~~~~~~~~~
+
+CategoryReference
+*****************
+
+Type
+    :doc:`/item-types/Category/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Reference to the Category represented by the Value of the Code assigned in a CodeList. Repeat for including multiple values.
+
+CodeReference
+*************
+
+Type
+    :doc:`/composite-types/CodeType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Reference to the Code within the CodeList used by the variable describing the dimension. Repeat for including multiple values.
+
+Range
+*****
+
+Type
+    :doc:`/composite-types/RangeType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Use when multiple values are included. This uses the unique Value provided for the Code as a means of identification. Provides the range of Values for this dimension that are within the area being defined. Repeat for non-contiguous values.
+
+Rank
+****
+
+Type
+    int
+Cardinality
+    1..1
+
+Identify the dimension being described by its rank value within the NCube description.
+
+
+
