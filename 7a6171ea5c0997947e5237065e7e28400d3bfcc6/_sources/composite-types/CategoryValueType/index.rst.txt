@@ -1,0 +1,46 @@
+CategoryValueType
+-----------------
+
+A category value for which one or more statistics are recorded. Each VariableCategory has one category value and any number of associated statistics.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CategoryValueType.svg
+
+Properties
+~~~~~~~~~~
+
+CodeReference
+*************
+
+Type
+    :doc:`/composite-types/CodeType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+A reference to the coded value of the category as used by a CodeRepresentation.
+
+Value
+*****
+
+Type
+    :doc:`/composite-types/ValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+The value of the category.
+
+
+

@@ -1,0 +1,46 @@
+IntervalType
+------------
+
+Describes the structure, starting point and increment step of an interval.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/IntervalType.svg
+
+Properties
+~~~~~~~~~~
+
+Anchor_string
+*************
+
+Type
+    string
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_2
+
+Identifies the start value for this interval.
+
+Increment
+*********
+
+Type
+    string
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_2
+
+Value specifying the increment between categories.
+
+
+

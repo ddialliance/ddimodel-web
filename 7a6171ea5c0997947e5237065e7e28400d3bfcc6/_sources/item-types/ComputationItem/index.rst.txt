@@ -1,0 +1,54 @@
+ComputationItem
+---------------
+
+A form of control construct providing a code and assigning a variable to hold value of the code as used for computation in control construct flow. Member of the ControlConstruct substitution group.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/ControlConstruct/index`
+        * **ComputationItem**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ComputationItem.svg
+
+Properties
+~~~~~~~~~~
+
+CommandCode
+***********
+
+Type
+    :doc:`/composite-types/CommandCodeType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+The Code which contains the value of the variable in programming terms.
+
+AssignedVariableReference
+*************************
+
+Type
+    :doc:`/composite-types/ParameterType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_2
+
+A reference to a variable to which the associated value in the Code element is assigned.
+
+
+

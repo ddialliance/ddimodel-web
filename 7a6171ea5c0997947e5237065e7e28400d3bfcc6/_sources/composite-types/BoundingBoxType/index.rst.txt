@@ -1,0 +1,84 @@
+BoundingBoxType
+---------------
+
+Set of north, south, east, west coordinates defining a rectangle that encompasses the full extent of geographic coverage.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/BoundingBoxType.svg
+
+Properties
+~~~~~~~~~~
+
+WestLongitude
+*************
+
+Type
+    decimal
+Cardinality
+    0..1
+
+Minimum Value (Inclusive)
+    -180
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+West longitude of the bounding box. (xmin)
+
+EastLongitude
+*************
+
+Type
+    decimal
+Cardinality
+    0..1
+
+Minimum Value (Inclusive)
+    -180
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+East longitude of the bounding box. (xmax)
+
+SouthLatitude
+*************
+
+Type
+    decimal
+Cardinality
+    0..1
+
+Minimum Value (Inclusive)
+    -90
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+South latitude of the bounding box. (ymin)
+
+NorthLatitude
+*************
+
+Type
+    decimal
+Cardinality
+    0..1
+
+Minimum Value (Inclusive)
+    -90
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+North latitude of the bounding box. (ymax)
+
+
+

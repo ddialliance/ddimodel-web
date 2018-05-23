@@ -1,0 +1,40 @@
+SourceReferenceType
+-------------------
+
+Reference to a variable or question used in the derivation or coding instruction.  TypeOfObject should be set to Variable, QuestionItem, or QuestionGrid.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/ReferenceType/index`
+    * **SourceReferenceType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/SourceReferenceType.svg
+
+Properties
+~~~~~~~~~~
+
+Alias
+*****
+
+Type
+    string
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_2
+
+Allows for assigning an alias used to reference this item in a command. For example if the SourceReference was a question capturing a persons age the command might read "If AGE LT 5...". AGE would be the alias.
+
+
+
