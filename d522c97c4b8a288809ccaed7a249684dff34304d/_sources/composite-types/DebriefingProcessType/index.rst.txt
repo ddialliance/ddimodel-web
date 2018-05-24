@@ -1,0 +1,37 @@
+DebriefingProcessType
+---------------------
+
+Describe the debriefing process. Specifies if debriefing is required. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/StructuredStringType/index`
+    * **DebriefingProcessType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DebriefingProcessType.svg
+
+Properties
+~~~~~~~~~~
+
+IsRequired
+**********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+If debriefing is required for this activity set isRequired to "true".
+
+
+

@@ -1,0 +1,54 @@
+WeightingMethodologyType
+------------------------
+
+A basic structure for describing the methodology used for weighting. In addition to a descriptive narrative, the methodology may be classified by a short term or external controlled vocabulary.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* AbstractIdentifiableType
+    * :doc:`/composite-types/IdentifiableType/index`
+        * **WeightingMethodologyType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/WeightingMethodologyType.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfWeightingMethodology
+**************************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Allows for brief identification of the type of weighting methodology using an optional controlled vocabulary.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Full description of the weighting methodology. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+
+

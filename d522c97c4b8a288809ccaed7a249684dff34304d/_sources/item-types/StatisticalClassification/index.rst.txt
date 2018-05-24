@@ -1,0 +1,357 @@
+StatisticalClassification
+-------------------------
+
+A Statistical Classification is a set of categories which may be assigned to one or more variables registered in statistical surveys or administrative files, and used in the production and dissemination of statistics.
+
+The categories at each level of the classification structure must be mutually exclusive and jointly exhaustive of all objects/units in the population of interest.
+
+The categories are defined with reference to one or more characteristics of a particular population of units of observation. A Statistical Classification may have a flat, linear structure or may be hierarchically structured, such that all categories at lower Levels are sub-categories of categories at the next Level up. Categories in Statistical Classifications are represented in the information model as Classification Items. 
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Describable/index`
+        * **StatisticalClassification**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/StatisticalClassification.svg
+
+Properties
+~~~~~~~~~~
+
+ReleaseDate
+***********
+
+Type
+    cogsDate
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Date on which the Statistical Classification was released.
+
+TerminationDate
+***************
+
+Type
+    cogsDate
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Date on which the Statistical Classification was superseded by a successor version or otherwise ceased to be valid.
+
+IsCurrent
+*********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Indicates whether or not the Statistical Classification is currently valid.
+
+MaintenanceUnit
+***************
+
+Type
+    :doc:`/item-types/Agent/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+The unit or group of persons within the organization  who are responsible for the Statistical Classification (i.e, for maintaining, updating and changing it). 
+
+ContactPerson
+*************
+
+Type
+    :doc:`/item-types/Agent/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Person(s) who may be contacted for additional information about the Statistical Classification.
+
+LegalBase
+*********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Indicates that the Statistical Classification is covered by a legal act or by some other formal agreement.
+
+Publication
+***********
+
+Type
+    :doc:`/composite-types/PublicationType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A list of the publications, including print, PDF, HTML and other electronic formats, in which the Statistical Classification has been published.
+
+Copyright
+*********
+
+Type
+    :doc:`/composite-types/InternationalStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Statistical Classifications may have restricted copyrights. Such Statistical Classifications might be excluded from downloading. Notes the copyright statement that should be displayed in official publications to indicate the copyright owner.
+
+IsDisseminationAllowed
+**********************
+
+Type
+    boolean
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Indicates whether or not the Statistical Classification may be published or otherwise disseminated (e.g. electronic dissemination).
+
+Levels
+******
+
+Type
+    :doc:`/item-types/ClassificationLevel/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+The structure of a Statistical Classification is defined by its Levels (classification level). Include here links to the relevant Levels.
+
+ClassificationItems
+*******************
+
+Type
+    :doc:`/item-types/ClassificationItem/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+A Statistical Classification is composed of categories structured in one or more Levels. Each category is represented by a Classification Item, which defines the content and the borders of the category.
+
+ClassificationIndexes
+*********************
+
+Type
+    :doc:`/item-types/ClassificationIndex/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+A Statistical Classification can be associated with one or a number of Classification Indexes in which Classification Index Entries are linked to the appropriate Classification Item. Include here links to any relevant Classification Indexes.
+
+IsVersion
+*********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Indicates if the Statistical Classification is a version.
+
+IsUpdate
+********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Indicates if the Statistical Classification is an update.
+
+IsFloating
+**********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Indicates if the Statistical Classification is a floating classification. In a floating statistical classification, a validity period should be defined for all Classification Items which will allow the display of the item structure and content at different points of time.
+
+Predecessor
+***********
+
+Type
+    :doc:`/item-types/StatisticalClassification/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+For those Statistical Classifications that are versions or updates, notes the preceding Statistical Classification of which the actual Statistical Classification is the successor.
+
+Successor
+*********
+
+Type
+    :doc:`/item-types/StatisticalClassification/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Notes the Statistical Classification that superseded the actual Statistical Classification.
+
+DerivedFrom
+***********
+
+Type
+    :doc:`/item-types/StatisticalClassification/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+A Statistical Classification can be derived from one of the classification versions of another Classification Series. The derived Statistical Classification can either inherit the structure of the classification version from which it is derived, usually adding more detail, or use a large part of its Classification Items, rearranging them in a different structure. Indicates the classification version from which the actual Statistical Classification is derived.
+
+ChangesFromPreceding
+********************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+A summary description of the nature and content of changes from the preceding version or update. Specific changes are recorded in the Classification Item object under the -Changes from previous version and updates- attribute. 
+
+UpdatesAllowed
+**************
+
+Type
+    boolean
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Indicates whether or not updates are allowed within the classification version i.e. without leading to a new version.
+
+PermissibleUpdates
+******************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+If Updates are Allowed, Indicate here what structural changes, if any, are permissible within a version. Note whether Classification Items can be added to the structure and whether they can be revalidated or invalidated. Such changes are more likely to be permissible in floating classifications. Also indicate whether changes to such things as Classification Item names and explanatory notes that do not involve structural changes are permissible within a version.
+
+Updates
+*******
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Summary description of changes which have occurred since the most recent classification version or classification update came into force.
+
+VariantOf
+*********
+
+Type
+    :doc:`/item-types/StatisticalClassification/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+For those Statistical Classifications that are variants, notes the Statistical Classification on which it is based and any subsequent versions of that Statistical Classification to which it is also applicable.
+
+VariantChangesFromBase
+**********************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Describes the relationship between the variant and its base Statistical Classification, including regroupings, aggregations added and extensions.
+
+VariantPurpose
+**************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+If the Statistical Classification is a variant, notes the specific purpose for which it was developed.
+
+
+

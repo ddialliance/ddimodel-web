@@ -1,0 +1,46 @@
+PopulationSizeType
+------------------
+
+The target value of the sample size for the primary and any secondary or sub-population.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/PopulationSizeType.svg
+
+Properties
+~~~~~~~~~~
+
+PrimaryPopulation
+*****************
+
+Type
+    :doc:`/composite-types/SizeType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+The sample size of the primary or full population included in this sample. Consists of an integer value and specification of the sample unit.
+
+SecondaryPopulation
+*******************
+
+Type
+    :doc:`/composite-types/SizeType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+The sample size of any secondary or sub-populations included in this sample. Consists of an integer value and specification of the sample unit.
+
+
+

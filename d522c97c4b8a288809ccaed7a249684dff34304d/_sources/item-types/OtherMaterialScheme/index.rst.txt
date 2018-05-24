@@ -1,0 +1,106 @@
+OtherMaterialScheme
+-------------------
+
+This scheme contains a set of other materials referenced by the metadata. In addition to the name, label, and description of the scheme, the structure supports the inclusion of another OtherMaterialScheme by reference and a set of OtherMaterial descriptions either in-line or by reference.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **OtherMaterialScheme**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/OtherMaterialScheme.svg
+
+Properties
+~~~~~~~~~~
+
+OtherMaterialSchemeName
+***********************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A name for the OtherMaterialScheme. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the OtherMaterialScheme. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the content and purpose of the OtherMaterialScheme. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+OtherMaterialSchemeReference
+****************************
+
+Type
+    :doc:`/item-types/OtherMaterialScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Inclusion of an existing OtherMaterialScheme by reference.
+
+OtherMaterialReference
+**********************
+
+Type
+    :doc:`/item-types/OtherMaterial/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+In-line description of a OtherMaterial. These are used by reference at various points in the lifecycle.
+
+OtherMaterialGroupReference
+***************************
+
+Type
+    :doc:`/item-types/OtherMaterialGroup/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+In-line description of a group of OtherMaterials.
+
+
+
