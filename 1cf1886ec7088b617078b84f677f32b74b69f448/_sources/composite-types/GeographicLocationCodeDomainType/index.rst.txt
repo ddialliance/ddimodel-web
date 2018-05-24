@@ -1,0 +1,103 @@
+GeographicLocationCodeDomainType
+--------------------------------
+
+A response domain capturing the name or code of a Geographic Location as a response for a question item. Includes standard response domain elements; OutParameter, designation of response cardinality, and a declaration of an offset date for the data content, as well as a description of a geographic location code represeanttion. Allows for capturing a limited segment of a complex geographic code.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/RepresentationType/index`
+    * :doc:`/composite-types/GeographicLocationCodeRepresentationBaseType/index`
+        * **GeographicLocationCodeDomainType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/GeographicLocationCodeDomainType.svg
+
+Properties
+~~~~~~~~~~
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the domain. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the content and purpose of the domain. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+OutParameter
+************
+
+Type
+    :doc:`/composite-types/ParameterType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Allows for the response to be bound to one of the QuestionItem's OutParameters, so the collected information can be used elsewhere, for example as inputs to subsequent questions in an Instrument or to a GenerationInstruction. If multiple responses are possible, this would represent and ordered array of the responses.
+
+ResponseCardinality
+*******************
+
+Type
+    :doc:`/composite-types/ResponseCardinalityType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Allows the designation of the minimum and maximum number of responses allowed for this response domain.
+
+ContentDateOffset
+*****************
+
+Type
+    :doc:`/composite-types/ContentDateOffsetType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Identifies the difference between the date applied to the data as a whole and this specific item such as previous year's income or residence 5 years ago.
+
+DisplayCode
+***********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+If set to "true" (default value) the code value associated with the category label will be displayed. Set to "false" if only the category label should not be displayed.
+
+
+

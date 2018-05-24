@@ -1,6 +1,42 @@
 {
     "builds":  [
                    {
+                       "APPVEYOR_BUILD_ID":  "16105968",
+                       "APPVEYOR_REPO_BRANCH":  "master",
+                       "APPVEYOR_REPO_NAME":  "ddialliance/ddimodel",
+                       "APPVEYOR_REPO_TAG_NAME":  "",
+                       "APPVEYOR_REPO_COMMIT":  "1cf1886ec7088b617078b84f677f32b74b69f448",
+                       "APPVEYOR_REPO_COMMIT_AUTHOR":  "Dan Smith",
+                       "APPVEYOR_REPO_COMMIT_TIMESTAMP":  "2018-05-24T19:00:18.0000000Z",
+                       "APPVEYOR_REPO_COMMIT_MESSAGE":  "Updates for DDILIFE-3601, property name usages with multiple datatypes",
+                       "APPVEYOR_REPO_COMMIT_MESSAGE_EXTENDED":  "",
+                       "APPVEYOR_REPO_TAG":  "false",
+                       "APPVEYOR_PULL_REQUEST_NUMBER":  "",
+                       "APPVEYOR_PULL_REQUEST_TITLE":  "",
+                       "APPVEYOR_PULL_REQUEST_HEAD_REPO_NAME":  "",
+                       "APPVEYOR_PULL_REQUEST_HEAD_REPO_BRANCH":  "",
+                       "APPVEYOR_PULL_REQUEST_HEAD_COMMIT":  "",
+                       "github_commit_info":  {
+                                                  "login":  "DanSmith",
+                                                  "id":  174349,
+                                                  "avatar_url":  "https://avatars0.githubusercontent.com/u/174349?v=4",
+                                                  "gravatar_id":  "",
+                                                  "url":  "https://api.github.com/users/DanSmith",
+                                                  "html_url":  "https://github.com/DanSmith",
+                                                  "followers_url":  "https://api.github.com/users/DanSmith/followers",
+                                                  "following_url":  "https://api.github.com/users/DanSmith/following{/other_user}",
+                                                  "gists_url":  "https://api.github.com/users/DanSmith/gists{/gist_id}",
+                                                  "starred_url":  "https://api.github.com/users/DanSmith/starred{/owner}{/repo}",
+                                                  "subscriptions_url":  "https://api.github.com/users/DanSmith/subscriptions",
+                                                  "organizations_url":  "https://api.github.com/users/DanSmith/orgs",
+                                                  "repos_url":  "https://api.github.com/users/DanSmith/repos",
+                                                  "events_url":  "https://api.github.com/users/DanSmith/events{/privacy}",
+                                                  "received_events_url":  "https://api.github.com/users/DanSmith/received_events",
+                                                  "type":  "User",
+                                                  "site_admin":  false
+                                              }
+                   },
+                   {
                        "APPVEYOR_BUILD_ID":  "16080178",
                        "APPVEYOR_REPO_BRANCH":  "master",
                        "APPVEYOR_REPO_NAME":  "ddialliance/ddimodel",

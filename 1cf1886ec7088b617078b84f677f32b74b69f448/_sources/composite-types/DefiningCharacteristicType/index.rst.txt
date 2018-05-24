@@ -1,0 +1,46 @@
+DefiningCharacteristicType
+--------------------------
+
+Use to attach one or more characteristics to the parent object. The defining characteristic supports the use of a controlled vocabulary and may provide a time period for which the classification is valid.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DefiningCharacteristicType.svg
+
+Properties
+~~~~~~~~~~
+
+Characteristic
+**************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A characteristic which defines the area. These are often useful in terms of selection. For example a U.S. Block may be classified as Urban, Rural, or Mixed. The characteristic supports the use of a controlled vocabulary.
+
+GeographicTime
+**************
+
+Type
+    :doc:`/composite-types/DateType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+The time period for which the characteristic is valid.
+
+
+

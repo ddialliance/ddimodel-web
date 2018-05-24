@@ -1,0 +1,29 @@
+ProcessingInstruction
+---------------------
+
+Substitution group head for types of processing instruction.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **ProcessingInstruction**
+        * :doc:`/item-types/GeneralInstruction/index`
+        * :doc:`/item-types/GenerationInstruction/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ProcessingInstruction.svg
+
+Properties
+~~~~~~~~~~
+
+
+

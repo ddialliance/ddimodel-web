@@ -1,0 +1,246 @@
+QuestionBlock
+-------------
+
+A QuestionBlock is a specific structure used in educational and other types of testing where an object (Stimulus Material) is provided and a set of questions are asked regarding the object. The QuestionBlock generally has related QuestionBlocks that measure similar skills or aptitudes and is used randomly within a set of questionnaires to create multiple versions of a single questionnaire that can be used with large groups for testing purposes. Assembly of the QuestionBlocks into a questionnaire may the result of selection based on an experimental design model. It contains information on what the QuestionBlock is intended to measure, input and output parameters for the QuestionBlock, a description of the stimulus material and the questions related to it, instructions on sequencing and number of allowed responses, references to external aids and instructions, and an estimate of the time needed to complete the question. Note that the QuestionBlock is a reusable format for use in any number of applied uses. External aids, instructions, response sequencing etc. should contain information consistent with the general use of the QuestionBlock (QuestionItems and QuestionGrids will contain information specific to the individual question). Additional materials and information can be added within the QuestionConstruct which is the applied use of a question.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Question/index`
+        * **QuestionBlock**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/QuestionBlock.svg
+
+Properties
+~~~~~~~~~~
+
+QuestionBlockName
+*****************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A name for the QuestionBlock. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the QuestionBlock. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the QuestionBlock. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+InParameter
+***********
+
+Type
+    :doc:`/composite-types/InParameterType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Provides an identity for input objects required for the QuestionBlock.
+
+OutParameter
+************
+
+Type
+    :doc:`/composite-types/ParameterType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Provides an identify for the output objects of the QuestionBlock.
+
+Binding
+*******
+
+Type
+    :doc:`/composite-types/BindingType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A structure used to bind the content of a parameter declared as the source to a parameter declared as the target. For example, binding the OutParameter of one Question to the InParameter of another Question in order to personalize a question text. Care should be taken to bind only reusable information at this level. Binding is also available at the QuestionConstruct to reflect bindings particular to the use of the question in a specific question flow or instrument.
+
+QuestionBlockIntent
+*******************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+The purpose of the QuestionBlock in terms of what it is designed to test. May contain information on specific aspects of the Block and its construction. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+StimulusMaterial
+****************
+
+Type
+    :doc:`/composite-types/StimulusMaterialType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Material that is visual, verbal and/or auditory used to communicate ideas or information which can be researched or provide a source for a response. For example, a picture about which a number of questions are asked, or a sound for which a measurable response is taken (as in a hearing test).
+
+QuestionItemReference
+*********************
+
+Type
+    :doc:`/item-types/QuestionItem/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Reference to a QuestionItem containing a question regarding the stimulus material.
+
+QuestionGridReference
+*********************
+
+Type
+    :doc:`/item-types/QuestionGrid/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Reference to a QuestionGrid containing a question regarding the stimulus material.
+
+QuestionSequence
+****************
+
+Type
+    :doc:`/composite-types/QuestionSequenceType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Allows for recommending that the sequence of questions should vary according to a specified pattern, i.e., random, rotation, etc.
+
+ResponseCardinality
+*******************
+
+Type
+    :doc:`/composite-types/ResponseCardinalityType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Indicates the minimum and maximum number of responses to expect from the QuestionBlock.
+
+ConceptReference
+****************
+
+Type
+    :doc:`/item-types/Concept/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A reference to the concept the QuestionBlock is intended to gather data on.
+
+ExternalAid
+***********
+
+Type
+    :doc:`/composite-types/ExternalAidType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A pointer to an external aid presented by the instrument such as a text card, image, audio, or audiovisual aid. Typically a URN. Use type attribute to describe the type of external aid provided. Example of terms to use would include: imageOnly audioOnly audioVisual multiMedia.
+
+ExternalInterviewerInstruction
+******************************
+
+Type
+    :doc:`/composite-types/ExternalInterviewerInstructionType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+External reference to an interviewer instruction not expressed as DDI XML using OtherMaterial.
+
+InterviewerInstructionReference
+*******************************
+
+Type
+    :doc:`/item-types/Instruction/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Reference to an interviewer instruction expressed as DDI XML.
+
+EstimatedSecondsResponseTime
+****************************
+
+Type
+    decimal
+Cardinality
+    0..1
+
+The estimated amount of time required to answer a question expressed in seconds. Decimal values should be used to define fractions of seconds.
+
+
+
