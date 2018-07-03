@@ -1,0 +1,141 @@
+SampleFrameGroup
+----------------
+
+A grouping of SampleFrames for administrative purposes. Contains a group of sample frames and/or sample frame groups, which may be hierarchical.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **SampleFrameGroup**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/SampleFrameGroup.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfSampleFrameGroup
+**********************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A generic element for specifying a reason for a sample frame group. Note that this element can contain either a term from a controlled vocabulary list or a textual description.
+
+SampleFrameGroupName
+********************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A name for the sample frame group. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the sample frame group. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Additional textual description of the sample frame group. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+UniverseReference
+*****************
+
+Type
+    :doc:`/item-types/Universe/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to the universe statement describing the persons or other elements that the sample frames refer to, and to which any analytic results refer.
+
+ConceptReference
+****************
+
+Type
+    :doc:`/item-types/Concept/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to the concept measured by the sample frames in this group.
+
+SampleFrameReference
+********************
+
+Type
+    :doc:`/item-types/SampleFrame/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Reference to constituent SampleFrame.
+
+SampleFrameGroupReference
+*************************
+
+Type
+    :doc:`/item-types/SampleFrameGroup/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Reference to constituent sample frame group. This allows for nesting of sample frame groups.
+
+IsOrdered
+*********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+Indicates that the content of the group is ordered as it appears within the XML structure.
+
+
+

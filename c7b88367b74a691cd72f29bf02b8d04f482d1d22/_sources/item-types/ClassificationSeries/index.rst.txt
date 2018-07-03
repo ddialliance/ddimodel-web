@@ -1,0 +1,119 @@
+ClassificationSeries
+--------------------
+
+A Classification Series is an ensemble of one or several consecutive Statistical Classifications under a particular heading (for example ISIC or ISCO).
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Describable/index`
+        * **ClassificationSeries**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ClassificationSeries.svg
+
+Properties
+~~~~~~~~~~
+
+SeriesContext
+*************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+A Classification Series can be designed in a specific context.
+
+UnitTypeClassified
+******************
+
+Type
+    :doc:`/item-types/UnitType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+A Classification Series is designed to classify a specific type of object/unit according to a specific attribute.
+
+SubjectArea
+***********
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Areas of statistics in which the Classification Series is implemented.
+
+Owner
+*****
+
+Type
+    :doc:`/item-types/Agent/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+The statistical office or other authority, which created and maintains the Statistical Classification(s) related to the Classification Series. A Classification Series may have several owners.
+
+Keyword
+*******
+
+Type
+    :doc:`/composite-types/InternationalCodeValueType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A Classification Series can be associated with one or a number of keywords.
+
+StatisticalClassificationReference
+**********************************
+
+Type
+    :doc:`/item-types/StatisticalClassification/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A Classification Series has at least one Statistical Classification.
+
+CurrentStatisticalClassification
+********************************
+
+Type
+    :doc:`/item-types/StatisticalClassification/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+If there are several Statistical Classifications related to a Classification Series, one Statistical Classification may be assigned as the currently valid Statistical Classification.
+
+
+

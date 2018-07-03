@@ -1,0 +1,133 @@
+ClassificationIndex
+-------------------
+
+A Classification Index is an ordered list (alphabetical, in code order etc) of Classification Index Entries. A Classification Index can relate to one particular or to several Statistical Classifications.
+A Classification Index shows the relationship between text found in statistical data sources (responses to survey questionnaires, administrative records) and one or more Statistical Classifications. A Classification Index may be used to assign the codes for Classification Items to observations in statistical collections. 
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Describable/index`
+        * **ClassificationIndex**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ClassificationIndex.svg
+
+Properties
+~~~~~~~~~~
+
+ReleaseDate
+***********
+
+Type
+    cogsDate
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Date when the current version of the Classification Index was released.
+
+MaintenanceUnit
+***************
+
+Type
+    :doc:`/item-types/Agent/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+The unit or group of persons within the organization  responsible for the Classification Index, i.e. for adding, changing or deleting Classification Index Entries.
+
+ContactPerson
+*************
+
+Type
+    :doc:`/item-types/Agent/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+ Person(s) who may be contacted for additional information about the Classification Index.
+
+Publication
+***********
+
+Type
+    :doc:`/composite-types/PublicationType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A list of the publications in which the Classification Index has been published.
+
+Languages
+*********
+
+Type
+    language
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+A Classification Index can exist in several languages. Indicates the languages available. If a Classification Index exists in several languages, the number of entries in each language may be different, as the number of terms describing the same phenomenon can change from one language to another. However, the same phenomena should be described in each language.
+
+Corrections
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Summary description of corrections, which have occurred within the Classification Index. Corrections include changing the item code associated with a Classification Index Entry.
+
+CodingInstructions
+******************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Additional information which drives the coding process for all entries in a Classification Index.
+
+ClassificationIndexEntry
+************************
+
+Type
+    :doc:`/composite-types/ClassificationIndexEntryType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+An ordered list (alphabetical, in code order etc.) of Classification Index Entries.
+
+
+

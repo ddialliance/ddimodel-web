@@ -1,0 +1,141 @@
+SamplingPlanGroup
+-----------------
+
+Contains a group of sampling plans, which may be hierarchical.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **SamplingPlanGroup**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/SamplingPlanGroup.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfSamplingPlanGroup
+***********************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A generic element for specifying a reason for a sampling plan group. Note that this element can contain either a term from a controlled vocabulary list or a textual description. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+SamplingPlanGroupName
+*********************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A name for a sampling plan group which may be repeated to express differing names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the sampling plan group. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Additional textual description of the sampling plan group. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+UniverseReference
+*****************
+
+Type
+    :doc:`/item-types/Universe/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to the universe statement describing the persons or other elements that the sampling plans refer to, and to which any analytic results refer.
+
+ConceptReference
+****************
+
+Type
+    :doc:`/item-types/Concept/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to the concept measured by the sampling plans in this group.
+
+SamplingPlanReference
+*********************
+
+Type
+    :doc:`/item-types/SamplingPlan/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Reference to constituent SamplingPlan.
+
+SamplingPlanGroupReference
+**************************
+
+Type
+    :doc:`/item-types/SamplingPlanGroup/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Reference to constituent sampling plan group. This allows for nesting of sampling plan groups.
+
+IsOrdered
+*********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+Indicates that the content of the group is ordered as it appears within the XML structure.
+
+
+

@@ -1,0 +1,132 @@
+OrganizationScheme
+------------------
+
+
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **OrganizationScheme**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/OrganizationScheme.svg
+
+Properties
+~~~~~~~~~~
+
+OrganizationSchemeName
+**********************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+A name for the OrganizationScheme. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the OrganizationScheme. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the content and purpose of the OrganizationScheme. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+OrganizationSchemeReference
+***************************
+
+Type
+    :doc:`/item-types/OrganizationScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to an existing OrganizationScheme for inclusion by reference.
+
+OrganizationReference
+*********************
+
+Type
+    :doc:`/item-types/Organization/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+In-line description of an Organization. These may be referenced by many elements in DDI and provide fuller detail regarding the Organization.
+
+IndividualReference
+*******************
+
+Type
+    :doc:`/item-types/Individual/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+In-line description of an Individual. These may be referenced by many elements in DDI and provide fuller detail regarding the Individual.
+
+RelationReference
+*****************
+
+Type
+    :doc:`/item-types/Relation/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+In-line description of a Relationship between two organizations or individual or between an individual and an organization. Relation is generally and on-going association not associated with a specific role in relationship to a study.
+
+OrganizationGroupReference
+**************************
+
+Type
+    :doc:`/item-types/OrganizationGroup/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+In-line description of a group of Organizations, Individuals, and/or Relations.
+
+
+

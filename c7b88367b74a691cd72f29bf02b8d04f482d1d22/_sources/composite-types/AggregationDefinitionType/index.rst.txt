@@ -1,0 +1,56 @@
+AggregationDefinitionType
+-------------------------
+
+Identifies the independent (denominator) and dependent (numerator) dimensions for calculating aggregate measures such as percent. When two or more independent or dependent dimensions are listed here, the value is defined as the intersection of the listed dimensions.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/AggregationDefinitionType.svg
+
+Properties
+~~~~~~~~~~
+
+IndependentDimension
+********************
+
+Type
+    nonNegativeInteger
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+The rank of a dimension that acts as the denominator (independent variable).
+
+DependentDimension
+******************
+
+Type
+    nonNegativeInteger
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+The rank of a dimension that acts as the numerator (dependent variable).
+
+IsNCubeUniverse
+***************
+
+Type
+    boolean
+Cardinality
+    0..1
+
+When true indicates that total count of the NCube as described by the universe acts as the independent variable (denominator) and that all dimensions are used to define the dependent variable (numerator). When false, use the IndependentDimension and DependentDimension elements to assign each rank to its appropriate role.
+
+
+

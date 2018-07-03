@@ -1,0 +1,33 @@
+FixedIdentifierType
+-------------------
+
+Reference to the variable containing the unique identifier. This may be a concatenated variable which indicates the combination of variable required to create a unique identification. If more than one variable reference is included the combination of the variable field contents must be unique and all variables are required for case identification.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/FixedIdentifierType.svg
+
+Properties
+~~~~~~~~~~
+
+VariableReference
+*****************
+
+Type
+    :doc:`/item-types/Variable/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to a variable used as a fixed identifier either singly or in combination with additional reference variables.
+
+
+

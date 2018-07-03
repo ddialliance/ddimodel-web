@@ -1,0 +1,46 @@
+VariableCategoryType
+--------------------
+
+A category value for which one or more statistics are recorded. Each VariableCategory has one category value and any number of associated statistics.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/VariableCategoryType.svg
+
+Properties
+~~~~~~~~~~
+
+CategoryValue
+*************
+
+Type
+    :doc:`/composite-types/CategoryValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:physicalinstance:3_3
+
+The value of the category.
+
+CategoryStatistic
+*****************
+
+Type
+    :doc:`/composite-types/CategoryStatisticType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:physicalinstance:3_3
+
+The value of a statistic associated with the category value indicated in the sibling CategoryValue element.
+
+
+

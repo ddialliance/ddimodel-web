@@ -1,0 +1,115 @@
+RepresentationType
+------------------
+
+Abstract type for the head of a substitution group for a variable representation or a question response domain. If specific values are used to denote missing values, these can be indicated as a space-delimited list in the missingValue attribute. If the missing value is indicated by a blank, this should be indicated by setting the value of blankIsMissingValue to true.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* **RepresentationType**
+    * :doc:`/composite-types/CategoryRepresentationBaseType/index`
+    * :doc:`/composite-types/CodeRepresentationBaseType/index`
+    * :doc:`/composite-types/DateTimeRepresentationBaseType/index`
+    * :doc:`/composite-types/DistributionRepresentationBaseType/index`
+    * :doc:`/composite-types/ExternalCategoryRepresentationBaseType/index`
+    * :doc:`/composite-types/GeographicLocationCodeRepresentationBaseType/index`
+    * :doc:`/composite-types/GeographicRepresentationBaseType/index`
+    * :doc:`/composite-types/GeographicStructureCodeRepresentationBaseType/index`
+    * :doc:`/composite-types/LocationRepresentationBaseType/index`
+    * :doc:`/composite-types/NominalRepresentationBaseType/index`
+    * :doc:`/composite-types/NumericRepresentationBaseType/index`
+    * :doc:`/composite-types/RankingRepresentationBaseType/index`
+    * :doc:`/composite-types/ScaleRepresentationBaseType/index`
+    * :doc:`/composite-types/TextRepresentationBaseType/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/RepresentationType.svg
+
+Properties
+~~~~~~~~~~
+
+RecommendedDataType
+*******************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+This field provides the recommended treatment of the data within an application. The value should come from a controlled vocabulary - recommended values include the set found in W3C XML Schema Part 2, but excluding string sub-types, QNAME, and NOTATION.
+
+GenericOutputFormat
+*******************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+This field provides a recommended generic treatment of the data for display by an application. The value should come from a controlled vocabulary.
+
+MeasurementUnit
+***************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Records the measurement unit, for example, 'km', 'miles', etc. Supports the use of a controlled vocabulary.
+
+MissingValue
+************
+
+Type
+    string
+Cardinality
+    0..1
+
+Pattern regular expression
+    \c+
+
+List the values used to represent missing data in a space delimited array. Use of MissingValuesReference is preferred. If this content does not match the values provided in the MissingValuesReference, the content of the MissingValuesReference overrides the content of this attribute.
+
+BlankIsMissingValue
+*******************
+
+Type
+    boolean
+Cardinality
+    0..1
+
+When value is true a blank or empty variable content should be treated as a missing value.  Use of MissingValuesReference is preferred.
+
+ClassificationLevel
+*******************
+
+Type
+    string
+Cardinality
+    0..1
+
+Enumeration
+    Nominal, Ordinal, Interval, Ratio, Continuous
+
+Indicates the type of relationship, nominal, ordinal, interval, ratio, or continuous. Use where appropriate for the representation type.
+
+
+
