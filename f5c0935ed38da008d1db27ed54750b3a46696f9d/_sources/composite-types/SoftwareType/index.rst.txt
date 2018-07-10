@@ -1,0 +1,111 @@
+SoftwareType
+------------
+
+Describes a specific software package, which may be commercially available or custom-made.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/SoftwareType.svg
+
+Properties
+~~~~~~~~~~
+
+SoftwareName
+************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+The name of the software package, including its producer.
+
+SoftwarePackage
+***************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A coded value from a controlled vocabulary, describing the software package.
+
+SoftwareVersion
+***************
+
+Type
+    string
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+The version of the software package. Defaults to '1.0'.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the content and purpose of the software. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+Date
+****
+
+Type
+    :doc:`/composite-types/DateType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Supported date of the software package with, at minimum, a release date if known.
+
+Function
+********
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Identifies the functions handled by this software. Repeat for multiple functions. It may be advisable to note only those functions used in the specific usage of the software.
+
+Lang
+****
+
+Type
+    language
+Cardinality
+    0..1
+
+DDI namespace
+    Attribute in http://www.w3.org/XML/1998/namespace
+
+Language (human language) of the software package.
+
+
+

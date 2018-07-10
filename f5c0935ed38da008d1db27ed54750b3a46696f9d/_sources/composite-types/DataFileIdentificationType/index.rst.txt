@@ -1,0 +1,69 @@
+DataFileIdentificationType
+--------------------------
+
+Identifies the data file documented in the physical instance and provides information about its location.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DataFileIdentificationType.svg
+
+Properties
+~~~~~~~~~~
+
+Location
+********
+
+Type
+    :doc:`/composite-types/InternationalStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Documents the location of the data file as a description. Supports the multi-language content.
+
+DataFileURI
+***********
+
+Type
+    :doc:`/composite-types/URIType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:physicalinstance:3_3
+
+A URN or URL for the data file with a flag to indicate if it is a public copy.
+
+SizeInBytes
+***********
+
+Type
+    nonNegativeInteger
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Specifies the size of the file in bytes.
+
+IsMaster
+********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+Set to "true" when this file is the master file (in the case that there are multiple, i.e. backup, copies).
+
+
+

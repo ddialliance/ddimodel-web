@@ -1,0 +1,171 @@
+DDIProfile
+----------
+
+Describes the subset of valid DDI objects used by an agency for a specified purpose. This may be the required and supported objects for a specific system, a profile for deposit in an archive, requirements at different points of production, etc. In addition to the standard name, label, and description the DDI Profile describes the intended application of the profile, its purpose, the version of XPath used in describing the supported objects, the DDI namespace (major and minor version numbers), a mapping of schema to prefixes (if different from the standard DDI model), a set of instructions for use of the profile, and a listing of used and unsupported objects. These objects may be constrained (i.e., change from optional to required), provided a fixed value, or provided a local name.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **DDIProfile**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DDIProfile.svg
+
+Properties
+~~~~~~~~~~
+
+DDIProfileName
+**************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:ddiprofile:3_3
+
+A name for the profile. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the profile. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the content and purpose of the profile. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+ApplicationOfProfile
+********************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:ddiprofile:3_3
+
+A brief description of the intended applications of the profile. Supports the use of an external controlled vocabulary.
+
+Purpose
+*******
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Purpose describes the purpose of creating the profile such as describing the coverage of a distribution software system.
+
+XPathVersion
+************
+
+Type
+    decimal
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:ddiprofile:3_3
+
+Provides the version of XPath used. Values are 1.0, 2.0 at this time.
+
+DDINamespace
+************
+
+Type
+    decimal
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:ddiprofile:3_3
+
+Provides the version of DDI schemas used. Values are 2.5, 3.0, 3.1, etc. Note that only the Major.Minor portion of the version number is used.
+
+XMLPrefixMap
+************
+
+Type
+    :doc:`/composite-types/XMLPrefixMapType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:ddiprofile:3_3
+
+If you are not using the standard DDI prefix or the full DDI name then provide mapping. For each XML namespace used in the profile's XPath expressions, the XML namespaces must have their prefix specified using this element.
+
+Instructions
+************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:ddiprofile:3_3
+
+Instructions for use of the profile. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+Used
+****
+
+Type
+    :doc:`/composite-types/UsedType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:ddiprofile:3_3
+
+Indicates an element in the DDI which is used by the profile expressed as an XPath. Note that including a complex element will include all of its component parts.
+
+NotUsed
+*******
+
+Type
+    :doc:`/composite-types/NotUsedType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:ddiprofile:3_3
+
+Indicates an element in the DDI which is not used by the profile expressed as an XPath. You cannot list anything which is required in the DDI schemas, as this would produce invalid XML instances.
+
+
+

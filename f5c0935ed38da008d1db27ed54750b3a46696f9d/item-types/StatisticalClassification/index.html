@@ -1,0 +1,622 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>StatisticalClassification &mdash; DDI Data Documentation 3.3 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/image.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="ClassificationLevel" href="../ClassificationLevel/" />
+    <link rel="prev" title="ClassificationSeries" href="../ClassificationSeries/" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../" class="icon icon-home"> DDI Data Documentation 3.3
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Topics</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Study/">Study</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../topics/Classification/">Classification</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../topics/Classification/#item-types">Item Types</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../ClassificationFamily/">ClassificationFamily</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ClassificationSeries/">ClassificationSeries</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">StatisticalClassification</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#item-type-hierarchy">Item Type Hierarchy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#relationships">Relationships</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../ClassificationLevel/">ClassificationLevel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ClassificationItem/">ClassificationItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ClassificationCorrespondenceTable/">ClassificationCorrespondenceTable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ClassificationIndex/">ClassificationIndex</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Data Capture/">Data Capture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Data Description/">Data Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Foundational/">Foundational</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Agent/">Agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Non-Packaging Items/">Non-Packaging Items</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/All Content Items/">All Content Items</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Items and Fields</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../">All Item Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../composite-types/">All Composite Types</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">DDI Data Documentation 3.3</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+          <li><a href="../../topics/Classification/">Classification</a> &raquo;</li>
+        
+      <li>StatisticalClassification</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/item-types/StatisticalClassification/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="statisticalclassification">
+<h1><a class="toc-backref" href="#id1">StatisticalClassification</a><a class="headerlink" href="#statisticalclassification" title="Permalink to this headline">¶</a></h1>
+<p>A Statistical Classification is a set of categories which may be assigned to one or more variables registered in statistical surveys or administrative files, and used in the production and dissemination of statistics.</p>
+<p>The categories at each level of the classification structure must be mutually exclusive and jointly exhaustive of all objects/units in the population of interest.</p>
+<p>The categories are defined with reference to one or more characteristics of a particular population of units of observation. A Statistical Classification may have a flat, linear structure or may be hierarchically structured, such that all categories at lower Levels are sub-categories of categories at the next Level up. Categories in Statistical Classifications are represented in the information model as Classification Items.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#statisticalclassification" id="id1">StatisticalClassification</a><ul>
+<li><a class="reference internal" href="#item-type-hierarchy" id="id2">Item Type Hierarchy</a></li>
+<li><a class="reference internal" href="#relationships" id="id3">Relationships</a></li>
+<li><a class="reference internal" href="#properties" id="id4">Properties</a><ul>
+<li><a class="reference internal" href="#releasedate" id="id5">ReleaseDate</a></li>
+<li><a class="reference internal" href="#terminationdate" id="id6">TerminationDate</a></li>
+<li><a class="reference internal" href="#iscurrent" id="id7">IsCurrent</a></li>
+<li><a class="reference internal" href="#maintenanceunit" id="id8">MaintenanceUnit</a></li>
+<li><a class="reference internal" href="#contactperson" id="id9">ContactPerson</a></li>
+<li><a class="reference internal" href="#legalbase" id="id10">LegalBase</a></li>
+<li><a class="reference internal" href="#publication" id="id11">Publication</a></li>
+<li><a class="reference internal" href="#copyright" id="id12">Copyright</a></li>
+<li><a class="reference internal" href="#isdisseminationallowed" id="id13">IsDisseminationAllowed</a></li>
+<li><a class="reference internal" href="#levels" id="id14">Levels</a></li>
+<li><a class="reference internal" href="#classificationitems" id="id15">ClassificationItems</a></li>
+<li><a class="reference internal" href="#classificationindexes" id="id16">ClassificationIndexes</a></li>
+<li><a class="reference internal" href="#isversion" id="id17">IsVersion</a></li>
+<li><a class="reference internal" href="#isupdate" id="id18">IsUpdate</a></li>
+<li><a class="reference internal" href="#isfloating" id="id19">IsFloating</a></li>
+<li><a class="reference internal" href="#predecessor" id="id20">Predecessor</a></li>
+<li><a class="reference internal" href="#successor" id="id21">Successor</a></li>
+<li><a class="reference internal" href="#derivedfrom" id="id22">DerivedFrom</a></li>
+<li><a class="reference internal" href="#changesfrompreceding" id="id23">ChangesFromPreceding</a></li>
+<li><a class="reference internal" href="#updatesallowed" id="id24">UpdatesAllowed</a></li>
+<li><a class="reference internal" href="#permissibleupdates" id="id25">PermissibleUpdates</a></li>
+<li><a class="reference internal" href="#updates" id="id26">Updates</a></li>
+<li><a class="reference internal" href="#variantof" id="id27">VariantOf</a></li>
+<li><a class="reference internal" href="#variantchangesfrombase" id="id28">VariantChangesFromBase</a></li>
+<li><a class="reference internal" href="#variantpurpose" id="id29">VariantPurpose</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="item-type-hierarchy">
+<h2><a class="toc-backref" href="#id2">Item Type Hierarchy</a><a class="headerlink" href="#item-type-hierarchy" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt><a class="reference internal" href="../Versionable/"><span class="doc">Versionable</span></a></dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt><a class="reference internal" href="../Describable/"><span class="doc">Describable</span></a></dt>
+<dd><ul class="first last">
+<li><strong>StatisticalClassification</strong></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="relationships">
+<h2><a class="toc-backref" href="#id3">Relationships</a><a class="headerlink" href="#relationships" title="Permalink to this headline">¶</a></h2>
+<div class="image docutils container">
+<img alt="stub" src="../../_images/StatisticalClassification.svg" /></div>
+</div>
+<div class="section" id="properties">
+<h2><a class="toc-backref" href="#id4">Properties</a><a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="releasedate">
+<h3><a class="toc-backref" href="#id5">ReleaseDate</a><a class="headerlink" href="#releasedate" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>cogsDate</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>Date on which the Statistical Classification was released.</p>
+</div>
+<div class="section" id="terminationdate">
+<h3><a class="toc-backref" href="#id6">TerminationDate</a><a class="headerlink" href="#terminationdate" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>cogsDate</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>Date on which the Statistical Classification was superseded by a successor version or otherwise ceased to be valid.</p>
+</div>
+<div class="section" id="iscurrent">
+<h3><a class="toc-backref" href="#id7">IsCurrent</a><a class="headerlink" href="#iscurrent" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>boolean</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>Indicates whether or not the Statistical Classification is currently valid.</p>
+</div>
+<div class="section" id="maintenanceunit">
+<h3><a class="toc-backref" href="#id8">MaintenanceUnit</a><a class="headerlink" href="#maintenanceunit" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../Agent/"><span class="doc">Agent</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>The unit or group of persons within the organization  who are responsible for the Statistical Classification (i.e, for maintaining, updating and changing it).</p>
+</div>
+<div class="section" id="contactperson">
+<h3><a class="toc-backref" href="#id9">ContactPerson</a><a class="headerlink" href="#contactperson" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../Agent/"><span class="doc">Agent</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>Person(s) who may be contacted for additional information about the Statistical Classification.</p>
+</div>
+<div class="section" id="legalbase">
+<h3><a class="toc-backref" href="#id10">LegalBase</a><a class="headerlink" href="#legalbase" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../../composite-types/StructuredStringType/"><span class="doc">StructuredStringType</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>Indicates that the Statistical Classification is covered by a legal act or by some other formal agreement.</p>
+</div>
+<div class="section" id="publication">
+<h3><a class="toc-backref" href="#id11">Publication</a><a class="headerlink" href="#publication" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../../composite-types/PublicationType/"><span class="doc">PublicationType</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:reusable:3_3</dd>
+</dl>
+<p>A list of the publications, including print, PDF, HTML and other electronic formats, in which the Statistical Classification has been published.</p>
+</div>
+<div class="section" id="copyright">
+<h3><a class="toc-backref" href="#id12">Copyright</a><a class="headerlink" href="#copyright" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../../composite-types/InternationalStringType/"><span class="doc">InternationalStringType</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:reusable:3_3</dd>
+</dl>
+<p>Statistical Classifications may have restricted copyrights. Such Statistical Classifications might be excluded from downloading. Notes the copyright statement that should be displayed in official publications to indicate the copyright owner.</p>
+</div>
+<div class="section" id="isdisseminationallowed">
+<h3><a class="toc-backref" href="#id13">IsDisseminationAllowed</a><a class="headerlink" href="#isdisseminationallowed" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>boolean</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>Indicates whether or not the Statistical Classification may be published or otherwise disseminated (e.g. electronic dissemination).</p>
+</div>
+<div class="section" id="levels">
+<h3><a class="toc-backref" href="#id14">Levels</a><a class="headerlink" href="#levels" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../ClassificationLevel/"><span class="doc">ClassificationLevel</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>The structure of a Statistical Classification is defined by its Levels (classification level). Include here links to the relevant Levels.</p>
+</div>
+<div class="section" id="classificationitems">
+<h3><a class="toc-backref" href="#id15">ClassificationItems</a><a class="headerlink" href="#classificationitems" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../ClassificationItem/"><span class="doc">ClassificationItem</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>A Statistical Classification is composed of categories structured in one or more Levels. Each category is represented by a Classification Item, which defines the content and the borders of the category.</p>
+</div>
+<div class="section" id="classificationindexes">
+<h3><a class="toc-backref" href="#id16">ClassificationIndexes</a><a class="headerlink" href="#classificationindexes" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../ClassificationIndex/"><span class="doc">ClassificationIndex</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>A Statistical Classification can be associated with one or a number of Classification Indexes in which Classification Index Entries are linked to the appropriate Classification Item. Include here links to any relevant Classification Indexes.</p>
+</div>
+<div class="section" id="isversion">
+<h3><a class="toc-backref" href="#id17">IsVersion</a><a class="headerlink" href="#isversion" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>boolean</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>Indicates if the Statistical Classification is a version.</p>
+</div>
+<div class="section" id="isupdate">
+<h3><a class="toc-backref" href="#id18">IsUpdate</a><a class="headerlink" href="#isupdate" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>boolean</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>Indicates if the Statistical Classification is an update.</p>
+</div>
+<div class="section" id="isfloating">
+<h3><a class="toc-backref" href="#id19">IsFloating</a><a class="headerlink" href="#isfloating" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>boolean</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>Indicates if the Statistical Classification is a floating classification. In a floating statistical classification, a validity period should be defined for all Classification Items which will allow the display of the item structure and content at different points of time.</p>
+</div>
+<div class="section" id="predecessor">
+<h3><a class="toc-backref" href="#id20">Predecessor</a><a class="headerlink" href="#predecessor" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="#"><span class="doc">StatisticalClassification</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>For those Statistical Classifications that are versions or updates, notes the preceding Statistical Classification of which the actual Statistical Classification is the successor.</p>
+</div>
+<div class="section" id="successor">
+<h3><a class="toc-backref" href="#id21">Successor</a><a class="headerlink" href="#successor" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="#"><span class="doc">StatisticalClassification</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>Notes the Statistical Classification that superseded the actual Statistical Classification.</p>
+</div>
+<div class="section" id="derivedfrom">
+<h3><a class="toc-backref" href="#id22">DerivedFrom</a><a class="headerlink" href="#derivedfrom" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="#"><span class="doc">StatisticalClassification</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>A Statistical Classification can be derived from one of the classification versions of another Classification Series. The derived Statistical Classification can either inherit the structure of the classification version from which it is derived, usually adding more detail, or use a large part of its Classification Items, rearranging them in a different structure. Indicates the classification version from which the actual Statistical Classification is derived.</p>
+</div>
+<div class="section" id="changesfrompreceding">
+<h3><a class="toc-backref" href="#id23">ChangesFromPreceding</a><a class="headerlink" href="#changesfrompreceding" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../../composite-types/StructuredStringType/"><span class="doc">StructuredStringType</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>A summary description of the nature and content of changes from the preceding version or update. Specific changes are recorded in the Classification Item object under the -Changes from previous version and updates- attribute.</p>
+</div>
+<div class="section" id="updatesallowed">
+<h3><a class="toc-backref" href="#id24">UpdatesAllowed</a><a class="headerlink" href="#updatesallowed" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>boolean</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>Indicates whether or not updates are allowed within the classification version i.e. without leading to a new version.</p>
+</div>
+<div class="section" id="permissibleupdates">
+<h3><a class="toc-backref" href="#id25">PermissibleUpdates</a><a class="headerlink" href="#permissibleupdates" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../../composite-types/StructuredStringType/"><span class="doc">StructuredStringType</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>If Updates are Allowed, Indicate here what structural changes, if any, are permissible within a version. Note whether Classification Items can be added to the structure and whether they can be revalidated or invalidated. Such changes are more likely to be permissible in floating classifications. Also indicate whether changes to such things as Classification Item names and explanatory notes that do not involve structural changes are permissible within a version.</p>
+</div>
+<div class="section" id="updates">
+<h3><a class="toc-backref" href="#id26">Updates</a><a class="headerlink" href="#updates" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../../composite-types/StructuredStringType/"><span class="doc">StructuredStringType</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>Summary description of changes which have occurred since the most recent classification version or classification update came into force.</p>
+</div>
+<div class="section" id="variantof">
+<h3><a class="toc-backref" href="#id27">VariantOf</a><a class="headerlink" href="#variantof" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="#"><span class="doc">StatisticalClassification</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>For those Statistical Classifications that are variants, notes the Statistical Classification on which it is based and any subsequent versions of that Statistical Classification to which it is also applicable.</p>
+</div>
+<div class="section" id="variantchangesfrombase">
+<h3><a class="toc-backref" href="#id28">VariantChangesFromBase</a><a class="headerlink" href="#variantchangesfrombase" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../../composite-types/StructuredStringType/"><span class="doc">StructuredStringType</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>Describes the relationship between the variant and its base Statistical Classification, including regrouping, aggregations added and extensions.</p>
+</div>
+<div class="section" id="variantpurpose">
+<h3><a class="toc-backref" href="#id29">VariantPurpose</a><a class="headerlink" href="#variantpurpose" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../../composite-types/StructuredStringType/"><span class="doc">StructuredStringType</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>If the Statistical Classification is a variant, notes the specific purpose for which it was developed.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ClassificationLevel/" class="btn btn-neutral float-right" title="ClassificationLevel" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../ClassificationSeries/" class="btn btn-neutral" title="ClassificationSeries" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright TODO.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+StimulusMaterialType
+--------------------
+
+Description and link to the StimulusMaterial using the DDI Other Material structure.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/StimulusMaterialType.svg
+
+Properties
+~~~~~~~~~~
+
+OtherMaterialReference
+**********************
+
+Type
+    :doc:`/item-types/OtherMaterial/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Description and link to the StimulusMaterial using the DDI Other Material structure.
+
+
+

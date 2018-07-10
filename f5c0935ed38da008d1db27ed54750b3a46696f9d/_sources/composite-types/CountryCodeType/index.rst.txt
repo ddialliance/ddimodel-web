@@ -1,0 +1,38 @@
+CountryCodeType
+---------------
+
+Use of a Controlled Vocabulary is strongly recommended. Use of ISO 3166 Country Codes (2 character, 3 character, or Numeric) is preferred with or without attribution to a specific controlled vocabulary. If using some other coding system it is important to cite the source as the assumption will generally be that ISO 3166 codes have been used. Allows for an optional effective date for the country code. This can effect the actual geographic coverage or related name.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* string
+    * :doc:`/composite-types/CodeValueType/index`
+        * **CountryCodeType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CountryCodeType.svg
+
+Properties
+~~~~~~~~~~
+
+EffectiveDate
+*************
+
+Type
+    dateTime
+Cardinality
+    0..1
+
+If it is important to specify the date that this code is effective in order to accurately capture a name or similar change, specify that here. This can effect the actual geographic coverage or related name.
+
+
+

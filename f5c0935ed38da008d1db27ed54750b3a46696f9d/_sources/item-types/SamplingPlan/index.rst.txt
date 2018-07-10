@@ -1,0 +1,131 @@
+SamplingPlan
+------------
+
+An inline description of a sampling plan (how the sample is drawn). A sampling plan is intended to be versioned over time and can be reused by multiple studies.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **SamplingPlan**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/SamplingPlan.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfSamplePlan
+****************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A controlled vocabulary covering probability and non-probability sampling methods and modeling approaches. If this is a multi-stage sample the plan at this level should indicate the broadest description of the sampling approaches used in each stage.
+
+SamplingPlanName
+****************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A name for a sampling plan which may be repeated to express differing names for different systems. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A full display label for the sampling plan, repeatable for different context or applications. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Full description of the sampling plan. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+IntendedTargetPopulation
+************************
+
+Type
+    :doc:`/composite-types/PopulationType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A description of the population that the survey is intended to question (i.e. "Likely voters").
+
+IntendedSurveyPopulation
+************************
+
+Type
+    :doc:`/composite-types/PopulationType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+The survey population is the set of elements identified by the frame.  For instance, pre-election polls have "likely voters" as a target population, but the survey is conducted using RDD (usually).  The survey population is households with active land-line telephones, because that's who we can initially identify.  Survey questions help narrow the respondents into the desired set, but then eliminating sampled units increases variance.  It is reusable in the sense that the same survey population will be used each time the named frame is used.
+
+SplitRationale
+**************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Rationale for dividing the frame at this stage into subsets and using a different sampling technique (e.g., Simple Random Sampling or Probability Proportional to Size) on each subset.
+
+Stage
+*****
+
+Type
+    :doc:`/composite-types/StageType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+All sampling plans have at least one stage.  Stages are used to reduce the size of the survey population frame from which to identify sampling units.  For instance, the US Current Population Survey samples geographic areas first before identifying households to contact within those areas.  Cost and sampling error considerations weigh heavily in these decisions.
+
+
+

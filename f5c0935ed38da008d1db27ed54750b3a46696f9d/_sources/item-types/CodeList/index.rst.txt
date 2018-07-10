@@ -1,0 +1,158 @@
+CodeList
+--------
+
+A structure used to associate a list of code values to specified categories. May be flat or hierarchical. This is a maintainable object. In addition to the standard name, label, and description the CodeList specifies a recommended data type, the hierarchical nature of the CodeList, level descriptions, individual code values and associated category, and whether the CodeList contents are used to represent system specific missing values. May include another CodeList by reference. If including other CodeLists make sure there are no code conflicts in the overall content. A code value must be unique within the CodeList. May also include a reference to a default CategoryScheme.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **CodeList**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CodeList.svg
+
+Properties
+~~~~~~~~~~
+
+CodeListName
+************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+A name for the CodeList. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the CodeList. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the content and purpose of the CodeList. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+RecommendedDataType
+*******************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+This field provides the recommended treatment of the data within an application. This field is important as some codes represented as numeric should be treated as strings, i.e., many standardized codes for industry, occupation, education, etc. The value should come from a controlled vocabulary - recommended values include the set found in W3C XML Schema Part 2, but excluding string sub-types, QNAME, and NOTATION.
+
+CodeListReference
+*****************
+
+Type
+    :doc:`/item-types/CodeList/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Allows for inclusion by reference of another CodeList. Care must be taken to ensure that all code values of the resulting CodeList are unique.
+
+CategorySchemeReference
+***********************
+
+Type
+    :doc:`/item-types/CategoryScheme/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to a default category scheme, with the assumption that all categories referenced by the subsequent codes are part of it, unless overwritten by the scheme reference in the CategoryReference field of the code.
+
+HierarchyType
+*************
+
+Type
+    string
+Cardinality
+    0..1
+
+Enumeration
+    Regular, Irregular
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Identifies the type of hierarchy used in the nesting of categories. Possible values are Regular and Irregular. A regular nesting indicates that the category hierarchy is consistent at all lower levels of the hierarchy, i.e., the lowest levels of the hierarchy are at the same level for every branch on the hierarchy.
+
+Level
+*****
+
+Type
+    :doc:`/composite-types/LevelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Describes the levels of the code hierarchy. The level describes the nesting structure of a hierarchical coding structure. Note that the attribute levelNumber is used for referencing specific codes to their level identifier.
+
+Code
+****
+
+Type
+    :doc:`/composite-types/CodeType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Includes a code value, references the category label, and describes the code's position in a hierarchy.
+
+IsSystemMissingValue
+********************
+
+Type
+    boolean
+Cardinality
+    0..1
+
+If "true" contents are used to represent system specific missing values. The default value is "false".
+
+
+
