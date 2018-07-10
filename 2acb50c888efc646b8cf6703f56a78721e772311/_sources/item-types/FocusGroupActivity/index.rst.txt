@@ -1,0 +1,41 @@
+FocusGroupActivity
+------------------
+
+A substitution for DevelopmentActivity which requires no additional information other than the specification of the type of Focus Group taking place for development purposes.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/DevelopmentActivity/index`
+        * **FocusGroupActivity**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/FocusGroupActivity.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfFocusGroup
+****************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Identifies the specific type of Focus Group. Supports the use of a controlled vocabulary which is strongly recommended.
+
+
+

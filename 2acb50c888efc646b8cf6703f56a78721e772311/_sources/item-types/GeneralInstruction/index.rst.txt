@@ -1,0 +1,77 @@
+GeneralInstruction
+------------------
+
+Processing instructions that pertain to data collection or data processing overall such as handling of non-response to questions, imputation practices, suppression rules, etc. General instructions should be listed separately to allow for referencing of specific processes.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/ProcessingInstruction/index`
+        * **GeneralInstruction**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/GeneralInstruction.svg
+
+Properties
+~~~~~~~~~~
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the general instruction. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+CommandCode
+***********
+
+Type
+    :doc:`/composite-types/CommandCodeType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Structured information used by a system to process the instruction.
+
+OverriddenCodeReference
+***********************
+
+Type
+    :doc:`/item-types/ProcessingInstruction/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Used when attribute of the containing GeneralInstruction isOverride equals true. This element provides the reference to the GeneralInstruction being overridden by the use of this instruction. For example a special confidentiality process used for a select set of variables rather than the normal process.
+
+IsOverride
+**********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+If set to "true", indicates that this coding instruction overrides a more generally used process.
+
+
+
