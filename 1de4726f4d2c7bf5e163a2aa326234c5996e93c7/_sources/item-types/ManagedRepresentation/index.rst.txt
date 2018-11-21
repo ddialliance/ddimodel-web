@@ -1,0 +1,32 @@
+ManagedRepresentation
+---------------------
+
+Substitution group head for referencing Managed Representations.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **ManagedRepresentation**
+        * :doc:`/item-types/ManagedDateTimeRepresentation/index`
+        * :doc:`/item-types/ManagedMissingValuesRepresentation/index`
+        * :doc:`/item-types/ManagedNumericRepresentation/index`
+        * :doc:`/item-types/ManagedScaleRepresentation/index`
+        * :doc:`/item-types/ManagedTextRepresentation/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ManagedRepresentation.svg
+
+Properties
+~~~~~~~~~~
+
+
+

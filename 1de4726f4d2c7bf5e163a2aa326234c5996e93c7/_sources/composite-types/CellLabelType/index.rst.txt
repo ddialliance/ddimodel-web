@@ -1,0 +1,41 @@
+CellLabelType
+-------------
+
+Provide a label to be included inside of a grid cell and defines the cell or cells that contain it. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/StructuredStringType/index`
+    * :doc:`/composite-types/LabelType/index`
+        * **CellLabelType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CellLabelType.svg
+
+Properties
+~~~~~~~~~~
+
+GridAttachment
+**************
+
+Type
+    :doc:`/composite-types/GridAttachmentType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Identifies the cell or cells in a grid to which the label is attached by a reference to a specific cell coordinate in a grid or by identifying a range of values along a dimension.
+
+
+

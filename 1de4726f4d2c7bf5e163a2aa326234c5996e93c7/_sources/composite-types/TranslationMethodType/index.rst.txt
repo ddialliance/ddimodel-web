@@ -1,0 +1,46 @@
+TranslationMethodType
+---------------------
+
+Describes both minimum and preferred language abilities sought for the translation work as a set of source and target language requirements.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/TranslationMethodType.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfTranslationMethod
+***********************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Specifies the type of translation method used. Supports the use of a controlled vocabulary.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Description of the translation method. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+
+

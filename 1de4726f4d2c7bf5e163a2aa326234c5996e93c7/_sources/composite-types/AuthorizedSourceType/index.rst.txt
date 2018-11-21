@@ -1,0 +1,53 @@
+AuthorizedSourceType
+--------------------
+
+A stack of LocationValueReferences to each of the locations of the specified PrimaryComponentLevel type that make up the Component Area. Includes a GeographicTime to allow for repetition for change over time.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/IdentifiableType/index`
+    * **AuthorizedSourceType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/AuthorizedSourceType.svg
+
+Properties
+~~~~~~~~~~
+
+OtherMaterialReference
+**********************
+
+Type
+    :doc:`/item-types/OtherMaterial/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the authorization source using OtherMaterial. The TypeOfOtherMaterial should state AuthorizationSource. An authorization source should differentiate between codes derived for different purposes within the same agency.
+
+IdentifierParsingInformation
+****************************
+
+Type
+    :doc:`/composite-types/IdentifierParsingInformationType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Provides structural information for parsing the identification code structure of the Authorized Source into its separate parts.
+
+
+

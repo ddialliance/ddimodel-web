@@ -1,0 +1,65 @@
+MaintainableObjectType
+----------------------
+
+Provides information on the Maintainable Parent of the object. If the scope of the Identifiable or Versionable Object is the Maintinable, this information must be provided in order to provide all the information contained in the Canonical DDI URN. This is done to support interoperability.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/MaintainableObjectType.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfObject
+************
+
+Type
+    string
+Cardinality
+    0..1
+
+Enumeration
+    Access, ActionToMinimizeLosses, AggregationVariables, Attribute, AuthorizedSource, Code, CollectionEvent, CollectionSituation, CoordinateRegion, DataCollectionMethodology, DefaultAccess, DevelopmentProcessStep, DeviationFromSampleDesign, Embargo, GeographicLevel, GrossFileStructure, GrossRecordStructure, InParameter, ItemMap, LifecycleEvent, LocationValue, LogicalRecord, MeasureDefinition, ModeOfCollection, OutParameter, PhysicalRecordSegment, PretestActivity, RecordRelationship, SampleFrameAccess, SamplingProcedure, SpatialCoverage, Stage, StandardUsed, StandardWeight, SubStage, TemporalCoverage, TimeMethod, TopicalCoverage, TranslationActivity, WeightingMethodology, Category, CategoryGroup, CategoryMap, ClassificationCorrespondenceTable, ClassificationIndex, ClassificationItem, ClassificationLevel, ClassificationSeries, StatisticalClassification, CodeListGroup, CognitiveExpertReviewActivity, CognitiveInterviewActivity, ComputationItem, Concept, ConceptGroup, ConceptMap, ConceptualVariable, ConceptualVariableGroup, ContentReviewActivity, ControlConstructGroup, DataRelationship, DataSet, DevelopmentActivity, DevelopmentActivityGroup, DevelopmentPlan, DevelopmentProcess, DevelopmentResults, FocusGroupActivity, GeneralInstruction, GenerationInstruction, GeographicLocation, GeographicLocationGroup, GeographicStructure, GeographicStructureGroup, IfThenElse, Individual, Instruction, InstructionGroup, Instrument, InstrumentGroup, Loop, ManagedDateTimeRepresentation, ManagedMissingValuesRepresentation, ManagedNumericRepresentation, ManagedRepresentationGroup, ManagedScaleRepresentation, ManagedTextRepresentation, MeasurementConstruct, MeasurementGroup, MeasurementItem, Methodology, NCube, NCubeGroup, NCubeInstance, Organization, OrganizationGroup, OtherMaterial, OtherMaterialGroup, PretestActivity, PhysicalStructure, PhysicalStructureGroup, ProcessingEvent, ProcessingEventGroup, ProcessingInstructionGroup, QualityStandard, QualityStandardGroup, QualityStatement, QualityStatementGroup, QuestionBlock, QuestionConstruct, QuestionGrid, QuestionGroup, QuestionItem, QuestionMap, QuestionnaireDevelopment, RecordLayout, RecordLayoutGroup, Relation, RepeatUntil, RepeatWhile, RepresentationMap, RepresentedVariable, RepresentedVariableGroup, SampleFrame, SampleFrameGroup, SamplingPlan, SamplingPlanGroup, Sequence, StatementItem, SubUniverseClass, TranslationActivity, UnitType, UnitTypeGroup, Universe, UniverseGroup, UniverseMap, Variable, VariableGroup, VariableMap, VariableStatistics, Weighting, Archive, CategoryScheme, ClassificationFamily, CodeList, CodeListScheme, Comparison, ConceptScheme, ConceptualComponent, ConceptualVariableScheme, ControlConstructScheme, DataCollection, DDIInstance, DDIProfile, DevelopmentActivityScheme, GeographicLocationScheme, GeographicStructureScheme, Group, InstrumentScheme, InterviewerInstructionScheme, LocalGroupContent, LocalHoldingPackage, LocalResourcePackageContent, LocalStudyUnitContent, LogicalProduct, ManagedRepresentationScheme, MeasurementScheme, NCubeScheme, OrganizationScheme, OtherMaterialScheme, PhysicalDataProduct, PhysicalInstance, PhysicalInstanceGroup, PhysicalStructureScheme, ProcessingEventScheme, ProcessingInstructionScheme, QualityScheme, QuestionScheme, RecordLayoutScheme, RepresentedVariableScheme, ResourcePackage, SampleFrameScheme, SamplingPlanScheme, StudyUnit, UnitTypeScheme, UniverseScheme, VariableScheme
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+The object type of the parent maintainable taken from a restricted list.
+
+MaintainableID
+**************
+
+Type
+    string
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+The value of the ID of the maintainable parent object.
+
+MaintainableVersion
+*******************
+
+Type
+    string
+Cardinality
+    0..1
+
+Pattern regular expression
+    [0-9]+(\.[0-9]+)*
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+The version number of the maintainable parent object at the time the identifiable or versionable object was created or altered. Note that creating or altering the non-administrative content of an object within a maintainable will increment the version number of the maintainable and the content of this element should contain the new version number. In short, this represents the version number of the maintainable when the content of the current object first appeared in its present form.
+
+
+
