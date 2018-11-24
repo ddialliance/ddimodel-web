@@ -1,0 +1,59 @@
+PretestAdministrationType
+-------------------------
+
+Description of the method and mode of data collection in administering the pretest. Notes any additional data collected in the administration of the pretest.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/PretestAdministrationType.svg
+
+Properties
+~~~~~~~~~~
+
+MethodOfAdministration
+**********************
+
+Type
+    :doc:`/composite-types/MethodOfAdministrationType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Describes the method of pretest administration using a controlled vocabulary and description.
+
+ModeOfPretestCollection
+***********************
+
+Type
+    :doc:`/composite-types/ModeOfPretestCollectionType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Describes the mode of collection used in the pretest. Repeat of multiple modes of collection were used. Indicate the primary mode using isPrimary attribute if applicable.
+
+AdditionalDataCollection
+************************
+
+Type
+    :doc:`/composite-types/AdditionalDataCollectionType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Description of the method and mode of data collection in administering the pretest. Notes any additional data collected in the administration of the pretest.
+
+
+

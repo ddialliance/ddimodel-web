@@ -1,0 +1,28 @@
+TextType
+--------
+
+The static portion of the text expressed as a StructuredString with the ability to preserve whitespace if critical to the understanding of the content.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* string
+    * :doc:`/composite-types/ContentType/index`
+        * **TextType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/TextType.svg
+
+Properties
+~~~~~~~~~~
+
+
+

@@ -1,0 +1,106 @@
+GeographicStructureScheme
+-------------------------
+
+Contains information on the hierarchy of the geographic structure. In addition to the standard name, label, and description identifies one or more AuthorizedSources for the level codes/descriptions provided and a set of GeographicLevels in-line or by reference.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **GeographicStructureScheme**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/GeographicStructureScheme.svg
+
+Properties
+~~~~~~~~~~
+
+GeographicStructureSchemeName
+*****************************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:conceptualcomponent:3_3
+
+A name for the GeographicStructureScheme. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the GeographicStructureScheme. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the GeographicStructureScheme. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+GeographicStructureSchemeReference
+**********************************
+
+Type
+    :doc:`/item-types/GeographicStructureScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+The inclusion of an existing GeographicStructureScheme in the parent scheme by reference.
+
+GeographicStructureReference
+****************************
+
+Type
+    :doc:`/item-types/GeographicStructure/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Used to describe any level of geography, including overall coverage and each of the lower levels.
+
+GeographicStructureGroupReference
+*********************************
+
+Type
+    :doc:`/item-types/GeographicStructureGroup/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:conceptualcomponent:3_3
+
+In-line description of a group of GeographicStructure.
+
+
+

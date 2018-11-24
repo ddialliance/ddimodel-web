@@ -1,0 +1,41 @@
+TextContentType
+---------------
+
+Abstract type existing as the head of a substitution group. May be replaced by any valid member of the substitution group TextContent. Provides the common element Description to all members using TextContent as an extension base.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* **TextContentType**
+    * :doc:`/composite-types/ConditionalTextType/index`
+    * :doc:`/composite-types/LiteralTextType/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/TextContentType.svg
+
+Properties
+~~~~~~~~~~
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the content and purpose of the text segment. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+
+
