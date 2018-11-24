@@ -1,0 +1,59 @@
+RecommendedStaffRequirementsType
+--------------------------------
+
+Specify requirements for type of staffing needed to complete activity including the class of staff participating in the activity, requirements for those participants, and the recruitment process.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/RecommendedStaffRequirementsType.svg
+
+Properties
+~~~~~~~~~~
+
+StaffClass
+**********
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Specify the class of the staff participating in the activity. Supports the use of a controlled vocabulary.
+
+ParticipantRequirements
+***********************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Describe any special or specific requirements for participating staff.
+
+RecruitmentProcess
+******************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Describe the process to be used for staff recruitment in this class.
+
+
+

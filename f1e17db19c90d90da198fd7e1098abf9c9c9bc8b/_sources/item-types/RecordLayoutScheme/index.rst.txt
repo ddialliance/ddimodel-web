@@ -1,0 +1,106 @@
+RecordLayoutScheme
+------------------
+
+A scheme containing a set of RecordLayouts describing the location of individual data items within the physical record and how to address them (locate and retrieve). RecordLayouts provide a link to the PhysicalStructure description and to individual variables or NCubes describing the data items.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **RecordLayoutScheme**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/RecordLayoutScheme.svg
+
+Properties
+~~~~~~~~~~
+
+RecordLayoutSchemeName
+**********************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:physicaldataproduct:3_3
+
+A name for the RecordLayoutScheme. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the RecordLayoutScheme. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the RecordLayoutScheme. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+RecordLayoutSchemeReference
+***************************
+
+Type
+    :doc:`/item-types/RecordLayoutScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to an existing RecordLayoutScheme for inclusion.
+
+RecordLayoutReference
+*********************
+
+Type
+    :doc:`/item-types/RecordLayout/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:physicaldataproduct:3_3
+
+This is the head of a substitution group and may be replaced by any member of the group. Describes the contents and physical layout of a record of data. Different members of the substitution group support different storage formats as well as data records with and without NCube structures.
+
+RecordLayoutGroupReference
+**************************
+
+Type
+    :doc:`/item-types/RecordLayoutGroup/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:physicaldataproduct:3_3
+
+Describes a group of RecordLayout descriptions for administrative or conceptual purposes.
+
+
+

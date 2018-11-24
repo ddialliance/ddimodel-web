@@ -1,0 +1,106 @@
+UnitTypeScheme
+--------------
+
+This scheme contains a set of Unit Types referenced by the metadata at different points in the lifecycle. In addition to the name, label, and description of the scheme, the structure supports the inclusion of another UnitTypeScheme by reference and a set of UnitType descriptions either in-line or by reference.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **UnitTypeScheme**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/UnitTypeScheme.svg
+
+Properties
+~~~~~~~~~~
+
+UnitTypeSchemeName
+******************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:conceptualcomponent:3_3
+
+A name for the scheme. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the scheme. May be expressed in multiple languages. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the content and purpose of the scheme. May be expressed in multiple languages and supports the use of structured content.
+
+UnitTypeSchemeReference
+***********************
+
+Type
+    :doc:`/item-types/UnitTypeScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Inclusion of an existing UnitTypeScheme by reference.
+
+UnitTypeReference
+*****************
+
+Type
+    :doc:`/item-types/UnitType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:conceptualcomponent:3_3
+
+In-line description of a UnitType. These are used by reference at various points in the lifecycle.
+
+UnitTypeGroupReference
+**********************
+
+Type
+    :doc:`/item-types/UnitTypeGroup/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:conceptualcomponent:3_3
+
+In-line description of a group of UnitTypes.
+
+
+

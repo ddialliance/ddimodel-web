@@ -1,0 +1,59 @@
+ComplianceDefinitionType
+------------------------
+
+Provides a list of quality concepts in the quality standard.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ComplianceDefinitionType.svg
+
+Properties
+~~~~~~~~~~
+
+ComplianceConceptReference
+**************************
+
+Type
+    :doc:`/item-types/Concept/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A reference to a concept which relates to an area of coverage of the standard.
+
+ExternalComplianceCode
+**********************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Specification of a code which relates to an area of coverage of the standard. Supports the use of an external controlled vocabulary.
+
+ComplianceRequirements
+**********************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Specifies what is required to be seen as in compliance with the Standard. Note minimum requirements for various levels of compliance.
+
+
+

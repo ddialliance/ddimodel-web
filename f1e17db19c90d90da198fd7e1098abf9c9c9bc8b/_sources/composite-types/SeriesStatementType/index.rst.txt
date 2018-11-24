@@ -1,0 +1,72 @@
+SeriesStatementType
+-------------------
+
+Series statement contains information about the series to which a study unit or group of study units belongs. You may point to the URL of a series repository and then use the SeriesName field to indicate the series itself as identified in that repository. Fields also exist for describing the series and providing abbreviations.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/SeriesStatementType.svg
+
+Properties
+~~~~~~~~~~
+
+SeriesRepositoryLocation
+************************
+
+Type
+    anyURI
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Location of the repository containing the series. This may be repeated for multiple repository locations.
+
+SeriesName
+**********
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+The full name of the series. The structure supports the use of multiple language versions of the content. If the name varies depending upon the context or is known by multiple names, this element may be repeated.
+
+SeriesAbbreviation
+******************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Abbreviation of the series name. Repeat for multiple abbreviations for the SAME series Name.
+
+SeriesDescription
+*****************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Describe the purpose of coverage of the series. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+
+

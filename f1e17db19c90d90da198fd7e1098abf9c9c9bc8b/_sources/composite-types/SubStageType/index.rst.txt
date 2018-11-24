@@ -1,0 +1,79 @@
+SubStageType
+------------
+
+A substage assumes that its sample frame is the result of its parent stage.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/IdentifiableType/index`
+    * **SubStageType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/SubStageType.svg
+
+Properties
+~~~~~~~~~~
+
+Stratification
+**************
+
+Type
+    :doc:`/composite-types/StratificationType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Condition for using this stage. Use only when multiple top level stages are used.
+
+SamplingUnit
+************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A split results in multiple strata using different sampling plans. For example a study of those who fish which samples those engaged in fishing at particular locations (strata 1) and those who have fishing licenses (strata 2).
+
+TypeOfPlan
+**********
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Identifies a specific sample frame or frames appropriate for this plan.
+
+SubStage
+********
+
+Type
+    :doc:`/composite-types/SubStageType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Allows for recursive nesting.
+
+
+

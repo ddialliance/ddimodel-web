@@ -1,0 +1,107 @@
+LogicalProduct
+--------------
+
+A module describing the logical (intellectual) contents of the quantitative data. It is a member of the substitution group BaseLogicalProduct and contains all of the common features of the BaseLogicalProduct as well as content specific to quantitative data. This is a member of the BaseLogicalProduct substitution group and in addition to the content inherited from the BaseLogicalProduct, contains CategorySchemes, CodeListSchemes, ManagedRepresentationSchemes, RepresentedVariableSchemes, VariableSchemes an NCubeSchemes both in-line an by reference.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * :doc:`/item-types/BaseLogicalProduct/index`
+            * **LogicalProduct**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/LogicalProduct.svg
+
+Properties
+~~~~~~~~~~
+
+CategorySchemeReference
+***********************
+
+Type
+    :doc:`/item-types/CategoryScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Contains descriptions of particular categories used as question responses and in the logical product. Their relationships and code values are described in the code scheme.
+
+CodeListSchemeReference
+***********************
+
+Type
+    :doc:`/item-types/CodeListScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Lists the code values used to represent categories for a variable or question. Also describes hierarchical relationships between categories used in the code scheme.
+
+ManagedRepresentationSchemeReference
+************************************
+
+Type
+    :doc:`/item-types/ManagedRepresentationScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A scheme containing representations that are being managed as reusable sources for response domains and value representations.
+
+RepresentedVariableSchemeReference
+**********************************
+
+Type
+    :doc:`/item-types/RepresentedVariableScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+A set of RepresentedVariables managed by an agency. RepresentedVariables are the core reusable parts of a Variable. RepresentedVariable maps to the GSIM Represented Variable. In addition to the standard name, label, and description, allows for the inclusion of an existing RepresentedVariableScheme by reference and RepresentedVariables either in-line or by reference. RepresentedVariables may be grouped for management purposes.
+
+VariableSchemeReference
+***********************
+
+Type
+    :doc:`/item-types/VariableScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Contains a collection of variables and variable groups.
+
+NCubeSchemeReference
+********************
+
+Type
+    :doc:`/item-types/NCubeScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Contains a collection of NCubes and NCube groups.
+
+
+

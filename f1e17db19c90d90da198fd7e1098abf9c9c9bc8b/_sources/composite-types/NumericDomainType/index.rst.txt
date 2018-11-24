@@ -1,0 +1,93 @@
+NumericDomainType
+-----------------
+
+A response domain capturing a numeric response (the intent is to analyze the response as a number) for a question. Contains the equivalent content of a NumericRepresentation including the numeric range, numeric type code, format, scale, decimal position, and interval. Adds a set of elements available to all Response Domains; Label, Description, OutParameter, designation of response cardinality, and a declaration of an offset date for the data content. Has an equivalent NumericDomainReference which references a ManagedNumericRepresentation.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/RepresentationType/index`
+    * :doc:`/composite-types/NumericRepresentationBaseType/index`
+        * **NumericDomainType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/NumericDomainType.svg
+
+Properties
+~~~~~~~~~~
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the domain. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the content and purpose of the domain. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+OutParameter
+************
+
+Type
+    :doc:`/composite-types/ParameterType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Allows for the response to be bound to one of the QuestionItem's OutParameters, so the collected information can be used elsewhere, for example as inputs to subsequent questions in an Instrument or to a GenerationInstruction. If multiple responses are possible, this would represent and ordered array of the responses.
+
+ResponseCardinality
+*******************
+
+Type
+    :doc:`/composite-types/ResponseCardinalityType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Allows the designation of the minimum and maximum number of responses allowed for this response domain.
+
+ContentDateOffset
+*****************
+
+Type
+    :doc:`/composite-types/ContentDateOffsetType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Identifies the difference between the date applied to the data as a whole and this specific item such as previous year's income or residence 5 years ago.
+
+
+

@@ -1,0 +1,144 @@
+DevelopmentPlan
+---------------
+
+Provides a name, label and description for the Development Plan and lists the individual development activities which should take place.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **DevelopmentPlan**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DevelopmentPlan.svg
+
+Properties
+~~~~~~~~~~
+
+DevelopmentPlanName
+*******************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A name for the DevelopmentPlan. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the Development Plan. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the content and purpose of the Development Plan. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+DevelopmentObjective
+********************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Describes the objectives of the development work. Supports the use of structured content in multiple languages.
+
+DevelopmentObjectReference_Versionable
+**************************************
+
+Type
+    :doc:`/item-types/Versionable/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+References the objects which are targets of development. This could be a full Instrument, full or partial Questionnaire flow (ControlConstruct, use the master Sequence for a full questionnaire flow), QuestionItem, QuestionGrid, QuestionBlock, QuestionGroup, or any sub-set of these objects.
+
+DevelopmentObjectReference_Maintainable
+***************************************
+
+Type
+    :doc:`/item-types/Maintainable/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+References the objects which are targets of development. This could be a full Instrument, full or partial Questionnaire flow (ControlConstruct, use the master Sequence for a full questionnaire flow), QuestionItem, QuestionGrid, QuestionBlock, QuestionGroup, or any sub-set of these objects.
+
+ContactReference
+****************
+
+Type
+    :doc:`/item-types/Agent/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A reference to an organization and/or individual to contact for further information on this questionnaire development activity.
+
+CostStructure
+*************
+
+Type
+    :doc:`/composite-types/CostStructureType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Budget and funding information related to the development work.
+
+DevelopmentActivityReference
+****************************
+
+Type
+    :doc:`/item-types/DevelopmentActivity/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Reference to one or more Development Activities used by the Development Plan. DevelopmentActivity is a substitution base for a number of types of activities described with appropriate content. TypeOfObject should be ContentReviewActivity, TranslationActivity, or PretestActivity.
+
+
+

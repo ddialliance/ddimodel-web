@@ -1,0 +1,72 @@
+FundingInformationType
+----------------------
+
+Provides information about the individual, agency and/or grant(s) which funded the described entity. Lists a reference to the agency or individual as described in a DDI Organization Scheme, the role of the funder, the grant number(s) and a description of the funding activity.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/FundingInformationType.svg
+
+Properties
+~~~~~~~~~~
+
+AgencyOrganizationReference
+***************************
+
+Type
+    :doc:`/item-types/Agent/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to an organization or individual, defined in the organization scheme, that served as a funding source.
+
+FunderRole
+**********
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Role of the funding organization or individual. Supports the use of a controlled vocabulary.
+
+GrantNumber
+***********
+
+Type
+    string
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+The identification code of the grant or other monetary award which provided funding for the described object.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Additional information regarding the role and actions of the this funding source. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+
+

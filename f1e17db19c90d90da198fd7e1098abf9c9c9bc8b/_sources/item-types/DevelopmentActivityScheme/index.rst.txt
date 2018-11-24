@@ -1,0 +1,106 @@
+DevelopmentActivityScheme
+-------------------------
+
+A set of Development Activities maintained by an agency, and used in defining the development of a questionnaire. In addition to the standard name, label, and description allows for the inclusion of an existing DevelopmentActivityScheme by reference and descriptions of DevelopmentActivity and DevelopmentActivityGroup either in-line or by reference.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **DevelopmentActivityScheme**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DevelopmentActivityScheme.svg
+
+Properties
+~~~~~~~~~~
+
+DevelopmentActivitySchemeName
+*****************************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A name for the DevelopmentActivityScheme. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the DevelopmentActivityScheme. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the DevelopmentActivityScheme. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+DevelopmentActivitySchemeReference
+**********************************
+
+Type
+    :doc:`/item-types/DevelopmentActivityScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to an existing DevelopmentActivityScheme for inclusion.
+
+DevelopmentActivityReference
+****************************
+
+Type
+    :doc:`/item-types/DevelopmentActivity/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Extensible structure for development activity elements used in describing the development of a questionnaire.: ContentReviewActivity, TranslationActivity, and PretestActivity.
+
+DevelopmentActivityGroupReference
+*********************************
+
+Type
+    :doc:`/item-types/DevelopmentActivityGroup/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A description of a group of DevelopmentActivity for administrative or conceptual purposes.
+
+
+

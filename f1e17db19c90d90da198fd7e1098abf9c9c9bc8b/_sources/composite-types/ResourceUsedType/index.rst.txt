@@ -1,0 +1,85 @@
+ResourceUsedType
+----------------
+
+Provides a name, label and description for the Development Process and lists the individual development activities which should take place.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ResourceUsedType.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfResource
+**************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Type of resource used. Supports the use of an external controlled vocabulary.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the Resource. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+ResourceObjectReference_Versionable
+***********************************
+
+Type
+    :doc:`/item-types/Versionable/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Reference to the resource object used by this development step. If it is an external object create a description as OtherMaterial and reference the OtherMaterial. Use the attribute "objectLanguage" to specify any language preference. Repeat for multiple development objects. TypeOfObject should relate to the object referenced.
+
+ResourceObjectReference_Maintainable
+************************************
+
+Type
+    :doc:`/item-types/Maintainable/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Reference to the resource object used by this development step. If it is an external object create a description as OtherMaterial and reference the OtherMaterial. Use the attribute "objectLanguage" to specify any language preference. Repeat for multiple development objects. TypeOfObject should relate to the object referenced.
+
+ResourceUsage
+*************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+The use of the resource within the DevelopmentProcessingStep. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+
+

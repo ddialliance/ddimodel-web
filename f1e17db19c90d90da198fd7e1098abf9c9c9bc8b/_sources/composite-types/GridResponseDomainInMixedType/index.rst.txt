@@ -1,0 +1,82 @@
+GridResponseDomainInMixedType
+-----------------------------
+
+Designates the response domain and the cells using the specified response domain within a QuestionGrid. Supports the use of ResponseAttachmentLocation and attachmentBase for defining specific relationships between response domains in a StructuredMixedGridResponseDomain. Functions similar to a ResponseDomainInMixed within a QuestionItem.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/GridResponseDomainInMixedType.svg
+
+Properties
+~~~~~~~~~~
+
+ResponseDomain
+**************
+
+Type
+    :doc:`/composite-types/RepresentationType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+This is a substitution head and can be replaced by any valid member of the substitution group for ResponseDomain.
+
+ResponseDomainReference
+***********************
+
+Type
+    :doc:`/item-types/ManagedRepresentation/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+The inclusion of a response domain by reference (must be supported by a managed representation). An abstract element. May be substituted by any valid object of substitution type ResponseDomainReference.
+
+ResponseAttachmentLocation
+**************************
+
+Type
+    :doc:`/composite-types/AttachmentLocationType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Allows attachment of a secondary response domain to a specific item within another response domain used in the question grid. For example, attach a TextDomain to the value "Other" using the TextDomain label (Please specify) as a label for the TextDomain.
+
+GridAttachment
+**************
+
+Type
+    :doc:`/composite-types/GridAttachmentType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Identifies the cell or cells in a grid to which the item is attached by a reference to a specific cell coordinate in a grid or by identifying a range of values along a dimension.
+
+AttachmentBase
+**************
+
+Type
+    int
+Cardinality
+    0..1
+
+If another response domain will be attached to the response domain listed withinResponseDomainInMixed provide a value in attachmentBase to allow for unique identification within this question grid. ResponseAttachmentLocation contains an attribute attachmentDomain which will provide a link from the domain that is being attached to the domain it is being attached to.
+
+
+

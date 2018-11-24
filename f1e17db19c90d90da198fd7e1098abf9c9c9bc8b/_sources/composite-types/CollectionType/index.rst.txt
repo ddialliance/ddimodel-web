@@ -1,0 +1,189 @@
+CollectionType
+--------------
+
+Describes a collection of items held or distributed by the archive in connection with a study, group of studies, or resource packages. What constitutes an collection is determined by the archive. These may be data file(s) in a variety of formats, statistical setups, codebooks, questionnaires, etc. A collection may also be a group of studies, groups, and/or resource packages.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CollectionType.svg
+
+Properties
+~~~~~~~~~~
+
+Citation
+********
+
+Type
+    :doc:`/composite-types/CitationType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A citation for the collection. May additionally be rendered in native qualified Dublin Core (dc and dcterms).
+
+LocationInArchive
+*****************
+
+Type
+    :doc:`/composite-types/InternationalStringType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+Describes the location of the collection within the archive. Repeat for multiple locations such as separate stores for access and archival copies.
+
+CallNumber
+**********
+
+Type
+    string
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+The name, code, or number used by the archive to uniquely identify the collection within the archive.
+
+URI
+***
+
+Type
+    anyURI
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+The URL or URN for the collection.
+
+ItemQuantity
+************
+
+Type
+    nonNegativeInteger
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+The number of items in the collection. This is a check sum and should be updated as the contents of the collection changes. The use of this element is best restricted to completed collections where change in the number of objects is not dynamic.
+
+StudyClass
+**********
+
+Type
+    :doc:`/composite-types/StudyClassType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+An archive specific classification for the collection. This may be a topical classification, a classification of intended processing levels, or information on the processing status.
+
+DefaultAccess
+*************
+
+Type
+    :doc:`/composite-types/AccessType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+Default access restriction information applying to all of the items in the collection.
+
+OriginalArchiveOrganizationReference
+************************************
+
+Type
+    :doc:`/item-types/Organization/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+The original archive for the described collection, expressed as a reference to an organization listed in the organization scheme.
+
+AvailabilityStatus
+******************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+A statement of availability for the object. This is a positive statement (as opposed to access restrictions) which may be used for publication or other purposes. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+DataFileQuantity
+****************
+
+Type
+    nonNegativeInteger
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+The number of data files in the described collection, expressed as an integer. This is a check sum and should be updated as the contents of the collection changes. The use of this element is best restricted to completed collections where change in the number of objects is not dynamic.
+
+CollectionCompleteness
+**********************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+Describes the completeness of the collection for the item and its related data files and sub-items. Note coverage gaps as well as unique content . This statement may be used for publication or other purposes. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+Item
+****
+
+Type
+    :doc:`/composite-types/ItemType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+Allows for the nesting of Item descriptions with a collection.
+
+Collection
+**********
+
+Type
+    :doc:`/composite-types/CollectionType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+Allows for the nesting of collection descriptions with a collection hierarchical groupings within a collection description.
+
+
+
