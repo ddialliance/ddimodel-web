@@ -1,0 +1,72 @@
+ResponseRateType
+----------------
+
+A specific rate of response and/or a description of the rate of response for a specific processing event that includes data appraisal.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ResponseRateType.svg
+
+Properties
+~~~~~~~~~~
+
+SampleSize
+**********
+
+Type
+    nonNegativeInteger
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+The size of the sample from whom data was requested.
+
+NumberOfResponses
+*****************
+
+Type
+    nonNegativeInteger
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+The number of responses within the specified sample.
+
+SpecificResponseRate
+********************
+
+Type
+    decimal
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+The specific rate of response expressed as a percent.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the rate of response including any information pertinent to understanding the specified rate of response. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+
+

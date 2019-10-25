@@ -1,0 +1,271 @@
+MeasurementItem
+---------------
+
+Structure a single Measurement which may contain one or more response domains (i.e., a list of valid category responses where if "Other" is indicated a text response can be used to specify the intent of "Other"). The structure provides detail on the intent of the measurement, they type of capture, the valid response options and the number of allowed responses, references to external aids and instructions, and an estimation of the time needed to respond to the measurement. Note that the MeasurementItem is a reusable format for use in any number of applied uses. Additional materials and information can be added within the MeasurementConstruct which is the applied use of a measurement.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **MeasurementItem**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/MeasurementItem.svg
+
+Properties
+~~~~~~~~~~
+
+MeasurementItemName
+*******************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A name for the MeasurementItem. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the MeasurementItem. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the MeasurementItem. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+InParameter
+***********
+
+Type
+    :doc:`/composite-types/InParameterType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Provides an identity for input objects required for the MeasurementItem.
+
+OutParameter
+************
+
+Type
+    :doc:`/composite-types/ParameterType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Provides an identify for the output objects of the MeasurementItem.
+
+Binding
+*******
+
+Type
+    :doc:`/composite-types/BindingType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A structure used to bind the content of a parameter declared as the source to a parameter declared as the target.
+
+TypeOfMeasurementItem
+*********************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A brief term defining the type of MeasurementItem. Supports the use of an external controlled vocabulary.
+
+MeasurementItemIntent
+*********************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+The purpose of the MeasurementItem in terms of what it is designed to measure.
+
+ResponseDomain
+**************
+
+Type
+    :doc:`/composite-types/RepresentationType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Contains a response domain for the measurement item. Typically used to describe simple response domains (textual, numeric, etc.).
+
+ResponseDomainReference
+***********************
+
+Type
+    :doc:`/item-types/ManagedRepresentation/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+The inclusion of a response domain by reference (must be supported by a managed representation). An abstract element. May be substituted by any valid object of substitution type ResponseDomainReference.
+
+StructuredMixedResponseDomain
+*****************************
+
+Type
+    :doc:`/composite-types/StructuredMixedResponseDomainType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Use in cases where the measurement requires the option for multiple response domains.
+
+ResponseCardinality
+*******************
+
+Type
+    :doc:`/composite-types/ResponseCardinalityType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Allows the designation of the minimum and maximum number of responses allowed for this measurement. Note that each response domain has its own response cardinality.
+
+ConceptReference
+****************
+
+Type
+    :doc:`/item-types/Concept/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A reference to the concept associated with the response to the measurement.
+
+ExternalAid
+***********
+
+Type
+    :doc:`/composite-types/ExternalAidType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A pointer to an external aid presented by the instrument such as a text card, image, audio, or audiovisual aid. Typically a URN. Use type attribute to describe the type of external aid provided. Example of terms to use would include: imageOnly audioOnly audioVisual multiMedia.
+
+ExternalInterviewerInstruction
+******************************
+
+Type
+    :doc:`/composite-types/ExternalInterviewerInstructionType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+External reference to an interviewer instruction not expressed as DDI XML using OtherMaterial.
+
+InterviewerInstructionReference
+*******************************
+
+Type
+    :doc:`/item-types/Instruction/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Reference to an interviewer instruction expressed as DDI XML.
+
+RepresentedVariableReference
+****************************
+
+Type
+    :doc:`/item-types/RepresentedVariable/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to the RepresentedVariable that describes the data to be collected by this measurement. The RepresentedVariable contains the broad reusable specification of the Variable, i.e., concept, universe, and value representation. When more than one ResponseDomain exists, one RepresentedVariable should be created for each ResponseDomain in the same order as the corresponding ResponseDomain. TypeOfObject should be set to RepresentedVariable.
+
+DevelopmentResultsReference
+***************************
+
+Type
+    :doc:`/item-types/DevelopmentResults/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Reference to the development implementation results which gave rise to this version of the object. TypeOfObject should be DevelopmentResults.
+
+EstimatedSecondsResponseTime
+****************************
+
+Type
+    decimal
+Cardinality
+    0..1
+
+The estimated amount of time required to perform the measurement expressed in seconds. Decimal values should be used to define fractions of seconds.
+
+
+

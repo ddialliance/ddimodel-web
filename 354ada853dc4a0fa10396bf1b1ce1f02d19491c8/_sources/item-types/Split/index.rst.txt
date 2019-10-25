@@ -1,0 +1,54 @@
+Split
+-----
+
+A member of the ControlConstruct substitution group. The components of a Split consists of a number of process steps to be executed concurrently with partial synchronization. Split completes as soon as all of its component process steps have been scheduled for execution.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/ControlConstruct/index`
+        * **Split**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/Split.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfSequence
+**************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Provides the ability to "type" a spit for classification or processing purposes. Supports the use of an external controlled vocabulary.
+
+ControlConstructReference
+*************************
+
+Type
+    :doc:`/item-types/ControlConstruct/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+References control constructs that can be executed concurrently.
+
+
+

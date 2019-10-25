@@ -1,0 +1,31 @@
+Agent
+-----
+
+
+				Base class for Individual and Organization. This allows strongly typed references.
+			
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **Agent**
+        * :doc:`/item-types/Individual/index`
+        * :doc:`/item-types/Organization/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/Agent.svg
+
+Properties
+~~~~~~~~~~
+
+
+

@@ -1,0 +1,435 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ManagedScaleRepresentation &mdash; DDI Data Documentation 3.3 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/image.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="ManagedTextRepresentation" href="../ManagedTextRepresentation/" />
+    <link rel="prev" title="ManagedNumericRepresentation" href="../ManagedNumericRepresentation/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../" class="icon icon-home"> DDI Data Documentation 3.3
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Topics</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Study/">Study</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Classification/">Classification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Data Capture/">Data Capture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Data Description/">Data Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Foundational/">Foundational</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Agent/">Agent</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../topics/Non-Packaging Items/">Non-Packaging Items</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../topics/Non-Packaging Items/#item-types">Item Types</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Category/">Category</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../CodeList/">CodeList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ComputationItem/">ComputationItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Concept/">Concept</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ConceptualVariable/">ConceptualVariable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../DataCollection/">DataCollection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../DataRelationship/">DataRelationship</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GeneralInstruction/">GeneralInstruction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GenerationInstruction/">GenerationInstruction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Group/">Group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../IfThenElse/">IfThenElse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Individual/">Individual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Instruction/">Instruction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Instrument/">Instrument</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Loop/">Loop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ManagedDateTimeRepresentation/">ManagedDateTimeRepresentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ManagedMissingValuesRepresentation/">ManagedMissingValuesRepresentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ManagedNumericRepresentation/">ManagedNumericRepresentation</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ManagedScaleRepresentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#item-type-hierarchy">Item Type Hierarchy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#relationships">Relationships</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../ManagedTextRepresentation/">ManagedTextRepresentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../MeasurementItem/">MeasurementItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Methodology/">Methodology</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../NCube/">NCube</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Organization/">Organization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../PhysicalInstance/">PhysicalInstance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ProcessingEvent/">ProcessingEvent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../QualityStatement/">QualityStatement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../QuestionBlock/">QuestionBlock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../QuestionConstruct/">QuestionConstruct</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../QuestionGrid/">QuestionGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../QuestionItem/">QuestionItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Relation/">Relation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../RepeatUntil/">RepeatUntil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../RepeatWhile/">RepeatWhile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../RepresentedVariable/">RepresentedVariable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Sequence/">Sequence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../StatementItem/">StatementItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../StudyUnit/">StudyUnit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Universe/">Universe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Variable/">Variable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../VariableStatistics/">VariableStatistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Weighting/">Weighting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/All Content Items/">All Content Items</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Items and Fields</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../">All Item Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../composite-types/">All Composite Types</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">DDI Data Documentation 3.3</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+          <li><a href="../../topics/Data Description/">Data Description</a> &raquo;</li>
+        
+      <li>ManagedScaleRepresentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/item-types/ManagedScaleRepresentation/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="managedscalerepresentation">
+<h1><a class="toc-backref" href="#id1">ManagedScaleRepresentation</a><a class="headerlink" href="#managedscalerepresentation" title="Permalink to this headline">¶</a></h1>
+<p>A means of capturing a managed representation of a Scale for use by a Response Domain Reference or Value Representation Reference. In addition to the name, label, and description of the representation, the structure defines the dimensions of the scale, an intersect for a multi-dimensional scale, and display layout.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#managedscalerepresentation" id="id1">ManagedScaleRepresentation</a></p>
+<ul>
+<li><p><a class="reference internal" href="#item-type-hierarchy" id="id2">Item Type Hierarchy</a></p></li>
+<li><p><a class="reference internal" href="#relationships" id="id3">Relationships</a></p></li>
+<li><p><a class="reference internal" href="#properties" id="id4">Properties</a></p>
+<ul>
+<li><p><a class="reference internal" href="#managedscalerepresentationname" id="id5">ManagedScaleRepresentationName</a></p></li>
+<li><p><a class="reference internal" href="#label" id="id6">Label</a></p></li>
+<li><p><a class="reference internal" href="#description" id="id7">Description</a></p></li>
+<li><p><a class="reference internal" href="#recommendeddatatype" id="id8">RecommendedDataType</a></p></li>
+<li><p><a class="reference internal" href="#genericoutputformat" id="id9">GenericOutputFormat</a></p></li>
+<li><p><a class="reference internal" href="#scaledimension" id="id10">ScaleDimension</a></p></li>
+<li><p><a class="reference internal" href="#dimensionintersect" id="id11">DimensionIntersect</a></p></li>
+<li><p><a class="reference internal" href="#displaylayout" id="id12">DisplayLayout</a></p></li>
+<li><p><a class="reference internal" href="#classificationlevel" id="id13">ClassificationLevel</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="item-type-hierarchy">
+<h2><a class="toc-backref" href="#id2">Item Type Hierarchy</a><a class="headerlink" href="#item-type-hierarchy" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt><a class="reference internal" href="../Versionable/"><span class="doc">Versionable</span></a></dt><dd><ul>
+<li><dl class="simple">
+<dt><a class="reference internal" href="../ManagedRepresentation/"><span class="doc">ManagedRepresentation</span></a></dt><dd><ul>
+<li><p><strong>ManagedScaleRepresentation</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="relationships">
+<h2><a class="toc-backref" href="#id3">Relationships</a><a class="headerlink" href="#relationships" title="Permalink to this headline">¶</a></h2>
+<div class="image docutils container">
+<p><img alt="stub" src="../../_images/ManagedScaleRepresentation.svg" /></p>
+</div>
+</div>
+<div class="section" id="properties">
+<h2><a class="toc-backref" href="#id4">Properties</a><a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="managedscalerepresentationname">
+<h3><a class="toc-backref" href="#id5">ManagedScaleRepresentationName</a><a class="headerlink" href="#managedscalerepresentationname" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p><a class="reference internal" href="../../composite-types/NameType/"><span class="doc">NameType</span></a></p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..n</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:reusable:3_3</p>
+</dd>
+</dl>
+<p>A name for the ManagedScaleRepresentation. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.</p>
+</div>
+<div class="section" id="label">
+<h3><a class="toc-backref" href="#id6">Label</a><a class="headerlink" href="#label" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p><a class="reference internal" href="../../composite-types/LabelType/"><span class="doc">LabelType</span></a></p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..n</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:reusable:3_3</p>
+</dd>
+</dl>
+<p>A display label for the ManagedScaleRepresentation. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.</p>
+</div>
+<div class="section" id="description">
+<h3><a class="toc-backref" href="#id7">Description</a><a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p><a class="reference internal" href="../../composite-types/StructuredStringType/"><span class="doc">StructuredStringType</span></a></p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..1</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:reusable:3_3</p>
+</dd>
+</dl>
+<p>A description of the content and purpose of the ManagedScaleRepresentation. Supports multiple language versions of the same content as well as optional formatting of the content.</p>
+</div>
+<div class="section" id="recommendeddatatype">
+<h3><a class="toc-backref" href="#id8">RecommendedDataType</a><a class="headerlink" href="#recommendeddatatype" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p><a class="reference internal" href="../../composite-types/CodeValueType/"><span class="doc">CodeValueType</span></a></p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..1</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:reusable:3_3</p>
+</dd>
+</dl>
+<p>This field provides the recommended treatment of the data within an application. The value should come from a controlled vocabulary - recommended values include the set found in W3C XML Schema Part 2, but excluding string sub-types, QNAME, and NOTATION. The DDI Alliance has provided a controlled vocabulary (DataType) to support this element at <a class="reference external" href="http://www.ddialliance.org/controlled-vocabularies">http://www.ddialliance.org/controlled-vocabularies</a>.</p>
+</div>
+<div class="section" id="genericoutputformat">
+<h3><a class="toc-backref" href="#id9">GenericOutputFormat</a><a class="headerlink" href="#genericoutputformat" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p><a class="reference internal" href="../../composite-types/CodeValueType/"><span class="doc">CodeValueType</span></a></p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..1</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:reusable:3_3</p>
+</dd>
+</dl>
+<p>This field provides a recommended generic treatment of the data for display by an application. The value should come from a controlled vocabulary.</p>
+</div>
+<div class="section" id="scaledimension">
+<h3><a class="toc-backref" href="#id10">ScaleDimension</a><a class="headerlink" href="#scaledimension" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p><a class="reference internal" href="../../composite-types/ScaleDimensionType/"><span class="doc">ScaleDimensionType</span></a></p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..n</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:reusable:3_3</p>
+</dd>
+</dl>
+<p>A description of a dimension of the scale. Note that most scales will have only one dimension.</p>
+</div>
+<div class="section" id="dimensionintersect">
+<h3><a class="toc-backref" href="#id11">DimensionIntersect</a><a class="headerlink" href="#dimensionintersect" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p><a class="reference internal" href="../../composite-types/DimensionIntersectType/"><span class="doc">DimensionIntersectType</span></a></p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..n</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:reusable:3_3</p>
+</dd>
+</dl>
+<p>Identifies the point at which the scales of a multidimensional scale intersect.</p>
+</div>
+<div class="section" id="displaylayout">
+<h3><a class="toc-backref" href="#id12">DisplayLayout</a><a class="headerlink" href="#displaylayout" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p><a class="reference internal" href="../../composite-types/CodeValueType/"><span class="doc">CodeValueType</span></a></p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..1</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:reusable:3_3</p>
+</dd>
+</dl>
+<p>Defines they layout such as containing a drawn scale line, a list of values only, an outline (the boundaries of the area defined by 2 or more intersecting scales such as a diamond of opposites), or some other layout design. Allows for the use of a controlled vocabulary.</p>
+</div>
+<div class="section" id="classificationlevel">
+<h3><a class="toc-backref" href="#id13">ClassificationLevel</a><a class="headerlink" href="#classificationlevel" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p>string</p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..1</p>
+</dd>
+<dt>Enumeration</dt><dd><p>Nominal, Ordinal, Interval, Ratio, Continuous</p>
+</dd>
+</dl>
+<p>Indicates the type of relationship, nominal, ordinal, interval, ratio, or continuous. Use where appropriate for the representation type.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ManagedTextRepresentation/" class="btn btn-neutral float-right" title="ManagedTextRepresentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../ManagedNumericRepresentation/" class="btn btn-neutral float-left" title="ManagedNumericRepresentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright TODO
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

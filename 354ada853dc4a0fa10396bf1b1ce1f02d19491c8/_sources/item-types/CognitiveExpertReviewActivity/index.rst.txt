@@ -1,0 +1,41 @@
+CognitiveExpertReviewActivity
+-----------------------------
+
+A substitution for DevelopmentActivity which requires no additional information other than the specification of the type of cognitive expert review taking place for development purposes.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/DevelopmentActivity/index`
+        * **CognitiveExpertReviewActivity**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CognitiveExpertReviewActivity.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfCognitiveExpertReview
+***************************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Identifies the specific type of Cognitive Expert Interview. Supports the use of a controlled vocabulary which is strongly recommended.
+
+
+

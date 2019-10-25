@@ -1,0 +1,40 @@
+QuestionSequenceType
+--------------------
+
+Describes the ordering of questions when not otherwise indicated. Extends the standard sequencing information to indicate how and if StimulusMaterial should be treated in the resequencing.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/SpecificSequenceType/index`
+    * **QuestionSequenceType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/QuestionSequenceType.svg
+
+Properties
+~~~~~~~~~~
+
+HandlingOfStimulusMaterial
+**************************
+
+Type
+    string
+Cardinality
+    0..1
+
+Enumeration
+    include, preceding, following, within
+
+Clarifies how stimulus material is to be handled within the resequencing using a controlled vocabulary. Options: "include"=Include StimulusMaterial in resequencing without restriction; "preceding"=Attach each StimulusMaterial to the preceding question; "following"=Attach each StimulusMaterial to the question following it; and the default value of "within"=Resequencing occurs within each set of questions as delimited by StimulusMaterial
+
+
+

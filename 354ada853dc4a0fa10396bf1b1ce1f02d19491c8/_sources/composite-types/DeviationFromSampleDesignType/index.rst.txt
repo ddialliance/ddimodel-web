@@ -1,0 +1,53 @@
+DeviationFromSampleDesignType
+-----------------------------
+
+Describes any deviations from the planned sample design. These may be for reasons of practicality, implementation issues, or other reasons. In addition to a narrative description allows for use of a brief term or controlled vocabulary term to classify the type of deviation.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/IdentifiableType/index`
+    * **DeviationFromSampleDesignType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DeviationFromSampleDesignType.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfDeviationFromSampleDesign
+*******************************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Allows brief identification of the deviation from the sample design with the option of using a controlled vocabulary.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Full description of deviation from the sample design. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+
+

@@ -1,0 +1,53 @@
+TranslationRequirementsType
+---------------------------
+
+Provides a detailed description of the requirements for an acceptable translation and indicate if the translation should be oral and/or written. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/TranslationRequirementsType.svg
+
+Properties
+~~~~~~~~~~
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the Translation Requirements. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+IsOral
+******
+
+Type
+    boolean
+Cardinality
+    0..1
+
+Indicates if the translation is an oral translation.
+
+IsWritten
+*********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+Indicates if the translation is a written translation.
+
+
+

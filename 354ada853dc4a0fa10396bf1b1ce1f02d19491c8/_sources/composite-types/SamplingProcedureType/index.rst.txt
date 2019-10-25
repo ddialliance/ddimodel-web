@@ -1,0 +1,79 @@
+SamplingProcedureType
+---------------------
+
+Describes a sampling procedure. If multiple sampling procedures were used repeat this element for each.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/IdentifiableType/index`
+    * **SamplingProcedureType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/SamplingProcedureType.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfSamplingProcedure
+***********************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A generic means of classifying a SamplingProcedure. Supports the use of an external controlled vocabulary.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Full description of the sampling procedure. Supports structured content and multiple language content.
+
+SamplingPlanReference
+*********************
+
+Type
+    :doc:`/item-types/SamplingPlan/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Reference to sample plan which describes a process for achieving the sample. TypeOfObject should be SamplingPlan.
+
+SampleReference
+***************
+
+Type
+    :doc:`/item-types/Sample/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Reference to sample created using sampling procedure. TypeOfObject should be Sample.
+
+
+

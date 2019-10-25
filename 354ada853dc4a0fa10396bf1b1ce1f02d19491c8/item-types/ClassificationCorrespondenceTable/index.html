@@ -1,0 +1,426 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ClassificationCorrespondenceTable &mdash; DDI Data Documentation 3.3 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/image.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="ClassificationIndex" href="../ClassificationIndex/" />
+    <link rel="prev" title="ClassificationItem" href="../ClassificationItem/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../" class="icon icon-home"> DDI Data Documentation 3.3
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Topics</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Study/">Study</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../topics/Classification/">Classification</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../topics/Classification/#item-types">Item Types</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../ClassificationFamily/">ClassificationFamily</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ClassificationSeries/">ClassificationSeries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../StatisticalClassification/">StatisticalClassification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ClassificationLevel/">ClassificationLevel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ClassificationItem/">ClassificationItem</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ClassificationCorrespondenceTable</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#item-type-hierarchy">Item Type Hierarchy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#relationships">Relationships</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../ClassificationIndex/">ClassificationIndex</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Data Capture/">Data Capture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Data Description/">Data Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Foundational/">Foundational</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Agent/">Agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Non-Packaging Items/">Non-Packaging Items</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/All Content Items/">All Content Items</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Items and Fields</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../">All Item Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../composite-types/">All Composite Types</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">DDI Data Documentation 3.3</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+          <li><a href="../../topics/Classification/">Classification</a> &raquo;</li>
+        
+      <li>ClassificationCorrespondenceTable</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/item-types/ClassificationCorrespondenceTable/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="classificationcorrespondencetable">
+<h1><a class="toc-backref" href="#id1">ClassificationCorrespondenceTable</a><a class="headerlink" href="#classificationcorrespondencetable" title="Permalink to this headline">¶</a></h1>
+<p>A Correspondence Table expresses the relationship between two Statistical Classifications. These are typically: two versions from the same Classification Series; Statistical Classifications from different Classification Series; a variant and the version on which it is based; different versions of a variant. In the first and last examples, the Correspondence Table facilitates comparability over time. Correspondence relationships are shown in both directions</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#classificationcorrespondencetable" id="id1">ClassificationCorrespondenceTable</a></p>
+<ul>
+<li><p><a class="reference internal" href="#item-type-hierarchy" id="id2">Item Type Hierarchy</a></p></li>
+<li><p><a class="reference internal" href="#relationships" id="id3">Relationships</a></p></li>
+<li><p><a class="reference internal" href="#properties" id="id4">Properties</a></p>
+<ul>
+<li><p><a class="reference internal" href="#ownerreference" id="id5">OwnerReference</a></p></li>
+<li><p><a class="reference internal" href="#maintenanceunitreference" id="id6">MaintenanceUnitReference</a></p></li>
+<li><p><a class="reference internal" href="#contactpersonreference" id="id7">ContactPersonReference</a></p></li>
+<li><p><a class="reference internal" href="#publication" id="id8">Publication</a></p></li>
+<li><p><a class="reference internal" href="#sourceclassificationreference" id="id9">SourceClassificationReference</a></p></li>
+<li><p><a class="reference internal" href="#targetclassificationreference" id="id10">TargetClassificationReference</a></p></li>
+<li><p><a class="reference internal" href="#sourcelevelreference" id="id11">SourceLevelReference</a></p></li>
+<li><p><a class="reference internal" href="#targetlevelreference" id="id12">TargetLevelReference</a></p></li>
+<li><p><a class="reference internal" href="#relationshipmappingtype" id="id13">RelationshipMappingType</a></p></li>
+<li><p><a class="reference internal" href="#maps" id="id14">Maps</a></p></li>
+<li><p><a class="reference internal" href="#floatingmapdate" id="id15">FloatingMapDate</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="item-type-hierarchy">
+<h2><a class="toc-backref" href="#id2">Item Type Hierarchy</a><a class="headerlink" href="#item-type-hierarchy" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt><a class="reference internal" href="../Versionable/"><span class="doc">Versionable</span></a></dt><dd><ul>
+<li><dl class="simple">
+<dt><a class="reference internal" href="../Describable/"><span class="doc">Describable</span></a></dt><dd><ul>
+<li><p><strong>ClassificationCorrespondenceTable</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="relationships">
+<h2><a class="toc-backref" href="#id3">Relationships</a><a class="headerlink" href="#relationships" title="Permalink to this headline">¶</a></h2>
+<div class="image docutils container">
+<p><img alt="stub" src="../../_images/ClassificationCorrespondenceTable.svg" /></p>
+</div>
+</div>
+<div class="section" id="properties">
+<h2><a class="toc-backref" href="#id4">Properties</a><a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ownerreference">
+<h3><a class="toc-backref" href="#id5">OwnerReference</a><a class="headerlink" href="#ownerreference" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p><a class="reference internal" href="../Agent/"><span class="doc">Agent</span></a></p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..n</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:logicalproduct:3_3</p>
+</dd>
+</dl>
+<p>The statistical office, other authority or section that created and maintains the Correspondence Table. A Correspondence Table may have several owners. TypeOfObject should be Organization or Individual.</p>
+</div>
+<div class="section" id="maintenanceunitreference">
+<h3><a class="toc-backref" href="#id6">MaintenanceUnitReference</a><a class="headerlink" href="#maintenanceunitreference" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p><a class="reference internal" href="../Agent/"><span class="doc">Agent</span></a></p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..n</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:logicalproduct:3_3</p>
+</dd>
+</dl>
+<p>The unit or group of persons who are responsible for the Correspondence Table, i.e. for maintaining and updating it. TypeOfObject should be Organization or Individual.</p>
+</div>
+<div class="section" id="contactpersonreference">
+<h3><a class="toc-backref" href="#id7">ContactPersonReference</a><a class="headerlink" href="#contactpersonreference" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p><a class="reference internal" href="../Agent/"><span class="doc">Agent</span></a></p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..n</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:logicalproduct:3_3</p>
+</dd>
+</dl>
+<p>The person(s) who may be contacted for additional information about the Correspondence Table. TypeOfObject should be Organization or Individual.</p>
+</div>
+<div class="section" id="publication">
+<h3><a class="toc-backref" href="#id8">Publication</a><a class="headerlink" href="#publication" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p><a class="reference internal" href="../../composite-types/PublicationType/"><span class="doc">PublicationType</span></a></p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..n</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:reusable:3_3</p>
+</dd>
+</dl>
+<p>A list of the publications in which the Correspondence Table has been published.</p>
+</div>
+<div class="section" id="sourceclassificationreference">
+<h3><a class="toc-backref" href="#id9">SourceClassificationReference</a><a class="headerlink" href="#sourceclassificationreference" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p><a class="reference internal" href="../StatisticalClassification/"><span class="doc">StatisticalClassification</span></a></p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..1</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:logicalproduct:3_3</p>
+</dd>
+</dl>
+<p>The Statistical Classification from which the correspondence is made. TypeOfObject should be StatisticalClassification.</p>
+</div>
+<div class="section" id="targetclassificationreference">
+<h3><a class="toc-backref" href="#id10">TargetClassificationReference</a><a class="headerlink" href="#targetclassificationreference" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p><a class="reference internal" href="../StatisticalClassification/"><span class="doc">StatisticalClassification</span></a></p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..n</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:logicalproduct:3_3</p>
+</dd>
+</dl>
+<p>The Statistical Classification(s) to which the correspondence is directed. There may be multiple target Statistical Classifications associated with the Correspondence Table. TypeOfObject should be StatisticalClassification.</p>
+</div>
+<div class="section" id="sourcelevelreference">
+<h3><a class="toc-backref" href="#id11">SourceLevelReference</a><a class="headerlink" href="#sourcelevelreference" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p><a class="reference internal" href="../ClassificationLevel/"><span class="doc">ClassificationLevel</span></a></p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..1</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:logicalproduct:3_3</p>
+</dd>
+</dl>
+<p>The correspondence is normally restricted to a certain Level in the source Statistical Classification. In this case, target Classification Items are assigned only to source Classification Items on the given level. If no level is indicated, target Classification Items can be assigned to any Level of the source Statistical Classification. TypeOfObject should be set to ClassificationLevel.</p>
+</div>
+<div class="section" id="targetlevelreference">
+<h3><a class="toc-backref" href="#id12">TargetLevelReference</a><a class="headerlink" href="#targetlevelreference" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p><a class="reference internal" href="../ClassificationLevel/"><span class="doc">ClassificationLevel</span></a></p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..1</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:logicalproduct:3_3</p>
+</dd>
+</dl>
+<p>The correspondence is normally restricted to a certain Level in the target Statistical Classification. In this case, source Classification Items are assigned only to target Classification Items on the given Level. If no Level is indicated, source Classification Items can be assigned to any Level of the target Statistical Classification. TypeOfObject should be set to ClassificationLevel.</p>
+</div>
+<div class="section" id="relationshipmappingtype">
+<h3><a class="toc-backref" href="#id13">RelationshipMappingType</a><a class="headerlink" href="#relationshipmappingtype" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p><a class="reference internal" href="../../composite-types/CodeValueType/"><span class="doc">CodeValueType</span></a></p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..1</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:logicalproduct:3_3</p>
+</dd>
+</dl>
+<p>A Correspondence Table can define a 1:1, 1:N, N:1 or M:N relationship between source and target Classification Items. Supports the use of an external controlled vocabulary.</p>
+</div>
+<div class="section" id="maps">
+<h3><a class="toc-backref" href="#id14">Maps</a><a class="headerlink" href="#maps" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p><a class="reference internal" href="../../composite-types/ClassificationMapType/"><span class="doc">ClassificationMapType</span></a></p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..n</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:logicalproduct:3_3</p>
+</dd>
+</dl>
+<p>The relationship between two Statistical Classifications. A Map is an expression of the relation between a Classification Item in a source Statistical Classification and a corresponding Classification Item in the target Statistical Classification. The Map should specify whether the relationship between the two Classification Items is partial or complete. Depending on the relationship type of the Correspondence Table, there may be several Maps for a single source or target Classification Item.</p>
+</div>
+<div class="section" id="floatingmapdate">
+<h3><a class="toc-backref" href="#id15">FloatingMapDate</a><a class="headerlink" href="#floatingmapdate" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>Type</dt><dd><p>cogsDate</p>
+</dd>
+<dt>Cardinality</dt><dd><p>0..1</p>
+</dd>
+<dt>DDI namespace</dt><dd><p>Element in ddi:logicalproduct:3_3</p>
+</dd>
+</dl>
+<p>If the source and/or target Statistical Classifications of a Correspondence Table are floating Statistical Classifications, the date of the Correspondence Table must be noted. The Correspondence Table expresses the relationships between the two Statistical Classifications as they existed on the date specified in the Correspondence Table.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ClassificationIndex/" class="btn btn-neutral float-right" title="ClassificationIndex" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../ClassificationItem/" class="btn btn-neutral float-left" title="ClassificationItem" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright TODO
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

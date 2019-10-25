@@ -1,0 +1,105 @@
+ConceptualVariable
+------------------
+
+Describes a ConceptualVariable which provides the link between a concept to a specific unit type (object) that defines this as a ConceptualVariable. In addition to the standard name, label, and description, it provides the two primary components of a ConceptualVariable by referencing a concept and its related unit type. Note that the concept referenced may itself contain sub-concepts and/or references to similar concepts. This maps to the GSIM ConceptualVariable and has a basis in the ISO/IEC 11179 RepresentedVariableConcept.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **ConceptualVariable**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ConceptualVariable.svg
+
+Properties
+~~~~~~~~~~
+
+ConceptualVariableName
+**********************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:conceptualcomponent:3_3
+
+A name for the ConceptualVariable. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the ConceptualVariable. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the content and purpose of the ConceptualVariable. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+ConceptReference
+****************
+
+Type
+    :doc:`/item-types/Concept/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to a Concept that is being linked to a UnitType identified by the UnitTypeReference. TypeOfObject should be set to Concept.
+
+UnitTypeReference
+*****************
+
+Type
+    :doc:`/item-types/UnitType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to a unit type being associated with this conceptual variable. TypeOfObject should be set to UnitType.
+
+CategorySchemeReference
+***********************
+
+Type
+    :doc:`/item-types/CategoryScheme/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to a previously created category scheme that represents the conceptual variable's enumerated conceptual domain.
+
+
+

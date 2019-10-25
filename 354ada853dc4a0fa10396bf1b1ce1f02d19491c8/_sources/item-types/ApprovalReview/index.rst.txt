@@ -1,0 +1,170 @@
+ApprovalReview
+--------------
+
+Provides information about the Approval Review undertaken in relation to the activity. Identifies the organization processing the review, the role of the approval review organization, case number, description, and related dates. Allows the inclusion of a reference to an external source detailing the approval review.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **ApprovalReview**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ApprovalReview.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfApprovalReview
+********************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A brief identification of the type of approval review such as IRB, ethical, compliance, etc. Supports the use of a controlled vocabulary.
+
+ReviewObjectReference_Versionable
+*********************************
+
+Type
+    :doc:`/item-types/Versionable/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to an existing identifiable object using the Reference structure.  TypeOfObject should be set to any Versionable or Maintainable object.
+
+ReviewObjectReference_Maintainable
+**********************************
+
+Type
+    :doc:`/item-types/Maintainable/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to an existing identifiable object using the Reference structure.  TypeOfObject should be set to any Versionable or Maintainable object.
+
+AgencyOrganizationReference
+***************************
+
+Type
+    :doc:`/item-types/Agent/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to an organization or individual, that provided the approval review. TypeOfObject should be set to Organization.
+
+ReviewerRole
+************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Role of the reviewing organization or individual. Supports the use of a controlled vocabulary.
+
+ReferenceIdentifier
+*******************
+
+Type
+    string
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+The reference or case identification of the review. Used to specify or track the case by the review organization
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Description of the approval review which can include requirements for the review, contents, or results.
+
+ApprovalReviewDocumentReference
+*******************************
+
+Type
+    :doc:`/item-types/OtherMaterial/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Link to a document related to the ethical review using the OtherMaterial structure.
+
+ApplicationDate
+***************
+
+Type
+    :doc:`/composite-types/DateType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Date materials submitted for approval review.
+
+ApprovalDate
+************
+
+Type
+    :doc:`/composite-types/DateType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Date approval received from approval review organization.
+
+ApprovedPeriod
+**************
+
+Type
+    :doc:`/composite-types/DateType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Period for which the approval is valid. This may be a start date, and end date, or range specified as a start and end date.
+
+
+

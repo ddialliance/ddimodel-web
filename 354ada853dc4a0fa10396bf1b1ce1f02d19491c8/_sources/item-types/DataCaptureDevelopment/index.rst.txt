@@ -1,0 +1,105 @@
+DataCaptureDevelopment
+----------------------
+
+Data capture development covers the development planning, process, and outcome for a partial or full questionnaire. Development normally included the development of the question wording, possible response domains and their presentation, translation for language or cultural variance in the population, and question order. Extensive work is often done for individual questions that may be reused by different questionnaires with the organization or for topical areas or populations that are difficult to measure. In addition to the standard name, label, and description information DataCaptureDevelopment contains structures to capture the development plan, the development implementation, and the results or outcome of the development implementation. DataCaptureDevelopment is a Maintainable object and any Note or OtherMaterial related to one of its objects should be placed within the Note and OtherMaterial section of DataCaptureDevelopment.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **DataCaptureDevelopment**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DataCaptureDevelopment.svg
+
+Properties
+~~~~~~~~~~
+
+DataCaptureDevelopmentName
+**************************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A name for the Data Capture Development. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the Data Capture Development. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the content and purpose of the Data Capture Development. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+DevelopmentPlanReference
+************************
+
+Type
+    :doc:`/item-types/DevelopmentPlan/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Describes the set of development activities that should take place.
+
+DevelopmentImplementationReference
+**********************************
+
+Type
+    :doc:`/item-types/DevelopmentImplementation/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Describes the implementation of a development plan for a specific set of development objects. May provide specific details using Control Construct to order Development Steps.
+
+DevelopmentResultsReference
+***************************
+
+Type
+    :doc:`/item-types/DevelopmentResults/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Separates the capture of development implementation results from the process plan and general activities. Allows for capture of the overall results, details of individual steps, or separate iterations of that step.
+
+
+

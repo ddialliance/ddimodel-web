@@ -1,0 +1,92 @@
+QualityStandard
+---------------
+
+A formal description of a quality standard, and the quality concepts which it requires.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **QualityStandard**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/QualityStandard.svg
+
+Properties
+~~~~~~~~~~
+
+QualityStandardName
+*******************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Name of the QualityStandard using the DDI Name structure.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the QualityStandard. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the QualityStandard. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+StandardUsed
+************
+
+Type
+    :doc:`/composite-types/StandardUsedType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Provide the citation and location of the source published standard using the OtherMaterialType.
+
+ComplianceDefinition
+********************
+
+Type
+    :doc:`/composite-types/ComplianceDefinitionType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Provides a list of quality concepts in the quality standard.
+
+
+
