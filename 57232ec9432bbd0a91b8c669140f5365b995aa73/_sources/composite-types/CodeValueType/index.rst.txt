@@ -1,0 +1,100 @@
+CodeValueType
+-------------
+
+Allows for string content which may be taken from an externally maintained controlled vocabulary (code value). If the content is from a controlled vocabulary provide the code value, as well as a reference to the controlled vocabulary from which the value is taken. Provide as many of the identifying attributes as needed to adequately identify the controlled vocabulary. Note that DDI has published a number of controlled vocabularies applicable to several locations using the CodeValue structure. Use of shared controlled vocabularies helps support interoperability and machine actionability.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* string
+    * **CodeValueType**
+        * :doc:`/composite-types/ContentDateOffsetType/index`
+        * :doc:`/composite-types/CountryCodeType/index`
+        * :doc:`/composite-types/KindOfDataType/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CodeValueType.svg
+
+Properties
+~~~~~~~~~~
+
+ControlledVocabularyID
+**********************
+
+Type
+    string
+Cardinality
+    0..1
+
+The ID of the controlled vocabulary that the content was taken from.
+
+ControlledVocabularyName
+************************
+
+Type
+    string
+Cardinality
+    0..1
+
+The name of the controlled vocabulary.
+
+ControlledVocabularyAgencyName
+******************************
+
+Type
+    string
+Cardinality
+    0..1
+
+The name of the agency maintaining the controlled vocabulary.
+
+ControlledVocabularyVersionID
+*****************************
+
+Type
+    string
+Cardinality
+    0..1
+
+The version number of the controlled vocabulary.
+
+OtherValue
+**********
+
+Type
+    string
+Cardinality
+    0..1
+
+If the value of the string is "Other" or the equivalent from the controlled vocabulary, this attribute can provide a more specific value not found in the controlled vocabulary.
+
+ControlledVocabularyURN
+***********************
+
+Type
+    string
+Cardinality
+    0..1
+
+The URN of the controlled vocabulary.
+
+ControlledVocabularySchemeURN
+*****************************
+
+Type
+    string
+Cardinality
+    0..1
+
+If maintained within a scheme, the URN of the scheme containing the controlled vocabulary.
+
+
+

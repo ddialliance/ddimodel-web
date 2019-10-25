@@ -1,0 +1,411 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CodeList &mdash; DDI Data Documentation 3.3 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/image.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Concept" href="../Concept/" />
+    <link rel="prev" title="Category" href="../Category/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../" class="icon icon-home"> DDI Data Documentation 3.3
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Topics</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Study/">Study</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Classification/">Classification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Data Capture/">Data Capture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Data Description/">Data Description</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../topics/Foundational/">Foundational</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../topics/Foundational/#item-types">Item Types</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Category/">Category</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">CodeList</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#item-type-hierarchy">Item Type Hierarchy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#relationships">Relationships</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Concept/">Concept</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Organization/">Organization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Universe/">Universe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../UnitType/">UnitType</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Agent/">Agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/Non-Packaging Items/">Non-Packaging Items</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/All Content Items/">All Content Items</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Items and Fields</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../">All Item Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../composite-types/">All Composite Types</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../">DDI Data Documentation 3.3</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../">Docs</a> &raquo;</li>
+        
+          <li><a href="../../topics/Foundational/">Foundational</a> &raquo;</li>
+        
+      <li>CodeList</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/item-types/CodeList/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="codelist">
+<h1><a class="toc-backref" href="#id1">CodeList</a><a class="headerlink" href="#codelist" title="Permalink to this headline">¶</a></h1>
+<p>A structure used to associate a list of code values to specified categories. May be flat or hierarchical. This is a maintainable object. In addition to the standard name, label, and description the CodeList specifies a recommended data type, the hierarchical nature of the CodeList, level descriptions, individual code values and associated category, and whether the CodeList contents are used to represent system specific missing values. May include another CodeList by reference. If including other CodeLists make sure there are no code conflicts in the overall content. A code value must be unique within the CodeList. May also include a reference to a default CategoryScheme.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#codelist" id="id1">CodeList</a><ul>
+<li><a class="reference internal" href="#item-type-hierarchy" id="id2">Item Type Hierarchy</a></li>
+<li><a class="reference internal" href="#relationships" id="id3">Relationships</a></li>
+<li><a class="reference internal" href="#properties" id="id4">Properties</a><ul>
+<li><a class="reference internal" href="#codelistname" id="id5">CodeListName</a></li>
+<li><a class="reference internal" href="#label" id="id6">Label</a></li>
+<li><a class="reference internal" href="#description" id="id7">Description</a></li>
+<li><a class="reference internal" href="#recommendeddatatype" id="id8">RecommendedDataType</a></li>
+<li><a class="reference internal" href="#codelistreference" id="id9">CodeListReference</a></li>
+<li><a class="reference internal" href="#categoryschemereference" id="id10">CategorySchemeReference</a></li>
+<li><a class="reference internal" href="#hierarchytype" id="id11">HierarchyType</a></li>
+<li><a class="reference internal" href="#level" id="id12">Level</a></li>
+<li><a class="reference internal" href="#code" id="id13">Code</a></li>
+<li><a class="reference internal" href="#issystemmissingvalue" id="id14">IsSystemMissingValue</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="item-type-hierarchy">
+<h2><a class="toc-backref" href="#id2">Item Type Hierarchy</a><a class="headerlink" href="#item-type-hierarchy" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt><a class="reference internal" href="../Versionable/"><span class="doc">Versionable</span></a></dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt><a class="reference internal" href="../Maintainable/"><span class="doc">Maintainable</span></a></dt>
+<dd><ul class="first last">
+<li><strong>CodeList</strong></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="relationships">
+<h2><a class="toc-backref" href="#id3">Relationships</a><a class="headerlink" href="#relationships" title="Permalink to this headline">¶</a></h2>
+<div class="image docutils container">
+<img alt="stub" src="../../_images/CodeList.svg" /></div>
+</div>
+<div class="section" id="properties">
+<h2><a class="toc-backref" href="#id4">Properties</a><a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="codelistname">
+<h3><a class="toc-backref" href="#id5">CodeListName</a><a class="headerlink" href="#codelistname" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../../composite-types/NameType/"><span class="doc">NameType</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>A name for the CodeList. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.</p>
+</div>
+<div class="section" id="label">
+<h3><a class="toc-backref" href="#id6">Label</a><a class="headerlink" href="#label" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../../composite-types/LabelType/"><span class="doc">LabelType</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:reusable:3_3</dd>
+</dl>
+<p>A display label for the CodeList. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.</p>
+</div>
+<div class="section" id="description">
+<h3><a class="toc-backref" href="#id7">Description</a><a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../../composite-types/StructuredStringType/"><span class="doc">StructuredStringType</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:reusable:3_3</dd>
+</dl>
+<p>A description of the content and purpose of the CodeList. Supports multiple language versions of the same content as well as optional formatting of the content.</p>
+</div>
+<div class="section" id="recommendeddatatype">
+<h3><a class="toc-backref" href="#id8">RecommendedDataType</a><a class="headerlink" href="#recommendeddatatype" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../../composite-types/CodeValueType/"><span class="doc">CodeValueType</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:reusable:3_3</dd>
+</dl>
+<p>This field provides the recommended treatment of the data within an application. This field is important as some codes represented as numeric should be treated as strings, i.e., many standardized codes for industry, occupation, education, etc. The value should come from a controlled vocabulary - recommended values include the set found in W3C XML Schema Part 2, but excluding string sub-types, QNAME, and NOTATION.</p>
+</div>
+<div class="section" id="codelistreference">
+<h3><a class="toc-backref" href="#id9">CodeListReference</a><a class="headerlink" href="#codelistreference" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="#"><span class="doc">CodeList</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:reusable:3_3</dd>
+</dl>
+<p>Allows for inclusion by reference of another CodeList. Care must be taken to ensure that all code values of the resulting CodeList are unique.</p>
+</div>
+<div class="section" id="categoryschemereference">
+<h3><a class="toc-backref" href="#id10">CategorySchemeReference</a><a class="headerlink" href="#categoryschemereference" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../CategoryScheme/"><span class="doc">CategoryScheme</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:reusable:3_3</dd>
+</dl>
+<p>Reference to a default category scheme, with the assumption that all categories referenced by the subsequent codes are part of it, unless overwritten by the scheme reference in the CategoryReference field of the code.</p>
+</div>
+<div class="section" id="hierarchytype">
+<h3><a class="toc-backref" href="#id11">HierarchyType</a><a class="headerlink" href="#hierarchytype" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>string</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+<dt>Enumeration</dt>
+<dd>Regular, Irregular</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>Identifies the type of hierarchy used in the nesting of categories. Possible values are Regular and Irregular. A regular nesting indicates that the category hierarchy is consistent at all lower levels of the hierarchy, i.e., the lowest levels of the hierarchy are at the same level for every branch on the hierarchy.</p>
+</div>
+<div class="section" id="level">
+<h3><a class="toc-backref" href="#id12">Level</a><a class="headerlink" href="#level" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../../composite-types/LevelType/"><span class="doc">LevelType</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>Describes the levels of the code hierarchy. The level describes the nesting structure of a hierarchical coding structure. Note that the attribute levelNumber is used for referencing specific codes to their level identifier.</p>
+</div>
+<div class="section" id="code">
+<h3><a class="toc-backref" href="#id13">Code</a><a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd><a class="reference internal" href="../../composite-types/CodeType/"><span class="doc">CodeType</span></a></dd>
+<dt>Cardinality</dt>
+<dd>0..n</dd>
+<dt>DDI namespace</dt>
+<dd>Element in ddi:logicalproduct:3_3</dd>
+</dl>
+<p>Includes a code value, references the category label, and describes the code’s position in a hierarchy.</p>
+</div>
+<div class="section" id="issystemmissingvalue">
+<h3><a class="toc-backref" href="#id14">IsSystemMissingValue</a><a class="headerlink" href="#issystemmissingvalue" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Type</dt>
+<dd>boolean</dd>
+<dt>Cardinality</dt>
+<dd>0..1</dd>
+</dl>
+<p>If “true” contents are used to represent system specific missing values. The default value is “false”.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Concept/" class="btn btn-neutral float-right" title="Concept" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../Category/" class="btn btn-neutral float-left" title="Category" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright TODO
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

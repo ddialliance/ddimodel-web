@@ -1,0 +1,132 @@
+SamplingInformationScheme
+-------------------------
+
+A set of sampling information maintained by an agency including sampling plans, sample frames, and samples.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **SamplingInformationScheme**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/SamplingInformationScheme.svg
+
+Properties
+~~~~~~~~~~
+
+SamplingInformationSchemeName
+*****************************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A name for the sampling information scheme. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the sampling information scheme. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the use of the sampling information scheme. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+SamplingInformationSchemeReference
+**********************************
+
+Type
+    :doc:`/item-types/SamplingInformationScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Provides for inclusion by reference of external sampling information schemes.
+
+SampleFrameReference
+********************
+
+Type
+    :doc:`/item-types/SampleFrame/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+An item (that is, a sample frame) belonging to the sampling information Scheme.
+
+SamplingPlanReference
+*********************
+
+Type
+    :doc:`/item-types/SamplingPlan/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+An item (that is, a sampling plan) belonging to the sampling information Scheme.
+
+SampleReference
+***************
+
+Type
+    :doc:`/item-types/Sample/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+An item (that is, a sample) belonging to the sampling information Scheme.
+
+SamplingInformationGroupReference
+*********************************
+
+Type
+    :doc:`/item-types/SamplingInformationGroup/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+An item (that is, a sampling information group) belonging to the sampling information Scheme.
+
+
+

@@ -1,0 +1,145 @@
+ManagedScaleRepresentation
+--------------------------
+
+A means of capturing a managed representation of a Scale for use by a Response Domain Reference or Value Representation Reference. In addition to the name, label, and description of the representation, the structure defines the dimensions of the scale, an intersect for a multi-dimensional scale, and display layout.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/ManagedRepresentation/index`
+        * **ManagedScaleRepresentation**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ManagedScaleRepresentation.svg
+
+Properties
+~~~~~~~~~~
+
+ManagedScaleRepresentationName
+******************************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A name for the ManagedScaleRepresentation. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the ManagedScaleRepresentation. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the content and purpose of the ManagedScaleRepresentation. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+RecommendedDataType
+*******************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+This field provides the recommended treatment of the data within an application. The value should come from a controlled vocabulary - recommended values include the set found in W3C XML Schema Part 2, but excluding string sub-types, QNAME, and NOTATION. The DDI Alliance has provided a controlled vocabulary (DataType) to support this element at http://www.ddialliance.org/controlled-vocabularies.
+
+GenericOutputFormat
+*******************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+This field provides a recommended generic treatment of the data for display by an application. The value should come from a controlled vocabulary.
+
+ScaleDimension
+**************
+
+Type
+    :doc:`/composite-types/ScaleDimensionType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of a dimension of the scale. Note that most scales will have only one dimension.
+
+DimensionIntersect
+******************
+
+Type
+    :doc:`/composite-types/DimensionIntersectType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Identifies the point at which the scales of a multidimensional scale intersect.
+
+DisplayLayout
+*************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Defines they layout such as containing a drawn scale line, a list of values only, an outline (the boundaries of the area defined by 2 or more intersecting scales such as a diamond of opposites), or some other layout design. Allows for the use of a controlled vocabulary.
+
+ClassificationLevel
+*******************
+
+Type
+    string
+Cardinality
+    0..1
+
+Enumeration
+    Nominal, Ordinal, Interval, Ratio, Continuous
+
+Indicates the type of relationship, nominal, ordinal, interval, ratio, or continuous. Use where appropriate for the representation type.
+
+
+

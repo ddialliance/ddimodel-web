@@ -1,0 +1,47 @@
+DDIMaintenanceAgencyIDType
+--------------------------
+
+Provides the official DDI ID of a maintenance agency as a value taken from the registry cited in @registryID.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* string
+    * **DDIMaintenanceAgencyIDType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DDIMaintenanceAgencyIDType.svg
+
+Properties
+~~~~~~~~~~
+
+RegistryID
+**********
+
+Type
+    string
+Cardinality
+    1..1
+
+Currently there is only a single DDI Agency Registry. Use "DDIAgencyRegistry".
+
+ActivationDate
+**************
+
+Type
+    dateTime
+Cardinality
+    0..1
+
+The date when this agency ID was registered or become active.
+
+
+

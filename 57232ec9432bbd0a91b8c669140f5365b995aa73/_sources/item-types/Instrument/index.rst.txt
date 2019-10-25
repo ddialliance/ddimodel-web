@@ -1,0 +1,131 @@
+Instrument
+----------
+
+Defines the type of instrument used for data collection or capture. In addition to the standard name, label, and description contains a classification of the type of instrument, a reference to an external instance of the instrument (such as an image of a questionnaire or programming script) and a reference to the Sequence control construct that contains the flow for data collection or capture.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **Instrument**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/Instrument.svg
+
+Properties
+~~~~~~~~~~
+
+InstrumentName
+**************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A name for the Instrument. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the Instrument. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the Instrument. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+TypeOfInstrument
+****************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Describes the type of the instrument, according to the documenters type classification. Supports the use of an external controlled vocabulary. The DDI Alliance has provided a controlled vocabulary (TypeOfInstrument) to support this element at http://www.ddialliance.org/controlled-vocabularies.
+
+ExternalInstrumentLocation
+**************************
+
+Type
+    anyURI
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A reference to an external representation of the data collection instrument, such as an image of a questionnaire or programming script.
+
+ControlConstructReference
+*************************
+
+Type
+    :doc:`/item-types/ControlConstruct/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A reference to the Sequence control construct that initiates the flow of the instrument content.
+
+FieldedLanguages
+****************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Language in which the Instrument is fielded. Include all options as separate items. Language can be specified by region, for example en-AU. Supports the use of a controlled vocabulary.
+
+DevelopmentResultsReference
+***************************
+
+Type
+    :doc:`/item-types/DevelopmentResults/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Reference to the development implementation results which gave rise to this version of the object. TypeOfObject should be DevelopmentResults.
+
+
+

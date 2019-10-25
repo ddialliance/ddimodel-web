@@ -1,0 +1,56 @@
+RequirementsAssessmentType
+--------------------------
+
+Description of whether specific requirements for the activities providing these results were met.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/RequirementsAssessmentType.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfRequirementsAssessment
+****************************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Identifies the type of requirement being assessed such as staffing, funding, source materials, etc. Supports the use of an external controlled vocabulary.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the Requirements Assessment. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+IsSatisfied
+***********
+
+Type
+    boolean
+Cardinality
+    0..1
+
+A boolean statement of whether the requirement was satisfied or not. A value of "true" indicates that the minimum requirement was satisfied. Note any specific information in the Description.
+
+
+

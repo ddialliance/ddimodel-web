@@ -1,0 +1,106 @@
+ManagedRepresentationScheme
+---------------------------
+
+This scheme contains sets of values described by ManagedRepresentation. These are used by reference to define Variable Representation and Question Response Domain. Text representations cover all non-code and non-category representations/response domains that should be treated or analyzed as characters regardless of whether the character is a number or a letter. In addition to the name, label and description of the scheme, the structure allows for the inclusion on an external scheme by reference, definitions of ManagedRepresentations in-line or by reference, and ManagedRepresentationGroups in-line or by reference.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **ManagedRepresentationScheme**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ManagedRepresentationScheme.svg
+
+Properties
+~~~~~~~~~~
+
+ManagedRepresentationSchemeName
+*******************************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A name for the ManagedRepresentationScheme. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the ManagedRepresentationScheme. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the content and purpose of the ManagedRepresentationScheme. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+ManagedRepresentationSchemeReference
+************************************
+
+Type
+    :doc:`/item-types/ManagedRepresentationScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A reference to another ManagedRepresentationScheme to include in this scheme by reference.
+
+ManagedRepresentationReference
+******************************
+
+Type
+    :doc:`/item-types/ManagedRepresentation/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of a text based representation to be used by a question response domain or variable value representation.
+
+ManagedRepresentationGroupReference
+***********************************
+
+Type
+    :doc:`/item-types/ManagedRepresentationGroup/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A grouping of ManagedRepresentations for conceptual, administrative or other reasons.
+
+
+

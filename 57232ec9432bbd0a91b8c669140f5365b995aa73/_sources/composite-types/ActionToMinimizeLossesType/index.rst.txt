@@ -1,0 +1,53 @@
+ActionToMinimizeLossesType
+--------------------------
+
+Describes action taken to minimize loss of data from the collection event. This may include a brief term, such as from a controlled vocabulary, and a full description of the actions taken. If multiple actions were taken repeat this element.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/IdentifiableType/index`
+    * **ActionToMinimizeLossesType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ActionToMinimizeLossesType.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfActionToMinimizeLosses
+****************************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A brief textual description of the action taken to minimize loss of data. Supports the use of an external controlled vocabulary
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Full description of the action taken to minimize loss of data. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+
+

@@ -1,0 +1,53 @@
+DynamicTextType
+---------------
+
+Structure supporting the use of dynamic text, where portions of the textual contend change depending on external information (pre-loaded data, response to an earlier query, environmental situations, etc.).
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DynamicTextType.svg
+
+Properties
+~~~~~~~~~~
+
+TextContent
+***********
+
+Type
+    :doc:`/composite-types/TextContentType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+This is the head of a substitution group and is never used directly as an element name. Instead it is replaced with either LiteralText or ConditionalText.
+
+IsStructureRequired
+*******************
+
+Type
+    boolean
+Cardinality
+    0..1
+
+If textual structure (e.g. size, color, font, etc.) is required to understand the meaning of the content change value to "true".
+
+AudienceLanguage
+****************
+
+Type
+    language
+Cardinality
+    0..1
+
+Specifies the language of the intended audience. This is particularly important for clarifying the primary language of a mixed language textual string, for example when language testing and using a foreign word withing the question text.
+
+
+

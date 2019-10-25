@@ -1,0 +1,46 @@
+CostStructureType
+-----------------
+
+Budget and funding information related to the development work.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CostStructureType.svg
+
+Properties
+~~~~~~~~~~
+
+Budget
+******
+
+Type
+    :doc:`/composite-types/BudgetType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description and/or reference to a related document providing budget information for the development activities
+
+FundingInformation
+******************
+
+Type
+    :doc:`/composite-types/FundingInformationType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Provides information about the agency and grant(s) which fund the development work.
+
+
+

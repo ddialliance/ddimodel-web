@@ -1,0 +1,46 @@
+VariableValueReferenceType
+--------------------------
+
+A reference to the variable containing the record type locator and the value being used. TypeOfObject should be set to Variable.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/VariableValueReferenceType.svg
+
+Properties
+~~~~~~~~~~
+
+VariableReference
+*****************
+
+Type
+    :doc:`/item-types/Variable/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to the variable containing the record type locator.
+
+RelatedValue
+************
+
+Type
+    :doc:`/composite-types/RelatedValueType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Value of variable indicating this record type, multiple entries allow for multiple valid values or ranges. Indicates if the variable should be equal to, greater than, less than, greater than or equal to, less than or equal to, or not equal to the stated value.(default value is "Equal"). Also allows the conditional value to be defined as blank (or no content).
+
+
+

@@ -1,0 +1,98 @@
+ApplicationDetailsType
+----------------------
+
+Provides sample stage level details where needed. Repeat for individual stages or sub-stages.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ApplicationDetailsType.svg
+
+Properties
+~~~~~~~~~~
+
+SamplingStageReference
+**********************
+
+Type
+    :doc:`/item-types/SamplingStage/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+References the sample plan stage in an overall sample plan. Target object should be SamplingStage
+
+SampleFrameReference
+********************
+
+Type
+    :doc:`/item-types/SampleFrame/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Reference to sample frame used. Note that this is the actual sample frame used and may differ from the recommended sample frame found in the sample plan stage referenced for this procedure. Deviation from the recommended sample frame should be described in FrameLimitations.
+
+FrameLimitations
+****************
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Description of limitations of the usage of the frame for the data collection.  Clarify (over/under) coverage issues, lack of needed fields, and needs to support over-sampling or deviation from recommended sample frame found in sample plan stage.
+
+TargetSampleSize
+****************
+
+Type
+    :doc:`/composite-types/TargetSampleSizeType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+The desired sample size for this particular sample plan express in relation to its strata number if relevant. Provides means of expressing the formula used for determining the sample size.
+
+DateOfSample
+************
+
+Type
+    :doc:`/composite-types/DateType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Date or date range when sample was drawn.
+
+ResponsibleForSamplingReference
+*******************************
+
+Type
+    :doc:`/item-types/Agent/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A reference to an organization or individual responsible for sampling.
+
+
+

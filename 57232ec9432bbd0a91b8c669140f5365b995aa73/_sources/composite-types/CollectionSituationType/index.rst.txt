@@ -1,0 +1,53 @@
+CollectionSituationType
+-----------------------
+
+Describes the situation in which the data collection event takes place.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/IdentifiableType/index`
+    * **CollectionSituationType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CollectionSituationType.svg
+
+Properties
+~~~~~~~~~~
+
+TypeOfCollectionSituation
+*************************
+
+Type
+    :doc:`/composite-types/CodeValueType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Allows brief identification of collection situation with the option of using a controlled vocabulary.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Full description of the collection situation. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+
+

@@ -1,0 +1,43 @@
+AnchorType
+----------
+
+Allows for the attachment of a category label at any anchor point in a scale.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/AnchorType.svg
+
+Properties
+~~~~~~~~~~
+
+CategoryReference
+*****************
+
+Type
+    :doc:`/item-types/Category/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A reference to the category containing the label for the anchor point.
+
+Value_string
+************
+
+Type
+    string
+Cardinality
+    0..1
+
+The value of the anchor point.
+
+
+

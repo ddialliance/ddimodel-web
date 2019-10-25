@@ -1,0 +1,33 @@
+StandardUsedType
+----------------
+
+Provide the citation and location of the published standard using the OtherMaterialType.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/StandardUsedType.svg
+
+Properties
+~~~~~~~~~~
+
+OtherMaterialReference
+**********************
+
+Type
+    :doc:`/item-types/OtherMaterial/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Description and link to the StandardUsed using the DDI Other Material structure.
+
+
+

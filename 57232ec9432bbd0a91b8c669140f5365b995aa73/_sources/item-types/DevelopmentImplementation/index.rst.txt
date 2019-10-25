@@ -1,0 +1,118 @@
+DevelopmentImplementation
+-------------------------
+
+Provides a name, label and description for the Development Implementation and lists the individual development activities which should take place. Note that the structure allows for a simple summary of the implementation work or can provide details using the DevelopmentStep and other control constructs to describe the organization of the implementation.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **DevelopmentImplementation**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DevelopmentImplementation.svg
+
+Properties
+~~~~~~~~~~
+
+DevelopmentImplementationName
+*****************************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A name for the DevelopmentImplementation. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the Development Implementation. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the overall Development Implementation. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+DevelopmentPlanReference
+************************
+
+Type
+    :doc:`/item-types/DevelopmentPlan/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+References the Development Plan which the results refer to.
+
+DevelopmentActivityReference
+****************************
+
+Type
+    :doc:`/item-types/DevelopmentActivity/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Reference to one or more Development Activities used by the Development Implementation. DevelopmentActivity is a substitution base for a number of types of activities described with appropriate content. TypeOfObject should be ContentReviewActivity, TranslationActivity, or PretestActivity.
+
+DevelopmentObject
+*****************
+
+Type
+    :doc:`/composite-types/DevelopmentObjectType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Describes the object of the development. May reference a specific object instrument, question, measurement, or control construct to.
+
+ControlConstructReference
+*************************
+
+Type
+    :doc:`/item-types/ControlConstruct/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+A set of DevelopmentSteps (control construct sub-type) that detail the implementation. May be organized using other control constructs to define sequencing, flow logic, sub-testing, etc. TypeOfObject should be any sub-type of a control construct.
+
+
+

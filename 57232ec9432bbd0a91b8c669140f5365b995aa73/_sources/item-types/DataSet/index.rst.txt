@@ -1,0 +1,119 @@
+DataSet
+-------
+
+DataSet is a substitution for a BaseRecordLayout and allows for in-line inclusion of micro or unit level data in the metadata file. This is valuable for small datasets or cases where there is a need to combine the metadata and data within a single file. In addition to the PhysicalStructureReference the DataSet indicates the ArrayBase if applicable, a name for the DataSet, a reference to the default Variable Scheme used by the data set, a reference to an Identifying Variable (e.g. case number), and a choice of organization order for the data: Record Set, Item Set, or Variable Set. RecordSet describes records of data which contain the same variables in the same order, ItemSet describes individual items of a dataset in any order. VariableSet describes the values for a given variable in record order.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/BaseRecordLayout/index`
+        * **DataSet**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DataSet.svg
+
+Properties
+~~~~~~~~~~
+
+ArrayBase
+*********
+
+Type
+    int
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Sets the array base for any arrays used in the definition (that is, whether the first value is in position 0 or 1, etc.).
+
+DataSetName
+***********
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:dataset:3_3
+
+A name for the data set. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+IdentifyingVariableReference
+****************************
+
+Type
+    :doc:`/item-types/Variable/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:dataset:3_3
+
+Reference to the variable used to identify a specific record within the data set (unique identifier or key).
+
+DefaultVariableSchemeReference
+******************************
+
+Type
+    :doc:`/item-types/VariableScheme/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A reference to the Variable Scheme containing all or a majority of the variables in the data set. May be overridden by an individual VariableReference.
+
+RecordSet
+*********
+
+Type
+    :doc:`/composite-types/RecordSetType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:dataset:3_3
+
+Storage format arranged record by record. A RecordSet requires a list of variables to appear in a specified order.
+
+ItemSet
+*******
+
+Type
+    :doc:`/composite-types/ItemSetType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:dataset:3_3
+
+Storage format for random order item variables. Each ItemValue references it's defining variable, it's record identifier, and the it's value.
+
+VariableSet
+***********
+
+Type
+    :doc:`/composite-types/VariableSetType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:dataset:3_3
+
+Storage format arranged variable by variable. Item values are listed in record order with the assumption that each record will occupy the position in each array.
+
+
+

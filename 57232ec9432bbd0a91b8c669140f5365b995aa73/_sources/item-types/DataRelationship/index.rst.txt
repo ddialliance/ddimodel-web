@@ -1,0 +1,92 @@
+DataRelationship
+----------------
+
+Describes the relationships among logical records in the dataset. Date Relationship is needed to create the appropriate link between the logical record and the physical storage description. Data Relationship is optional because a logical product can contain only a category scheme and/or code scheme. In addition to the standard name, label, and description, it contains structures to describe the LogicalRecord and RecordRelationship.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * **DataRelationship**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DataRelationship.svg
+
+Properties
+~~~~~~~~~~
+
+DataRelationshipName
+********************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+A name for the DataRelationship. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the DataRelationship. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the content and purpose of the DataRelationship. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+LogicalRecord
+*************
+
+Type
+    :doc:`/composite-types/LogicalRecordType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+A logical record is a description of all of the elements (variables or NCubes) related to a single case or analysis unit. Required to link a description of a physical record structure to its logical record.
+
+RecordRelationship
+******************
+
+Type
+    :doc:`/composite-types/RecordRelationshipType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+Describes the relationship between records of different types or of the same type within a longitudinal study. Identifies the key and linking value relationships. All relationships are pairwise. Multiple pairwise relationships maybe needed to clarify all record relationships within a logical product or data set.
+
+
+

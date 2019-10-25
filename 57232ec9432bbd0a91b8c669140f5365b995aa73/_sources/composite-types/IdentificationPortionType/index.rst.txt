@@ -1,0 +1,53 @@
+IdentificationPortionType
+-------------------------
+
+Provides structural information for parsing the identification code structure of the Authorized Source into its separate parts.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/IdentificationPortionType.svg
+
+Properties
+~~~~~~~~~~
+
+GeographicLevelReference
+************************
+
+Type
+    :doc:`/composite-types/GeographicLevelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Reference to the Geographic Level to which this identification segment refers.
+
+StartPosition
+*************
+
+Type
+    nonNegativeInteger
+Cardinality
+    0..1
+
+The start position of the first character expressed as an integer.
+
+Length
+******
+
+Type
+    nonNegativeInteger
+Cardinality
+    0..1
+
+The length of the segment expressed as an integer.
+
+
+

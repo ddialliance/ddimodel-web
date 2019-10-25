@@ -1,0 +1,100 @@
+TranslationActivity
+-------------------
+
+A substitution for DevelopmentActivity which describes the specifics of translation, looking at source and target languages, aids available for translation, and translator requirements regarding language ability and method of translation.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/DevelopmentActivity/index`
+        * **TranslationActivity**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/TranslationActivity.svg
+
+Properties
+~~~~~~~~~~
+
+TranslationMethod
+*****************
+
+Type
+    :doc:`/composite-types/TranslationMethodType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Describes the method of translation required through use of a controlled vocabulary and description. Repeat for multiple methods.
+
+TranslationRequirements
+***********************
+
+Type
+    :doc:`/composite-types/TranslationRequirementsType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Provides a detailed description of the requirements for an acceptable translation and indicate if the translation should be oral and/or written.
+
+TranslationAid
+**************
+
+Type
+    :doc:`/composite-types/TranslationAidType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Describes available aids for translation typed by a controlled vocabulary and supporting a description and resource identification where appropriate. This may include items such as the availability of an interpreter, key word material, etc.
+
+TranslatorRequirements
+**********************
+
+Type
+    :doc:`/composite-types/TranslatorRequirementsType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:datacollection:3_3
+
+Describes both minimum and preferred language abilities sought for the translation work as a set of source and target language requirements. Details requirements for the translator in terms of language ability for reading, speaking, and writing the source and target languages. Repeat for each language pair sought.
+
+TranslationSourceLanguage
+*************************
+
+Type
+    language
+Cardinality
+    0..n
+
+List the language or language codes in a space delimited array. The language original may or may not be provided in this bundle of language specific strings.
+
+TranslationTargetLanguage
+*************************
+
+Type
+    language
+Cardinality
+    0..n
+
+List the language or language codes in a space delimited array.
+
+
+

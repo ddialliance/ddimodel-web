@@ -1,0 +1,62 @@
+SourceObjectType
+----------------
+
+Identifies the Source organization or individual in the relationship. References either an Organization or an Individual and specifies their relationship in terms of parent, child, or sibling.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/SourceObjectType.svg
+
+Properties
+~~~~~~~~~~
+
+OrganizationReference
+*********************
+
+Type
+    :doc:`/item-types/Organization/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+A reference to an Organization described in DDI.
+
+IndividualReference
+*******************
+
+Type
+    :doc:`/item-types/Individual/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+A reference to an Individual described in DDI.
+
+RelationshipCode
+****************
+
+Type
+    string
+Cardinality
+    0..1
+
+Enumeration
+    Parent, Child, Sibling
+
+DDI namespace
+    Element in ddi:archive:3_3
+
+A specification of the relationship of the Source to the Target in terms of Parent (superior), Child (subordinate), or Sibling (on par).
+
+
+

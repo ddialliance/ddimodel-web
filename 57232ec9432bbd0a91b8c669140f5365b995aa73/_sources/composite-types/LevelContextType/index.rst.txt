@@ -1,0 +1,59 @@
+LevelContextType
+----------------
+
+Level Context provides the depth of a Level within a Statistical Classification together with its membership. Both depth and membership can be specified per Statistical Classification.
+
+.. contents::
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/LevelContextType.svg
+
+Properties
+~~~~~~~~~~
+
+LevelNumber
+***********
+
+Type
+    nonNegativeInteger
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+The number associated with the Level Context. Levels are numbered consecutively starting with Level 1 at the highest (most aggregated) Level.
+
+ClassificationLevelReference
+****************************
+
+Type
+    :doc:`/item-types/ClassificationLevel/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+The structure of a Statistical Classification is defined by its Levels (classification level). Include here links to the relevant Level. TypeOfObject should be ClassificationLevel.
+
+ClassificationItemReference
+***************************
+
+Type
+    :doc:`/item-types/ClassificationItem/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:logicalproduct:3_3
+
+A Statistical Classification is composed of categories structured in one or more Levels. Each category is represented by a Classification Item, which defines the content and the borders of the category. TypeOfObject should be set to ClassificationItem.
+
+
+

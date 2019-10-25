@@ -1,0 +1,106 @@
+UniverseScheme
+--------------
+
+Contains a set of Universe descriptions that may be organized into sub-universe structures. A Universe may also be known as a population. A Universe describes the "object" of a Data Element Concept or Data Element as defined by ISO/IEC 11179.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/Maintainable/index`
+        * **UniverseScheme**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/UniverseScheme.svg
+
+Properties
+~~~~~~~~~~
+
+UniverseSchemeName
+******************
+
+Type
+    :doc:`/composite-types/NameType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:conceptualcomponent:3_3
+
+A name for the UniverseScheme. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems.
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A display label for the UniverseScheme. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations.
+
+Description
+***********
+
+Type
+    :doc:`/composite-types/StructuredStringType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+A description of the content and purpose of the UniverseScheme. Supports multiple language versions of the same content as well as optional formatting of the content.
+
+UniverseSchemeReference
+***********************
+
+Type
+    :doc:`/item-types/UniverseScheme/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Allows the inclusion of a UniverseScheme by reference.
+
+UniverseReference
+*****************
+
+Type
+    :doc:`/item-types/Universe/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:conceptualcomponent:3_3
+
+Describes a universe (population, object). A universe may be organized into hierarchical sub-universe classes.
+
+UniverseGroupReference
+**********************
+
+Type
+    :doc:`/item-types/UniverseGroup/index`
+Cardinality
+    0..n
+
+DDI namespace
+    Element in ddi:conceptualcomponent:3_3
+
+Describes a group of universes (populations, objects) for administrative purposes.
+
+
+

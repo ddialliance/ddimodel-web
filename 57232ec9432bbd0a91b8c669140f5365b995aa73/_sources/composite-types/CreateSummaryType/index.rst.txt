@@ -1,0 +1,40 @@
+CreateSummaryType
+-----------------
+
+Note that this is generally usable only with single valid response domain in grid. More complex uses should be carefully documented using details in CommandCode and Input/output Parameters.
+
+.. contents::
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/CommandCodeType/index`
+    * **CreateSummaryType**
+
+
+Relationships
+~~~~~~~~~~~~~
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CreateSummaryType.svg
+
+Properties
+~~~~~~~~~~
+
+Label
+*****
+
+Type
+    :doc:`/composite-types/LabelType/index`
+Cardinality
+    0..1
+
+DDI namespace
+    Element in ddi:reusable:3_3
+
+Label for the summary type used.
+
+
+
