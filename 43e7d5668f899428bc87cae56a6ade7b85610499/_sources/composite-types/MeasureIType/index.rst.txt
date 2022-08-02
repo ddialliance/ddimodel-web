@@ -1,0 +1,28 @@
+MeasureIType
+------------
+
+Identifies the specific measure of the cell designating the order value of the Measure within the MeasureDimension and the value of the measure. It is recommended to repeat Measure to define each measure definition and value separately. When Value contains multiple measures expressed as an ordered array list each measure in the array as a MeasureDimensionValue with its specified arrayOrder within a single Measure definition.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "MeasureDimensionValue",":doc:`/composite-types/MeasureDimensionValueType/index`","0..n","Specifies the orderValue of the Measure in the MeasureDimension described in the NCubeInstance along with its arrayOrder if multiple measures are provided as an array in a single storage location."
+   "Value",":doc:`/composite-types/ValueType/index`","0..1","Value of the Measure expressed as a single value or ordered array."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following types reference this type.
+
+* :doc:`/composite-types/DataItemIType/index`
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/MeasureIType.svg
+
