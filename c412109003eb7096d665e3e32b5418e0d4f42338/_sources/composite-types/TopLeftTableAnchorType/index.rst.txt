@@ -1,0 +1,28 @@
+TopLeftTableAnchorType
+----------------------
+
+Notes the column and row position of the top left corner of the data table in the spreadsheet.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "Column","string","1..1","The column identifier expressed as a string."
+   "Row","nonNegativeInteger","1..1","The row number expressed as an integer."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following types reference this type.
+
+* :doc:`/item-types/TabularNCubeRecordLayout/index`
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/TopLeftTableAnchorType.svg
+

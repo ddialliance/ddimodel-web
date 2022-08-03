@@ -1,0 +1,30 @@
+BasicIncrementType
+------------------
+
+Describes the start, end, and increment value for an incremental string (numeric, character, or length).
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "Increment","string","0..1","The size of the increment in units (number of characters, length, number of units)."
+   "StartValue","string","0..1","The starting value or beginning point of the increment string."
+   "EndValue","string","0..1","The ending value or end point of the increment string."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following types reference this type.
+
+* :doc:`/composite-types/LevelType/index`
+* :doc:`/composite-types/ScaleDimensionType/index`
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/BasicIncrementType.svg
+
