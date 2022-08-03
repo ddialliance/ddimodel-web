@@ -1,0 +1,30 @@
+DataItemNType
+-------------
+
+Describes a single data item or cell within an NCube Instance. It defines its location within the NCube by its coordinate (matrix) address which is its intersect point on each dimension. Allows for the specification of data item specific attributes, and identifies the physical location of each measure for the data item. May optionally indicate the language of the data contents.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "DimensionRankValue",":doc:`/composite-types/DimensionRankValueType/index`","0..n","A dimension describes the rank or order of the dimension within the NCube structure and provides the specific coordinate value of the dimension for the data item."
+   "AttachedAttribute",":doc:`/composite-types/AttachedAttributeType/index`","0..n","This is an attribute attached to the specified Data Item. The content of the attribute can be provided as a single value or reference a location in the data store where the attribute value will be found. This may be in addition to attribute information described in the logical structure."
+   "Measure",":doc:`/composite-types/MeasureType/index`","0..n","Identifies the specific measure of the cell by noting the order value of the measure within the MeasureDimension and provides information on the storage location of the cell value for the measure."
+   "Lang","language","0..1","Use to indicate the language of the data item in the file."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following types reference this type.
+
+* :doc:`/item-types/NCubeInstance/index`
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DataItemNType.svg
+
