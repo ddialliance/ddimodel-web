@@ -1,0 +1,27 @@
+DimensionIntersectType
+----------------------
+
+Identifies the point at which the scales of a multidimensional scale intersect. May include all or a subset of dimensions intersecting at a given point. Repeat for multiple intersect points.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "IncludedDimension","`int <https://cogsdata.org/docs/modeler-guide/primitive-types/#int>`_","0..n","List by repetition all dimensions intersecting at this value by Dimension Number."
+   "ForAllDimensions","`boolean <https://cogsdata.org/docs/modeler-guide/primitive-types/#boolean>`_","0..1","If different dimensions intersect at different values list each set in a separate DimensionIntersect and list each dimension included by an IncludeDimension."
+   "IntersectValue","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","The value at which the dimensions intersect."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DimensionIntersectType.svg
+

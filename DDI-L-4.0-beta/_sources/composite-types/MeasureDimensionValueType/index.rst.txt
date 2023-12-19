@@ -1,0 +1,26 @@
+MeasureDimensionValueType
+-------------------------
+
+Specifies the orderValue of the Measure in the MeasureDimension described in the NCubeInstance along with its arrayOrder if multiple measures are provided as an array in a single storage location.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "DimensionCellValue","`nonNegativeInteger <https://cogsdata.org/docs/modeler-guide/primitive-types/#nonnegativeinteger>`_","0..1","The value of the dimension used to determine the cell address."
+   "ArrayOrder","`nonNegativeInteger <https://cogsdata.org/docs/modeler-guide/primitive-types/#nonnegativeinteger>`_","0..1","Oder within the array. Note that this attribute assumes an array base of 0. The array order assumes that the measures will always be displayed in the same order and that sparse content (a missing value in the array) will be clear between two delimiters in this array. (For example 1,1,1 or 1,,1)"
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/MeasureDimensionValueType.svg
+

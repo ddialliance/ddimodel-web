@@ -1,0 +1,26 @@
+ResponseCardinalityType
+-----------------------
+
+Indicates the minimum and maximum number of occurrences of a response within the given parameters.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "MinimumResponses","`nonNegativeInteger <https://cogsdata.org/docs/modeler-guide/primitive-types/#nonnegativeinteger>`_","0..1","Minimum number of responses accepted expressed and an integer."
+   "MaximumResponses","`nonNegativeInteger <https://cogsdata.org/docs/modeler-guide/primitive-types/#nonnegativeinteger>`_","0..1","Maximum number of responses accepted expressed and an integer."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ResponseCardinalityType.svg
+

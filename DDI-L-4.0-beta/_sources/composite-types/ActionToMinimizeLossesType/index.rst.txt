@@ -1,0 +1,47 @@
+ActionToMinimizeLossesType
+--------------------------
+
+Describes action taken to minimize loss of data from the collection event. This may include a brief term, such as from a controlled vocabulary, and a full description of the actions taken. If multiple actions were taken repeat this element.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "TypeOfActionToMinimizeLosses",":doc:`/composite-types/CodeValueType/index`","0..1","A brief textual description of the action taken to minimize loss of data. Supports the use of an external controlled vocabulary"
+   "Description",":doc:`/composite-types/StructuredStringType/index`","0..1","Full description of the action taken to minimize loss of data. Supports multiple language versions of the same content as well as optional formatting of the content."
+
+Properties Inherited from IdentifiableType
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "URN","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","The URN of the entity matching the DDI URN pattern associated with the value of the attribute typeOfIdentifier (Canonical or Deprecated)."
+   "Agency","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","This is the registered agency code with optional sub-agencies separated by dots."
+   "ID","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","The ID of the object. This must conform to the allowed structure of the DDI Identifier and must be unique within the declared scope of uniqueness (Agency or Maintainable)."
+   "Version","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","The version number of the object. For the identifiable object this is the version number of its parent versionable at the point of creation or alteration of the non-administrative metadata of the identifiable. Versionable and Maintainable items increment their version number whenever the non-administrative metadata contained by the object changes."
+   "UserID",":doc:`/composite-types/UserIDType/index`","0..n","Allows for the specification of identifiers other than the specified DDI identification of the object. This may be a legacy ID from DDI-C, a system specific ID such as for a database or registry, or a non-DDI unique identifier. As the identifier is specific to a system the system must be identified with the UserID structure."
+   "UserAttributePair",":doc:`/composite-types/StandardKeyValuePairType/index`","0..n","A system specific user defined property of the object expressed as a key/value pair. As this is specific to an individual system the use of controlled vocabularies for the key is strongly recommended."
+
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/IdentifiableType/index`
+    * **ActionToMinimizeLossesType**
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ActionToMinimizeLossesType.svg
+

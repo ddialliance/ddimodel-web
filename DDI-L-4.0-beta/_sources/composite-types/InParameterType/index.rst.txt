@@ -1,0 +1,62 @@
+InParameterType
+---------------
+
+A parameter that may accept content from outside its parent element. In addition to standard parameter content may provide the instructions for limiting the allowable array index.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "LimitArrayIndex","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","When the InParameter represents an array of items, this attribute specifies the index identification of the items within the zero-based array which should be treated as input parameters. If not specified, the full array is treated as the input parameter."
+
+Properties Inherited from ParameterType
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "ParameterName",":doc:`/composite-types/NameType/index`","0..n","A name for the Parameter. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems."
+   "Alias","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","If the content of the parameter is being used in a generic set of code as an alias for the value of an object in a formula (for example source code for a statistical program) enter that name here. This provides a link from the identified parameter to the alias in the code."
+   "Description",":doc:`/composite-types/StructuredStringType/index`","0..1","A description of the Parameter. Supports multiple language versions of the same content as well as optional formatting of the content."
+   "ValueRepresentation",":doc:`/composite-types/RepresentationType/index`","0..1","If the content of the parameter contains representational content, such as codes, provide the representation here. ValueRepresentation is the abstract head of a substitution group and may be replaced with any valid substitution for ValueRepresentation. Inclusion of the ValueRepresentation is recommended if you will be sharing data with others as it provides information on the structure of what they can expect to receive when the parameter is processed."
+   "ValueRepresentationReference",":doc:`/item-types/ManagedRepresentation/index`","0..1","Allows for the use of a ManagedRepresentation by reference. ValueRepresentationReference is the abstract head of a substitution group and may be replaced with any valid substitution for ValueRepresentationReference."
+   "DefaultValue",":doc:`/composite-types/ValueType/index`","0..1","Provides a default value for the parameter if there is no value provided by the object it is bound to or the process that was intended to produce a value."
+   "IsArray","`boolean <https://cogsdata.org/docs/modeler-guide/primitive-types/#boolean>`_","0..1","If set to ""true"" indicates that the content of the parameter is a delimited array rather than a single object and should be processed as such."
+
+Properties Inherited from IdentifiableType
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "URN","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","The URN of the entity matching the DDI URN pattern associated with the value of the attribute typeOfIdentifier (Canonical or Deprecated)."
+   "Agency","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","This is the registered agency code with optional sub-agencies separated by dots."
+   "ID","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","The ID of the object. This must conform to the allowed structure of the DDI Identifier and must be unique within the declared scope of uniqueness (Agency or Maintainable)."
+   "Version","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","The version number of the object. For the identifiable object this is the version number of its parent versionable at the point of creation or alteration of the non-administrative metadata of the identifiable. Versionable and Maintainable items increment their version number whenever the non-administrative metadata contained by the object changes."
+   "UserID",":doc:`/composite-types/UserIDType/index`","0..n","Allows for the specification of identifiers other than the specified DDI identification of the object. This may be a legacy ID from DDI-C, a system specific ID such as for a database or registry, or a non-DDI unique identifier. As the identifier is specific to a system the system must be identified with the UserID structure."
+   "UserAttributePair",":doc:`/composite-types/StandardKeyValuePairType/index`","0..n","A system specific user defined property of the object expressed as a key/value pair. As this is specific to an individual system the use of controlled vocabularies for the key is strongly recommended."
+
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/IdentifiableType/index`
+    * :doc:`/composite-types/ParameterType/index`
+        * **InParameterType**
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/InParameterType.svg
+

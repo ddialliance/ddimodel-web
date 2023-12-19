@@ -1,0 +1,26 @@
+GeographicLocationIdentifierType
+--------------------------------
+
+Describes the GeographicLocation as represented by a specific GeographicCode provided by an Authorized Source.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "GeographicCode","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","Container for a standard geography code expressed as a string."
+   "AuthorizedSourceReference",":doc:`/composite-types/AuthorizedSourceType/index`","0..1","Reference to the AuthorizedSource description in GeographicLocation that provided this code."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/GeographicLocationIdentifierType.svg
+

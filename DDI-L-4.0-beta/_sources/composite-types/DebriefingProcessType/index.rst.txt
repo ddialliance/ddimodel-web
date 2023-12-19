@@ -1,0 +1,26 @@
+DebriefingProcessType
+---------------------
+
+Describe the debriefing process. Specifies if debriefing is required.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "Description",":doc:`/composite-types/StructuredStringType/index`","0..1","A description of the Debriefing Process. Supports multiple language versions of the same content as well as optional formatting of the content."
+   "IsRequired","`boolean <https://cogsdata.org/docs/modeler-guide/primitive-types/#boolean>`_","0..1","If debriefing is required for this activity set isRequired to ""true""."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DebriefingProcessType.svg
+

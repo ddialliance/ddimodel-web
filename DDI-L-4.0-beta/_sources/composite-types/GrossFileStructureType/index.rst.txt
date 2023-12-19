@@ -1,0 +1,51 @@
+GrossFileStructureType
+----------------------
+
+Includes information about the file structure, as well as other characteristics that are specific to the physical instance. Information includes place of production, processing checks to validate the content, processing status, the software used to create the data file, and check sums for the number of cases and overall record count.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "PlaceOfProduction","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","Indicates the place where the physical instance was produced expressed as a simple string."
+   "ProcessingCheck",":doc:`/composite-types/StructuredStringType/index`","0..n","Documents processing checks and other operations performed on the data file. Supports multiple language versions of the same content as well as optional formatting of the content."
+   "ProcessingStatus",":doc:`/composite-types/CodeValueType/index`","0..1","Processing status of the data file. Supports the use of an external controlled vocabulary."
+   "CreationSoftware",":doc:`/composite-types/SoftwareType/index`","0..1","Indicates the software that was used to create the data file."
+   "CaseQuantity","`nonNegativeInteger <https://cogsdata.org/docs/modeler-guide/primitive-types/#nonnegativeinteger>`_","0..1","Number of cases or observations in the data file. Caution in using optional checksums is recommended. Conflict between checksums and the items being counted can cause problems with warning flags during processing. If using checksum to capture information for internal processing purposes, the use of automatically generated check sums is strongly urged."
+   "OverallRecordCount","`nonNegativeInteger <https://cogsdata.org/docs/modeler-guide/primitive-types/#nonnegativeinteger>`_","0..1","Overall record count in the data file. Caution in using optional checksums is recommended. Conflict between checksums and the items being counted can cause problems with warning flags during processing. If using checksum to capture information for internal processing purposes, the use of automatically generated check sums is strongly urged."
+
+Properties Inherited from IdentifiableType
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "URN","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","The URN of the entity matching the DDI URN pattern associated with the value of the attribute typeOfIdentifier (Canonical or Deprecated)."
+   "Agency","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","This is the registered agency code with optional sub-agencies separated by dots."
+   "ID","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","The ID of the object. This must conform to the allowed structure of the DDI Identifier and must be unique within the declared scope of uniqueness (Agency or Maintainable)."
+   "Version","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","The version number of the object. For the identifiable object this is the version number of its parent versionable at the point of creation or alteration of the non-administrative metadata of the identifiable. Versionable and Maintainable items increment their version number whenever the non-administrative metadata contained by the object changes."
+   "UserID",":doc:`/composite-types/UserIDType/index`","0..n","Allows for the specification of identifiers other than the specified DDI identification of the object. This may be a legacy ID from DDI-C, a system specific ID such as for a database or registry, or a non-DDI unique identifier. As the identifier is specific to a system the system must be identified with the UserID structure."
+   "UserAttributePair",":doc:`/composite-types/StandardKeyValuePairType/index`","0..n","A system specific user defined property of the object expressed as a key/value pair. As this is specific to an individual system the use of controlled vocabularies for the key is strongly recommended."
+
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/IdentifiableType/index`
+    * **GrossFileStructureType**
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/GrossFileStructureType.svg
+

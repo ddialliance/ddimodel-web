@@ -1,0 +1,28 @@
+DataFileIdentificationType
+--------------------------
+
+Identifies the data file documented in the physical instance and provides information about its location.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "Location",":doc:`/composite-types/InternationalStringType/index`","0..1","Documents the location of the data file as a description. Supports the multi-language content."
+   "DataFileURI",":doc:`/composite-types/URIType/index`","0..1","A URN or URL for the data file with a flag to indicate if it is a public copy."
+   "SizeInBytes","`nonNegativeInteger <https://cogsdata.org/docs/modeler-guide/primitive-types/#nonnegativeinteger>`_","0..1","Specifies the size of the file in bytes."
+   "IsMaster","`boolean <https://cogsdata.org/docs/modeler-guide/primitive-types/#boolean>`_","0..1","Set to ""true"" when this file is the master file (in the case that there are multiple, i.e. backup, copies)."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DataFileIdentificationType.svg
+

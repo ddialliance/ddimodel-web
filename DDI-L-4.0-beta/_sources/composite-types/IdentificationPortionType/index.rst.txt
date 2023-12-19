@@ -1,0 +1,27 @@
+IdentificationPortionType
+-------------------------
+
+Provides structural information for parsing the identification code structure of the Authorized Source into its separate parts.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "GeographicLevelReference",":doc:`/composite-types/GeographicLevelType/index`","0..n","Reference to the Geographic Level to which this identification segment refers."
+   "StartPosition","`nonNegativeInteger <https://cogsdata.org/docs/modeler-guide/primitive-types/#nonnegativeinteger>`_","0..1","The start position of the first character expressed as an integer."
+   "Length","`nonNegativeInteger <https://cogsdata.org/docs/modeler-guide/primitive-types/#nonnegativeinteger>`_","0..1","The length of the segment expressed as an integer."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/IdentificationPortionType.svg
+

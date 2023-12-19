@@ -1,0 +1,26 @@
+MeasureType
+-----------
+
+Identifies the specific measure of the cell by reference and provides information on the storage location of the value for the measure. When individual measures are stored in separately identifiable locations repeat Measure to define each measure and storage location. When multiple measures are stored as an ordered array in a single location list each measure in the array as a MeasureReference with its specified arrayOrder within a single Measure definition.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "MeasureDefinitionReference",":doc:`/composite-types/MeasureDefinitionType/index`","0..n","Reference to the MeasureDefinition in NCube."
+   "PhysicalLocation",":doc:`/composite-types/PhysicalLocationType/index`","0..1","Description of the physical location of the measure value in the data file."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/MeasureType.svg
+

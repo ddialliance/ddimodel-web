@@ -1,0 +1,25 @@
+VariableOrderType
+-----------------
+
+A set of References to Variable found in the record in storage order.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "VariableReference",":doc:`/item-types/Variable/index`","0..n","References variables in storage order. One reference per variable."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/VariableOrderType.svg
+

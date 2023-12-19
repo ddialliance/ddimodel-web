@@ -1,0 +1,89 @@
+CitationType
+------------
+
+Provides bibliographic citation information for a DDI instance, a group of studies, a study unit, or a physical instance. Note that a native DDI citation is required - the citation information may be repeated using DCElements if desired, but a citation must not consist only of DCElements.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "Title",":doc:`/composite-types/InternationalStringType/index`","0..1","Full authoritative title. List any additional titles for this item as AlternativeTitle."
+   "SubTitle",":doc:`/composite-types/InternationalStringType/index`","0..n","Secondary or explanatory title."
+   "AlternateTitle",":doc:`/composite-types/InternationalStringType/index`","0..n","An alternative title by which a data collection is commonly referred, or an abbreviation  for the title."
+   "Creator",":doc:`/composite-types/CreatorType/index`","0..n","Person, corporate body, or agency responsible for the substantive and intellectual content of the described object."
+   "Publisher",":doc:`/composite-types/PublisherType/index`","0..n","Person or organization responsible for making the resource available in its present form."
+   "Contributor",":doc:`/composite-types/ContributorType/index`","0..n","The name of a contributing author or creator, who worked in support of the primary creator given above."
+   "PublicationDate",":doc:`/composite-types/DateType/index`","0..1","The date of publication."
+   "Language",":doc:`/composite-types/CodeValueType/index`","0..n","Language of the intellectual content of the described object. Strongly recommend the use of language codes supported by xs:language which include the 2 and 3 character and extended structures defined by RFC4646 or its successors."
+   "InternationalIdentifier",":doc:`/composite-types/InternationalIdentifierType/index`","0..n","An identifier whose scope of uniqueness is broader than the local archive. Common forms of an international identifier are ISBN, ISSN, DOI or similar designator."
+   "Copyright",":doc:`/composite-types/InternationalStringType/index`","0..n","The copyright statement."
+   "DublinCoreAbstract","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A summary of the content of the resource."
+   "DublinCoreAccessRights","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","Information about who can access the resource or its content."
+   "DublinCoreAccrualMethod","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The method by which items are added to a collection."
+   "DublinCoreAccrualPeriodicity","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The frequency at which items are added to a collection."
+   "DublinCoreAccrualPolicy","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The policy governing the addition of items to a collection."
+   "DublinCoreAlternative","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","An alternative name for the resource."
+   "DublinCoreAudience","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A group of users for whom the resource is intended."
+   "DublinCoreAvailable","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The date the resource became or will become available."
+   "DublinCoreBibliographicCitation","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A bibliographic reference for the resource."
+   "DublinCoreConformsTo","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A reference to a standard to which the resource conforms."
+   "DublinCoreContributor","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","An entity responsible for making contributions to the resource."
+   "DublinCoreCoverage","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The spatial or temporal topic of the resource."
+   "DublinCoreCreated","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The date the resource was created."
+   "DublinCoreCreator","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","An entity primarily responsible for making the resource."
+   "DublinCoreDate","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A point or period of time associated with the resource."
+   "DublinCoreDateAccepted","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The date the resource was accepted."
+   "DublinCoreDateCopyrighted","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The date the resource was copyrighted."
+   "DublinCoreDateSubmitted","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The date the resource was submitted."
+   "DublinCoreDescription","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","An account of the resource."
+   "DublinCoreEducationLevel","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The level of education audience the resource is intended for."
+   "DublinCoreExtent","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The size or duration of the resource."
+   "DublinCoreFormat","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The file format, physical medium, or dimensions of the resource."
+   "DublinCoreHasFormat","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A related resource that is a format of the resource."
+   "DublinCoreHasPart","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A related resource that is a part of the resource."
+   "DublinCoreHasVersion","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A related resource that is a version, edition, or adaptation of the resource."
+   "DublinCoreIdentifier","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","An unambiguous reference to the resource."
+   "DublinCoreInstructionalMethod","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The method of learning provided by the resource."
+   "DublinCoreIsFormatOf","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A related resource that is a format of the resource."
+   "DublinCoreIsPartOf","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A related resource in which the described resource is a part."
+   "DublinCoreIsReferencedBy","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A related resource that references the resource."
+   "DublinCoreIsReplacedBy","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A related resource that supplants or displaces the resource."
+   "DublinCoreIsRequiredBy","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A related resource that requires the resource."
+   "DublinCoreIsVersionOf","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A related resource that is a version, edition, or adaptation of the resource."
+   "DublinCoreIssued","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The date the resource was issued."
+   "DublinCoreLanguage","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The language of the resource."
+   "DublinCoreLicense","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","Information about rights held in and over the resource."
+   "DublinCoreMediator","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","An entity that mediates access to the resource."
+   "DublinCoreMedium","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The material or physical carrier of the resource."
+   "DublinCoreModified","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The date the resource was last modified."
+   "DublinCoreProvenance","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A statement of any changes in ownership and custody of the resource."
+   "DublinCorePublisher","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","An entity responsible for making the resource available."
+   "DublinCoreReferences","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A related resource that is referenced by the resource."
+   "DublinCoreRelation","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A related resource."
+   "DublinCoreReplaces","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A related resource that is supplanted or displaced by the resource."
+   "DublinCoreRequires","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A related resource that is required by the resource."
+   "DublinCoreRights","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","Information about rights held in and over the resource."
+   "DublinCoreRightsHolder","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A person or organization owning or managing rights over the resource."
+   "DublinCoreSource","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A related resource from which the present resource is derived."
+   "DublinCoreSpatial","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The spatial characteristics of the resource."
+   "DublinCoreSubject","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The topic of the resource."
+   "DublinCoreTableOfContents","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","A list of subunits of the resource."
+   "DublinCoreTemporal","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The temporal characteristics of the resource."
+   "DublinCoreTitle","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The name given to the resource."
+   "DublinCoreType","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The nature or genre of the resource."
+   "DublinCoreValid","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..n","The date the resource will be or was valid."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CitationType.svg
+

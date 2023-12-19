@@ -1,0 +1,26 @@
+PopulationType
+--------------
+
+Describe the population through a combination of textual description and reference to a structured Universe. If multiple universes are referenced, the overall universe is the intersect of the set of universes referenced.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "Description",":doc:`/composite-types/StructuredStringType/index`","0..1","A textual description of the population. Supports multiple language versions of the same content as well as optional formatting of the content."
+   "UniverseReference",":doc:`/item-types/Universe/index`","0..n","A reference to a structured Universe description."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/PopulationType.svg
+

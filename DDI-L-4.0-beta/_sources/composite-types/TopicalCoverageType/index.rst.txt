@@ -1,0 +1,47 @@
+TopicalCoverageType
+-------------------
+
+Describes the topical coverage of the module using Subject and Keyword. Note that upper level modules should include all the members of lower level modules. Subjects are members of structured classification systems such as formal subject headings in libraries or topical thesauri. Keywords are generally unstructured and reflect the terminology found in the document and other related (broader or similar) terms.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "Subject",":doc:`/composite-types/InternationalCodeValueType/index`","0..n","A subject or list of subjects that indicate the topical coverage of the data described in a particular module/section. Uses and InternationalCodeValue and may indicate the language of the code used."
+   "Keyword",":doc:`/composite-types/InternationalCodeValueType/index`","0..n","A keyword that indicates the topical coverage of the data described in a particular module/section. Uses and InternationalCodeValue and may indicate the language of the code used."
+
+Properties Inherited from IdentifiableType
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "URN","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","The URN of the entity matching the DDI URN pattern associated with the value of the attribute typeOfIdentifier (Canonical or Deprecated)."
+   "Agency","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","This is the registered agency code with optional sub-agencies separated by dots."
+   "ID","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","The ID of the object. This must conform to the allowed structure of the DDI Identifier and must be unique within the declared scope of uniqueness (Agency or Maintainable)."
+   "Version","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","The version number of the object. For the identifiable object this is the version number of its parent versionable at the point of creation or alteration of the non-administrative metadata of the identifiable. Versionable and Maintainable items increment their version number whenever the non-administrative metadata contained by the object changes."
+   "UserID",":doc:`/composite-types/UserIDType/index`","0..n","Allows for the specification of identifiers other than the specified DDI identification of the object. This may be a legacy ID from DDI-C, a system specific ID such as for a database or registry, or a non-DDI unique identifier. As the identifier is specific to a system the system must be identified with the UserID structure."
+   "UserAttributePair",":doc:`/composite-types/StandardKeyValuePairType/index`","0..n","A system specific user defined property of the object expressed as a key/value pair. As this is specific to an individual system the use of controlled vocabularies for the key is strongly recommended."
+
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/IdentifiableType/index`
+    * **TopicalCoverageType**
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/TopicalCoverageType.svg
+

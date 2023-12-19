@@ -1,0 +1,51 @@
+AttributeType
+-------------
+
+An attribute may be any object which should be attached to all or part of the NCube. It may be defined as a Variable or contain textual content (such as a footnote).
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "VariableReference",":doc:`/item-types/Variable/index`","0..1","A reference to a variable that describes the attribute."
+   "AttachmentValue","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","The value of the attachment expressed as a string, if not a variable."
+   "AttachmentRegionReference",":doc:`/composite-types/CoordinateRegionType/index`","0..1","Reference to the CoordinateRegion that defines the attachment point for the attribute."
+   "MeasureDefinitionReference",":doc:`/composite-types/MeasureDefinitionType/index`","0..n","Reference to the MeasureDefinition that the attribute is attached to."
+   "Value",":doc:`/composite-types/ValueType/index`","0..n","Reference to the specified Value of the MeasureDefinition that the attribute is attached to."
+   "AttachmentLevel","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","Describes the attachment level of the attribute as Cube, CoordinateRegion, Dimension, Measurement, or MeasurementValue. Valid values include: Cube, CoordinateRegion, Dimension, Measurement, MeasurementValue"
+
+Properties Inherited from IdentifiableType
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "URN","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","The URN of the entity matching the DDI URN pattern associated with the value of the attribute typeOfIdentifier (Canonical or Deprecated)."
+   "Agency","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","This is the registered agency code with optional sub-agencies separated by dots."
+   "ID","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","The ID of the object. This must conform to the allowed structure of the DDI Identifier and must be unique within the declared scope of uniqueness (Agency or Maintainable)."
+   "Version","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","The version number of the object. For the identifiable object this is the version number of its parent versionable at the point of creation or alteration of the non-administrative metadata of the identifiable. Versionable and Maintainable items increment their version number whenever the non-administrative metadata contained by the object changes."
+   "UserID",":doc:`/composite-types/UserIDType/index`","0..n","Allows for the specification of identifiers other than the specified DDI identification of the object. This may be a legacy ID from DDI-C, a system specific ID such as for a database or registry, or a non-DDI unique identifier. As the identifier is specific to a system the system must be identified with the UserID structure."
+   "UserAttributePair",":doc:`/composite-types/StandardKeyValuePairType/index`","0..n","A system specific user defined property of the object expressed as a key/value pair. As this is specific to an individual system the use of controlled vocabularies for the key is strongly recommended."
+
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/IdentifiableType/index`
+    * **AttributeType**
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/AttributeType.svg
+

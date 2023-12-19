@@ -1,0 +1,41 @@
+RangeValueType
+--------------
+
+Describes a bounding value of a string.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "Included","`boolean <https://cogsdata.org/docs/modeler-guide/primitive-types/#boolean>`_","1..1","Set to ""true"" if the value is included in the range."
+
+Properties Inherited from ValueType
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "StringValue","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1",""
+
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/ValueType/index`
+    * **RangeValueType**
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/RangeValueType.svg
+

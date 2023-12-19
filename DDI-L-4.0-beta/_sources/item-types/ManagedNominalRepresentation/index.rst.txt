@@ -1,0 +1,105 @@
+ManagedNominalRepresentation
+----------------------------
+
+A means of capturing the features of a nominal (marked/unmarked) response domain. Note that this is not the same as a code or category list with a yes/no set of responses. This representation is generally used in QuestionGrids when defining the response domain of a grid cell. In addition to the basic objects of a representation, the structure defines the allowed content of the mark using a regular expression.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "ManagedNominalRepresentationName",":doc:`/composite-types/NameType/index`","0..n","A name for the ManagedNominalRepresentation. May be expressed in multiple languages. Repeat the element to express names with different content, for example, different names for different systems."
+   "Label",":doc:`/composite-types/LabelType/index`","0..n","A display label for the ManagedTextRepresentation. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations."
+   "Description",":doc:`/composite-types/StructuredStringType/index`","0..1","A description of the content and purpose of the ManagedTextRepresentation. Supports multiple language versions of the same content as well as optional formatting of the content."
+   "RecommendedDataType",":doc:`/composite-types/CodeValueType/index`","0..1","This field provides the recommended treatment of the data within an application. The value should come from a controlled vocabulary - recommended values include the set found in W3C XML Schema Part 2, but excluding string sub-types, QNAME, and NOTATION. The DDI Alliance has provided a controlled vocabulary (DataType) to support this element at http://www.ddialliance.org/controlled-vocabularies."
+   "GenericOutputFormat",":doc:`/composite-types/CodeValueType/index`","0..1","This field provides a recommended generic treatment of the data for display by an application. The value should come from a controlled vocabulary."
+   "MeasurementUnit",":doc:`/composite-types/CodeValueType/index`","0..1","Records the measurement unit, for example, 'km', 'miles', etc. Supports the use of a controlled vocabulary."
+   "RegExp","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","The regular expression allows for further description of the allowable content of the data."
+   "ClassificationLevelCode",":doc:`/composite-types/CodeValueType/index`","0..1","Indicates the type of relationship, nominal, ordinal, interval, ratio, or continuous. Use where appropriate for the representation type. Valid values include: Nominal, Ordinal, Interval, Ratio, Continuous"
+
+Properties Inherited from ManagedRepresentation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+No properties are inherited.
+
+Properties Inherited from Versionable
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "URN","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1",""
+   "Agency","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1",""
+   "ID","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1",""
+   "Version","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1",""
+   "UserID",":doc:`/composite-types/UserIDType/index`","0..n","Allows for the specification of identifiers other than the specified DDI identification of the object. This may be a legacy ID from DDI-C, a system specific ID such as for a database or registry, or a non-DDI unique identifier. As the identifier is specific to a system the system must be identified with the UserID structure."
+   "UserAttributePair",":doc:`/composite-types/StandardKeyValuePairType/index`","0..n","A system specific user defined property of the object expressed as a key/value pair. As this is specific to an individual system the use of controlled vocabularies for the key is strongly recommended."
+   "VersionResponsibility","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","Person or organization within the MaintenanceAgency responsible for the version change. If it is important to retain the affiliation between and individual responsible for the version and his/her agency, it may be included in this notation. This is primarily intended for internal use."
+   "VersionResponsibilityReference",":doc:`/item-types/Agent/index`","0..1","Reference person or organization within the MaintenanceAgency responsible for the version change, as described in an OrganizationScheme. If it is important to retain the affiliation between and individual responsible for the version and his/her agency, a Relation should be created between the individual referenced here and his/her organization. This is primarily intended for internal use."
+   "VersionRationale",":doc:`/composite-types/VersionRationaleType/index`","0..1","Textual description of the rationale/purpose for the version change and a coded value to provide an internal processing flag within and organization or system. Note that versioning can only take place on objects owned by the specified DDI Agency. If you are creating a local instance of an object from another agency for current or future modification use BasedOnObject. If the changes being made result in what you determine to be new object rather than a version of a previous object, i.e. the change is too extensive to consider it a version of the existing object, create a new object and use BasedOnObject to provide a link to the object or objects that were a basis for the new object."
+   "BasedOnObject",":doc:`/composite-types/BasedOnObjectType/index`","0..1","Use when creating an object that is based on an existing object or objects that are managed by a different agency or when the new object is NOT simply a version change but you wish to maintain a reference to the object that served as a basis for the new object. BasedOnObject may contain references to any number of objects which serve as a basis for this object, a BasedOnRationalDescription of how the content of the referenced object was incorporated or altered, and a BasedOnRationalCode to allow for specific typing of the BasedOnReference according to an external controlled vocabulary."
+   "RelatedOtherMaterialReference",":doc:`/item-types/OtherMaterial/index`","0..n","The inclusion of an existing OtherMaterial by reference. Use for any type of OtherMaterial not specifically addressed by an inline description for such as ExternalAid in QuestionItem."
+   "VersionDate","`cogsDate <https://cogsdata.org/docs/modeler-guide/primitive-types/#cogsdate>`_","0..1","Date of version using the union set BaseDateType. Duration should not be used in this field, even though allowed by the ISO format enforced by the parser."
+   "IsPublished","`boolean <https://cogsdata.org/docs/modeler-guide/primitive-types/#boolean>`_","0..1","Indicates that the maintainable will not be changed without versioning, and is a stable target for referencing."
+
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/item-types/Versionable/index`
+    * :doc:`/item-types/ManagedRepresentation/index`
+        * **ManagedNominalRepresentation**
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. csv-table::
+   :header: "Item Type","Property"
+   :widths: 30,70
+
+   :doc:`/item-types/Archive/index`,ArchiveSpecific/Coverage/RestrictionProcess/CommandCode/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/BaseLogicalProduct/index`,Coverage/RestrictionProcess/CommandCode/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/Category/index`,Generation/CommandCode/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/ComputationItem/index`,CommandCode/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/ConceptualComponent/index`,Coverage/RestrictionProcess/CommandCode/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/ControlConstruct/index`,OutParameter/ValueRepresentationReference
+   :doc:`/item-types/DataCollection/index`,Coverage/RestrictionProcess/CommandCode/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/DDIInstance/index`,Coverage/RestrictionProcess/CommandCode/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/GeneralInstruction/index`,CommandCode/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/GenerationInstruction/index`,CommandCode/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/Group/index`,Coverage/RestrictionProcess/CommandCode/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/IfThenElse/index`,IfCondition/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/Loop/index`,LoopVariableReference/ValueRepresentationReference
+   :doc:`/item-types/ManagedGeographicRepresentation/index`,AlternateOffset/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/ManagedRepresentationGroup/index`,ManagedRepresentationReference
+   :doc:`/item-types/ManagedRepresentationScheme/index`,ManagedRepresentationReference
+   :doc:`/item-types/MeasurementItem/index`,OutParameter/ValueRepresentationReference
+   :doc:`/item-types/PhysicalInstance/index`,Coverage/RestrictionProcess/CommandCode/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/QuestionBlock/index`,OutParameter/ValueRepresentationReference
+   :doc:`/item-types/QuestionConstruct/index`,ResponseSequence/AlternateSequenceType/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/QuestionGrid/index`,OutParameter/ValueRepresentationReference
+   :doc:`/item-types/QuestionItem/index`,OutParameter/ValueRepresentationReference
+   :doc:`/item-types/RepeatUntil/index`,UntilCondition/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/RepeatWhile/index`,WhileCondition/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/RepresentationMap/index`,SourceRepresentation/ManagedRepresentationReference
+   :doc:`/item-types/RepresentedVariable/index`,ValueRepresentationReference
+   :doc:`/item-types/ResourcePackage/index`,Coverage/RestrictionProcess/CommandCode/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/SampleStep/index`,CommandCode/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/SamplingStage/index`,ConstructSequence/AlternateSequenceType/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/Sequence/index`,ConstructSequence/AlternateSequenceType/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/StudyUnit/index`,Coverage/RestrictionProcess/CommandCode/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/Universe/index`,UniverseGenerationCode/Command/OutParameter/ValueRepresentationReference
+   :doc:`/item-types/Variable/index`,OutParameter/ValueRepresentationReference
+   :doc:`/item-types/Weighting/index`,UsageGuide/CommandCode/Command/OutParameter/ValueRepresentationReference
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/ManagedNominalRepresentation.svg
+

@@ -1,0 +1,26 @@
+SpatialCoordinateType
+---------------------
+
+Lists the value and format type for the coordinate value. Note that this is a single value (X coordinate or Y coordinate) rather than a coordinate pair.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "CoordinateValue","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","The value of the coordinate expressed as a string."
+   "CoordinateType","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","Identifies the type of point coordinate system using a controlled vocabulary. Point formats include decimal degree, degrees minutes seconds, decimal minutes, meters, and feet. Valid values include: DecimalDegree, DegreesMinutesSeconds, DecimalMinutes, Meters, Feet"
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/SpatialCoordinateType.svg
+

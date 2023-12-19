@@ -1,0 +1,27 @@
+BasicIncrementType
+------------------
+
+Describes the start, end, and increment value for an incremental string (numeric, character, or length).
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "Increment","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","The size of the increment in units (number of characters, length, number of units)."
+   "StartValue","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","The starting value or beginning point of the increment string."
+   "EndValue","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","The ending value or end point of the increment string."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/BasicIncrementType.svg
+

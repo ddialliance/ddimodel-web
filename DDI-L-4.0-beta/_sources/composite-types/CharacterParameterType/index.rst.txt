@@ -1,0 +1,26 @@
+CharacterParameterType
+----------------------
+
+Specification of the character offset for the beginning and end of the segment.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "StartCharOffset","`nonNegativeInteger <https://cogsdata.org/docs/modeler-guide/primitive-types/#nonnegativeinteger>`_","0..1","Number of characters from beginning of the document, indicating the inclusive start of the text range."
+   "EndCharOffset","`nonNegativeInteger <https://cogsdata.org/docs/modeler-guide/primitive-types/#nonnegativeinteger>`_","0..1","Number of characters from the beginning of the document, indicating the inclusive end of the text segment."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/CharacterParameterType.svg
+

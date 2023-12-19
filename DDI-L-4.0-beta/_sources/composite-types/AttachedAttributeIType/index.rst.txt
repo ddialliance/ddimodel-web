@@ -1,0 +1,26 @@
+AttachedAttributeIType
+----------------------
+
+References the attribute description or provides a value.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "AttributeReference",":doc:`/composite-types/AttributeType/index`","0..1","Reference to the attribute described in an NCube."
+   "Value",":doc:`/composite-types/ValueType/index`","0..1","Contains the value for the attribute."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/AttachedAttributeIType.svg
+

@@ -1,0 +1,26 @@
+DomainSpecificValueType
+-----------------------
+
+Identifies the value of the ResponseDomain to which the new ResponseDomain is attached by specifying its attachmentBase number of the target ResponseDomain in the attribute attachmentDomain. Specifies one or more values within the ResponseDomain to which the object is attached (i.e. single item or set).
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "Value",":doc:`/composite-types/ValueType/index`","0..n","The value of the target response domain to which the object should be attached."
+   "AttachmentDomain","`int <https://cogsdata.org/docs/modeler-guide/primitive-types/#int>`_","0..1","This is the value of the attribute ""attachmentBase"" on the ResponseDomainInMixed to which the specified response domain will be attached. This is used to clarify attachment locations when more than two response domains are provided in a StructuredMixedResponseDomain."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DomainSpecificValueType.svg
+

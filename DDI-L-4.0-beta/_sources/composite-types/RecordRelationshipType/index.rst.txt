@@ -1,0 +1,52 @@
+RecordRelationshipType
+----------------------
+
+Describes the relationship between records of different types or of the same type within a longitudinal study. Identifies the key and linking value relationships. All relationships are pairwise. Multiple pairwise relationships maybe needed to clarify all record relationships within a logical product or data set. In addition to the standard name, label, and description, the structure identifies the pair of logical records for which the relationship is defined as SourceLogicalRecord and TargetLogicalRecord, describes the link between these two records and indicates the relationship of the of the source record to the target record.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "RecordRelationshipName",":doc:`/composite-types/NameType/index`","0..n","A name for the RecordRelationship. May be expressed in multiple languages. Repeat the element to express names with different content, for example different names for different systems."
+   "Label",":doc:`/composite-types/LabelType/index`","0..n","A display label for the RecordRelationship. Supports multiple language versions of the same content as well as optional formatting of the content. Repeat for labels with different content, for example, labels with differing length limitations."
+   "Description",":doc:`/composite-types/StructuredStringType/index`","0..1","A description of the content and purpose of the RecordRelationship. Supports multiple language versions of the same content as well as optional formatting of the content."
+   "SourceLogicalRecordReference",":doc:`/composite-types/LogicalRecordType/index`","0..1","A reference to the Logical Record acting as the Source Record. All relationship information is from the source to the target. If the relationship is not unidirectional (i.e., sibling) simply assign one record as the source and the other as the target."
+   "TargetLogicalRecordReference",":doc:`/composite-types/LogicalRecordType/index`","0..1","A reference to the Logical Record acting as the Target Record."
+   "SourceTargetLink",":doc:`/composite-types/SourceTargetLinkType/index`","0..n","Each SourceTargetLink provides a pair of variables which act as all or part of a link between the source and the target records. Repeat if more than one set of variables is required to make the link."
+   "RelationToTarget","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","Indicates the relationship of the source to the target. The value describes the role of the source in the relationship. This is a restricted list of Parent, Child, Sibling, Unknown. Valid values include: Parent, Child, Sibling, Unknown"
+
+Properties Inherited from IdentifiableType
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "URN","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","The URN of the entity matching the DDI URN pattern associated with the value of the attribute typeOfIdentifier (Canonical or Deprecated)."
+   "Agency","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","This is the registered agency code with optional sub-agencies separated by dots."
+   "ID","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","The ID of the object. This must conform to the allowed structure of the DDI Identifier and must be unique within the declared scope of uniqueness (Agency or Maintainable)."
+   "Version","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","The version number of the object. For the identifiable object this is the version number of its parent versionable at the point of creation or alteration of the non-administrative metadata of the identifiable. Versionable and Maintainable items increment their version number whenever the non-administrative metadata contained by the object changes."
+   "UserID",":doc:`/composite-types/UserIDType/index`","0..n","Allows for the specification of identifiers other than the specified DDI identification of the object. This may be a legacy ID from DDI-C, a system specific ID such as for a database or registry, or a non-DDI unique identifier. As the identifier is specific to a system the system must be identified with the UserID structure."
+   "UserAttributePair",":doc:`/composite-types/StandardKeyValuePairType/index`","0..n","A system specific user defined property of the object expressed as a key/value pair. As this is specific to an individual system the use of controlled vocabularies for the key is strongly recommended."
+
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/IdentifiableType/index`
+    * **RecordRelationshipType**
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/RecordRelationshipType.svg
+

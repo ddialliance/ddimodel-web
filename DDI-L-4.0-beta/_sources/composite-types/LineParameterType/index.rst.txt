@@ -1,0 +1,28 @@
+LineParameterType
+-----------------
+
+Specification of the line and offset for the beginning and end of the segment.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "StartLine","`nonNegativeInteger <https://cogsdata.org/docs/modeler-guide/primitive-types/#nonnegativeinteger>`_","0..1","Number of lines from beginning of the document."
+   "StartOffset","`nonNegativeInteger <https://cogsdata.org/docs/modeler-guide/primitive-types/#nonnegativeinteger>`_","0..1","Number of characters from start of the line specified in StartLine."
+   "EndLine","`nonNegativeInteger <https://cogsdata.org/docs/modeler-guide/primitive-types/#nonnegativeinteger>`_","0..1","Number of lines from beginning of the document."
+   "EndOffset","`int <https://cogsdata.org/docs/modeler-guide/primitive-types/#int>`_","0..1","Number of characters from the start of the line specified in EndLine."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/LineParameterType.svg
+

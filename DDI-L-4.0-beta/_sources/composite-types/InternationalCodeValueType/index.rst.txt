@@ -1,0 +1,51 @@
+InternationalCodeValueType
+--------------------------
+
+Allows for string content which may be taken from an externally maintained controlled vocabulary. If the content is from a controlled vocabulary provide the code value, as well as a reference to the code list from which the value is taken. This differs from a CodeValue only by the provision of a language-location specification. DDI uses the International CodeValue in cases where controlled vocabularies are assumed to be highly language specific, such as nationally maintained subject headings, thesauri, or keywords derived from the content of documents. The ability to identify language is especially important when supporting searches by external language-specific search engines. Provide as many of the identifying attributes as needed to adequately identify the controlled vocabulary.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "ControlledVocabularyID","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","The ID of the code controlled vocabulary that the content was taken from."
+   "ControlledVocabularyName","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","The name of the controlledVocabulary."
+   "ControlledVocabularyAgencyName","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","The name of the agency maintaining the controlledVocabulary."
+   "ControlledVocabularyVersionID","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","The version number of the controlledVocabulary."
+   "OtherValue","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","If the value of the string is ""Other"" or the equivalent from the controlledVocabulary, this attribute can provide a more specific value not found in the codelist."
+   "ControlledVocabularyURN","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","The URN of the codelist."
+   "ControlledVocabularySchemeURN","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1","If maintained within a scheme, the URN of the scheme containing the controlledVocabulary."
+
+Properties Inherited from StringType
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "MultilingualStringValue","`langString <https://cogsdata.org/docs/modeler-guide/primitive-types/#langstring>`_","0..1",""
+   "IsTranslated","`boolean <https://cogsdata.org/docs/modeler-guide/primitive-types/#boolean>`_","0..1","Indicates whether content is a translation (true) or an original (false)."
+   "IsTranslatable","`boolean <https://cogsdata.org/docs/modeler-guide/primitive-types/#boolean>`_","0..1","Indicates whether content is translatable (true) or not (false). An example of something that is not translatable would be a MNEMONIC of an object or a number."
+   "TranslationSourceLanguage","`language <https://cogsdata.org/docs/modeler-guide/primitive-types/#language>`_","0..n","List the language or language codes. The language original may or may not be provided in this bundle of language specific strings."
+   "TranslationDate","`date <https://cogsdata.org/docs/modeler-guide/primitive-types/#date>`_","0..1","The date the content was translated. Provision of translation date allows user to verify if translation was available during data collection or other time linked activity."
+
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* :doc:`/composite-types/StringType/index`
+    * **InternationalCodeValueType**
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/InternationalCodeValueType.svg
+

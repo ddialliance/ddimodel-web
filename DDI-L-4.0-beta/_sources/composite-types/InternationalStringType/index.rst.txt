@@ -1,0 +1,33 @@
+InternationalStringType
+-----------------------
+
+Packaging structure for multiple language versions of the same string content. Where an element of this type is repeatable, the expectation is that each repetition contains different content, each of which can be expressed in multiple languages. The language designation goes on the individual String.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "String",":doc:`/composite-types/StringType/index`","0..n","A non-formatted string of text with an attribute that designates the language of the text. Repeat this object to express the same content in another language."
+
+
+Item Type Hierarchy
+~~~~~~~~~~~~~~~~~~~
+
+* **InternationalStringType**
+    * :doc:`/composite-types/BibliographicNameType/index`
+    * :doc:`/composite-types/NameType/index`
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/InternationalStringType.svg
+

@@ -1,0 +1,27 @@
+DDIMaintenanceAgencyIDType
+--------------------------
+
+Provides the official DDI ID of a maintenance agency as a value taken from the registry cited in @registryID.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "StringValue","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","0..1",""
+   "RegistryID","`string <https://cogsdata.org/docs/modeler-guide/primitive-types/#string>`_","1..1","Currently there is only a single DDI Agency Registry. Use ""DDIAgencyRegistry""."
+   "ActivationDate","`dateTime <https://cogsdata.org/docs/modeler-guide/primitive-types/#datetime>`_","0..1","The date when this agency ID was registered or become active."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/DDIMaintenanceAgencyIDType.svg
+

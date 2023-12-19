@@ -1,0 +1,27 @@
+RequirementsAssessmentType
+--------------------------
+
+Description of whether specific requirements for the activities providing these results were met.
+
+Properties
+~~~~~~~~~~
+
+.. csv-table::
+   :header: "Name","Type","","Description"
+   :widths: 15,10,5,100
+
+   "TypeOfRequirementsAssessment",":doc:`/composite-types/CodeValueType/index`","0..1","Identifies the type of requirement being assessed such as staffing, funding, source materials, etc. Supports the use of an external controlled vocabulary."
+   "Description",":doc:`/composite-types/StructuredStringType/index`","0..1","A description of the Requirements Assessment. Supports multiple language versions of the same content as well as optional formatting of the content."
+   "IsSatisfied","`boolean <https://cogsdata.org/docs/modeler-guide/primitive-types/#boolean>`_","0..1","A boolean statement of whether the requirement was satisfied or not. A value of ""true"" indicates that the minimum requirement was satisfied. Note any specific information in the Description."
+
+
+Relationships
+~~~~~~~~~~~~~
+The following identified item types reference this type.
+
+.. container:: image
+
+   |stub|
+
+.. |stub| image:: ../../images/RequirementsAssessmentType.svg
+
