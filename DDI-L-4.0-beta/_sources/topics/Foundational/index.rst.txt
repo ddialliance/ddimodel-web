@@ -6,7 +6,7 @@ Foundational
 Item Types
 **********
 
-DDI40 has 6 item types related to Foundational.
+DDI40BETA has 6 item types related to Foundational.
 
 .. toctree::
    :maxdepth: 1

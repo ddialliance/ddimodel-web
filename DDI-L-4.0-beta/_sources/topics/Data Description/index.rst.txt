@@ -6,7 +6,7 @@ Data Description
 Item Types
 **********
 
-DDI40 has 13 item types related to Data Description.
+DDI40BETA has 13 item types related to Data Description.
 
 .. toctree::
    :maxdepth: 1

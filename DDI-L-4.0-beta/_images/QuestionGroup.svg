@@ -21,10 +21,10 @@
 <text text-anchor="start" x="282.95" y="-133.1" font-family="Times New Roman,serif" font-size="8.00">ConceptReference : Concept[0...1] </text>
 <text text-anchor="start" x="282.95" y="-124.1" font-family="Times New Roman,serif" font-size="8.00">Subject : InternationalCodeValueType[0...n] </text>
 <text text-anchor="start" x="282.95" y="-115.1" font-family="Times New Roman,serif" font-size="8.00">Keyword : InternationalCodeValueType[0...n] </text>
-<text text-anchor="start" x="282.95" y="-106.1" font-family="Times New Roman,serif" font-size="8.00">QuestionItemReference : QuestionItem[0...1] </text>
-<text text-anchor="start" x="282.95" y="-97.1" font-family="Times New Roman,serif" font-size="8.00">QuestionGridReference : QuestionGrid[0...1] </text>
-<text text-anchor="start" x="282.95" y="-88.1" font-family="Times New Roman,serif" font-size="8.00">QuestionBlockReference : QuestionBlock[0...1] </text>
-<text text-anchor="start" x="282.95" y="-79.1" font-family="Times New Roman,serif" font-size="8.00">QuestionGroupReference : QuestionGroup[0...1] </text>
+<text text-anchor="start" x="282.95" y="-106.1" font-family="Times New Roman,serif" font-size="8.00">QuestionItemReference : QuestionItem[0...n] </text>
+<text text-anchor="start" x="282.95" y="-97.1" font-family="Times New Roman,serif" font-size="8.00">QuestionGridReference : QuestionGrid[0...n] </text>
+<text text-anchor="start" x="282.95" y="-88.1" font-family="Times New Roman,serif" font-size="8.00">QuestionBlockReference : QuestionBlock[0...n] </text>
+<text text-anchor="start" x="282.95" y="-79.1" font-family="Times New Roman,serif" font-size="8.00">QuestionGroupReference : QuestionGroup[0...n] </text>
 <text text-anchor="start" x="282.95" y="-70.1" font-family="Times New Roman,serif" font-size="8.00">IsOrdered : boolean[0...1] </text>
 </g>
 <!-- QuestionGroup&#45;&gt;QuestionGroup -->

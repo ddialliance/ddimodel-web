@@ -19,10 +19,10 @@
 <text text-anchor="start" x="418.731" y="-142.1" font-family="Times New Roman,serif" font-size="8.00">Description : StructuredStringType[0...1] </text>
 <text text-anchor="start" x="418.731" y="-133.1" font-family="Times New Roman,serif" font-size="8.00">UniverseReference : Universe[0...n] </text>
 <text text-anchor="start" x="418.731" y="-124.1" font-family="Times New Roman,serif" font-size="8.00">ConceptReference : Concept[0...1] </text>
-<text text-anchor="start" x="418.731" y="-115.1" font-family="Times New Roman,serif" font-size="8.00">SampleFrameReference : SampleFrame[0...1] </text>
-<text text-anchor="start" x="418.731" y="-106.1" font-family="Times New Roman,serif" font-size="8.00">SamplingPlanReference : SamplingPlan[0...1] </text>
-<text text-anchor="start" x="418.731" y="-97.1" font-family="Times New Roman,serif" font-size="8.00">SampleReference : Sample[0...1] </text>
-<text text-anchor="start" x="418.731" y="-88.1" font-family="Times New Roman,serif" font-size="8.00">SamplingInformationGroupReference : SamplingInformationGroup[0...1] </text>
+<text text-anchor="start" x="418.731" y="-115.1" font-family="Times New Roman,serif" font-size="8.00">SampleFrameReference : SampleFrame[0...n] </text>
+<text text-anchor="start" x="418.731" y="-106.1" font-family="Times New Roman,serif" font-size="8.00">SamplingPlanReference : SamplingPlan[0...n] </text>
+<text text-anchor="start" x="418.731" y="-97.1" font-family="Times New Roman,serif" font-size="8.00">SampleReference : Sample[0...n] </text>
+<text text-anchor="start" x="418.731" y="-88.1" font-family="Times New Roman,serif" font-size="8.00">SamplingInformationGroupReference : SamplingInformationGroup[0...n] </text>
 <text text-anchor="start" x="418.731" y="-79.1" font-family="Times New Roman,serif" font-size="8.00">IsOrdered : boolean[0...1] </text>
 </g>
 <!-- SamplingInformationGroup&#45;&gt;SamplingInformationGroup -->

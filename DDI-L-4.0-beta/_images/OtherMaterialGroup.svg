@@ -21,8 +21,8 @@
 <text text-anchor="start" x="341.37" y="-70.1" font-family="Times New Roman,serif" font-size="8.00">ConceptReference : Concept[0...1] </text>
 <text text-anchor="start" x="341.37" y="-61.1" font-family="Times New Roman,serif" font-size="8.00">Subject : InternationalCodeValueType[0...n] </text>
 <text text-anchor="start" x="341.37" y="-52.1" font-family="Times New Roman,serif" font-size="8.00">Keyword : InternationalCodeValueType[0...n] </text>
-<text text-anchor="start" x="341.37" y="-43.1" font-family="Times New Roman,serif" font-size="8.00">OtherMaterialReference : OtherMaterial[0...1] </text>
-<text text-anchor="start" x="341.37" y="-34.1" font-family="Times New Roman,serif" font-size="8.00">OtherMaterialGroupReference : OtherMaterialGroup[0...1] </text>
+<text text-anchor="start" x="341.37" y="-43.1" font-family="Times New Roman,serif" font-size="8.00">OtherMaterialReference : OtherMaterial[0...n] </text>
+<text text-anchor="start" x="341.37" y="-34.1" font-family="Times New Roman,serif" font-size="8.00">OtherMaterialGroupReference : OtherMaterialGroup[0...n] </text>
 <text text-anchor="start" x="341.37" y="-25.1" font-family="Times New Roman,serif" font-size="8.00">IsOrdered : boolean[0...1] </text>
 </g>
 <!-- OtherMaterialGroup&#45;&gt;OtherMaterialGroup -->

@@ -21,8 +21,8 @@
 <text text-anchor="start" x="282.95" y="-52.1" font-family="Times New Roman,serif" font-size="8.00">GroupingConceptReference : Concept[0...1] </text>
 <text text-anchor="start" x="282.95" y="-43.1" font-family="Times New Roman,serif" font-size="8.00">Subject : InternationalCodeValueType[0...n] </text>
 <text text-anchor="start" x="282.95" y="-34.1" font-family="Times New Roman,serif" font-size="8.00">Keyword : InternationalCodeValueType[0...n] </text>
-<text text-anchor="start" x="282.95" y="-25.1" font-family="Times New Roman,serif" font-size="8.00">UniverseReference : Universe[0...1] </text>
-<text text-anchor="start" x="282.95" y="-16.1" font-family="Times New Roman,serif" font-size="8.00">UniverseGroupReference : UniverseGroup[0...1] </text>
+<text text-anchor="start" x="282.95" y="-25.1" font-family="Times New Roman,serif" font-size="8.00">UniverseReference : Universe[0...n] </text>
+<text text-anchor="start" x="282.95" y="-16.1" font-family="Times New Roman,serif" font-size="8.00">UniverseGroupReference : UniverseGroup[0...n] </text>
 <text text-anchor="start" x="282.95" y="-7.1" font-family="Times New Roman,serif" font-size="8.00">IsOrdered : boolean[0...1] </text>
 </g>
 <!-- UniverseGroup&#45;&gt;UniverseGroup -->

@@ -1,6 +1,6 @@
 All Item Types
 ==============
-DDI40 has 172 item types.
+DDI40BETA has 172 item types.
 
 .. toctree::
    :maxdepth: 1

@@ -6,7 +6,7 @@ All Content Items
 Item Types
 **********
 
-DDI40 has 161 item types related to All Content Items.
+DDI40BETA has 161 item types related to All Content Items.
 
 .. toctree::
    :maxdepth: 1

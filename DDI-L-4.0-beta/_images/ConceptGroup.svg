@@ -21,8 +21,8 @@
 <text text-anchor="start" x="277.681" y="-70.1" font-family="Times New Roman,serif" font-size="8.00">GroupingConceptReference : Concept[0...1] </text>
 <text text-anchor="start" x="277.681" y="-61.1" font-family="Times New Roman,serif" font-size="8.00">Subject : InternationalCodeValueType[0...n] </text>
 <text text-anchor="start" x="277.681" y="-52.1" font-family="Times New Roman,serif" font-size="8.00">Keyword : InternationalCodeValueType[0...n] </text>
-<text text-anchor="start" x="277.681" y="-43.1" font-family="Times New Roman,serif" font-size="8.00">ConceptReference : Concept[0...1] </text>
-<text text-anchor="start" x="277.681" y="-34.1" font-family="Times New Roman,serif" font-size="8.00">ConceptGroupReference : ConceptGroup[0...1] </text>
+<text text-anchor="start" x="277.681" y="-43.1" font-family="Times New Roman,serif" font-size="8.00">ConceptReference : Concept[0...n] </text>
+<text text-anchor="start" x="277.681" y="-34.1" font-family="Times New Roman,serif" font-size="8.00">ConceptGroupReference : ConceptGroup[0...n] </text>
 <text text-anchor="start" x="277.681" y="-25.1" font-family="Times New Roman,serif" font-size="8.00">IsOrdered : boolean[0...1] </text>
 <text text-anchor="start" x="277.681" y="-16.1" font-family="Times New Roman,serif" font-size="8.00">IsAdministrativeOnly : boolean[0...1] </text>
 <text text-anchor="start" x="277.681" y="-7.1" font-family="Times New Roman,serif" font-size="8.00">IsConcept : boolean[0...1] </text>

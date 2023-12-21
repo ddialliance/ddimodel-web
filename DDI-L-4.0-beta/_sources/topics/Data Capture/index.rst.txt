@@ -6,7 +6,7 @@ Data Capture
 Item Types
 **********
 
-DDI40 has 17 item types related to Data Capture.
+DDI40BETA has 17 item types related to Data Capture.
 
 .. toctree::
    :maxdepth: 1

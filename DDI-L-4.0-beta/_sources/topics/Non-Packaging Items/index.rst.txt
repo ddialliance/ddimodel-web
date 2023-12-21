@@ -6,7 +6,7 @@ Non-Packaging Items
 Item Types
 **********
 
-DDI40 has 43 item types related to Non-Packaging Items.
+DDI40BETA has 43 item types related to Non-Packaging Items.
 
 .. toctree::
    :maxdepth: 1

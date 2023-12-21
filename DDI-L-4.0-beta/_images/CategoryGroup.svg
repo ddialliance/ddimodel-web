@@ -22,8 +22,8 @@
 <text text-anchor="start" x="284.95" y="-81.6" font-family="Times New Roman,serif" font-size="8.00">ConceptReference : Concept[0...1] </text>
 <text text-anchor="start" x="284.95" y="-72.6" font-family="Times New Roman,serif" font-size="8.00">Subject : InternationalCodeValueType[0...n] </text>
 <text text-anchor="start" x="284.95" y="-63.6" font-family="Times New Roman,serif" font-size="8.00">Keyword : InternationalCodeValueType[0...n] </text>
-<text text-anchor="start" x="284.95" y="-54.6" font-family="Times New Roman,serif" font-size="8.00">CategoryReference : Category[0...1] </text>
-<text text-anchor="start" x="284.95" y="-45.6" font-family="Times New Roman,serif" font-size="8.00">CategoryGroupReference : CategoryGroup[0...1] </text>
+<text text-anchor="start" x="284.95" y="-54.6" font-family="Times New Roman,serif" font-size="8.00">CategoryReference : Category[0...n] </text>
+<text text-anchor="start" x="284.95" y="-45.6" font-family="Times New Roman,serif" font-size="8.00">CategoryGroupReference : CategoryGroup[0...n] </text>
 <text text-anchor="start" x="284.95" y="-36.6" font-family="Times New Roman,serif" font-size="8.00">IsOrdered : boolean[0...1] </text>
 </g>
 <!-- CategoryGroup&#45;&gt;CategoryGroup -->

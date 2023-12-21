@@ -6,7 +6,7 @@ Agent
 Item Types
 **********
 
-DDI40 has 3 item types related to Agent.
+DDI40BETA has 3 item types related to Agent.
 
 .. toctree::
    :maxdepth: 1

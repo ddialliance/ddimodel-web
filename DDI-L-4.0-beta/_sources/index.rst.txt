@@ -1,5 +1,5 @@
-DDI Lifecycle Data Documentation 4.0
-====================================
+DDI Lifecycle Data Documentation 4.0 BETA 1
+===========================================
 
 .. toctree::
    :maxdepth: 1

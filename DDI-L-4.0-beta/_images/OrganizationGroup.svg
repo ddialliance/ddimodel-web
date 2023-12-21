@@ -21,10 +21,10 @@
 <text text-anchor="start" x="327.832" y="-133.1" font-family="Times New Roman,serif" font-size="8.00">ConceptReference : Concept[0...1] </text>
 <text text-anchor="start" x="327.832" y="-124.1" font-family="Times New Roman,serif" font-size="8.00">Subject : InternationalCodeValueType[0...n] </text>
 <text text-anchor="start" x="327.832" y="-115.1" font-family="Times New Roman,serif" font-size="8.00">Keyword : InternationalCodeValueType[0...n] </text>
-<text text-anchor="start" x="327.832" y="-106.1" font-family="Times New Roman,serif" font-size="8.00">OrganizationReference : Organization[0...1] </text>
-<text text-anchor="start" x="327.832" y="-97.1" font-family="Times New Roman,serif" font-size="8.00">IndividualReference : Individual[0...1] </text>
-<text text-anchor="start" x="327.832" y="-88.1" font-family="Times New Roman,serif" font-size="8.00">RelationReference : Relation[0...1] </text>
-<text text-anchor="start" x="327.832" y="-79.1" font-family="Times New Roman,serif" font-size="8.00">OrganizationGroupReference : OrganizationGroup[0...1] </text>
+<text text-anchor="start" x="327.832" y="-106.1" font-family="Times New Roman,serif" font-size="8.00">OrganizationReference : Organization[0...n] </text>
+<text text-anchor="start" x="327.832" y="-97.1" font-family="Times New Roman,serif" font-size="8.00">IndividualReference : Individual[0...n] </text>
+<text text-anchor="start" x="327.832" y="-88.1" font-family="Times New Roman,serif" font-size="8.00">RelationReference : Relation[0...n] </text>
+<text text-anchor="start" x="327.832" y="-79.1" font-family="Times New Roman,serif" font-size="8.00">OrganizationGroupReference : OrganizationGroup[0...n] </text>
 <text text-anchor="start" x="327.832" y="-70.1" font-family="Times New Roman,serif" font-size="8.00">IsOrdered : boolean[0...1] </text>
 </g>
 <!-- OrganizationGroup&#45;&gt;OrganizationGroup -->

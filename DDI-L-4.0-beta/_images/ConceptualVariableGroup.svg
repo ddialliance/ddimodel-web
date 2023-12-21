@@ -21,8 +21,8 @@
 <text text-anchor="start" x="395.79" y="-70.1" font-family="Times New Roman,serif" font-size="8.00">ConceptReference : Concept[0...1] </text>
 <text text-anchor="start" x="395.79" y="-61.1" font-family="Times New Roman,serif" font-size="8.00">Subject : InternationalCodeValueType[0...n] </text>
 <text text-anchor="start" x="395.79" y="-52.1" font-family="Times New Roman,serif" font-size="8.00">Keyword : InternationalCodeValueType[0...n] </text>
-<text text-anchor="start" x="395.79" y="-43.1" font-family="Times New Roman,serif" font-size="8.00">ConceptualVariableReference : ConceptualVariable[0...1] </text>
-<text text-anchor="start" x="395.79" y="-34.1" font-family="Times New Roman,serif" font-size="8.00">ConceptualVariableGroupReference : ConceptualVariableGroup[0...1] </text>
+<text text-anchor="start" x="395.79" y="-43.1" font-family="Times New Roman,serif" font-size="8.00">ConceptualVariableReference : ConceptualVariable[0...n] </text>
+<text text-anchor="start" x="395.79" y="-34.1" font-family="Times New Roman,serif" font-size="8.00">ConceptualVariableGroupReference : ConceptualVariableGroup[0...n] </text>
 <text text-anchor="start" x="395.79" y="-25.1" font-family="Times New Roman,serif" font-size="8.00">IsOrdered : boolean[0...1] </text>
 </g>
 <!-- ConceptualVariableGroup&#45;&gt;ConceptualVariableGroup -->

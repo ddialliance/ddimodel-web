@@ -21,8 +21,8 @@
 <text text-anchor="start" x="305.891" y="-70.1" font-family="Times New Roman,serif" font-size="8.00">ConceptReference : Concept[0...1] </text>
 <text text-anchor="start" x="305.891" y="-61.1" font-family="Times New Roman,serif" font-size="8.00">Subject : InternationalCodeValueType[0...n] </text>
 <text text-anchor="start" x="305.891" y="-52.1" font-family="Times New Roman,serif" font-size="8.00">Keyword : InternationalCodeValueType[0...n] </text>
-<text text-anchor="start" x="305.891" y="-43.1" font-family="Times New Roman,serif" font-size="8.00">InstrumentReference : Instrument[0...1] </text>
-<text text-anchor="start" x="305.891" y="-34.1" font-family="Times New Roman,serif" font-size="8.00">InstrumentGroupReference : InstrumentGroup[0...1] </text>
+<text text-anchor="start" x="305.891" y="-43.1" font-family="Times New Roman,serif" font-size="8.00">InstrumentReference : Instrument[0...n] </text>
+<text text-anchor="start" x="305.891" y="-34.1" font-family="Times New Roman,serif" font-size="8.00">InstrumentGroupReference : InstrumentGroup[0...n] </text>
 <text text-anchor="start" x="305.891" y="-25.1" font-family="Times New Roman,serif" font-size="8.00">IsOrdered : boolean[0...1] </text>
 </g>
 <!-- InstrumentGroup&#45;&gt;InstrumentGroup -->

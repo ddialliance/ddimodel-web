@@ -1,6 +1,6 @@
 All Composite Types
 ===================
-DDI40 has 319 composite types.
+DDI40BETA has 319 composite types.
 
 .. toctree::
    :maxdepth: 1

@@ -16,10 +16,10 @@ Properties
    "Description",":doc:`/composite-types/StructuredStringType/index`","0..1","Additional textual description of the sampling information group. Supports multiple language versions of the same content as well as optional formatting of the content."
    "UniverseReference",":doc:`/item-types/Universe/index`","0..n","Reference to the universe statement describing the persons or other elements that the sampling information objects refer to, and to which any analytic results refer."
    "ConceptReference",":doc:`/item-types/Concept/index`","0..1","Reference to the concept measured by the sampling information objects in this group."
-   "SampleFrameReference",":doc:`/item-types/SampleFrame/index`","0..1","A sample frame item included in the scheme by reference."
-   "SamplingPlanReference",":doc:`/item-types/SamplingPlan/index`","0..1","A sampling plan item included in the scheme by reference."
-   "SampleReference",":doc:`/item-types/Sample/index`","0..1","A sample included in the scheme by reference."
-   "SamplingInformationGroupReference",":doc:`/item-types/SamplingInformationGroup/index`","0..1","Inclusion of a SamplingInformationGroup by reference."
+   "SampleFrameReference",":doc:`/item-types/SampleFrame/index`","0..n","A sample frame item included in the scheme by reference."
+   "SamplingPlanReference",":doc:`/item-types/SamplingPlan/index`","0..n","A sampling plan item included in the scheme by reference."
+   "SampleReference",":doc:`/item-types/Sample/index`","0..n","A sample included in the scheme by reference."
+   "SamplingInformationGroupReference",":doc:`/item-types/SamplingInformationGroup/index`","0..n","Inclusion of a SamplingInformationGroup by reference."
    "IsOrdered","`boolean <https://cogsdata.org/docs/modeler-guide/primitive-types/#boolean>`_","0..1","Indicates that the content of the group is ordered as it appears within the XML structure."
 
 Properties Inherited from Versionable

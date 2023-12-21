@@ -6,7 +6,7 @@ Classification
 Item Types
 **********
 
-DDI40 has 7 item types related to Classification.
+DDI40BETA has 7 item types related to Classification.
 
 .. toctree::
    :maxdepth: 1
